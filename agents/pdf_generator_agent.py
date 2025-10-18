@@ -3,6 +3,7 @@ import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from core.pdf_generator import generate_tailored_resume_pdf
+from core.utils import load_resume, load_job_description
 
 class PDFGeneratorAgent:
     """
@@ -23,7 +24,14 @@ class PDFGeneratorAgent:
         """
         print("\n--- PDF Generator Agent: Initiating Tailored CV Generation ---")
         try:
-            output_pdf_path = generate_tailored_resume_pdf(resume_path, jd_path, output_dir)
+            # 1. Ingestion Phase: Process documents to get cleaned text
+            print("PDF Generator Agent")
+            resume_text = load_resume(resume_path)
+            jd_text = load_job_description(jd_path)
+
+            # 2. PDF Generation Phase: Call the core function with cleaned texts
+            output_pdf_path = generate_tailored_resume_pdf(resume_text, jd_text, output_dir=output_dir)
+            
             if output_pdf_path:
                 print(f"PDF Generator Agent: Tailored CV successfully generated at {output_pdf_path}")
             else:
