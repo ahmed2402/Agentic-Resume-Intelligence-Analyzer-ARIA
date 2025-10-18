@@ -29,14 +29,14 @@ def create_embeddings(texts: List[str]) -> List[List[float]]:
     """
     return huggingface_embeddings.embed_documents(texts)
 
-def store_embeddings_in_faiss(texts: List[str], db_path: str = "../data/embeddings/faiss_index"):
-    """
-    Creates and stores a FAISS vector database from texts using the pre-initialized embeddings model.
-    """
-    db = FAISS.from_texts(texts, huggingface_embeddings)
-    db.save_local(db_path)
-    print(f"FAISS database created and saved at {db_path}")
-    return db
+# def store_embeddings_in_faiss(texts: List[str], db_path: str = "../data/embeddings/faiss_index"):
+#     """
+#     Creates and stores a FAISS vector database from texts using the pre-initialized embeddings model.
+#     """
+#     db = FAISS.from_texts(texts, huggingface_embeddings)
+#     db.save_local(db_path)
+#     print(f"FAISS database created and saved at {db_path}")
+#     return db
 
 def calculate_similarity(embedding1: List[float], embedding2: List[float]) -> float:
     """
@@ -55,9 +55,9 @@ def calculate_resume_jd_similarity(cleaned_resume_text: str, cleaned_jd_text: st
     resume_embedding = embeddings[0]
     jd_embedding = embeddings[1]
 
-    # Optionally store in FAISS
-    if store_faiss:
-        store_embeddings_in_faiss(texts_to_embed, db_path)
+    # # Optionally store in FAISS
+    # if store_faiss:
+    #     store_embeddings_in_faiss(texts_to_embed, db_path)
 
     # Calculate similarity
     similarity_score = calculate_similarity(resume_embedding, jd_embedding)

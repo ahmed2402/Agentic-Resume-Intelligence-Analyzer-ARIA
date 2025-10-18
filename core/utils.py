@@ -7,8 +7,8 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 # Download NLTK data 
-nltk.download('stopwords')
-nltk.download('wordnet')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
 
 def load_resume(file_path: str):
     """
@@ -69,22 +69,22 @@ def process_documents(resume_path: str, jd_path: str) -> dict:
         "cleaned_job_description": cleaned_jd
     }
 
-if __name__ == "__main__":
-    # Example usage of the process_documents function
-    resume_path = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
-    jd_path = "../data/raw/job_descriptions/ai_engineer.txt"
+# if __name__ == "__main__":
+#     # Example usage of the process_documents function
+#     resume_path = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
+#     jd_path = "../data/raw/job_descriptions/ai_engineer.txt"
     
-    try:
-        processed_data = process_documents(resume_path, jd_path)
-        print("Successfully processed documents:")
-        print(f"Resume tokens: {len(processed_data['cleaned_resume'])} tokens")
-        print(f"Job description tokens: {len(processed_data['cleaned_job_description'])} tokens")
-        print("\nFirst 20 resume tokens:", processed_data['cleaned_resume'][:20])
-        print("First 20 JD tokens:", processed_data['cleaned_job_description'][:20])
-    except FileNotFoundError as e:
-        print(f"File error: {e}")
-    except NotImplementedError as e:
-        print(f"Feature not implemented: {e}")
-    except Exception as e:
-        print(f"Error processing documents: {e}")
+#     try:
+#         processed_data = process_documents(resume_path, jd_path)
+#         print("Successfully processed documents:")
+#         print(f"Resume tokens: {len(processed_data['cleaned_resume'])} tokens")
+#         print(f"Job description tokens: {len(processed_data['cleaned_job_description'])} tokens")
+#         print("\nFirst 20 resume tokens:", processed_data['cleaned_resume'][:20])
+#         print("First 20 JD tokens:", processed_data['cleaned_job_description'][:20])
+#     except FileNotFoundError as e:
+#         print(f"File error: {e}")
+#     except NotImplementedError as e:
+#         print(f"Feature not implemented: {e}")
+#     except Exception as e:
+#         print(f"Error processing documents: {e}")
 
