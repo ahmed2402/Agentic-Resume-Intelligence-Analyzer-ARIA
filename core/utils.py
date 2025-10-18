@@ -7,8 +7,11 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 # Download NLTK data 
-nltk.download('stopwords')
-nltk.download('wordnet')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
+
+for pkg in ['stopwords', 'wordnet', 'punkt', 'punkt_tab']:
+    nltk.download(pkg, quiet=True)
 
 def load_resume(file_path: str):
     """
