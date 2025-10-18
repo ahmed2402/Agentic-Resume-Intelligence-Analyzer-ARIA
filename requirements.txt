@@ -1,0 +1,50 @@
+# --- Core utilities ---
+python-dotenv
+PyYAML
+pandas
+numpy
+tqdm
+loguru
+
+# --- Text Extraction & Preprocessing ---
+pdfminer.six
+python-docx
+PyMuPDF==1.24.4
+nltk
+spacy
+pypdf
+
+# --- Embeddings & NLP Models ---
+sentence-transformers
+openai
+faiss-cpu
+chromadb
+
+# --- LLM & RAG Frameworks ---
+langchain
+langchain-community
+langchain-core
+langchain-openai
+
+# --- Visualization ---
+matplotlib
+seaborn
+plotly
+
+# --- PDF Generation ---
+fpdf2
+reportlab
+
+# --- Workflow / Orchestration ---
+prefect
+
+# --- Testing ---
+pytest
+
+# --- Optional (for future web/LLM connectivity) ---
+requests
+
+langchain-community
+nltk
+pypdf
+python-docx

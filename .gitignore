@@ -1,0 +1,19 @@
+# Virtual environments
+venv/
+env/
+ENV/
+.env
+.env.local
+.env.production
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+.env.production
+.env.local
+.env.development
+.env.test
