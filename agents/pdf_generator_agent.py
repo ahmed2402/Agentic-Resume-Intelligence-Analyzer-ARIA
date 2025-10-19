@@ -41,17 +41,17 @@ class PDFGeneratorAgent:
             print(f"PDF Generator Agent: An error occurred during CV generation: {e}")
             return None
 
-if __name__ == "__main__":
-    # Example Usage:
-    RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
-    JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
+# if __name__ == "__main__":
+#     # Example Usage:
+#     RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
+#     JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
 
-    pdf_generator_agent = PDFGeneratorAgent()
+#     pdf_generator_agent = PDFGeneratorAgent()
 
-    print("Starting Tailored CV Generation Workflow Example...")
-    output_pdf_path = pdf_generator_agent.generate_cv(RESUME_PATH, JD_PATH)
+#     print("Starting Tailored CV Generation Workflow Example...")
+#     output_pdf_path = pdf_generator_agent.generate_cv(RESUME_PATH, JD_PATH)
 
-    if output_pdf_path:
-        print(f"Tailored CV generation workflow completed. Output saved to: {os.path.abspath(output_pdf_path)}")
-    else:
-        print("Tailored CV generation workflow failed.")
+#     if output_pdf_path:
+#         print(f"Tailored CV generation workflow completed. Output saved to: {os.path.abspath(output_pdf_path)}")
+#     else:
+#         print("Tailored CV generation workflow failed.")
