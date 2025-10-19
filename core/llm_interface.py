@@ -66,35 +66,36 @@ Format your response as a JSON object with the following keys: "missing_skills",
         print(f"Error generating insights with LLM: {e}")
         return {"error": str(e)}
 
-# if __name__ == "__main__":
-#     # Example Usage:
-#     RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
-#     JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
+if __name__ == "__main__":
+    # Example Usage:
+    RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
+    JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
 
-#     try:
-#         print("Loading and cleaning documents...")
-#         processed_data = process_documents(RESUME_PATH, JD_PATH)
-#         cleaned_resume = " ".join(processed_data["cleaned_resume"])
-#         cleaned_jd = " ".join(processed_data["cleaned_job_description"])
+    try:
+        print("Loading and cleaning documents...")
+        processed_data = process_documents(RESUME_PATH, JD_PATH)
+        raw_resume = processed_data["raw_resume_text"]
+        raw_jd = processed_data["raw_jd_text"]
+        cleaned_resume = processed_data["cleaned_resume"]
+        cleaned_jd = processed_data["cleaned_job_description"]
+        print("Calculating similarity score...")
+        similarity_score = calculate_resume_jd_similarity(cleaned_resume, cleaned_jd)
 
-#         print("Calculating similarity score...")
-#         similarity_score = calculate_resume_jd_similarity(cleaned_resume, cleaned_jd, store_faiss=True)
+        print(f"\nResume-JD Similarity Score: {similarity_score:.4f}")
 
-#         print(f"\nResume-JD Similarity Score: {similarity_score:.4f}")
+        print("\nGenerating insights...")
+        insights = generate_insights(raw_resume, raw_jd, similarity_score)
 
-#         print("\nGenerating insights...")
-#         insights = generate_insights(cleaned_resume, cleaned_jd, similarity_score)
+        if "error" not in insights:
+            print("--- AI Generated Insights ---")
+            for key, value in insights.items():
+                print(f"\n**{key.replace('_', ' ').title()}**:\n{value}")
+        else:
+            print(f"Failed to generate insights: {insights['error']}")
 
-#         if "error" not in insights:
-#             print("--- AI Generated Insights ---")
-#             for key, value in insights.items():
-#                 print(f"\n**{key.replace('_', ' ').title()}**:\n{value}")
-#         else:
-#             print(f"Failed to generate insights: {insights['error']}")
-
-#     except FileNotFoundError as e:
-#         print(f"File error: {e}")
-#     except NotImplementedError as e:
-#         print(f"Feature not implemented: {e}")
-#     except Exception as e:
-#         print(f"An unexpected error occurred: {e}")
+    except FileNotFoundError as e:
+        print(f"File error: {e}")
+    except NotImplementedError as e:
+        print(f"Feature not implemented: {e}")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")

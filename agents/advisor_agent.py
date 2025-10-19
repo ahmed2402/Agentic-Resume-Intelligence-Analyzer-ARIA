@@ -3,8 +3,8 @@ import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from core.llm_interface import generate_insights
-# from agents.ingestion_agent import IngestionAgent
-# from agents.embedding_agent import EmbeddingAgent
+from agents.ingestion_agent import IngestionAgent
+from agents.embedding_agent import EmbeddingAgent
 
 class AdvisorAgent:
     """
@@ -18,8 +18,8 @@ class AdvisorAgent:
         improvements, strengths, weaknesses, and suggestions.
 
         Args:
-            resume_text (str): The cleaned text content of the resume.
-            jd_text (str): The cleaned text content of the job description.
+            resume_text (str): The raw text content of the resume.
+            jd_text (str): The raw text content of the job description.
             similarity_score (float): The calculated similarity score between the resume and job description.
 
         Returns:
@@ -36,41 +36,45 @@ class AdvisorAgent:
             print(f"Error generating advice: {e}")
             raise
 
-# if __name__ == "__main__":
-#     # Example Usage:
-#     RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
-#     JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
+if __name__ == "__main__":
+    # Example Usage:
+    RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
+    JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
 
-#     ingestion_agent = IngestionAgent()
-#     embedding_agent = EmbeddingAgent()
-#     advisor_agent = AdvisorAgent()
+    ingestion_agent = IngestionAgent()
+    embedding_agent = EmbeddingAgent()
+    advisor_agent = AdvisorAgent()
 
-#     try:
-#         # Ingestion Phase
-#         print("\n--- Ingestion Phase ---")
-#         processed_data = ingestion_agent.ingest(RESUME_PATH, JD_PATH)
-#         cleaned_resume = " ".join(processed_data["cleaned_resume"])
-#         cleaned_jd = " ".join(processed_data["cleaned_job_description"])
+    try:
+        # Ingestion Phase
+        print("\n--- Ingestion Phase ---")
+        processed_data = ingestion_agent.ingest(RESUME_PATH, JD_PATH)
+        raw_resume = processed_data["raw_resume_text"]
+        raw_jd = processed_data["raw_jd_text"]
+        cleaned_resume = processed_data["cleaned_resume"]
+        cleaned_jd = processed_data["cleaned_job_description"]
 
-#         # Embedding Phase
-#         print("\n--- Embedding Phase ---")
-#         similarity_score = embedding_agent.process(cleaned_resume, cleaned_jd, store_faiss=True)
+        # Embedding Phase
+        print("\n--- Embedding Phase ---")
+        similarity_score = embedding_agent.process(cleaned_resume, cleaned_jd)
 
-#         # Advisory Phase
-#         print("\n--- Advisory Phase ---")
-#         insights = advisor_agent.advise(cleaned_resume, cleaned_jd, similarity_score)
+        # Advisory Phase
+        print("\n--- Advisory Phase ---")
+        insights = advisor_agent.advise(raw_resume, raw_jd, similarity_score)
 
-#         print("\n--- Final Results ---")
-#         print(f"Resume-JD Similarity Score: {similarity_score:.4f}")
-#         if "error" not in insights:
-#             for key, value in insights.items():
-#                 print(f"\n**{key.replace('_', ' ').title()}**:\n{value}")
-#         else:
-#             print(f"Failed to generate insights: {insights['error']}")
+        print("\n--- Final Results ---")
+        print(f"Resume-JD Similarity Score: {similarity_score:.4f}")
 
-#     except FileNotFoundError as e:
-#         print(f"File error: {e}")
-#     except NotImplementedError as e:
-#         print(f"Feature not implemented: {e}")
-#     except Exception as e:
-#         print(f"An unexpected error occurred in the advisor agent workflow: {e}")
+        if "error" not in insights:
+            print("--- AI Generated Insights ---")
+            for key, value in insights.items():
+                print(f"\n**{key.replace('_', ' ').title()}**:\n{value}")
+        else:
+            print(f"Failed to generate insights: {insights['error']}")
+
+    except FileNotFoundError as e:
+        print(f"File error: {e}")
+    except NotImplementedError as e:
+        print(f"Feature not implemented: {e}")
+    except Exception as e:
+        print(f"An unexpected error occurred in the advisor agent workflow: {e}")
