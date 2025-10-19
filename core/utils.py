@@ -56,7 +56,7 @@ def clean_text(text: str) -> list[str]:
 def process_documents(resume_path: str, jd_path: str) -> dict:
     """
     Loads and preprocesses both the resume and job description.
-    Returns a dictionary containing the cleaned text for both.
+    Returns a dictionary containing the raw text and cleaned text for both.
     """
     resume_text = load_resume(resume_path)
     jd_text = load_job_description(jd_path)
@@ -65,6 +65,8 @@ def process_documents(resume_path: str, jd_path: str) -> dict:
     cleaned_jd = clean_text(jd_text)
 
     return {
+        "raw_resume_text": resume_text,
+        "raw_jd_text": jd_text,
         "cleaned_resume": cleaned_resume,
         "cleaned_job_description": cleaned_jd
     }
@@ -77,6 +79,8 @@ def process_documents(resume_path: str, jd_path: str) -> dict:
 #     try:
 #         processed_data = process_documents(resume_path, jd_path)
 #         print("Successfully processed documents:")
+#         print(f"Raw resume text (first 200 chars): {processed_data['raw_resume_text'][:200]}...")
+#         print(f"Raw job description text (first 200 chars): {processed_data['raw_jd_text'][:200]}...")
 #         print(f"Resume tokens: {len(processed_data['cleaned_resume'])} tokens")
 #         print(f"Job description tokens: {len(processed_data['cleaned_job_description'])} tokens")
 #         print("\nFirst 20 resume tokens:", processed_data['cleaned_resume'][:20])
@@ -87,4 +91,3 @@ def process_documents(resume_path: str, jd_path: str) -> dict:
 #         print(f"Feature not implemented: {e}")
 #     except Exception as e:
 #         print(f"Error processing documents: {e}")
-
