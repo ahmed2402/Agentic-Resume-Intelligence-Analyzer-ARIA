@@ -35,13 +35,14 @@ def calculate_similarity(embedding1: List[float], embedding2: List[float]) -> fl
     Calculates the cosine similarity between two embedding vectors.
     """
     return cosine_similarity([embedding1], [embedding2])[0][0]
-
-def calculate_resume_jd_similarity(cleaned_resume_text: str, cleaned_jd_text: str, store_faiss: bool = False, db_path: str = "../data/embeddings/faiss_index") -> float:
+def calculate_resume_jd_similarity(cleaned_resume_list: list[str], cleaned_jd_list: list[str]):
     """
     Calculates the cosine similarity between a cleaned resume and job description.
     Optionally stores the embeddings in a FAISS vector database.
     """
     # Generate embeddings
+    cleaned_resume_text = " ".join(cleaned_resume_list)
+    cleaned_jd_text = " ".join(cleaned_jd_list)
     texts_to_embed = [cleaned_resume_text, cleaned_jd_text]
     embeddings = create_embeddings(texts_to_embed)
     resume_embedding = embeddings[0]
@@ -52,22 +53,21 @@ def calculate_resume_jd_similarity(cleaned_resume_text: str, cleaned_jd_text: st
     return similarity_score
 
 
-# if __name__ == "__main__":
-#     # Example Usage:
-#     RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
-#     JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
+if __name__ == "__main__":
+    # Example Usage:
+    RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
+    JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
 
-#     try:
-#         print("Loading and cleaning documents...")
-#         processed_data = process_documents(RESUME_PATH, JD_PATH)
-#         cleaned_resume = " ".join(processed_data["cleaned_resume"])
-#         cleaned_jd = " ".join(processed_data["cleaned_job_description"])
+    try:
+        print("Loading and cleaning documents...")
+        processed_data = process_documents(RESUME_PATH, JD_PATH)
+        
 
-#         print("Calculating similarity score...")
-#         similarity = calculate_resume_jd_similarity(cleaned_resume, cleaned_jd, store_faiss=True)
+        print("Calculating similarity score...")
+        similarity = calculate_resume_jd_similarity(processed_data["cleaned_resume"], processed_data["cleaned_job_description"])
 
-#         print("\n--- Results ---")
-#         print(f"Resume-JD Similarity Score: {similarity:.4f}")
+        print("\n--- Results ---")
+        print(f"Resume-JD Similarity Score: {similarity:.4f}")
 
-#     except Exception as e:
-#         print(f"An error occurred: {e}")
+    except Exception as e:
+        print(f"An error occurred: {e}")

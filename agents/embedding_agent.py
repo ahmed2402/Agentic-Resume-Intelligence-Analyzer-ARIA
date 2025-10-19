@@ -3,7 +3,7 @@ import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from core.embedding import calculate_resume_jd_similarity
-# from agents.ingestion_agent import IngestionAgent
+from agents.ingestion_agent import IngestionAgent
 
 class EmbeddingAgent:
     """
@@ -11,22 +11,21 @@ class EmbeddingAgent:
     and calculates their similarity score.
     It utilizes functions from `core/embedding.py`.
     """
-    def process(self, cleaned_resume_text: str, cleaned_jd_text: str, store_faiss: bool = False) -> float:
+    def process(self, cleaned_resume_list: list[str], cleaned_jd_list: list[str]):
         """
         Generates embeddings for the cleaned resume and job description and calculates
         their cosine similarity.
 
         Args:
-            cleaned_resume_text (str): The preprocessed text of the resume.
-            cleaned_jd_text (str): The preprocessed text of the job description.
-            store_faiss (bool): Whether to store the embeddings in a FAISS vector database. Defaults to False.
+            cleaned_resume_list (list[str]): The preprocessed tokens of the resume.
+            cleaned_jd_list (list[str]): The preprocessed tokens of the job description.
 
         Returns:
             float: The cosine similarity score between the resume and job description embeddings.
         """
         print("Generating embeddings and calculating similarity...")
         try:
-            similarity_score = calculate_resume_jd_similarity(cleaned_resume_text, cleaned_jd_text, store_faiss=store_faiss)
+            similarity_score = calculate_resume_jd_similarity(cleaned_resume_list, cleaned_jd_list)
             print(f"Similarity score calculated: {similarity_score:.4f}")
             return similarity_score
         except Exception as e:
@@ -34,26 +33,25 @@ class EmbeddingAgent:
             raise
 
 # if __name__ == "__main__":
-    # Example Usage:
-    RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
-    JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
+#     # Example Usage:
+#     RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
+#     JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
 
-    ingestion_agent = IngestionAgent()
-    embedding_agent = EmbeddingAgent()
+#     ingestion_agent = IngestionAgent()
+#     embedding_agent = EmbeddingAgent()
 
-    try:
-        # Ingest documents first
-        print("\n--- Ingestion Phase ---")
-        processed_data = ingestion_agent.ingest(RESUME_PATH, JD_PATH)
-        cleaned_resume = " ".join(processed_data["cleaned_resume"])
-        cleaned_jd = " ".join(processed_data["cleaned_job_description"])
+#     try:
+#         # Ingest documents first
+#         print("\n--- Ingestion Phase ---")
+#         processed_data = ingestion_agent.ingest(RESUME_PATH, JD_PATH)
 
-        # Process with Embedding Agent
-        print("\n--- Embedding Phase ---")
-        similarity_score = embedding_agent.process(cleaned_resume, cleaned_jd, store_faiss=True)
+#         # Process with Embedding Agent
+#         print("\n--- Embedding Phase ---")
+#         similarity_score = embedding_agent.process(processed_data["cleaned_resume"], processed_data["cleaned_job_description"])
 
-        print("\n--- Results ---")
-        print(f"Final Resume-JD Similarity Score: {similarity_score:.4f}")
+#         print("\n--- Results ---")
+#         print(f"Final Resume-JD Similarity Score: {similarity_score:.4f}")
 
-    except Exception as e:
-        print(f"An error occurred in the embedding agent workflow: {e}")
+#     except Exception as e:
+#         print(f"An error occurred in the embedding agent workflow: {e}")
+
