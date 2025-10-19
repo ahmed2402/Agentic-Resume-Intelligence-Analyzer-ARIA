@@ -28,19 +28,19 @@ class IngestionAgent:
             print(f"Error during ingestion: {e}")
             raise
 
-if __name__ == "__main__":
-    # Example Usage:
-    RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
-    JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
+# if __name__ == "__main__":
+#     # Example Usage:
+#     RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
+#     JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
 
-    ingestion_agent = IngestionAgent()
+#     ingestion_agent = IngestionAgent()
 
-    try:
-        ingested_data = ingestion_agent.ingest(RESUME_PATH, JD_PATH)
-        print("\n--- Ingestion Results ---")
-        print(f"Raw Resume Text (first 100 chars): {ingested_data['raw_resume_text'][:100]}...")
-        print(f"Raw Job Description Text (first 100 chars): {ingested_data['raw_jd_text'][:100]}...")
-        print(f"Cleaned Resume (first 20 tokens): {ingested_data['cleaned_resume'][:20]}")
-        print(f"Cleaned Job Description (first 20 tokens): {ingested_data['cleaned_job_description'][:20]}")
-    except Exception as e:
-        print(f"An error occurred during ingestion: {e}")
+#     try:
+#         ingested_data = ingestion_agent.ingest(RESUME_PATH, JD_PATH)
+#         print("\n--- Ingestion Results ---")
+#         print(f"Raw Resume Text (first 100 chars): {ingested_data['raw_resume_text'][:100]}...")
+#         print(f"Raw Job Description Text (first 100 chars): {ingested_data['raw_jd_text'][:100]}...")
+#         print(f"Cleaned Resume (first 20 tokens): {ingested_data['cleaned_resume'][:20]}")
+#         print(f"Cleaned Job Description (first 20 tokens): {ingested_data['cleaned_job_description'][:20]}")
+#     except Exception as e:
+#         print(f"An error occurred during ingestion: {e}")

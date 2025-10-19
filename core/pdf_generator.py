@@ -7,6 +7,7 @@ from langchain_groq import ChatGroq
 from fpdf import FPDF # For PDF generation
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from core.utils import process_documents
 load_dotenv()
 groq_api_key = os.environ.get("GROQ_API_KEY")
 
@@ -15,7 +16,7 @@ if not groq_api_key:
 
 groq_llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.1-8b-instant")
 
-def generate_tailored_cv_content_from_llm(original_resume_text: str, jd_text: str) -> str:
+def generate_tailored_cv_content_from_llm(original_resume_text: str, original_jd_text: str) -> str:
     """
     Generates tailored CV content based on the original resume and a job description,
     using an LLM. The content will be structured for a new CV document.
@@ -31,7 +32,7 @@ Here is the candidate's **original resume content**:
 
 Here is the **job description**:
 <JOB_DESCRIPTION>
-{jd_text}
+{original_jd_text}
 </JOB_DESCRIPTION>
 
 Based on the original resume and the job description, generate content for a **new, tailored CV**.
@@ -126,7 +127,7 @@ def create_pdf_document(content: str, output_path: str, title: str = "Tailored R
     pdf.output(output_path)
     print(f"Tailored CV generated successfully at {output_path}")
 
-def generate_tailored_resume_pdf(original_resume_text: str, jd_text: str, output_filename_prefix: str = "Tailored_CV", output_dir: str = "../data/output") -> str | None:
+def generate_tailored_resume_pdf(original_resume_text: str, original_jd_text: str, output_filename_prefix: str = "Tailored_CV", output_dir: str = "../data/output") -> str | None:
     """
     Generates a tailored CV in PDF format based on the original resume text and job description text.
     This function assumes the input texts are already cleaned and prepared.
@@ -145,7 +146,7 @@ def generate_tailored_resume_pdf(original_resume_text: str, jd_text: str, output
     try:
         # 1. CV Content Generation Phase
         print("\n--- Tailored CV Content Generation Phase ---")
-        tailored_cv_content = generate_tailored_cv_content_from_llm(original_resume_text, jd_text)
+        tailored_cv_content = generate_tailored_cv_content_from_llm(original_resume_text, original_jd_text)
 
         # 2. PDF Document Creation Phase
         print("\n--- Tailored CV Document Creation Phase ---")
@@ -172,16 +173,15 @@ if __name__ == "__main__":
     JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
 
     # Import for example usage only, simulating agent output
-    from core.utils import process_documents
 
     print("Starting Tailored CV Generation Example...")
     try:
         print("Loading and cleaning documents for example (simulating Ingestion Agent output)...")
         processed_data = process_documents(RESUME_PATH, JD_PATH)
-        cleaned_resume_text = " ".join(processed_data["cleaned_resume"])
-        cleaned_jd_text = " ".join(processed_data["cleaned_job_description"])
+        original_resume_text = processed_data["raw_resume_text"]
+        original_jd_text = processed_data["raw_jd_text"]
 
-        output_pdf_path = generate_tailored_resume_pdf(cleaned_resume_text, cleaned_jd_text)
+        output_pdf_path = generate_tailored_resume_pdf(original_resume_text, original_jd_text)
 
         if output_pdf_path:
             print(f"Full workflow completed. Tailored CV saved to: {os.path.abspath(output_pdf_path)}")
