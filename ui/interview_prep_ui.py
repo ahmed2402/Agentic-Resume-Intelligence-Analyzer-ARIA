@@ -1,89 +1,101 @@
 import streamlit as st
-from langchain_groq import ChatGroq
 import os
-from dotenv import load_dotenv
+import sys
+import time # For simulating typing effect
 
-load_dotenv()
+# Add the parent directory to the sys.path to allow importing rag_core
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Import the main conversational chain and the LLM instance from your RAG core
+from rag_core.retriever import get_full_conversational_chain, llm
+from langchain_core.messages import HumanMessage, AIMessage # For displaying chat history correctly
 
 def show_interview_prep_ui():
-    st.header("💬 Interview Prep Chatbot")
-    st.write("Practice your interview skills with our AI-powered chatbot. Get personalized feedback and tips!")
+    st.header("🧠 AI Interview Prep Assistant")
+    st.write("Ask me anything about interview prep, technical concepts, or general career advice. I'll use a knowledge base to give you accurate answers!")
+
+    # --- Session State Initialization ---
+    if "k_retrieval" not in st.session_state:
+        st.session_state.k_retrieval = 5
     
-    # Initialize session state for chat history
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
+    if "rag_chain" not in st.session_state:
+        st.session_state.rag_chain = get_full_conversational_chain(llm, st.session_state.k_retrieval)
     
-    # Job description input
-    st.subheader("Job Information")
-    job_title = st.text_input("Job Title", placeholder="e.g., Software Engineer, Data Analyst")
-    job_description = st.text_area("Job Description", height=150, 
-                                  placeholder="Paste the job description here for more tailored practice")
+    if "streamlit_messages" not in st.session_state:
+        st.session_state.streamlit_messages = []
+        # Add a welcome message from the assistant on first load
+        st.session_state.streamlit_messages.append({"role": "assistant", "content": "Hello! I'm your AI Interview Prep Assistant. How can I help you prepare today?"})
     
-    # Chat interface
-    st.subheader("Chat with Interview Coach")
-    
-    # Display chat messages
-    for message in st.session_state.messages:
+    # --- Chat Display ---
+    for message in st.session_state.streamlit_messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
-    
-    # Chat input
-    if prompt := st.chat_input("Ask interview questions or practice your responses..."):
-        # Add user message to chat history
-        st.session_state.messages.append({"role": "user", "content": prompt})
-        
-        # Display user message
+
+    # --- Chat Input and Response Generation ---
+    if prompt := st.chat_input("Ask about Data Structures, System Design, ML algorithms, or interview tips..."):
+        # Add user message to Streamlit's display history
+        st.session_state.streamlit_messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
-        
-        # Generate AI response
+
         with st.chat_message("assistant"):
             message_placeholder = st.empty()
             full_response = ""
             
+            # Simulate typing/thinking
+            message_placeholder.markdown("AI is thinking...") 
+            
+            
             try:
-                # Initialize Groq LLM
-                groq_api_key = os.environ.get("GROQ_API_KEY")
-                if groq_api_key:
-                    llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.1-8b-instant")
-                    
-                    # Create context-aware prompt
-                    context_prompt = f"""
-                    You are an experienced interview coach helping a candidate prepare for a job interview.
-                    Job Title: {job_title if job_title else 'Not specified'}
-                    Job Description: {job_description if job_description else 'Not provided'}
-                    
-                    Candidate's question/practice: {prompt}
-                    
-                    Provide helpful, constructive feedback and guidance. If they're practicing an answer, 
-                    suggest improvements and alternative approaches. If they're asking about interview preparation,
-                    give practical advice and tips.
-                    """
-                    
-                    response = llm.invoke(context_prompt)
-                    full_response = response.content
-                else:
-                    full_response = "⚠️ GROQ_API_KEY not configured. Please set up your API key in the .env file."
-                    
+                # Prepare chat history for LangChain
+                # Convert Streamlit's display messages to LangChain's HumanMessage/AIMessage format
+                langchain_chat_history = []
+                for msg in st.session_state.streamlit_messages:
+                    if msg["role"] == "user":
+                        langchain_chat_history.append(HumanMessage(content=msg["content"]))
+                    elif msg["role"] == "assistant":
+                        langchain_chat_history.append(AIMessage(content=msg["content"]))
+                
+                # The session_id here is crucial for LangChain's RunnableWithMessageHistory
+                # to correctly manage chat history. We use a fixed ID for this Streamlit session.
+                response_content = st.session_state.rag_chain.invoke(
+                    {"input": prompt, "chat_history": langchain_chat_history}, # <--- MODIFIED HERE
+                    config={"configurable": {"session_id": "streamlit_user_session"}}
+                )
+                full_response = response_content
+
             except Exception as e:
-                full_response = f"❌ Error generating response: {str(e)}"
+                st.error(f"It seems I'm having trouble connecting or processing. Error: {e}")
+                full_response = "I apologize, but I couldn't generate a response at this moment. Please check your API key, ensure the backend is running, and try again."
             
             message_placeholder.markdown(full_response)
-        
-        # Add assistant response to chat history
-        st.session_state.messages.append({"role": "assistant", "content": full_response})
-    
-    # Clear chat button
-    if st.button("Clear Chat History"):
-        st.session_state.messages = []
+            st.session_state.streamlit_messages.append({"role": "assistant", "content": full_response})
+
+    # --- Controls ---
+    st.sidebar.header("Settings")
+    new_k_retrieval = st.sidebar.slider(
+        "Number of documents to retrieve (k)",
+        min_value=1, max_value=15, value=st.session_state.k_retrieval, step=1,
+        help="Adjusts how many relevant documents the AI considers for its answer."
+    )
+    if new_k_retrieval != st.session_state.k_retrieval:
+        st.session_state.k_retrieval = new_k_retrieval
+        st.session_state.rag_chain = get_full_conversational_chain(llm, st.session_state.k_retrieval)
+        st.sidebar.success(f"Retriever k set to {new_k_retrieval}. Chain reinitialized.")
+
+    # More prominent "New Chat" button
+    if st.sidebar.button("✨ Start New Chat", help="Clear current conversation and start fresh."):
+        st.session_state.streamlit_messages = []
+        st.session_state.rag_chain = get_full_conversational_chain(llm, st.session_state.k_retrieval) # Resets LangChain history
         st.rerun()
-    
-    # Interview tips section
-    st.subheader("💡 Quick Interview Tips")
-    st.write("""
-    - Research the company and role thoroughly
-    - Prepare STAR method answers (Situation, Task, Action, Result)
-    - Practice common behavioral questions
-    - Have 2-3 thoughtful questions ready for the interviewer
-    - Dress professionally and test your technology beforehand
-    """)
+
+    st.sidebar.markdown("---")
+    st.sidebar.info(
+        "This chatbot uses a hybrid retrieval system (semantic + BM25) with Reciprocal Rank Fusion (RRF) "
+        "and a Groq LLM to provide relevant interview preparation answers. "
+        "It can engage in casual conversation or answer RAG-based technical questions."
+    )
+
+# When this file is run directly (e.g., as part of a larger Streamlit app)
+if __name__ == "__main__":
+    show_interview_prep_ui()
