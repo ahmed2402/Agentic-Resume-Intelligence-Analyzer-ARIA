@@ -28,8 +28,6 @@ langchain
 langchain-community
 langchain-core
 langchain-groq
-# langchain-openai
-# langchain.retrievers
 langchain_huggingface
 
 
