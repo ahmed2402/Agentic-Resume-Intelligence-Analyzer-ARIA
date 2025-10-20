@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_community.vectorstores import FAISS
 from langchain_community.retrievers import BM25Retriever
-from langchain_classic.retrievers.ensemble import EnsembleRetriever 
+from langchain.retrievers.ensemble import EnsembleRetriever 
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.output_parsers import StrOutputParser
@@ -12,11 +12,11 @@ from langchain_core.runnables import RunnablePassthrough, RunnableBranch
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain_classic.chains import create_history_aware_retriever,create_retrieval_chain
-from langchain_classic.chains.combine_documents import create_stuff_documents_chain
+from langchain.chains import create_history_aware_retriever,create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
 
 # Internal project imports
-from rag_loader import load_interview_json_files
+from .rag_loader import load_interview_json_files
 load_dotenv()
 groq_api_key = os.environ["GROQ_API_KEY"]
 llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.1-8b-instant")
