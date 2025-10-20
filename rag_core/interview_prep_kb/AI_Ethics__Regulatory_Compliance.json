@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of AI regulation?",
+    "answer": "The primary goal of AI regulation is to ensure that AI systems are developed and deployed in a way that aligns with human values, promotes transparency, and protects individuals' rights and interests."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Easy",
+    "question": "Can you describe a scenario where data protection regulations would be relevant to AI development?",
+    "answer": "In a scenario where an AI system is trained on user data without explicit consent, data protection regulations such as GDPR would be relevant, as they require companies to obtain explicit consent from users before processing their personal data."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Easy",
+    "question": "What is the difference between a 'black box' and a 'white box' AI system in the context of regulatory compliance?",
+    "answer": "A 'black box' AI system is one where the decision-making process is not transparent, whereas a 'white box' AI system is one where the decision-making process is transparent, allowing for easier auditing and compliance with regulations."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Easy",
+    "question": "What are some common regulatory frameworks that AI developers should be familiar with?",
+    "answer": "Some common regulatory frameworks that AI developers should be familiar with include the General Data Protection Regulation (GDPR), the Health Insurance Portability and Accountability Act (HIPAA), and the Federal Trade Commission (FTC) guidelines on AI and consumer protection."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Easy",
+    "question": "Can you explain the concept of 'data minimization' in the context of AI development and regulatory compliance?",
+    "answer": "Data minimization refers to the practice of collecting and processing only the minimum amount of data necessary for a specific purpose, reducing the risk of data breaches and ensuring compliance with regulations such as GDPR."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Medium",
+    "question": "Explain how the General Data Protection Regulation (GDPR) impacts the use of AI in data-driven decision-making.",
+    "answer": "The GDPR requires organizations to implement data protection by design and by default, including in AI systems. This means that AI developers must ensure that their systems are designed to protect personal data and respect individuals' rights under the GDPR, such as the right to erasure and the right to transparency."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Medium",
+    "question": "A company is developing an AI-powered chatbot to provide customer support. However, the chatbot is designed to collect and store sensitive customer data without their explicit consent. What regulatory compliance issue does this raise?",
+    "answer": "This raises a concern under the GDPR regarding the processing of personal data without consent. The company must ensure that it has a valid legal basis for processing the data, such as explicit consent, and that the data is collected and stored in compliance with the regulation's requirements."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Medium",
+    "question": "An AI system is used to make hiring decisions for a company. The system relies on biased data, which results in discriminatory outcomes. How can the company ensure regulatory compliance in this scenario?",
+    "answer": "The company can ensure regulatory compliance by conducting an impact assessment to identify and mitigate the biases in the AI system. This may involve collecting and analyzing data to understand the sources of bias, updating the training data to remove or reduce bias, and implementing fairness metrics to measure the system's performance."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Medium",
+    "question": "A company is developing an AI-powered medical device. How can it ensure that the device meets regulatory requirements for safety and efficacy?",
+    "answer": "The company can ensure regulatory compliance by conducting clinical trials to demonstrate the safety and efficacy of the device, obtaining regulatory approval from relevant authorities such as the FDA, and implementing quality control measures to ensure the device is manufactured and maintained in accordance with regulatory requirements."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Medium",
+    "question": "An AI system is used to detect and prevent money laundering. What regulatory compliance requirements must the system meet?",
+    "answer": "The system must meet requirements under anti-money laundering (AML) regulations, such as the Financial Action Task Force (FATF) recommendations. This includes implementing robust customer due diligence, monitoring transactions for suspicious activity, and reporting potential money laundering activity to regulatory authorities."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Hard",
+    "question": "Explain how the EU's General Data Protection Regulation (GDPR) applies to AI-driven decision-making systems, particularly in cases where human oversight is limited.",
+    "answer": "The GDPR applies to AI-driven decision-making systems as they process personal data. Organizations must ensure that these systems are designed and implemented in a way that respects individuals' rights, such as the right to transparency, accountability, and human oversight. In cases where human oversight is limited, organizations must put in place measures to demonstrate compliance, such as regular auditing, data quality checks, and impact assessments."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Hard",
+    "question": "Design a compliance framework for an autonomous vehicle manufacturer to ensure adherence to regulatory requirements, such as those set by the National Highway Traffic Safety Administration (NHTSA), while also addressing AI-related risks and uncertainties.",
+    "answer": "To ensure compliance, the manufacturer should establish a risk-based framework that addresses AI-related risks and uncertainties. This framework should include: (1) a systematic approach to identifying and assessing regulatory requirements; (2) design and development processes that incorporate safety and security considerations; (3) testing and validation procedures to ensure the vehicle's safe operation; and (4) ongoing monitoring and evaluation to address emerging risks and regulatory updates."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Hard",
+    "question": "What are the key differences between the US FDA's 21 CFR Part 11 and the EU's Article 57(2) regarding the validation of AI systems in pharmaceutical development and approval processes?",
+    "answer": "The US FDA's 21 CFR Part 11 focuses on electronic records and signatures, emphasizing the validation of electronic systems to ensure their accuracy, reliability, and security. In contrast, the EU's Article 57(2) emphasizes the validation of AI systems in pharmaceutical development and approval processes, focusing on their ability to provide consistent, reliable, and reproducible results. While 21 CFR Part 11 is more general, Article 57(2) is more specific to AI systems and their role in pharmaceutical development and approval."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Hard",
+    "question": "Explain how the UK's AI Safety Standard (AS 1) applies to the development and deployment of AI systems in high-risk industries, such as healthcare and finance.",
+    "answer": "The UK's AI Safety Standard (AS 1) requires organizations to ensure that AI systems are designed and operated to minimize risks to people and the environment. For high-risk industries, AS 1 emphasizes the importance of risk assessment, safety management, and transparency. Organizations must identify and mitigate potential risks, provide regular safety updates, and ensure that AI systems are explainable and accountable. Compliance with AS 1 demonstrates an organization's commitment to responsible AI development and deployment in high-risk industries."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Regulatory Compliance",
+    "difficulty": "Hard",
+    "question": "What are the implications of the EU's AI Liability Directive on the development and deployment of autonomous systems, particularly in terms of product liability and fault allocation?",
+    "answer": "The EU's AI Liability Directive aims to establish a common framework for liability in the event of harm caused by AI systems. For autonomous systems, the Directive implies that manufacturers and operators may be held liable for damages caused by AI-driven decisions. The Directive also introduces the concept of 'negligence' as a fault allocation mechanism, requiring organizations to demonstrate due diligence in the design and deployment of autonomous systems. Compliance with the Directive will require organizations to develop robust risk management strategies and implement measures to ensure transparency and accountability in AI-driven decision-making."
+  }
+]

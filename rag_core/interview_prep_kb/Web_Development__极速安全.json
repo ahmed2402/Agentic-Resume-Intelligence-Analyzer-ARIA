@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "极速安全",
+    "difficulty": "Easy",
+    "question": "What is HTTP Strict Transport Security (HSTS) and why is it important for website security?",
+    "answer": "HTTP Strict Transport Security (HSTS) is a security feature that tells browsers to always use HTTPS when interacting with a website, even if the user enters the URL with HTTP. This is important because it prevents man-in-the-middle attacks and ensures that sensitive information is transmitted securely."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "极速安全",
+    "difficulty": "Easy",
+    "question": "A user reports that their login credentials are being leaked on your website. What is the first step you would take to investigate the issue?",
+    "answer": "The first step would be to examine the website's logs for any suspicious activity or error messages related to the login credentials. This would help identify the potential cause of the issue, such as a vulnerability in the login form or a malicious script injected into the website."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "极速安全",
+    "difficulty": "Easy",
+    "question": "Suppose you have a website with the following header: `Content-Security-Policy: default-src 'self'; object-src 'none';`. What does this policy allow and disallow?",
+    "answer": "This policy allows resources to be loaded from the same origin as the website (`'self'`) and disallows inline scripts and object tags, as well as any scripts or objects loaded from external sources (`'none'`)."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "极速安全",
+    "difficulty": "Easy",
+    "question": "What is a common vulnerability that can be exploited by an attacker to inject malicious code into a web application?",
+    "answer": "A common vulnerability is Cross-Site Scripting (XSS), which can be exploited by an attacker to inject malicious code into a web application by tricking the user into executing the malicious code in the browser."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "极速安全",
+    "difficulty": "Easy",
+    "question": "Describe a scenario where a web application would use a Web Application Firewall (WAF) to protect against attacks?",
+    "answer": "A web application would use a Web Application Firewall (WAF) to protect against attacks when it is exposed to the internet and is vulnerable to common web attacks such as SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF). The WAF would analyze incoming traffic and block or modify malicious requests, preventing the application from being compromised."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "约起安全",
+    "difficulty": "Medium",
+    "question": "What is HTTP Strict Transport Security (HSTS) and why is it important?",
+    "answer": "HTTP Strict Transport Security (HSTS) is a web security policy that helps protect websites against man-in-the-middle (MITM) attacks and eavesdropping by telling browsers to only access a website securely using HTTPS. This is important because it ensures that even if an attacker intercepts the communication between the browser and the server, they will not be able to read the encrypted data."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "约起安全",
+    "difficulty": "Medium",
+    "question": "A user submits a form on your website, but the form data is not being validated on the server-side. What kind of vulnerability does this create?",
+    "answer": "This creates a Cross-Site Scripting (XSS) vulnerability. If an attacker can inject malicious JavaScript code into the form data, it can be executed on the client-side, potentially stealing user credentials or taking other malicious actions."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "约起安全",
+    "difficulty": "Medium",
+    "question": "How can you prevent Clickjacking attacks on your website?",
+    "answer": "You can prevent Clickjacking attacks by setting the X-Frame-Options header to 'DENY' in your web server configuration. This tells browsers not to render your website within a frame, making it more difficult for attackers to use Clickjacking techniques."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "约起安全",
+    "difficulty": "Medium",
+    "question": "What is the difference between OWASP and W3C?",
+    "answer": "OWASP (Open Web Application Security Project) is a non-profit organization focused on improving the security of web applications, providing guidelines and resources for developers. W3C (World Wide Web Consortium) is an organization responsible for maintaining and developing web standards, such as HTML, CSS, and XML."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "约起安全",
+    "difficulty": "Medium",
+    "question": "How can you ensure that your website's cookies are not vulnerable to Session Hijacking attacks?",
+    "answer": "You can ensure that your website's cookies are not vulnerable to Session Hijacking attacks by setting the Secure and HttpOnly flags on your cookies. The Secure flag ensures that cookies are only transmitted over a secure connection (HTTPS), and the HttpOnly flag prevents JavaScript from accessing the cookies, making them more difficult to steal."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "绩球安全",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where you would use a Content Security Policy (CSP) to prevent a XSS attack, and provide an example of how you would implement it in a web application.",
+    "answer": "Content Security Policy (CSP) is used to define which sources of content are allowed to be executed within a web page. To prevent a XSS attack, we would implement a CSP that restricts the execution of scripts to only trusted sources, such as our own domain. For example, we could set the 'script-src' directive to only allow scripts from our own domain. This would prevent an attacker from injecting malicious scripts into our web page."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "绩球安全",
+    "difficulty": "Hard",
+    "question": "A web application uses a session-based authentication system. What are some potential security risks associated with this approach, and how would you mitigate them?",
+    "answer": "Session-based authentication systems are vulnerable to session fixation attacks, where an attacker steals a user's session ID and uses it to authenticate as that user. To mitigate this risk, we could implement a secure cookie flag (Secure, HttpOnly, and SameSite) and a random session ID. Additionally, we could implement a timeout for inactive sessions and regularly clean up old sessions to prevent them from being exploited."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "绩球安全",
+    "difficulty": "Hard",
+    "question": "Describe a method for securely storing and managing sensitive data, such as passwords, in a web application. Provide an example of how you would implement this method using a library like bcrypt.",
+    "answer": "To securely store and manage sensitive data, we would use a password hashing algorithm like bcrypt to store the passwords in a database. When a user logs in, we would hash the input password and compare it to the stored hash. This way, even if an attacker gains access to the passwords, they would only get access to the hashed passwords, not the actual passwords. For example, using bcrypt, we could use the bcrypt.hash() function to hash the password and the bcrypt.compare() function to compare the input password to the stored hash."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "绩球安全",
+    "difficulty": "Hard",
+    "question": "A web application uses a third-party API to fetch data. What are some potential security risks associated with this approach, and how would you mitigate them?",
+    "answer": "Using a third-party API to fetch data introduces several potential security risks, including data tampering, data exposure, and unauthorized access. To mitigate these risks, we could implement API keys and rate limiting to prevent excessive requests, validate the API responses to ensure they are in the expected format, and monitor the API usage to detect potential security breaches."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "绩球安全",
+    "difficulty": "Hard",
+    "question": "Describe a method for protecting against CSRF attacks in a web application. Provide an example of how you would implement this method using a token-based approach.",
+    "answer": "To protect against CSRF attacks, we would use a token-based approach, where a unique token is generated for each user session and included in each HTTP request. When a request is made, we would verify the token to ensure it matches the one stored in the user's session. This way, even if an attacker is able to make a request on behalf of a user, they would not have the correct token and the request would be rejected. For example, using a library like CSRFProtect, we could use a middleware to generate and verify the token in each request."
+  }
+]

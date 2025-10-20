@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of empathy in the design thinking process?",
+    "answer": "Empathy is the primary goal of understanding and sharing the feelings of users, which helps designers create solutions that meet their needs and expectations."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Easy",
+    "question": "Describe a scenario where defining the problem statement was challenging. How would you approach it?",
+    "answer": "A challenging scenario would be when multiple stakeholders have different perspectives on the problem. To approach it, I would facilitate a collaborative workshop to gather insights from all stakeholders, prioritize their concerns, and craft a clear problem statement that addresses the core issue."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Easy",
+    "question": "What is the difference between ideation and prototyping in the design thinking process?",
+    "answer": "Ideation is the phase where designers generate and explore a wide range of ideas, often using brainstorming techniques and workshops. Prototyping, on the other hand, involves creating tangible representations of these ideas to test and validate their feasibility and user experience."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Easy",
+    "question": "How do you ensure that design solutions are user-centered and meet user needs?",
+    "answer": "To ensure that design solutions are user-centered, I would conduct user research, gather user feedback, and test prototypes with real users to validate that the solutions meet their needs and expectations."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Easy",
+    "question": "What is the role of iteration in the design thinking process?",
+    "answer": "Iteration is an essential part of the design thinking process, where designers refine and improve their solutions based on user feedback, testing results, and new insights gained during each iteration."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of user validation in the design thinking process?",
+    "answer": "The primary goal of user validation is to confirm or reject design ideas by gathering feedback directly from users to ensure that the solution meets their needs and expectations."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Medium",
+    "question": "Describe a situation where empathizing with users led to a significant design change.",
+    "answer": "A company redesigned its mobile banking app after discovering that many users were struggling to manage their finances due to a lack of financial literacy. The redesigned app included educational resources and a simpler interface to help users better manage their accounts."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Medium",
+    "question": "How do you prioritize features during the ideation phase of design thinking?",
+    "answer": "Prioritize features based on user needs, business goals, and feasibility. This involves creating a list of potential features, ranking them according to their importance, and selecting the top features to include in the design."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Medium",
+    "question": "Explain the difference between a 'solution' and a 'prototype' in the context of design thinking.",
+    "answer": "A 'solution' is a theoretical answer to a problem, while a 'prototype' is a tangible, testable representation of a solution. Prototypes are used to validate assumptions and iterate on the design, whereas solutions are typically finalized after the testing and iteration process."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Medium",
+    "question": "Can you describe a situation where you had to 'fail forward' in a design project? What did you learn from the experience?",
+    "answer": "During a project, I designed a feature that users didn't find usable. Instead of giving up, I used the feedback to 'fail forward' by iterating on the design, and ultimately, creating a more intuitive and user-friendly feature. This experience taught me the importance of embracing failure as a learning opportunity and the value of iterative design."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Hard",
+    "question": "Explain the concept of 'empathy mapping' in the context of design thinking. How does it help designers in understanding user needs?",
+    "answer": "Empathy mapping is a design thinking technique used to visualize and organize the insights gathered from user research, typically through interviews, surveys, or observations. It helps designers identify patterns, relationships, and connections between user needs, emotions, and behaviors, ultimately leading to more informed design decisions."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Hard",
+    "question": "A product team is struggling to implement a design solution because stakeholders have conflicting priorities. Describe a situation where you would use 'design sprints' to resolve this conflict and what steps you would take.",
+    "answer": "I would propose a design sprint to bring stakeholders together, set clear goals, and work collaboratively to address the conflicting priorities. During the sprint, we would define a shared understanding of the problem, generate ideas, and create prototypes to test and validate solutions. This iterative process would help stakeholders see the benefits of different design solutions, leading to a more unified direction."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Hard",
+    "question": "A company is launching a new product with a complex set of features. Describe how you would apply the 'jobs-to-be-done' framework to design an intuitive user experience.",
+    "answer": "I would use the 'jobs-to-be-done' framework to identify the underlying tasks users are trying to accomplish with the product. By understanding the jobs, I would prioritize the features and design a user experience that makes it easy for users to achieve their goals. This would involve creating a clear and simple onboarding process, intuitive navigation, and a consistent design language to help users get the job done efficiently."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Hard",
+    "question": "Design a solution for a company that wants to improve the user experience of its existing product, but has a limited budget. Describe how you would apply the 'design thinking' methodology to develop a low-cost solution that still meets user needs.",
+    "answer": "I would start by conducting user research to understand the pain points and areas for improvement in the existing product. Then, I would develop a set of low-fidelity prototypes to test and validate potential solutions. By iterating on these prototypes and gathering user feedback, I would identify the most impactful changes to make with the limited budget. This would involve prioritizing the most critical features, simplifying the design, and leveraging low-cost design solutions such as reusing existing components or implementing simple usability improvements."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Design Thinking",
+    "difficulty": "Hard",
+    "question": "A company has developed a new product that has a complex set of technical requirements. Describe how you would use 'abductive reasoning' to identify potential design solutions that meet these technical requirements.",
+    "answer": "I would use abductive reasoning to generate a set of possible design solutions by making educated guesses based on the technical requirements. This would involve considering the constraints and possibilities of the technology, as well as the user needs and goals. I would then test and validate these potential solutions through prototyping, user testing, and feedback to identify the most effective design solution."
+  }
+]

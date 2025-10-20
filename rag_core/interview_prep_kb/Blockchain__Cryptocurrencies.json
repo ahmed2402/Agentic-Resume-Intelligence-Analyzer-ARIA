@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Easy",
+    "question": "What is the primary function of a cryptocurrency wallet?",
+    "answer": "A cryptocurrency wallet is primarily used to store, send, and receive digital currencies."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Easy",
+    "question": "Explain the concept of mining in the context of cryptocurrencies.",
+    "answer": "Mining is the process by which new cryptocurrency units are created and added to the blockchain through complex mathematical calculations."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Easy",
+    "question": "What is the difference between a hard fork and a soft fork in the context of cryptocurrency development?",
+    "answer": "A hard fork is a permanent change to the blockchain's protocol, while a soft fork is a backwards-compatible update to the protocol."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Easy",
+    "question": "Which cryptocurrency is considered the first decentralized digital currency?",
+    "answer": "Bitcoin is considered the first decentralized digital currency."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Easy",
+    "question": "What is the term for the decentralized and public ledger that records all cryptocurrency transactions?",
+    "answer": "The term is blockchain."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Medium",
+    "question": "What is the primary advantage of using a Proof of Stake consensus algorithm over Proof of Work in cryptocurrency networks?",
+    "answer": "The primary advantage of using a Proof of Stake consensus algorithm is that it is more energy-efficient and less vulnerable to 51% attacks compared to Proof of Work, as validators must stake their own tokens to secure the network."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Medium",
+    "question": "Describe the concept of a hard fork in a cryptocurrency network and provide an example.",
+    "answer": "A hard fork is a permanent change to a blockchain's protocol that results in a new and incompatible version of the blockchain. An example of a hard fork is the Bitcoin Cash fork from the Bitcoin blockchain, which occurred in 2017 and resulted in the creation of a new cryptocurrency with increased block size limits."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Medium",
+    "question": "Explain the concept of a decentralized exchange (DEX) and its benefits.",
+    "answer": "A decentralized exchange (DEX) is a type of cryptocurrency exchange that operates on a blockchain network, allowing users to trade cryptocurrencies without the need for a central authority or intermediary. The benefits of a DEX include increased security, transparency, and user autonomy, as well as reduced counterparty risk."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Medium",
+    "question": "What is the difference between a cryptocurrency's market capitalization and its circulating supply?",
+    "answer": "Market capitalization refers to the total value of all outstanding cryptocurrency tokens, while circulating supply refers to the total number of tokens that are currently in circulation and available for trading."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Medium",
+    "question": "Describe the process of implementing a new cryptocurrency token on an existing blockchain network.",
+    "answer": "The process typically involves creating a new smart contract that defines the token's properties and behavior, deploying the contract to the blockchain network, and configuring the network to recognize and validate the new token."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Hard",
+    "question": "Explain the concept of '51% attack' in the context of Proof of Work (PoW) consensus algorithm and how it can be mitigated.",
+    "answer": "A 51% attack occurs when a group of miners control more than 50% of the network's mining power, allowing them to manipulate transactions and block creation. To mitigate this, some cryptocurrencies implement techniques like Difficulty Adjustment Algorithms, Emergency Difficulty Bump, or Switching to different consensus algorithms like Proof of Stake (PoS)."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Hard",
+    "question": "Design a smart contract that allows users to create and manage their own decentralized stablecoin, pegged to the value of a fiat currency (e.g., USD).",
+    "answer": "A possible implementation involves creating a contract with the following features: (1) a mapping of user addresses to stablecoin balances, (2) a function to mint new stablecoins based on the pegged fiat currency value, (3) a function to burn stablecoins when their value decreases, and (4) an oracle system to fetch the latest fiat currency exchange rate. The contract should also include mechanisms for preventing price manipulation and maintaining the pegged value."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Hard",
+    "question": "Describe the differences between a soft fork and a hard fork in the context of blockchain upgrades. Provide an example of each and their implications.",
+    "answer": "A soft fork is a backwards-compatible upgrade that allows old nodes to continue validating new blocks, while a hard fork is a non-backwards-compatible upgrade that requires all nodes to upgrade to the new version. An example of a soft fork is the Segregated Witness (SegWit) upgrade, which added a new transaction format without changing the underlying blockchain structure. An example of a hard fork is the Bitcoin Cash (BCH) fork, which created a new blockchain with different rules and a larger block size limit."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Hard",
+    "question": "Explain the concept of 'block withholding attack' and how it can be prevented in a Proof of Stake (PoS) consensus algorithm.",
+    "answer": "A block withholding attack occurs when a validator deliberately delays or refuses to broadcast a valid block, allowing other validators to build on top of it and create an orphaned block. To prevent this, some PoS consensus algorithms use techniques like 'lazy validation', where validators verify the block before broadcasting it, or 'block propagation', where validators are incentivized to quickly broadcast valid blocks to prevent orphans."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Cryptocurrencies",
+    "difficulty": "Hard",
+    "question": "Design a decentralized exchange (DEX) that allows users to trade cryptocurrencies without revealing their identities or holding any assets on the exchange. Use a combination of smart contracts and zero-knowledge proofs to achieve this.",
+    "answer": "A possible implementation involves creating a DEX with the following features: (1) a smart contract that facilitates the trading process, (2) a zero-knowledge proof system that allows users to prove their possession of assets without revealing their identities, (3) a decentralized order book that allows users to place and match trades, and (4) a mechanism for escrowing assets during the trading process to prevent counter-party risk."
+  }
+]

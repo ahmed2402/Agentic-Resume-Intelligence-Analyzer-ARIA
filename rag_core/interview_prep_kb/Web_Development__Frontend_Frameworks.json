@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Easy",
+    "question": "What is the main difference between React and Angular?",
+    "answer": "React is a library for building user interfaces, while Angular is a full-fledged framework that includes everything you need to build a single-page application."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Easy",
+    "question": "Write an example of a React functional component.",
+    "answer": "import React from 'react'; function Counter() { const [count, setCount] = React.useState(0); return ( <div>Count: {count} <button onClick={() => setCount(count + 1)}>Increment</button> </div> ); } export default Counter;"
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the Virtual DOM in React?",
+    "answer": "The Virtual DOM is a lightweight in-memory representation of the real DOM. It allows React to optimize and minimize the number of DOM updates, making the application faster and more efficient."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Easy",
+    "question": "What is the main advantage of using Vue.js over other frontend frameworks?",
+    "answer": "Vue.js has a steeper learning curve than React, but it also has a more comprehensive set of built-in features, making it easier to build complex applications quickly."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Easy",
+    "question": "What is a key feature of the Ember.js framework?",
+    "answer": "Ember.js has a robust router system that allows for complex routing scenarios, making it a popular choice for building large-scale applications."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between React and Angular?",
+    "answer": "React is a view library, whereas Angular is a full-fledged framework that includes both view and application logic management."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Medium",
+    "question": "In a Vue.js application, how do you handle asynchronous data fetching?",
+    "answer": "You can use Vue's built-in async/await syntax or the $axios library for making HTTP requests and handling the response data."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Medium",
+    "question": "Explain the concept of virtual DOM in React and its benefits.",
+    "answer": "The virtual DOM is a lightweight in-memory representation of the real DOM. When the state of the application changes, React creates a virtual DOM and then reconciles it with the real DOM, resulting in efficient updates and improved performance."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Medium",
+    "question": "What is the difference between a React component and a functional component?",
+    "answer": "A React component is a class-based component that extends React.Component, whereas a functional component is a pure function that returns JSX without any lifecycle methods."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Medium",
+    "question": "How do you handle routing in a Svelte application?",
+    "answer": "You can use SvelteKit's built-in routing feature or the @sveltejs/kit library to manage client-side routing and server-side rendering."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Hard",
+    "question": "Describe the differences between React's `key` prop and `index` when mapping over an array of elements. Provide an example of each.",
+    "answer": "React's `key` prop is used to identify a unique element in a list, while `index` is not recommended as it can cause performance issues. The `key` prop should be a unique string or number that does not change between renders, whereas `index` can change if the order of the elements changes. For example, consider a list of users, where the `key` could be the user's ID, and the `index` could potentially change if the list is reordered."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Hard",
+    "question": "Explain how memoization can be used to optimize the performance of a React application, and provide an example of how to use the `useMemo` hook.",
+    "answer": "Memoization is an optimization technique that involves caching the results of expensive function calls and reusing them when the same inputs occur again. In React, the `useMemo` hook can be used to memoize the results of a function, so that it is only recalculated when the dependencies change. For example: `const memoizedValue = useMemo(() => expensiveFunction(), [dependency]);`"
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Hard",
+    "question": "Describe the benefits and trade-offs of using a state management library like Redux in a React application, and explain how to set up a basic Redux store.",
+    "answer": "Redux provides a centralized store for managing application state, allowing for predictable and efficient state updates. The benefits include easier debugging and testing, as well as better support for complex applications. However, Redux can introduce additional complexity and overhead. To set up a basic Redux store, you would need to create a store instance and connect your components to it using the `connect` function. For example: `const store = createStore(reducer);`"
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Hard",
+    "question": "Explain how to implement server-side rendering (SSR) in a Next.js application, including the benefits and potential pitfalls.",
+    "answer": "Server-side rendering involves generating HTML on the server and sending it to the client, which can improve SEO and provide faster page loads. To implement SSR in Next.js, you would need to create a `getServerSideProps` function in your page component, which returns the initial HTML as a string. Be aware that SSR can introduce additional complexity and may require additional configuration for authentication and routing."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Frontend Frameworks",
+    "difficulty": "Hard",
+    "question": "Describe the differences between Angular's services and observables, and explain how to use each in a real-world scenario.",
+    "answer": "Angular services are used to share data between components, whereas observables are used to handle asynchronous data streams. Services are typically used for simple data sharing, while observables are better suited for handling complex data streams. For example, a service could be used to share a user's authentication status, while an observable could be used to handle real-time updates to a user's data."
+  }
+]

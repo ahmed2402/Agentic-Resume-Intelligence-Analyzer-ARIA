@@ -1,0 +1,42 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Azure",
+    "difficulty": "Easy",
+    "question": "What is Azure Active Directory (AAD)?",
+    "answer": "Azure Active Directory (AAD) is a cloud-based identity and access management solution provided by Microsoft Azure. It enables users to manage and govern user identities, access, and permissions across cloud and on-premises applications."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Azure",
+    "difficulty": "Easy",
+    "question": "How do you create a virtual machine in Azure using the Azure CLI?",
+    "answer": "You can create a virtual machine in Azure using the Azure CLI by running the command `az vm create --resource-group <rg_name> --name <vm_name> --image <image_name> --size <vm_size>`. Replace <rg_name>, <vm_name>, <image_name>, and <vm_size> with the desired values."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Azure",
+    "difficulty": "Easy",
+    "question": "What is the difference between Azure Storage and Azure Blob Storage?",
+    "answer": "Azure Storage is a service that provides a hierarchical namespace for storing data, whereas Azure Blob Storage is a service that stores unstructured data as objects (blobs). Azure Blob Storage is a subset of Azure Storage and provides a more optimized storage solution for large amounts of unstructured data."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Azure",
+    "difficulty": "Easy",
+    "question": "How do you configure a network security group (NSG) in Azure to allow incoming traffic on port 80?",
+    "answer": "You can configure a network security group (NSG) in Azure to allow incoming traffic on port 80 by creating a new security rule with the following settings: Protocol = TCP, Source = Any, Destination = Any, Port = 80, Action = Allow."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Azure",
+    "difficulty": "Easy",
+    "question": "What is the purpose of an Azure Resource Group?",
+    "answer": "An Azure Resource Group is a logical container that holds related resources for an application, such as virtual machines, storage accounts, and networks. It provides a way to organize and manage resources in Azure, making it easier to deploy, manage, and monitor applications."
+  }
+]

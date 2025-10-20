@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Easy",
+    "question": "What is bias in AI, and how can it impact fairness?",
+    "answer": "Bias in AI refers to the systematic error in machine learning models that leads to unfair outcomes. It can occur due to various factors such as biased data, algorithms, or human decision-making. Bias can impact fairness by discriminating against certain groups, perpetuating existing inequalities, and undermining trust in AI systems."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Easy",
+    "question": "A company uses a facial recognition system to identify customers. However, the system has been shown to misidentify people with darker skin tones more frequently. What might be the cause of this issue?",
+    "answer": "The cause of this issue is likely due to a lack of diversity in the training data used to develop the facial recognition system. If the data set used for training does not include a diverse range of skin tones, the model may not be able to accurately recognize individuals with darker skin tones, leading to biased outcomes."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Easy",
+    "question": "How can you detect bias in AI decision-making?",
+    "answer": "Bias in AI decision-making can be detected through various methods such as data analysis, algorithmic audits, and fairness metrics. Some common techniques include checking for disparate impact, examining decision trees, and using fairness metrics such as equal opportunity and equalized odds."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Easy",
+    "question": "What is the difference between implicit bias and explicit bias in AI systems?",
+    "answer": "Implicit bias in AI refers to unintentional or unconscious biases present in the data, algorithms, or human decision-making, whereas explicit bias refers to intentional biases that are deliberately programmed into the system. Implicit bias can be more challenging to identify and address, as it is often embedded in the underlying data or algorithms."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Easy",
+    "question": "Can you provide an example of a fairness metric used to evaluate AI decision-making?",
+    "answer": "One common fairness metric used to evaluate AI decision-making is equalized odds, which measures the proportion of true positives and false positives for different groups. This metric helps to identify whether the AI system is biased towards a particular group, ensuring that the model is fair and equitable in its decision-making."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Medium",
+    "question": "How can you detect biases in a machine learning model when the data used to train it is biased?",
+    "answer": "To detect biases in a biased data set, you can use techniques such as data preprocessing, feature engineering, and model interpretability to identify and address the sources of bias."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Medium",
+    "question": "A facial recognition system has been trained on a dataset with a higher representation of white faces than faces from other ethnicities. What are some potential consequences of deploying this system?",
+    "answer": "The system may have lower accuracy rates for faces from underrepresented ethnicities, leading to incorrect identifications and potential misclassifications, which can have serious consequences in applications such as law enforcement and security."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Medium",
+    "question": "Write an algorithm to select the top k most similar data points to a given data point x in a dataset, while ensuring that the selection process is fair and unbiased.",
+    "answer": "A fair and unbiased algorithm to select the top k most similar data points to x would involve using a distance metric that is invariant to irrelevant features, such as a Mahalanobis distance, and then selecting the k data points with the smallest distance to x."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Medium",
+    "question": "An AI-powered hiring tool is being used to screen job applicants. What are some potential biases that this tool may introduce, and how can they be mitigated?",
+    "answer": "The tool may introduce biases based on demographic information, such as age, gender, or ethnicity, if the training data reflects these biases. To mitigate these biases, the training data should be diverse and representative of the population, and the tool should be regularly audited and updated to ensure fairness."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Medium",
+    "question": "How can you evaluate the fairness of a machine learning model's predictions in a real-world setting?",
+    "answer": "To evaluate the fairness of a model's predictions, you can use metrics such as demographic parity, equal opportunity, and equalized odds, and compare the results to a baseline model or a model that is known to be fair."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Hard",
+    "question": "A company is developing an AI-powered hiring tool that uses historical employment data to predict job candidate success. However, the data shows biased results towards candidates with a specific surname. How would you address this issue without compromising the model's accuracy?",
+    "answer": "To address this issue, you could use debiasing techniques such as data preprocessing, regularization, or fairness-aware loss functions. Another approach is to use techniques like data augmentation or generating counterfactual examples to increase the diversity of the training data. Additionally, you could use fairness metrics like disparate impact or equalized odds to evaluate and optimize the model's fairness."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Hard",
+    "question": "Design a system to detect and mitigate bias in a face recognition system used for law enforcement. The system should be able to detect bias in the training data, as well as any potential bias introduced during deployment.",
+    "answer": "To design such a system, you would need to implement a combination of fairness metrics like demographic parity and equalized odds. During deployment, you could use techniques like data poisoning detection and fairness auditing to monitor the system's performance. Additionally, you could use techniques like data augmentation and adversarial training to increase the robustness of the system to potential biases."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Hard",
+    "question": "Consider a scenario where a language model is trained on a dataset that contains biased language. How would you update the model to remove the bias without retraining the model from scratch?",
+    "answer": "One approach is to use techniques like word embeddings or contextual embeddings to reduce the impact of biased language. Another approach is to use a bias-removal algorithm that iteratively adjusts the model's weights to minimize the bias. Additionally, you could use a multi-task learning approach where the model learns to predict both the original task and a fairness-related task, such as predicting the sentiment of biased language."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Hard",
+    "question": "Design an algorithm to detect and correct bias in a recommendation system used for product suggestions. The algorithm should be able to identify bias in the training data and adjust the model's recommendations accordingly.",
+    "answer": "To design such an algorithm, you would need to implement a combination of fairness metrics like demographic parity and equalized odds. During deployment, you could use techniques like data poisoning detection and fairness auditing to monitor the system's performance. Additionally, you could use techniques like data augmentation and adversarial training to increase the robustness of the system to potential biases. The algorithm could also use a fairness-aware loss function to optimize the model's recommendations."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Bias & Fairness",
+    "difficulty": "Hard",
+    "question": "Consider a scenario where a company is developing an AI-powered medical diagnosis tool that uses a dataset of patient records to make predictions. However, the dataset is found to contain biased information regarding certain patient demographics. How would you address this issue and ensure that the model is fair and unbiased?",
+    "answer": "To address this issue, you could use techniques like data preprocessing, regularization, or fairness-aware loss functions to reduce the impact of biased data. Another approach is to use a bias-removal algorithm that iteratively adjusts the model's weights to minimize the bias. Additionally, you could use a multi-task learning approach where the model learns to predict both the original task and a fairness-related task, such as predicting the likelihood of biased data. The company should also implement a rigorous testing and validation process to ensure that the model is fair and unbiased."
+  }
+]

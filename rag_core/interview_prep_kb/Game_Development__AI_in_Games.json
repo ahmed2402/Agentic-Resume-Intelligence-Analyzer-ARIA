@@ -1,0 +1,42 @@
+[
+  {
+    "id": "q1",
+    "domain": "Game Development",
+    "topic": "AI in Games",
+    "difficulty": "Easy",
+    "question": "What are some common applications of AI in games?",
+    "answer": "AI is often used in games for pathfinding, navigation, decision-making, and player behavior simulation, such as NPC behavior."
+  },
+  {
+    "id": "q2",
+    "domain": "Game Development",
+    "topic": "AI in Games",
+    "difficulty": "Easy",
+    "question": "Can you describe a scenario where a game uses reinforcement learning?",
+    "answer": "A game might use reinforcement learning to train an AI agent to play a game like chess or Go, where the agent learns to make decisions based on rewards and penalties."
+  },
+  {
+    "id": "q3",
+    "domain": "Game Development",
+    "topic": "AI in Games",
+    "difficulty": "Easy",
+    "question": "What is the difference between a state machine and a decision tree in AI?",
+    "answer": "A state machine is a simple, finite state machine that transitions between states based on conditions, whereas a decision tree is a more complex, tree-like structure that uses conditional statements to make decisions."
+  },
+  {
+    "id": "q4",
+    "domain": "Game Development",
+    "topic": "AI in Games",
+    "difficulty": "Easy",
+    "question": "How does procedural generation use AI?",
+    "answer": "Procedural generation uses AI to create content on the fly, such as levels, terrain, or items, based on a set of rules and algorithms."
+  },
+  {
+    "id": "q5",
+    "domain": "Game Development",
+    "topic": "AI in Games",
+    "difficulty": "Easy",
+    "question": "Can you give an example of a game that uses machine learning?",
+    "answer": "A game like Sid Meier's Civilization VI uses machine learning to predict player behavior and adjust the game accordingly."
+  }
+]

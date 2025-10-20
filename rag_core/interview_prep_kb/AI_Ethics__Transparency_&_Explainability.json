@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Transparency & Explainability",
+    "difficulty": "Easy",
+    "question": "What is the main goal of model interpretability in AI systems?",
+    "answer": "The main goal of model interpretability is to provide insights and understanding into how AI models make predictions or take decisions, enabling users to trust and rely on the outcomes."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Transparency & Explainability",
+    "difficulty": "Easy",
+    "question": "A doctor uses a deep learning model to diagnose a patient's disease. Explain why it's essential to provide the patient with the model's decision-making process.",
+    "answer": "It's essential to provide the patient with the model's decision-making process to increase transparency, build trust, and enable the patient to make informed decisions about their treatment."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Transparency & Explainability",
+    "difficulty": "Easy",
+    "question": "What is feature importance in machine learning?",
+    "answer": "Feature importance in machine learning refers to the measure of how much a particular input feature contributes to the model's predictions or outcomes."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Transparency & Explainability",
+    "difficulty": "Easy",
+    "question": "Imagine you're working on a project that involves building a recommendation system for a e-commerce platform. What would you do to make the system more transparent to users?",
+    "answer": "To make the recommendation system more transparent to users, I would consider providing explanations for the recommended products, such as the reasons behind the suggestion, the user's browsing history, or the product's features."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Transparency & Explainability",
+    "difficulty": "Easy",
+    "question": "What is the difference between model interpretability and model explainability?",
+    "answer": "Model interpretability refers to understanding how a model works, whereas model explainability refers to understanding why a model made a particular prediction or decision."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Transparency & Explainability",
+    "difficulty": "Hard",
+    "question": "Design a system to provide transparent and explainable decision-making for a medical diagnosis AI model, which is trained on a large dataset of patient records with sensitive information. How would you ensure that the model's predictions are interpretable and auditable?",
+    "answer": "To achieve transparent and explainable decision-making, the system would employ model-agnostic explainability techniques such as SHAP or LIME. Additionally, the system would implement data encryption and access controls to protect sensitive patient information. The model's predictions would be audited through regular model evaluations, feature importance analysis, and feature permutation tests. The system would also provide a detailed audit trail of all interactions with the model, including input data, model predictions, and any subsequent actions taken."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Transparency & Explainability",
+    "difficulty": "Hard",
+    "question": "A developer is working on an AI-powered chatbot that provides personalized product recommendations to customers. However, the chatbot's decision-making process is opaque, and users are not able to understand why certain products are recommended. What would you recommend as a best practice to improve the explainability of the chatbot's recommendations, and how would you implement it?",
+    "answer": "To improve the explainability of the chatbot's recommendations, I would recommend using feature importance scores or saliency maps to provide insight into the factors that influence the recommendation. This could be achieved through techniques such as SHAP or LIME, which attribute the importance of each feature to the final recommendation. The developer would then implement a user interface that displays the feature importance scores or saliency maps to the user, allowing them to understand why certain products are recommended."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Transparency & Explainability",
+    "difficulty": "Hard",
+    "question": "A company is developing an AI-powered loan approval system that uses a complex algorithm to evaluate creditworthiness. However, the company is concerned that the algorithm may be biased against certain groups of people. How would you implement a transparent and explainable decision-making process for the loan approval system to ensure fairness and accountability?",
+    "answer": "To ensure fairness and accountability, I would recommend implementing a transparent and explainable decision-making process for the loan approval system. This could be achieved through techniques such as model interpretability, feature importance analysis, and bias detection. The system would also employ fairness metrics such as disparate impact and equalized odds to ensure that the algorithm is not biased against certain groups of people. Additionally, the system would provide a detailed audit trail of all interactions with the model, including input data, model predictions, and any subsequent actions taken."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Transparency & Explainability",
+    "difficulty": "Hard",
+    "question": "Design an AI-powered recommendation system that provides transparent and explainable suggestions to users based on their search history and preferences. The system should be able to provide a clear and concise explanation of why each suggestion is made, and how the AI model arrived at that suggestion. How would you implement this system, and what techniques would you use?",
+    "answer": "To implement an AI-powered recommendation system that provides transparent and explainable suggestions, I would recommend using a hybrid approach that combines collaborative filtering, content-based filtering, and knowledge-based systems. The system would employ model-agnostic explainability techniques such as SHAP or LIME to provide a clear and concise explanation of why each suggestion is made. The system would also use techniques such as feature importance scores or saliency maps to provide insight into the factors that influence the recommendation. Additionally, the system would provide a detailed audit trail of all interactions with the model, including input data, model predictions, and any subsequent actions taken."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Transparency & Explainability",
+    "difficulty": "Hard",
+    "question": "A researcher is developing an AI-powered predictive model that forecasts energy consumption for a smart grid system. However, the model is complex and difficult to interpret, and the researcher is concerned that the model may be biased or unfair. How would you recommend implementing a transparent and explainable decision-making process for the predictive model, and what techniques would you use?",
+    "answer": "To implement a transparent and explainable decision-making process for the predictive model, I would recommend using techniques such as model interpretability, feature importance analysis, and bias detection. The system would also employ fairness metrics such as disparate impact and equalized odds to ensure that the model is not biased or unfair. Additionally, the system would provide a detailed audit trail of all interactions with the model, including input data, model predictions, and any subsequent actions taken. The researcher would also use techniques such as SHAP or LIME to provide a clear and concise explanation of why each prediction is made, and how the model arrived at that prediction."
+  }
+]

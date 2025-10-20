@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of image normalization in computer vision?",
+    "answer": "Image normalization is used to rescale pixel values to a common range, typically between 0 and 1, to improve model stability and convergence during training."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Easy",
+    "question": "Describe a scenario where edge detection is useful in computer vision.",
+    "answer": "Edge detection is useful in applications such as object recognition, image segmentation, and robotics, where identifying the boundaries of objects is crucial for making decisions or taking actions."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Easy",
+    "question": "What is the difference between convolutional neural networks (CNNs) and recurrent neural networks (RNNs) in the context of computer vision?",
+    "answer": "CNNs are designed to process data with spatial hierarchies, such as images, while RNNs are designed to process sequential data, such as video or time-series data."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Easy",
+    "question": "What is the purpose of augmentation in computer vision when training machine learning models?",
+    "answer": "Data augmentation increases the training dataset size by applying random transformations to the original images, which helps to prevent overfitting and improve model generalizability."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Easy",
+    "question": "What is object detection, and how is it used in computer vision?",
+    "answer": "Object detection is a task that involves identifying and localizing specific objects within an image or video, which is used in applications such as self-driving cars, surveillance systems, and medical image analysis."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Medium",
+    "question": "Explain the difference between object detection and instance segmentation in the context of computer vision.",
+    "answer": "Object detection involves identifying and localizing instances of objects within an image, while instance segmentation goes a step further by also distinguishing between different parts of the same object."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Medium",
+    "question": "A deep neural network is being used for image classification. Describe how data augmentation can help improve the robustness of the model.",
+    "answer": "Data augmentation involves artificially increasing the size of the training dataset by applying random transformations (e.g., rotation, scaling, flipping) to the images, which helps the model learn to recognize patterns and features that are invariant to these transformations."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the U-Net architecture in the context of image segmentation?",
+    "answer": "The U-Net is a type of convolutional neural network designed for image segmentation tasks. It uses a contracting path to capture context and a expansive path to refine the segmentation mask, allowing for precise localization of objects."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Medium",
+    "question": "Suppose you're developing a system to detect pedestrians in images. What are some common challenges you might face, and how would you address them?",
+    "answer": "Common challenges in pedestrian detection include varying lighting conditions, occlusion, and pose variation. To address these, you could use techniques such as data augmentation with diverse lighting conditions, employ a model that can handle occlusion (e.g., using a recurrent neural network), and use a pose-agnostic detection approach (e.g., using a model that can detect pedestrians at various angles)."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Medium",
+    "question": "In the context of object recognition, what is the difference between a classification model and a detection model?",
+    "answer": "A classification model outputs a probability distribution over classes, given a single region of interest (ROI), whereas a detection model outputs the locations and classes of objects within an entire image, often with a confidence score associated with each detection."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where a deep learning-based object detection model may fail to detect an object due to a specific type of scene understanding error.",
+    "answer": "A deep learning-based object detection model may fail to detect an object due to a 'class-agnostic' scene understanding error, where the model incorrectly identifies a part of an object as the entire object. For example, in a cluttered scene, the model may mistakenly identify a car's wheel as the entire vehicle."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Hard",
+    "question": "Given a convolutional neural network (CNN) with a ReLU activation function, explain why the network's output may be biased towards the negative range.",
+    "answer": "The network's output may be biased towards the negative range due to the ReLU activation function's output being 0 for negative inputs and the positive input being passed through. This creates a 'dead zone' for negative inputs, resulting in a biased representation of negative values in the feature space."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Hard",
+    "question": "Design an approach to handle the 'occlusion problem' in 3D object recognition using a generative adversarial network (GAN).",
+    "answer": "To handle the occlusion problem, we can use a GAN-based approach that generates multiple 2D views of a 3D object from different angles. The generator network generates a 3D object mesh, and the discriminator network evaluates the generated 2D views against real 2D views. This allows the model to learn the relationship between 2D views and 3D object structure, enabling it to recognize objects even when parts of them are occluded."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Hard",
+    "question": "Explain how to adapt a pre-trained YOLOv3 model to a new dataset with a significantly different distribution of object classes and sizes.",
+    "answer": "To adapt the pre-trained YOLOv3 model, we can use transfer learning and fine-tune the model's weights on the new dataset. We can also update the model's anchor boxes to better fit the new dataset's object sizes. Additionally, we can use data augmentation techniques to artificially increase the size of the new dataset and reduce overfitting."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Computer Vision",
+    "difficulty": "Hard",
+    "question": "Describe a method to improve the robustness of a deep learning-based image segmentation model to variations in lighting conditions.",
+    "answer": "To improve the model's robustness to lighting variations, we can use data augmentation techniques such as histogram equalization, gamma correction, and brightness/contrast adjustment to artificially increase the diversity of the training dataset. We can also use a photometric normalization technique such as CLAHE (Contrast Limited Adaptive Histogram Equalization) to normalize the lighting conditions across different images."
+  }
+]

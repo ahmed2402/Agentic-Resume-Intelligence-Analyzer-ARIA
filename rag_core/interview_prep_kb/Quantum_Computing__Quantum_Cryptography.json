@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Easy",
+    "question": "What is the main advantage of Quantum Key Distribution (QKD) over classical cryptography?",
+    "answer": "The main advantage of QKD is its ability to provide unconditional security, as any attempt to eavesdrop on the communication would introduce detectable errors."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Easy",
+    "question": "In a quantum key distribution system, what is the role of a quantum channel?",
+    "answer": "A quantum channel is used to transmit the quantum key, which is encoded on a quantum state, such as a photon, between the sender and the receiver."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Easy",
+    "question": "What is the concept behind Quantum Cryptography's security?",
+    "answer": "Quantum Cryptography's security is based on the no-cloning theorem, which states that it is impossible to create a perfect copy of an arbitrary unknown quantum state."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Easy",
+    "question": "What is the typical protocol used in Quantum Cryptography?",
+    "answer": "The typical protocol used in Quantum Cryptography is the BB84 protocol, named after its inventors Bennett and Brassard, in collaboration with 84."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the classical channel in a Quantum Key Distribution system?",
+    "answer": "The classical channel is used to communicate the measurement bases and the sifting of the keys between the sender and the receiver."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of quantum key distribution (QKD) protocols in quantum cryptography?",
+    "answer": "The primary goal of QKD protocols is to securely establish a shared secret key between two parties, known as Alice and Bob, by exploiting quantum mechanics to ensure the security of their communication."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Medium",
+    "question": "Compare and contrast the BB84 and Ekert91 QKD protocols. What are their key differences?",
+    "answer": "BB84 and Ekert91 are two popular QKD protocols. BB84 uses photon polarization to encode and decode quantum information, while Ekert91 relies on entanglement to establish a shared secret key. The key difference lies in their encoding and decoding methods, as well as their resistance to certain types of eavesdropping attacks."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Medium",
+    "question": "What is the concept of the 'no-cloning theorem' in quantum cryptography, and how does it relate to secure key distribution?",
+    "answer": "The no-cloning theorem states that it is impossible to create a perfect copy of an arbitrary quantum state. This theorem is crucial in quantum cryptography as it ensures that any attempt to eavesdrop on a quantum communication will introduce errors, making it detectable by the legitimate parties."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Medium",
+    "question": "Describe a scenario where a man-in-the-middle (MitM) attack could potentially compromise a QKD system. How would you detect and prevent such an attack?",
+    "answer": "In a QKD system, a MitM attack could occur when an attacker intercepts the quantum communication between Alice and Bob, then forwards the quantum information to the intended recipient. To detect such an attack, QKD systems often employ quantum error correction techniques and statistical analysis to identify any anomalies in the received quantum information. Prevention measures include using secure quantum channels, such as optical fibers, and implementing robust authentication protocols."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Medium",
+    "question": "How does the concept of entanglement swapping relate to quantum cryptography? Can you explain a potential application of entanglement swapping in QKD?",
+    "answer": "Entanglement swapping is a process where the entanglement between two particles is transferred to a third particle, without physically interacting with the first two particles. In quantum cryptography, entanglement swapping can be used to extend the secure key distribution to multiple parties, enabling a network of secure nodes to communicate with each other."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Hard",
+    "question": "Explain the concept of 'no-cloning theorem' and its implications on quantum key distribution.",
+    "answer": "The no-cloning theorem states that it is impossible to create a perfect copy of an arbitrary unknown quantum state. This theorem has significant implications on quantum key distribution, as any attempt to eavesdrop on a quantum communication would introduce imperfections that could be detected, thereby ensuring the security of the communication."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where a quantum computer is used to break a classical cryptosystem. Explain how the quantum computer exploits the properties of a specific cryptographic algorithm.",
+    "answer": "A scenario where a quantum computer is used to break a classical cryptosystem is the Shor's algorithm, which is used to factor large composite numbers. A quantum computer can exploit the properties of the number field sieve algorithm, which is used for large prime factorization, by using quantum parallelism to perform an exponential number of operations in parallel, thereby reducing the time required to factor the large composite number."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Hard",
+    "question": "Derive the BB84 protocol for quantum key distribution, and explain the principles behind it.",
+    "answer": "The BB84 protocol involves the following steps: (1) Alice prepares a sequence of qubits in one of four possible basis states (0, 1, +, -). (2) Alice measures the qubits in one of the two basis states (0, 1) and sends the results to Bob. (3) Bob receives the qubits and measures them in the other basis state. (4) Alice and Bob publicly compare their measurement results to determine the correct basis for each qubit. (5) Once they agree on the correct basis, they can use the measurement results to create a shared secret key. The principles behind the protocol are based on the no-cloning theorem and the fact that a qubit can exist in a superposition of states, making it impossible to determine the correct basis without measurement."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Hard",
+    "question": "Explain the concept of quantum entanglement swapping and its relation to quantum cryptography.",
+    "answer": "Quantum entanglement swapping is a process where two particles become entangled, even if they have never interacted before. This process is achieved by having a third particle interact with one of the particles, causing the other particle to become entangled with it. In the context of quantum cryptography, entanglement swapping can be used to create a secure quantum channel between two parties, even if they are separated by large distances. This is achieved by using entanglement swapping to create a sequence of entangled particles, which can be used to encode and decode quantum information."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Cryptography",
+    "difficulty": "Hard",
+    "question": "Describe a method for detecting eavesdropping in a quantum key distribution protocol, and explain the underlying principles.",
+    "answer": "One method for detecting eavesdropping in a quantum key distribution protocol is the use of a Bell-state measurement. When Alice and Bob receive their qubits, they can perform a Bell-state measurement on their qubits, which will reveal any discrepancy in the state of the qubits due to eavesdropping. The underlying principle is based on the fact that any attempt to eavesdrop on the quantum communication would introduce imperfections that would be detectable through the Bell-state measurement. If the measurement results match, it indicates that the qubits have not been tampered with, and the communication is secure."
+  }
+]

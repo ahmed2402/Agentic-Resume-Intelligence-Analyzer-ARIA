@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of the Workbox library in Progressive Web Apps development?",
+    "answer": "The primary goal of the Workbox library is to provide a set of pre-configured libraries and tools to simplify the process of building and maintaining Progressive Web Apps, focusing on caching, routing, and other essential features."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Easy",
+    "question": "What is the main difference between a Progressive Web App and a native mobile app?",
+    "answer": "A Progressive Web App is built using web technologies (HTML, CSS, JavaScript) and can be accessed through a web browser, whereas a native mobile app is built specifically for a mobile platform (iOS or Android) and requires installation through an app store."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the 'manifest.json' file in a Progressive Web App?",
+    "answer": "The 'manifest.json' file provides metadata about the Progressive Web App, specifying its name, description, icons, and other settings that help browsers and users understand the app's nature and behavior."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Easy",
+    "question": "How do Progressive Web Apps handle offline data access?",
+    "answer": "Progressive Web Apps can handle offline data access using Service Workers, which can cache resources and provide access to cached data even when the user is offline."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Easy",
+    "question": "What is the benefit of using a Service Worker in a Progressive Web App?",
+    "answer": "The main benefit of using a Service Worker in a Progressive Web App is that it allows the app to run in the background and handle tasks such as caching, push notifications, and offline data access, improving the overall user experience."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between a Progressive Web App (PWA) and a native mobile app?",
+    "answer": "A Progressive Web App (PWA) is a web application that uses modern web technologies to provide a native app-like experience, whereas a native mobile app is installed on the device's operating system and has access to device-specific features."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Medium",
+    "question": "How do you ensure that a PWA is properly cached by the browser to provide offline support?",
+    "answer": "To ensure proper caching by the browser, you should use the Service Worker API to define a cache strategy, which includes caching resources such as HTML, CSS, and JavaScript files, as well as data fetched from APIs."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the Web App Manifest in a PWA?",
+    "answer": "The Web App Manifest is a JSON file that contains metadata about the PWA, such as its name, description, icons, and theme color, which are used by the browser to provide a more native app-like experience."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Medium",
+    "question": "How do you implement push notifications in a PWA?",
+    "answer": "To implement push notifications in a PWA, you should use the Push API and the Service Worker API to register a service worker, which will receive push messages from the server and display them to the user as notifications."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Medium",
+    "question": "What is the benefit of using a secure context (HTTPS) in a PWA?",
+    "answer": "Using a secure context (HTTPS) in a PWA provides a secure connection between the client and server, protecting user data and preventing man-in-the-middle attacks, which is essential for providing a trusted and secure user experience."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Hard",
+    "question": "Explain the difference between the 'scope' and 'secure' attributes in a Service Worker's registration. How do they impact the app's security and performance?",
+    "answer": "The 'scope' attribute determines the scope of the Service Worker, which is the URL prefix that the Service Worker will intercept requests for. The 'secure' attribute, on the other hand, tells the browser whether the Service Worker is secure or not. Setting 'secure' to true means the browser will only use the Service Worker when the page is loaded over HTTPS. This impacts the app's security by ensuring that sensitive data is not exposed over HTTP, and performance by preventing the browser from using the Service Worker when it's not secure."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Hard",
+    "question": "A user is experiencing issues with a PWA on a slow network connection. Describe a possible cause of this issue and how you would debug it.",
+    "answer": "A possible cause of this issue is that the Service Worker is not properly caching resources, resulting in a slow app load time. To debug this, you would use the Chrome DevTools to inspect the Service Worker's cache and identify which resources are not being cached or are being cached incorrectly. You would then use the 'Cache API' to review the cache entries and identify any issues. Additionally, you would check the 'Network' tab to see which resources are being loaded over the network and which are being loaded from the cache."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Hard",
+    "question": "Write a function that generates a 'manifest.json' file for a PWA based on a given set of metadata.",
+    "answer": "function generateManifest(title, shortName, description, themeColor, background_color, icons) {\n  return JSON.stringify({\n    'icons': icons,\n    'short_name': shortName,\n    'name': title,\n    'description': description,\n    'theme_color': themeColor,\n    'background_color': background_color\n  });\n}"
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Hard",
+    "question": "Describe the differences between a 'web app' and a 'native app' in the context of a PWA. How do these differences impact the app's user experience and development process?",
+    "answer": "A 'web app' is a PWA that is built using web technologies and can be accessed through a web browser. A 'native app', on the other hand, is a PWA that has been wrapped in a native container and can be installed on a user's device like a native app. The main differences between the two are that native apps have access to device hardware and resources, can be installed on the home screen, and can run in the background. However, native apps also require a separate development process and can be more difficult to maintain. This impacts the user experience by providing a more seamless and integrated experience, and the development process by requiring additional steps and tools."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Progressive Web Apps",
+    "difficulty": "Hard",
+    "question": "Explain how the 'push' API works in the context of a PWA. How do you handle notifications and what are the security implications?",
+    "answer": "The 'push' API allows a PWA to send notifications to users even when the app is not running. To handle notifications, you would first need to register for push notifications using the 'PushManager' API. You would then use the 'Push API' to send notifications to users, which would be received by the browser and displayed to the user. The security implications are that push notifications require a secure connection (HTTPS) and that users must opt-in to receive notifications. You would also need to handle rejection and permission-related issues."
+  }
+]

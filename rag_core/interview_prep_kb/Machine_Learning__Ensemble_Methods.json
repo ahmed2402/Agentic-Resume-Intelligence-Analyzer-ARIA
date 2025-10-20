@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Ensemble Methods",
+    "difficulty": "Easy",
+    "question": "What is the main advantage of using ensemble methods in machine learning?",
+    "answer": "The main advantage of using ensemble methods is that they can often improve the accuracy and robustness of predictions compared to a single model."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Ensemble Methods",
+    "difficulty": "Easy",
+    "question": "Suppose you have three different models that classify images as either cats or dogs. Can you explain how to use these models in an ensemble?",
+    "answer": "You can use these models in a voting ensemble, where each model predicts a class label and the final prediction is the class label with the most votes."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Ensemble Methods",
+    "difficulty": "Easy",
+    "question": "What is the difference between a bagging ensemble and a boosting ensemble?",
+    "answer": "In bagging, multiple models are trained on different subsets of the data and their predictions are combined. In boosting, multiple models are trained sequentially, with each model trying to correct the errors of the previous model."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Ensemble Methods",
+    "difficulty": "Easy",
+    "question": "How can the performance of a random forest model be improved?",
+    "answer": "The performance of a random forest model can be improved by tuning the hyperparameters, such as the number of trees, the maximum depth of the trees, and the number of features to consider at each split."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Ensemble Methods",
+    "difficulty": "Easy",
+    "question": "What is the purpose of using a meta-estimator in ensemble methods?",
+    "answer": "The purpose of using a meta-estimator is to provide a high-level interface for ensembling multiple models, which can simplify the process of combining multiple predictions and provide additional functionality, such as hyperparameter tuning and cross-validation."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Ensemble Methods",
+    "difficulty": "Medium",
+    "question": "What is the main advantage of using ensemble methods in machine learning?",
+    "answer": "Ensemble methods can improve the accuracy of a model by combining the predictions of multiple models, resulting in better generalization and reduced overfitting."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Ensemble Methods",
+    "difficulty": "Medium",
+    "question": "Suppose you have three different models with the following accuracy: 80%, 85%, and 78%. Which ensemble method would you use and why?",
+    "answer": "I would use weighted voting, where the weights are assigned based on the accuracy of each model. Model 2 with 85% accuracy would receive the highest weight, followed by model 1 with 80% accuracy, and then model 3 with 78% accuracy."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Ensemble Methods",
+    "difficulty": "Medium",
+    "question": "What is the difference between bagging and boosting?",
+    "answer": "Bagging creates multiple instances of the same model by resampling the training data with replacement, while boosting creates multiple models sequentially, with each model trying to correct the errors of the previous one."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Ensemble Methods",
+    "difficulty": "Medium",
+    "question": "Suppose you want to create an ensemble of decision trees. What is a common way to handle missing values in the data?",
+    "answer": "A common approach is to use the mean or median imputation method, where missing values are replaced with the mean or median of the respective feature. Alternatively, you can use a decision tree that can handle missing values, such as a random forest."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Ensemble Methods",
+    "difficulty": "Medium",
+    "question": "What is the purpose of cross-validation when evaluating an ensemble model?",
+    "answer": "Cross-validation is used to evaluate the ensemble model's performance on unseen data, preventing overfitting and providing a more accurate estimate of its generalization ability."
+  }
+]

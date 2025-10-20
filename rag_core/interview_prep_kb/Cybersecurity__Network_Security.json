@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Easy",
+    "question": "What is the primary function of a firewall in network security?",
+    "answer": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Easy",
+    "question": "What is the main difference between a hub and a switch in network security?",
+    "answer": "A hub broadcasts incoming data to all connected devices, while a switch forwards data to the intended recipient based on MAC addresses."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Easy",
+    "question": "What is the purpose of encryption in network security?",
+    "answer": "Encryption is the process of converting plaintext data into unreadable ciphertext to protect it from unauthorized access."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Easy",
+    "question": "What is the term for an unauthorized device connected to a network?",
+    "answer": "An unauthorized device connected to a network is known as a rogue device."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a MAC address in network security?",
+    "answer": "A MAC address is used to identify a network device and control access to a network based on the MAC address."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Medium",
+    "question": "Explain the difference between a firewall and an intrusion detection system (IDS).",
+    "answer": "A firewall acts as a network barrier to prevent unauthorized access to or from a private network, whereas an IDS monitors network traffic for signs of unauthorized access attempts and alerts the administrator, but does not block the traffic itself."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Medium",
+    "question": "What are some common types of network segmentation and their purposes?",
+    "answer": "Network segments by department or function (e.g., finance, HR), segments by security level (e.g., DMZ, internal network), or segments by traffic type (e.g., guest network, IoT network). These segments help contain damage in the event of a breach and reduce attack surfaces."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Medium",
+    "question": "A network administrator needs to configure a router to prevent ARP spoofing attacks. What configuration change would you recommend?",
+    "answer": "Disable the Dynamic ARP Inspection (DAI) feature on the switch, or configure the router to use a Secure Neighbor Discovery (SEND) protocol to prevent spoofing attacks."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Medium",
+    "question": "How do you ensure the integrity of data transmitted over a wireless network?",
+    "answer": "Implement WPA2 encryption with a strong password and 802.1X authentication, or use a VPN to encrypt data in transit. Regularly update the wireless access points and client devices to ensure they have the latest security patches."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Medium",
+    "question": "What's the difference between a stateful and stateless firewall?",
+    "answer": "A stateful firewall tracks the state of network connections and makes decisions based on the context of the connection, whereas a stateless firewall makes decisions based only on the current packet and does not maintain any contextual information."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Hard",
+    "question": "A security researcher discovers a vulnerability in a widely used network device that allows an attacker to inject arbitrary network packets. The researcher wants to report the vulnerability but is concerned about the potential backlash from the device manufacturer. What should the researcher do?",
+    "answer": "The researcher should report the vulnerability to the manufacturer through a responsible disclosure process, which typically involves providing the vendor with a reasonable amount of time to fix the vulnerability before making it public. This allows the vendor to address the issue without the potential for widespread exploitation."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Hard",
+    "question": "An organization's network is protected by a Next-Generation Firewall (NGFW) that uses a hybrid intrusion prevention system. The NGFW is configured to block traffic based on a set of predefined rules. However, the organization's security team notices that some legitimate traffic is being blocked. What can be done to improve the NGFW's ability to accurately block malicious traffic?",
+    "answer": "To improve the NGFW's accuracy, the organization's security team can implement a combination of techniques, such as anomaly-based detection, threat intelligence integration, and sandboxing, to provide more context and analysis of network traffic. This can help the NGFW to better differentiate between legitimate and malicious traffic."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Hard",
+    "question": "An attacker has compromised a network device using a zero-day exploit, allowing them to intercept and modify network traffic. What is the primary concern for the security team, and how can they mitigate the risk?",
+    "answer": "The primary concern is the potential for lateral movement and data exfiltration. To mitigate the risk, the security team should quickly isolate the compromised device from the rest of the network, implement network segmentation, and perform a thorough forensics analysis to determine the extent of the compromise and identify additional vulnerabilities that may be exploited."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Hard",
+    "question": "A network administrator is tasked with deploying a new network architecture that includes a Software-Defined Networking (SDN) controller. What are some key security considerations that the administrator should take into account during the deployment?",
+    "answer": "The administrator should consider security features such as network segmentation, access control, and encryption. They should also implement a robust authentication and authorization framework, ensure secure communication between the SDN controller and network devices, and regularly monitor and analyze network traffic for signs of compromise."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Network Security",
+    "difficulty": "Hard",
+    "question": "An organization has implemented a network-based intrusion detection system (NIDS) to monitor traffic for signs of malicious activity. However, the NIDS is not detecting any known threats. What could be the reason for this, and how can the organization improve the effectiveness of the NIDS?",
+    "answer": "The reason could be that the NIDS is not updated with the latest threat signatures or is not configured to monitor all relevant traffic flows. To improve the effectiveness of the NIDS, the organization should regularly update the threat signatures, adjust the NIDS configuration to monitor more traffic flows, and consider implementing a combination of signature-based and anomaly-based detection methods to detect unknown threats."
+  }
+]

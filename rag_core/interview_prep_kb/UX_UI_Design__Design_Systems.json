@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of a design system in UX/UI design?",
+    "answer": "A design system is a collection of reusable components, guidelines, and assets that help maintain consistency and efficiency in product design."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Easy",
+    "question": "Consider a design team working on multiple projects simultaneously. How can a design system help in such a scenario?",
+    "answer": "A design system helps by providing a shared language, assets, and components that can be easily reused across different projects, reducing the need for manual design creation and ensuring consistency."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Easy",
+    "question": "What are some key benefits of implementing a design system?",
+    "answer": "Key benefits include improved consistency, increased efficiency, reduced design debt, and enhanced collaboration among designers and developers."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Easy",
+    "question": "How does a design system typically handle component variations?",
+    "answer": "A design system usually provides a base component and allows for customization through props or overrides, enabling designers to create variations while maintaining consistency and reusability."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Easy",
+    "question": "What is the role of a design system in ensuring accessibility in product design?",
+    "answer": "A design system can help ensure accessibility by providing pre-built components, guidelines, and assets that follow accessibility best practices, making it easier for designers to create accessible products."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of implementing a design system in a product team?",
+    "answer": "The primary goal of implementing a design system is to establish consistency across a product, ensure scalability, and facilitate collaboration among designers and developers."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Medium",
+    "question": "A product team is considering adopting a design system. What are some potential benefits they can expect?",
+    "answer": "Potential benefits of adopting a design system include reduced design debt, improved brand consistency, accelerated design and development processes, and enhanced collaboration and communication among team members."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Medium",
+    "question": "Designers are struggling to maintain consistency in a product's UI components. What design system element can they leverage to address this issue?",
+    "answer": "Designers can leverage a style guide, which is a collection of reusable UI components, to ensure consistency and maintainability across the product."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Medium",
+    "question": "What is the role of a design language in a design system, and how does it contribute to the overall design goals?",
+    "answer": "A design language is a set of rules, principles, and guidelines that define the visual design of a product. It contributes to the overall design goals by providing a clear direction for designers and developers, ensuring consistency and coherence in the product's UI, and facilitating the creation of new components and features."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Medium",
+    "question": "A product team wants to integrate their existing design system with a new feature or product. What approach should they take?",
+    "answer": "The product team should take an incremental approach to integrate the existing design system with the new feature or product. This involves assessing the existing design system's components, identifying gaps or inconsistencies, and iteratively adding new components or updating existing ones to ensure seamless integration and maintain consistency across the product."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Hard",
+    "question": "Design a design system for a multinational company with 10+ product lines, each with its own unique brand identity. How would you handle the trade-off between consistency and customization?",
+    "answer": "To solve this challenge, I would propose a modular design system architecture. I would create a shared design language that outlines the core design principles, typography, color palette, and iconography. This would ensure consistency across all product lines. However, I would also allow for customization at the product level by creating a set of 'brand extensions' that can be applied to the shared design language. This would enable each product line to maintain its unique brand identity while still adhering to the overall design system."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Hard",
+    "question": "You've been tasked with integrating a new design system into an existing product line that has a large user base and a well-established brand identity. What steps would you take to avoid disrupting the user experience and ensure a seamless transition?",
+    "answer": "To minimize disruption, I would first conduct user research to understand the current pain points and user behavior. Then, I would create a phased rollout plan, starting with a small group of users and gradually expanding to the larger user base. I would also establish clear communication channels with the development team and stakeholders to ensure that any changes are thoroughly tested and validated before being deployed to the live product. Additionally, I would use analytics and feedback mechanisms to monitor the impact of the new design system and make adjustments as needed."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Hard",
+    "question": "Design a design system for a company that operates in multiple countries with varying regulatory requirements. How would you ensure that the design system is compliant with all relevant regulations?",
+    "answer": "To ensure compliance, I would create a design system that is modular and adaptable to different regulatory requirements. I would develop a set of 'regulatory modules' that can be applied to specific regions or countries. These modules would include design elements such as text labels, button styles, and form fields that comply with the relevant regulations. I would also establish a governance framework that ensures design decisions are made in consultation with regulatory experts and stakeholders to ensure that the design system remains compliant and up-to-date."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Hard",
+    "question": "You're tasked with creating a design system for a company that uses a microservices architecture. How would you design the system to accommodate the different services and ensure consistency across the board?",
+    "answer": "To accommodate the microservices architecture, I would design a distributed design system that uses a service-oriented architecture (SOA) approach. I would create a central design hub that acts as a single source of truth for the design system, and then replicate the design elements and components across each microservice. This would ensure consistency across the board while still allowing for flexibility and autonomy within each service. I would also establish clear communication channels between the design team and the development teams to ensure that design decisions are aligned with the technical requirements of each microservice."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Design Systems",
+    "difficulty": "Hard",
+    "question": "Design a design system for a company that has a highly iterative product development cycle. How would you ensure that the design system remains up-to-date and relevant throughout the product's lifecycle?",
+    "answer": "To keep the design system relevant, I would establish a continuous design integration (CDI) process that involves regular design reviews, user testing, and analytics analysis. I would also create a design backlog that prioritizes design updates and new features based on business requirements and user feedback. Additionally, I would establish clear communication channels with the product team to ensure that design decisions are aligned with the product roadmap and that the design system is evolving in tandem with the product. This would ensure that the design system remains relevant and effective throughout the product's lifecycle."
+  }
+]

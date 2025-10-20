@@ -1,0 +1,42 @@
+[
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Testing",
+    "difficulty": "Easy",
+    "question": "What is black-box testing?",
+    "answer": "Black-box testing involves testing software without knowledge of its internal workings, focusing on the inputs, expected outputs, and functionality."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Testing",
+    "difficulty": "Easy",
+    "question": "You are given a function with a single argument, but no test cases cover the edge case where the argument is null. What is a simple test you could write to ensure this edge case is handled correctly?",
+    "answer": "Write a test case that passes a null value to the function and verify that it handles the null input correctly."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Testing",
+    "difficulty": "Easy",
+    "question": "What is the difference between a unit test and an integration test?",
+    "answer": "A unit test focuses on a single component or function, ensuring it works correctly in isolation, whereas an integration test checks how multiple components or functions work together."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Testing",
+    "difficulty": "Easy",
+    "question": "If you have a test suite that is taking too long to run, what is a common strategy to improve its performance?",
+    "answer": "Run the slowest tests first and use a testing framework's built-in test filtering or skipping features to exclude slow tests during regular development cycles."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Testing",
+    "difficulty": "Easy",
+    "question": "What is a mock object in testing?",
+    "answer": "A mock object is a test double that mimics the behavior of a real object without actually being the real object, used to isolate the system under test and make it easier to write focused tests."
+  }
+]

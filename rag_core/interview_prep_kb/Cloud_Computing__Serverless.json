@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Serverless",
+    "difficulty": "Easy",
+    "question": "What is the primary benefit of using a serverless computing model?",
+    "answer": "The primary benefit of using a serverless computing model is that it eliminates the need for managing underlying infrastructure, allowing developers to focus on writing code without worrying about server provisioning and scaling."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Serverless",
+    "difficulty": "Easy",
+    "question": "Suppose you are deploying a Node.js function to AWS Lambda. What is the typical deployment unit?",
+    "answer": "The typical deployment unit for a Node.js function to AWS Lambda is a ZIP file that contains the function code."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Serverless",
+    "difficulty": "Easy",
+    "question": "What is a common use case for serverless computing?",
+    "answer": "A common use case for serverless computing is real-time data processing, such as image processing or video transcoding, where resources are needed for short periods of time."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Serverless",
+    "difficulty": "Easy",
+    "question": "Compare and contrast synchronous and asynchronous execution in serverless computing.",
+    "answer": "In serverless computing, synchronous execution means that a function starts and completes within a set time limit, while asynchronous execution allows a function to be triggered, start, and complete at a later time."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Serverless",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a 'cold start' in serverless computing?",
+    "answer": "A 'cold start' in serverless computing refers to the time it takes for a function to launch and become available for execution, typically due to the function not being recently invoked."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Serverless",
+    "difficulty": "Medium",
+    "question": "What are the primary benefits of using a serverless architecture compared to traditional server-based architectures?",
+    "answer": "The primary benefits of serverless architecture include cost savings, increased scalability, and reduced administrative burdens. Since the cloud provider manages the underlying infrastructure, users only pay for the compute time used, eliminating the need for upfront resource provisioning and management."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Serverless",
+    "difficulty": "Medium",
+    "question": "Consider you are migrating a web application from a traditional server-based architecture to a serverless one. What are some key considerations to keep in mind before making the transition?",
+    "answer": "Some key considerations include identifying cold-start issues, optimizing for event-driven design, choosing the right compute and storage options, and ensuring proper error handling and logging. Additionally, consider the need for additional infrastructure services like databases and caching."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Serverless",
+    "difficulty": "Medium",
+    "question": "What are some common triggers for serverless functions, and how do they differ from traditional application triggers?",
+    "answer": "Common triggers for serverless functions include API Gateway events, S3 bucket updates, DynamoDB table modifications, and cloud watch events. These triggers differ from traditional application triggers in that they are event-driven and decoupled from the application's execution flow, allowing for greater scalability and flexibility."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Serverless",
+    "difficulty": "Medium",
+    "question": "Suppose you are building a serverless application using AWS Lambda. How would you optimize its performance and cost?",
+    "answer": "To optimize performance, use caching mechanisms like Redis or Memcached, and consider using a service like Amazon ElastiCache. To optimize cost, ensure that the function is properly scaled, use a free tier whenever possible, and optimize the function code itself to reduce execution time and memory usage."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Serverless",
+    "difficulty": "Medium",
+    "question": "What are the trade-offs between using a container-based serverless platform like AWS Fargate and a traditional serverless platform like AWS Lambda?",
+    "answer": "The primary trade-offs are between control and flexibility. Container-based platforms like AWS Fargate offer more control over the underlying environment, but require more administrative effort and incur higher costs. Traditional serverless platforms like AWS Lambda provide more automation and cost savings, but limit the degree of customization and control."
+  }
+]

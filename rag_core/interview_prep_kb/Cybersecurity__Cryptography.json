@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of a digital signature in cryptography?",
+    "answer": "A digital signature is used to authenticate the sender of a message and ensure its integrity."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Easy",
+    "question": "A user wants to encrypt a file using a symmetric key encryption algorithm. What would be the minimum size of the key?",
+    "answer": "The key size should be at least 128 bits for symmetric key encryption algorithms like AES."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Easy",
+    "question": "What is the difference between the terms 'plaintext' and 'ciphertext'?",
+    "answer": "Plaintext refers to the original, unencrypted message, while ciphertext refers to the encrypted message."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Easy",
+    "question": "Can you explain the concept of a 'hash function'?",
+    "answer": "A hash function takes an input message and generates a fixed-size string of characters, known as a hash value, which cannot be reversed to obtain the original message."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Easy",
+    "question": "What is the term for the process of converting plaintext into ciphertext?",
+    "answer": "Encryption."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between a symmetric and asymmetric encryption algorithm?",
+    "answer": "Symmetric encryption uses the same key for both encryption and decryption, while asymmetric encryption uses a pair of keys: a public key for encryption and a private key for decryption."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Medium",
+    "question": "A company is implementing end-to-end encryption for its messaging service. What is one benefit of this approach?",
+    "answer": "End-to-end encryption ensures that only the sender and the intended recipient can access the encrypted message, preventing interception by third parties."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Medium",
+    "question": "What is a secure way to store a private key in a cryptographic system?",
+    "answer": "A secure way to store a private key is to use a Hardware Security Module (HSM) or a Trusted Platform Module (TPM), which provide secure key storage and protect against unauthorized access."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Medium",
+    "question": "A developer is implementing a digital signature scheme using the RSA algorithm. What is the purpose of the hash function in this scheme?",
+    "answer": "The hash function is used to create a fixed-size digital fingerprint of the original message, which is then signed using the private key to create a digital signature."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Medium",
+    "question": "What is a potential weakness of the Diffie-Hellman key exchange protocol?",
+    "answer": "The Diffie-Hellman key exchange protocol is vulnerable to man-in-the-middle attacks, where an attacker can intercept and alter the public keys exchanged between the parties."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Hard",
+    "question": "Explain the difference between a preimage attack and a second preimage attack in the context of cryptographic hash functions.",
+    "answer": "A preimage attack involves finding an input that produces a specific output hash value, whereas a second preimage attack involves finding two different inputs that produce the same output hash value."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Hard",
+    "question": "Design a secure cryptographic protocol for authenticated encryption with associated data (AEAD) in a scenario where the sender and receiver share a common secret key.",
+    "answer": "One possible protocol is the EAX (Encrypt-then-MAC) scheme, which combines encryption and authentication using a block cipher and a message authentication code (MAC)."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Hard",
+    "question": "Given a RSA public key with modulus n = p * q and a signature σ, describe how to compute the signature σ using the Chinese Remainder Theorem (CRT) without access to the private key.",
+    "answer": "This is impossible, as the CRT is used to efficiently compute the signature σ given the private key, not to compute the private key given the signature σ."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Hard",
+    "question": "What is the impact of the quantum computer's ability to perform Shor's algorithm on the security of RSA and elliptic curve cryptography (ECC) schemes?",
+    "answer": "Shor's algorithm can factor large composite numbers exponentially faster than any known classical algorithm, which makes RSA vulnerable to quantum computer attacks. ECC is also vulnerable, but the impact is less severe due to the larger key sizes required for equivalent security."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Cryptography",
+    "difficulty": "Hard",
+    "question": "Consider a stream cipher using a linear feedback shift register (LFSR) with a 128-bit state. What is the maximum amount of entropy that can be extracted from the cipher stream, and how is it related to the state size?",
+    "answer": "The maximum amount of entropy that can be extracted is 128 bits, which is equal to the state size. This is because each bit in the state contributes to the cipher stream, and the LFSR produces a maximal-length sequence with period 2^128."
+  }
+]

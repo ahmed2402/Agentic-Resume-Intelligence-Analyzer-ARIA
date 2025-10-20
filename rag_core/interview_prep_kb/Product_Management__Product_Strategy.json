@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Product Strategy",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of a product strategy?",
+    "answer": "The primary goal of a product strategy is to define the product's overall direction and objectives, aligning with the company's vision and goals."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Product Strategy",
+    "difficulty": "Easy",
+    "question": "A company is launching a new product. What are some key factors to consider when developing the product strategy?",
+    "answer": "Key factors to consider when developing a product strategy include target audience, market competition, product uniqueness, pricing, and revenue models."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Product Strategy",
+    "difficulty": "Easy",
+    "question": "What is the role of market research in product strategy development?",
+    "answer": "Market research helps inform product strategy by providing insights into customer needs, preferences, and behaviors, enabling data-driven decision-making."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Product Strategy",
+    "difficulty": "Easy",
+    "question": "Suppose you are a product manager, and you need to prioritize features for the next release. What approach would you use?",
+    "answer": "I would use the MoSCoW method, prioritizing must-haves, should-haves, could-haves, and won't-haves based on business value, customer needs, and technical feasibility."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Product Strategy",
+    "difficulty": "Easy",
+    "question": "What is the relationship between product strategy and product roadmap?",
+    "answer": "The product strategy defines the overall direction, while the product roadmap outlines the specific goals, milestones, and deliverables to achieve the strategy."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Product Strategy",
+    "difficulty": "Medium",
+    "question": "Can you explain the concept of Minimum Viable Product (MVP) and its role in product development?",
+    "answer": "A Minimum Viable Product is a version of a product that includes the core features and functionality required to satisfy early customers and provide a foundation for future development. Its primary role is to validate assumptions about the market, reduce uncertainty, and enable iterative refinement of the product."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Product Strategy",
+    "difficulty": "Medium",
+    "question": "You're tasked with launching a new product in a highly competitive market. What key factors would you consider when developing your product strategy?",
+    "answer": "Key factors to consider when developing a product strategy in a competitive market include target audience analysis, competitor analysis, unique value proposition, pricing strategy, go-to-market plan, and key performance indicators for measurement and evaluation."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Product Strategy",
+    "difficulty": "Medium",
+    "question": "If your product's user acquisition cost is higher than its customer lifetime value, what adjustments would you make to your product strategy?",
+    "answer": "To address a situation where user acquisition cost exceeds customer lifetime value, adjustments could include revising the pricing strategy, optimizing the value proposition to increase customer retention, improving the user experience to reduce churn, or exploring alternative channels for user acquisition with lower costs."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Product Strategy",
+    "difficulty": "Medium",
+    "question": "A recent market trend analysis indicates that there's a growing demand for a specific feature in your product. How would you prioritize this feature within your existing product roadmap?",
+    "answer": "To prioritize the new feature within the existing product roadmap, consider its alignment with the company's overall goals, its potential impact on customer satisfaction and retention, and its feasibility within the existing development constraints. This may involve re-evaluating existing feature backlogs, adjusting timelines, or allocating additional resources to accommodate the new feature."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Product Strategy",
+    "difficulty": "Medium",
+    "question": "How do you weigh the trade-offs between short-term revenue growth and long-term sustainability when developing a product strategy?",
+    "answer": "When weighing short-term revenue growth against long-term sustainability, consider the product's overall health, the potential for future scalability, and the impact on brand reputation and customer loyalty. Prioritize sustainability by focusing on delivering value to customers, investing in research and development, and maintaining a healthy balance between short-term goals and long-term vision."
+  }
+]

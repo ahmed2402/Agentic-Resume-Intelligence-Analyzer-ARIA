@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": "Easy",
+    "question": "What is the difference between a population and a sample in statistics?",
+    "answer": "A population is the entire set of data, while a sample is a subset of the population used to make inferences about the population."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": "Easy",
+    "question": "A study found that the average height of a group of people was 175 cm. What type of measure of central tendency is this?",
+    "answer": "This is an example of the mean."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a histogram in data visualization?",
+    "answer": "A histogram is used to display the distribution of a continuous variable and to identify patterns and outliers in the data."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": "Easy",
+    "question": "What is the formula for calculating the standard deviation of a sample?",
+    "answer": "The formula for calculating the sample standard deviation is √[(∑(xi - μ)^2) / (n - 1)], where xi is each data point, μ is the sample mean, and n is the sample size."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": "Easy",
+    "question": "What is the difference between correlation and causation?",
+    "answer": "Correlation refers to the relationship between two variables, while causation refers to a cause-and-effect relationship between two variables."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": "Medium",
+    "question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+    "answer": "A Type I error occurs when a true null hypothesis is rejected, while a Type II error occurs when a false null hypothesis is failed to be rejected."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": "Medium",
+    "question": "A dataset has a mean of 10 and a standard deviation of 2. What percentage of the data falls within 1 standard deviation of the mean?",
+    "answer": "68.26% of the data falls within 1 standard deviation of the mean."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": "Medium",
+    "question": "Given a correlation coefficient of 0.7 between two variables, what does this imply about their relationship?",
+    "answer": "A correlation coefficient of 0.7 indicates a strong positive linear relationship between the two variables."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": "Medium",
+    "question": "If a linear regression model has a coefficient of determination (R-squared) of 0.8, what can be inferred about the model's fit?",
+    "answer": "The model explains 80% of the variation in the dependent variable, indicating a good fit."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Statistics",
+    "difficulty": "Medium",
+    "question": "Describe the concept of standardization in statistical analysis.",
+    "answer": "Standardization is the process of rescaling a variable to have a mean of 0 and a standard deviation of 1, allowing for comparison across different scales."
+  }
+]

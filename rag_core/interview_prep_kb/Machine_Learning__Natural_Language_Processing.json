@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Natural Language Processing",
+    "difficulty": "Easy",
+    "question": "What is the primary function of word embeddings in NLP?",
+    "answer": "Word embeddings are used to represent words as vectors in a high-dimensional space, allowing for semantic relationships between words to be captured and used in NLP tasks."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Natural Language Processing",
+    "difficulty": "Easy",
+    "question": "Compare and contrast bag-of-words and TF-IDF representation methods in text classification tasks.",
+    "answer": "Bag-of-words and TF-IDF are both used to represent text in a numerical format, but TF-IDF incorporates term frequency and inverse document frequency to give more weight to rare words, which can improve classification accuracy."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Natural Language Processing",
+    "difficulty": "Easy",
+    "question": "What is the purpose of tokenization in text preprocessing?",
+    "answer": "Tokenization is the process of breaking down text into individual words or tokens, allowing for further processing and analysis of the text."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Natural Language Processing",
+    "difficulty": "Easy",
+    "question": "Describe a scenario where a Named Entity Recognition (NER) model would be useful in real-world application.",
+    "answer": "A NER model would be useful in a real-world application such as a chatbot, where the model can identify and extract relevant entities like names, locations, and organizations from user input, allowing for more accurate and personalized responses."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Natural Language Processing",
+    "difficulty": "Easy",
+    "question": "What is the difference between a unigram and a bigram in NLP?",
+    "answer": "A unigram is a single word or token, while a bigram is a pair of adjacent words or tokens, which can be used to capture more contextual information in NLP tasks."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Natural Language Processing",
+    "difficulty": "Medium",
+    "question": "Explain the difference between tokenization and stemming in natural language processing.",
+    "answer": "Tokenization is the process of breaking down text into individual words or tokens, while stemming involves reducing words to their base or root form to reduce dimensionality. For example, 'running' and 'runs' would be reduced to the same stem 'run'."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Natural Language Processing",
+    "difficulty": "Medium",
+    "question": "You are given a dataset of customer reviews with positive and negative sentiment. Describe a scenario where you would use a sentiment analysis model to classify these reviews.",
+    "answer": "I would use a sentiment analysis model to classify customer reviews to gauge overall customer satisfaction, identify areas for product improvement, and make informed business decisions. For instance, this could be used in customer support to prioritize responses or in marketing to tailor campaigns to target audiences."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Natural Language Processing",
+    "difficulty": "Medium",
+    "question": "How would you implement part-of-speech tagging in a Python script using the NLTK library?",
+    "answer": "To implement part-of-speech tagging in Python using NLTK, you would first download the required packages, then use the `pos_tag` function from the `nltk` module, as follows: `tagged = nltk.pos_tag(tokens)`. Here, `tokens` is the list of words to be tagged."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Natural Language Processing",
+    "difficulty": "Medium",
+    "question": "What are the advantages of using word embeddings over traditional bag-of-words representations in natural language processing?",
+    "answer": "Word embeddings capture semantic relationships between words, allowing the model to understand context and word meanings more accurately. This leads to improved performance in tasks like text classification, sentiment analysis, and language translation. Traditional bag-of-words representations, on the other hand, rely solely on word frequency."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Natural Language Processing",
+    "difficulty": "Medium",
+    "question": "Describe the key differences between a language generator model and a language translation model in the context of natural language processing.",
+    "answer": "A language generator model generates new text based on a given prompt, while a language translation model translates text from one language to another. Language generator models are often used in applications like chatbots and text summarization, whereas language translation models are commonly used in software localization and international communication."
+  }
+]

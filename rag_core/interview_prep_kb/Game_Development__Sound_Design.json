@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Game Development",
+    "topic": "Sound Design",
+    "difficulty": "Easy",
+    "question": "What is the purpose of sound propagation in game development?",
+    "answer": "Sound propagation is used to simulate the way sound behaves in the real world, such as how sound waves travel and decay over distance."
+  },
+  {
+    "id": "q2",
+    "domain": "Game Development",
+    "topic": "Sound Design",
+    "difficulty": "Easy",
+    "question": "How do you create a 3D audio effect in a 2D game?",
+    "answer": "You can use techniques such as panning or reverb to create the illusion of 3D audio in a 2D game."
+  },
+  {
+    "id": "q3",
+    "domain": "Game Development",
+    "topic": "Sound Design",
+    "difficulty": "Easy",
+    "question": "What is the difference between a sound effect and a music loop?",
+    "answer": "A sound effect is a short sound used to represent a specific action or event, while a music loop is a continuous audio track used to create a musical atmosphere."
+  },
+  {
+    "id": "q4",
+    "domain": "Game Development",
+    "topic": "Sound Design",
+    "difficulty": "Easy",
+    "question": "How do you make a sound fade out over time?",
+    "answer": "You can use an envelope or a volume curve to gradually decrease the volume of the sound over time."
+  },
+  {
+    "id": "q5",
+    "domain": "Game Development",
+    "topic": "Sound Design",
+    "difficulty": "Easy",
+    "question": "What is the purpose of Dolby 5.1 in game development?",
+    "answer": "Dolby 5.1 is a surround sound format that allows for the creation of immersive audio experiences with multiple speakers, enhancing the overall gaming experience."
+  },
+  {
+    "id": "q1",
+    "domain": "Game Development",
+    "topic": "Sound Design",
+    "difficulty": "Medium",
+    "question": "Explain the difference between additive and subtractive synthesis in sound design.",
+    "answer": "Additive synthesis involves combining multiple sine waves to create a sound, while subtractive synthesis involves filtering out unwanted frequencies from a single oscillator to produce a sound."
+  },
+  {
+    "id": "q2",
+    "domain": "Game Development",
+    "topic": "Sound Design",
+    "difficulty": "Medium",
+    "question": "A game developer wants to implement a realistic sound effect for a character throwing a punch. What type of audio file format would you recommend using, and why?",
+    "answer": "I would recommend using a WAV file format for this sound effect. WAV files store high-quality, uncompressed audio data, which is necessary for a realistic sound effect. This format is also lossless, ensuring that the audio quality is not compromised."
+  },
+  {
+    "id": "q3",
+    "domain": "Game Development",
+    "topic": "Sound Design",
+    "difficulty": "Medium",
+    "question": "How would you optimize audio streaming in a 3D game to reduce lag and improve performance?",
+    "answer": "To optimize audio streaming, I would use techniques such as audio compression, audio streaming with a limited buffer size, and implementing a dynamic audio loading system. This would ensure that the game only loads and plays audio data that is necessary for the player's current location and actions."
+  },
+  {
+    "id": "q4",
+    "domain": "Game Development",
+    "topic": "Sound Design",
+    "difficulty": "Medium",
+    "question": "What is the difference between a reverb and an echo in audio processing, and how would you use each in a game?",
+    "answer": "A reverb is an effect that simulates the way sound behaves in a physical space, while an echo is a delayed repetition of the original sound. In a game, I would use reverb to create a sense of space and atmosphere, while using echo to add a sense of distance or to create a sense of depth."
+  },
+  {
+    "id": "q5",
+    "domain": "Game Development",
+    "topic": "Sound Design",
+    "difficulty": "Medium",
+    "question": "Write a short script in C# to play a sound effect in Unity using the AudioSource class.",
+    "answer": "using UnityEngine; public class SoundPlayer : MonoBehaviour { public AudioClip soundEffect; private AudioSource audioSource; void Start() { audioSource = GetComponent<AudioSource>(); audioSource.clip = soundEffect; audioSource.Play(); } }"
+  }
+]

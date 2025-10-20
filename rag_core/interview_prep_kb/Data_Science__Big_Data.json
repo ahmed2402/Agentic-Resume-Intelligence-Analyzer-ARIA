@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Easy",
+    "question": "What is the primary characteristic of Big Data?",
+    "answer": "Big Data is characterized by its volume, velocity, and variety of data."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Easy",
+    "question": "Which of the following is a key challenge in processing Big Data?",
+    "answer": "Storing and processing large amounts of data in a timely manner."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Easy",
+    "question": "What is the concept of Hadoop in Big Data?",
+    "answer": "Hadoop is an open-source framework used for distributed storage and processing of large datasets."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Easy",
+    "question": "How do you typically handle data quality issues in Big Data?",
+    "answer": "Data quality issues are typically handled through data cleansing and data validation techniques."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Easy",
+    "question": "What is the primary benefit of using NoSQL databases for Big Data?",
+    "answer": "The primary benefit of using NoSQL databases is their ability to handle large amounts of semi-structured or unstructured data."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Medium",
+    "question": "How does Apache Hadoop handle data locality in MapReduce jobs?",
+    "answer": "Apache Hadoop uses data locality to schedule tasks on nodes where data is already stored, reducing data transfer costs and improving job performance."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Medium",
+    "question": "Suppose you're working with a dataset containing millions of records. How would you optimize the schema for efficient querying?",
+    "answer": "You would consider denormalizing the schema to minimize joins and reduce query complexity, or use data warehousing techniques like star or snowflake schema to improve query performance."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Medium",
+    "question": "Explain the difference between batch processing and real-time processing in Big Data systems.",
+    "answer": "Batch processing processes large datasets in batches, while real-time processing processes data as it arrives, often used in applications like streaming analytics or IoT data processing."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Medium",
+    "question": "What are some common data processing patterns in Big Data pipelines?",
+    "answer": "Common patterns include data ingestion, data transformation, data aggregation, and data loading into a data warehouse or data lake."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Medium",
+    "question": "How would you handle missing values in a Big Data dataset containing multiple columns and millions of records?",
+    "answer": "You would use techniques like imputation, interpolation, or mean/median/mode substitution to replace missing values, while also identifying and addressing the root cause of missing data."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Hard",
+    "question": "Design a distributed file system to manage petabytes of data across a cluster of 1000 nodes, each with a 10 TB storage capacity. The system should provide high availability, scalability, and fault tolerance.",
+    "answer": "The HDFS (Hadoop Distributed File System) architecture can be employed to manage petabytes of data. The system can be divided into a NameNode, which maintains the directory hierarchy, and DataNodes, which store the actual data. Data can be replicated across multiple DataNodes to ensure high availability and fault tolerance. Additionally, a distributed file system like Apache HDFS can be configured to automatically detect and handle node failures, ensuring continuous data availability."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Hard",
+    "question": "Imagine you're working with a team to analyze a large dataset containing user interactions on a social media platform. The dataset consists of 10 GB of JSON data, with each JSON object containing user ID, interaction type, and timestamp. Write a MapReduce program to extract the top 10 most active users based on their interaction frequency.",
+    "answer": "To solve this problem, we can use the MapReduce framework. The mapper program can be designed to parse each JSON object and emit a key-value pair with the user ID as the key and 1 as the value. The reducer program can then sum up the values for each user ID to find the interaction frequency. Finally, we can sort the reducer output in descending order to find the top 10 most active users. The MapReduce program can be implemented using the Hadoop MapReduce API."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Hard",
+    "question": "What are the key differences between NoSQL databases and traditional relational databases in the context of Big Data? Describe a scenario where a NoSQL database would be the preferred choice over a traditional relational database.",
+    "answer": "NoSQL databases are designed to handle large amounts of unstructured or semi-structured data, while traditional relational databases are optimized for structured data. NoSQL databases often sacrifice ACID (Atomicity, Consistency, Isolation, Durability) guarantees for higher scalability and flexibility. In a scenario where we need to store and analyze large amounts of user-generated content, such as social media posts or comments, a NoSQL database like MongoDB or Cassandra would be a better choice due to its ability to handle large amounts of semi-structured data and scale horizontally."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Hard",
+    "question": "How would you implement data deduplication in a Big Data pipeline to remove duplicate records? Describe a scenario where data deduplication would be particularly useful.",
+    "answer": "Data deduplication can be implemented using techniques like hashing or Bloom filters to remove duplicate records. One approach is to use a hash-based deduplication algorithm, where each record is hashed and stored in a hash table. Before writing a new record to the storage system, check if the hash value already exists in the hash table. If it does, skip the write operation. A scenario where data deduplication would be particularly useful is in a data integration workflow, where data is being aggregated from multiple sources and duplicate records need to be removed to ensure data consistency and accuracy."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Big Data",
+    "difficulty": "Hard",
+    "question": "Design a workflow to handle real-time data processing and analytics on a Big Data platform. The workflow should involve data ingestion, processing, and visualization. Describe the key components and tools required to implement this workflow.",
+    "answer": "To design a workflow for real-time data processing and analytics, we can use a microservices architecture involving multiple components like data ingestion, processing, and visualization. The key components and tools required to implement this workflow include: Apache Kafka or MQTT for data ingestion, Apache Storm or Apache Flink for real-time processing, Apache Cassandra or Apache HBase for data storage, and Apache Zeppelin or Tableau for data visualization. The workflow can be implemented using technologies like Docker, Kubernetes, and Apache NiFi for orchestration and management."
+  }
+]

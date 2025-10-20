@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of ethical decision making in AI?",
+    "answer": "The primary goal of ethical decision making in AI is to ensure that AI systems make decisions that align with human values and minimize harm to individuals and society."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Easy",
+    "question": "A self-driving car is approaching an intersection where it must choose between hitting a pedestrian or swerving into a group of people. What decision would you make, and why?",
+    "answer": "I would prioritize the safety of the pedestrian as the most vulnerable individual in the scenario, as it is the morally justifiable decision to protect human life."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Easy",
+    "question": "What are some key principles of transparent decision making in AI?",
+    "answer": "Key principles of transparent decision making in AI include explainability, accountability, and traceability, which ensure that decisions are clear, understandable, and verifiable."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Easy",
+    "question": "A doctor is using AI to diagnose a patient's illness. What are some potential biases in the AI system, and how could they be addressed?",
+    "answer": "Potential biases in the AI system could include racial or socioeconomic biases in the training data or algorithms. These biases could be addressed by using diverse and representative training data, auditing the AI system for biases, and implementing fairness metrics to ensure equal outcomes for all patients."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Easy",
+    "question": "What is the role of human oversight in AI decision making?",
+    "answer": "Human oversight plays a crucial role in AI decision making by providing a human check on the AI's decisions, identifying and mitigating potential biases, and ensuring that the AI system aligns with human values and ethics."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Medium",
+    "question": "Describe a situation where an AI system's decision-making process prioritizes efficiency over fairness. What are the potential ethical implications of this approach?",
+    "answer": "In a healthcare setting, an AI system prioritizes efficiency by automatically denying patients with low-probability diagnoses from receiving further medical attention. This approach may lead to a higher number of patients receiving unnecessary treatments, but it also results in cost savings and increased efficiency. However, the potential ethical implications include exacerbating health disparities and denying vulnerable populations access to care."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Medium",
+    "question": "A developer wants to train an AI model to predict student performance based on demographic data. What are some potential biases in the model, and how could they be mitigated?",
+    "answer": "Potential biases in the model include correlation with socioeconomic status, leading to unfair treatment of students from low-income backgrounds. To mitigate these biases, the developer could implement data preprocessing techniques, such as normalization and feature scaling, and use techniques like regularization to prevent overfitting. Additionally, the model could be evaluated on a diverse dataset to identify and address any biases."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Medium",
+    "question": "A self-driving car is faced with a situation where it must choose between hitting a pedestrian or swerving into a group of bystanders. What are the ethical considerations in this scenario?",
+    "answer": "The ethical considerations in this scenario include the moral obligation to protect human life and prevent harm. However, the car's programming and design must also be taken into account. A well-designed system would prioritize the safety of all individuals involved, but it's unclear whether the bystanders' safety is more or less important than the pedestrian's in this specific situation. The decision-making process should be transparent and accountable to ensure that the car's actions align with human values."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Medium",
+    "question": "A company is developing an AI-powered chatbot to provide customer support. What are some potential ethical considerations in this scenario?",
+    "answer": "Potential ethical considerations include the chatbot's ability to process and respond to sensitive customer data, such as financial information or personal health concerns. The company must ensure that the chatbot's design and implementation prioritize customer confidentiality and data security. Additionally, the chatbot's responses should be transparent and accountable, avoiding manipulative or deceptive tactics that might exploit customers."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Medium",
+    "question": "An AI system is designed to make decisions based on a set of predefined rules and constraints. How can these rules and constraints be updated to ensure that the system's decisions remain ethical and aligned with human values?",
+    "answer": "The rules and constraints can be updated through a continuous evaluation and refinement process, involving input from various stakeholders, including ethicists, experts, and end-users. This process should include regular audits and assessments to identify any biases or unintended consequences. The AI system's design and implementation should also be transparent and explainable, allowing for easier identification and correction of any ethical issues."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Hard",
+    "question": "In a scenario where an AI system is tasked with allocating limited medical resources, but the system determines that saving one patient would result in the death of another patient's loved one, what ethical principle should guide the AI's decision-making process?",
+    "answer": "The AI system should be guided by the principle of minimizing harm and maximizing the overall well-being, rather than solely prioritizing the individual patient's life. This could involve exploring alternative scenarios or seeking input from medical experts to ensure the most ethical outcome."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Hard",
+    "question": "Consider a situation where an AI-powered hiring system is biased towards hiring candidates with a certain demographic profile. How would you address this issue, and what ethical considerations would you take into account?",
+    "answer": "To address the issue, I would implement techniques such as data preprocessing and debiasing, as well as incorporating diverse training data to reduce the bias. Ethical considerations would include ensuring fairness, transparency, and accountability in the AI system's decision-making process, and providing clear explanations for the hiring decisions made by the system."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Hard",
+    "question": "Design a framework for evaluating the ethical implications of an AI system's decisions. Consider the potential consequences of the AI's actions and the values that the system is programmed to uphold.",
+    "answer": "A suitable framework would involve the following steps: (1) Identify the AI system's goals and values; (2) Analyze the potential consequences of the AI's actions; (3) Evaluate the alignment of the AI's decisions with the identified goals and values; and (4) Continuously monitor and update the AI system to ensure it remains aligned with the desired ethical standards."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Hard",
+    "question": "An AI system is designed to make autonomous decisions in a high-stakes environment, such as a self-driving car. However, the AI system's algorithm is not transparent, making it difficult to understand the decision-making process. What implications does this lack of transparency have on the AI system's accountability and trustworthiness?",
+    "answer": "The lack of transparency in the AI system's algorithm raises significant concerns about accountability and trustworthiness. As the decision-making process is opaque, it is challenging to identify and correct potential errors or biases. Furthermore, the inability to explain the AI's decisions can erode trust in the system, especially in high-stakes environments where human lives are at risk."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Ethical Decision Making",
+    "difficulty": "Hard",
+    "question": "Consider a situation where an AI system is asked to assist in identifying and prioritizing patients for organ transplantation. However, the AI system's recommendations are based on a scoring system that prioritizes patients who are more likely to survive and contribute to society in the long term. What are the potential ethical implications of this approach?",
+    "answer": "The potential ethical implications of this approach include the possibility of discriminating against patients who are less likely to survive or contribute to society, such as those with disabilities or terminal illnesses. This could be seen as a form of utilitarianism, where the AI system is prioritizing the greater good over individual rights and dignity. A more nuanced approach would consider multiple factors and prioritize fairness, equity, and compassion in the organ transplantation process."
+  }
+]

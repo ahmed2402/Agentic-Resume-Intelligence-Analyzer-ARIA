@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Easy",
+    "question": "What is a key element in a successful go-to-market strategy for a new product?",
+    "answer": "A clear and well-defined target market is a key element in a successful go-to-market strategy for a new product."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Easy",
+    "question": "A product launch is scheduled for three months from now. What should be the primary focus during the next three months?",
+    "answer": "The primary focus during the next three months should be on building awareness and buzz around the product, as well as preparing the sales and marketing teams for the launch."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a Minimum Viable Product (MVP) in a go-to-market strategy?",
+    "answer": "The purpose of an MVP in a go-to-market strategy is to test the market demand and validate the product's features and pricing with a minimal investment of resources."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Easy",
+    "question": "What role does pricing play in a go-to-market strategy?",
+    "answer": "Pricing plays a crucial role in a go-to-market strategy as it can either attract or deter customers, and ultimately impact revenue and profit margins."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Easy",
+    "question": "What is the importance of understanding the competition in a go-to-market strategy?",
+    "answer": "Understanding the competition in a go-to-market strategy helps identify market gaps, differentiate the product, and develop effective marketing and sales strategies."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Medium",
+    "question": "What's the primary goal of a go-to-market (GTM) strategy, and how does it impact product success?",
+    "answer": "The primary goal of a GTM strategy is to maximize the adoption and revenue of a product by aligning it with customer needs, market conditions, and business objectives. A well-crafted GTM strategy can significantly impact product success by ensuring timely product launch, effective marketing, and efficient sales execution."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Medium",
+    "question": "Suppose you're launching a new feature, and you need to decide between a direct-to-consumer (D2C) approach and a business-to-business (B2B) approach. What factors would you consider when making this decision?",
+    "answer": "When deciding between D2C and B2B approaches, I would consider factors such as target audience, product complexity, pricing strategy, sales channel preferences, and customer acquisition costs. For instance, if the product requires significant customization or integration, a B2B approach might be more suitable. However, if the product is simple and appealing to individual consumers, a D2C approach could be more effective."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Medium",
+    "question": "You have two product variants, A and B, with different pricing tiers. Product A appeals to a wider audience but has lower profit margins, while Product B has higher margins but appeals to a niche audience. How would you develop a pricing strategy that balances revenue and market share?",
+    "answer": "To balance revenue and market share, I would consider a tiered pricing strategy, offering Product A at a lower price point to capture a larger market share and generate volume revenue. Meanwhile, I would position Product B as a premium offering, charging a higher price to maximize profit margins. This approach would allow us to cater to both a broad audience and a niche market, while optimizing revenue and profitability."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Medium",
+    "question": "What's the role of market research in a go-to-market strategy, and how would you use market research findings to inform product positioning and marketing messaging?",
+    "answer": "Market research plays a crucial role in a go-to-market strategy by providing valuable insights into customer needs, preferences, and pain points. I would use market research findings to inform product positioning by identifying the most compelling value proposition and unique selling points. Additionally, I would tailor marketing messaging to resonate with the target audience, highlighting the product's benefits and features that align with customer needs and preferences."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Medium",
+    "question": "Suppose you're launching a new product in a highly competitive market. How would you develop a go-to-market strategy that differentiates your product from the competition and captures market share?",
+    "answer": "To differentiate our product and capture market share, I would focus on identifying a unique pain point or opportunity in the market that our product addresses more effectively than the competition. We would then develop a go-to-market strategy that leverages this unique value proposition, using targeted marketing campaigns, thought leadership initiatives, and strategic partnerships to reach the target audience and establish our product as a leader in the market."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Hard",
+    "question": "You're launching a new SaaS product in a highly competitive market. How would you prioritize your go-to-market activities to maximize ROI while minimizing the risk of cannibalizing existing customers?",
+    "answer": "To balance ROI and risk, I'd focus on a phased approach, starting with a pilot launch to a small subset of high-value customers, followed by targeted marketing campaigns, and finally, a broader launch after analyzing the results and iterating on the strategy."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Hard",
+    "question": "Your product has a unique selling proposition but faces regulatory hurdles. How would you adapt your go-to-market strategy to stay on track while navigating regulatory uncertainty?",
+    "answer": "I'd focus on building relationships with regulatory bodies, engaging in early-stage dialogue, and developing a flexible go-to-market strategy that can adapt to changing regulations, potentially leveraging a phased launch or a more localized approach initially."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Hard",
+    "question": "What are the key metrics you'd track to measure the effectiveness of your go-to-market strategy, and how would you use these metrics to make data-driven decisions?",
+    "answer": "I'd track metrics such as customer acquisition cost, customer lifetime value, retention rates, and net promoter score. I'd use these metrics to identify areas of improvement, optimize the strategy, and make data-driven decisions to drive growth."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Hard",
+    "question": "Your company has a strong brand presence but struggles to convert interest into sales. How would you revamp your go-to-market strategy to address this conversion gap?",
+    "answer": "I'd focus on enhancing the user experience, streamlining the sales funnel, and leveraging data-driven insights to create targeted marketing campaigns that speak directly to the needs and pain points of our target audience."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Go-to-Market Strategy",
+    "difficulty": "Hard",
+    "question": "You're launching a new product in a market where competitors have established strong channel partnerships. How would you develop a go-to-market strategy that effectively leverages indirect sales channels?",
+    "answer": "I'd focus on building relationships with key channel partners, providing them with the necessary training, support, and incentives to successfully promote and sell our product, and establishing a robust partner management program to ensure long-term success."
+  }
+]

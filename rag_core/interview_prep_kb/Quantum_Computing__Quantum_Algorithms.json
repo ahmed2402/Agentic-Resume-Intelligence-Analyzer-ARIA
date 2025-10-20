@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of the Quantum Approximate Optimization Algorithm (QAOA)?",
+    "answer": "QAOA is a hybrid quantum-classical algorithm designed to solve optimization problems more efficiently than classical algorithms, by leveraging the power of quantum parallelism."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Easy",
+    "question": "Consider a Quantum Circuit that applies the Hadamard gate to a qubit. What is the resulting state of the qubit?",
+    "answer": "The resulting state of the qubit is a superposition of |0 and |1, represented as (|0 + |1)/√2."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Easy",
+    "question": "What is the advantage of using Shor's algorithm over classical algorithms for factorization?",
+    "answer": "Shor's algorithm has an exponential speedup over classical algorithms for factorization, making it much faster for large numbers."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Easy",
+    "question": "Describe the basic concept behind Grover's algorithm.",
+    "answer": "Grover's algorithm is a quantum algorithm that uses a phase shift operation to amplify the probability of finding a marked item in an unsorted database, resulting in a quadratic speedup over classical algorithms."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the Quantum Fourier Transform (QFT) used in Shor's algorithm?",
+    "answer": "The QFT is used to extract the period of a periodic function, which is essential for factorizing large numbers in Shor's algorithm."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Medium",
+    "question": "What is the primary advantage of using the quantum Fourier transform (QFT) in quantum algorithms?",
+    "answer": "The QFT has a faster computational time complexity than the classical discrete Fourier transform, making it suitable for certain problems such as Shor's algorithm for factoring large numbers."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Medium",
+    "question": "Describe a scenario where the Grover's algorithm would be more efficient than a classical search algorithm.",
+    "answer": "Grover's algorithm would be more efficient when searching an unsorted database of N entries, reducing the number of queries from N/2 to O(sqrt(N)) compared to a classical linear search."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Medium",
+    "question": "How does the HHL algorithm (Harrow-Hassidim-Lloyd) differ from other quantum linear algebra algorithms?",
+    "answer": "The HHL algorithm solves systems of linear equations efficiently by using a quantum linear solver, providing an exponential speedup over classical algorithms for certain types of matrices, such as sparse or low-rank matrices."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the amplitude amplification step in the amplitude estimation algorithm?",
+    "answer": "The amplitude amplification step is used to amplify the amplitude of the marked outcome in the output state of the quantum circuit, allowing for a more accurate estimation of the desired probability amplitude."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Medium",
+    "question": "Explain the role of quantum parallelism in the Deutsch-Jozsa algorithm.",
+    "answer": "Quantum parallelism allows the Deutsch-Jozsa algorithm to evaluate a function f(x) simultaneously for all possible inputs x, enabling the algorithm to determine whether the function is constant or balanced in a single query to the function, rather than in O(2^n) queries as in a classical algorithm."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Hard",
+    "question": "Explain the concept of quantum parallelism and its significance in Shor's algorithm.",
+    "answer": "Quantum parallelism is the ability of a quantum computer to perform multiple computations simultaneously, making it exponentially faster than a classical computer for certain problems. In Shor's algorithm, quantum parallelism enables the simultaneous evaluation of multiple possible values of the period of a function, significantly reducing the number of steps required to factor large numbers."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Hard",
+    "question": "Design a quantum circuit for the Grover's algorithm to search for an element in an unsorted database of 8 elements. Assume a uniform superposition of all elements.",
+    "answer": "The quantum circuit for Grover's algorithm consists of the following gates: Hadamard gates to create a uniform superposition, a conditional phase gate for the marked element, and two iterations of the Grover diffusion operator. The gates are applied in the following order: H, H, CNOT, H, CNOT, H, where the marked element is encoded in the target qubit of the CNOT gate."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Hard",
+    "question": "Derive the quantum circuit for the HHL algorithm to solve a system of linear equations A x = b, where A is a 4x4 matrix and b is a 4-dimensional vector.",
+    "answer": "The quantum circuit for the HHL algorithm consists of the following gates: Hadamard gates to create a uniform superposition of the input qubits, a controlled-unitary transformation to apply the matrix A, and a series of rotations and measurements to obtain the solution x. The circuit requires 4 qubits and 4 ancilla qubits."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Hard",
+    "question": "Explain the difference between the phase estimation and the quantum approximation algorithm, and provide a scenario where one would be preferred over the other.",
+    "answer": "Phase estimation and the quantum approximation algorithm are both quantum algorithms for solving eigenvalue problems. The main difference is that phase estimation is a more general algorithm that can be used to estimate any eigenvalue, whereas the quantum approximation algorithm is specifically designed to find the smallest eigenvalue. Phase estimation is preferred when the eigenvalue of interest is not necessarily the smallest, whereas the quantum approximation algorithm is preferred when the smallest eigenvalue is of interest, such as in the context of quantum chemistry."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Algorithms",
+    "difficulty": "Hard",
+    "question": "Design a quantum algorithm to solve the following problem: Given a graph G = (V, E), find the shortest path between two vertices s and t. Assume that the graph is represented as an adjacency matrix A.",
+    "answer": "The quantum algorithm to solve this problem is based on the quantum circuit model and uses a combination of Hadamard gates, controlled-unitary transformations, and measurements. The algorithm consists of the following steps: (1) Create a uniform superposition of all vertices in V; (2) Apply a controlled-unitary transformation to the adjacency matrix A to create a superposition of all paths of length 1; (3) Apply a controlled-unitary transformation to the adjacency matrix A to create a superposition of all paths of length 2; (4) Repeat step 3 until the desired path length is achieved; (5) Measure the output qubits to obtain the shortest path."
+  }
+]

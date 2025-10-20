@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of supervised learning?",
+    "answer": "The primary goal of supervised learning is to learn a mapping between input data and their corresponding labels, allowing the model to make predictions on new, unseen data."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Easy",
+    "question": "What is the difference between a training set and a testing set in supervised learning?",
+    "answer": "The training set is used to train the model, while the testing set is used to evaluate the model's performance on unseen data, which helps to prevent overfitting."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Easy",
+    "question": "Consider a binary classification problem. What is the cost function used to optimize during training?",
+    "answer": "For a binary classification problem, a common cost function used is the logistic loss function (also known as cross-entropy loss)."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Easy",
+    "question": "What is overfitting, and how can it be prevented in supervised learning?",
+    "answer": "Overfitting occurs when a model is too complex and fits the training data too closely, resulting in poor performance on new data. It can be prevented by techniques such as regularization, early stopping, and cross-validation."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a feature selection process in supervised learning?",
+    "answer": "The purpose of feature selection is to select a subset of the most relevant features from the available data, reducing dimensionality and improving model performance and interpretability."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Medium",
+    "question": "What is the difference between a model's accuracy and its precision in the context of binary classification?",
+    "answer": "Accuracy measures the overall proportion of correctly classified instances, while precision measures the proportion of true positives among all positive predictions."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Medium",
+    "question": "Suppose you are given a dataset of student grades and are asked to predict the grades of new students based on their demographic information. If the dataset contains a strong correlation between the students' ages and their grades, how can you handle this in a supervised learning approach?",
+    "answer": "To handle this correlation, you can use regularization techniques such as L1 or L2 regularization to reduce the impact of the age feature on the model's predictions."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Medium",
+    "question": "What is the purpose of feature scaling in supervised learning, and how does it affect the performance of a model?",
+    "answer": "Feature scaling is used to normalize the range of input features to a common scale, which helps to prevent features with large ranges from dominating the model's predictions. This can improve the model's performance by allowing it to learn more meaningful relationships between features."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Medium",
+    "question": "How do you evaluate the performance of a supervised learning model when the target variable is categorical and imbalanced?",
+    "answer": "To evaluate the performance of a model with a categorical and imbalanced target variable, you can use metrics such as precision, recall, and F1-score, which are more suitable for categorical variables. Additionally, you can use techniques such as class weighting or oversampling the minority class to handle class imbalance."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Medium",
+    "question": "Suppose you are given a dataset of customer transactions and are asked to predict the likelihood of a customer making a purchase based on their purchase history. What is a common approach to handling missing values in this scenario?",
+    "answer": "A common approach to handling missing values in this scenario is to use imputation techniques, such as mean or median imputation, to replace missing values with the most likely value. Alternatively, you can use more advanced techniques such as multiple imputation or machine learning-based imputation methods."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Hard",
+    "question": "Describe the differences between Overfitting and Underfitting in the context of supervised learning, and provide a mathematical explanation for each.",
+    "answer": "Overfitting occurs when a model is too complex and performs well on the training data but poorly on unseen data. This can be mathematically represented by the bias-variance tradeoff, where a model with high bias (underfitting) and high variance (overfitting) has a high expected error. Underfitting, on the other hand, occurs when a model is too simple and fails to capture the underlying patterns in the data, resulting in high expected error due to high bias."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Hard",
+    "question": "Design an experiment to evaluate the robustness of a supervised learning model to adversarial attacks, and discuss the key metrics to measure its robustness.",
+    "answer": "To evaluate the robustness of a model to adversarial attacks, we can use the following experiment: 1) Generate a set of adversarial examples using techniques such as FGSM or PGD. 2) Evaluate the model's accuracy on these adversarial examples. 3) Measure the model's robustness using metrics such as robust accuracy, robust loss, and success rate of adversarial attacks."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Hard",
+    "question": "Compare and contrast the use of L1 and L2 regularization in supervised learning, and discuss their implications on model interpretation and feature selection.",
+    "answer": "L1 regularization (Lasso) sets some model coefficients to zero, effectively performing feature selection, while L2 regularization (Ridge) shrinks all coefficients but does not set them to zero. L1 regularization can lead to sparse models that are easier to interpret, but can also result in the loss of important features. L2 regularization can lead to more complex models that are harder to interpret, but can also prevent overfitting by shrinking the magnitude of coefficients."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Hard",
+    "question": "Describe the difference between ensemble methods such as Bagging and Boosting, and provide a mathematical explanation for their behavior.",
+    "answer": "Bagging (Bootstrap Aggregating) involves combining multiple models trained on different subsets of the data to reduce variance, while Boosting involves training multiple models sequentially, with each model attempting to correct the errors of the previous model. Mathematically, Bagging can be represented as a weighted average of model predictions, where the weights are determined by the bootstrap proportion. Boosting can be represented as a weighted sum of model predictions, where the weights are determined by the boosting algorithm (e.g. AdaBoost)."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Hard",
+    "question": "Implement a supervised learning algorithm for a binary classification problem using a custom loss function, and discuss the challenges and opportunities of using custom loss functions.",
+    "answer": "Here is an example implementation of a binary classification algorithm using a custom loss function: `def custom_loss(y_true, y_pred): return (y_true * np.log(y_pred) + (1-y_true) * np.log(1-y_pred))`. This custom loss function is a variant of the cross-entropy loss function. When using custom loss functions, we need to ensure that they are differentiable and computationally efficient. Additionally, we need to be cautious about overfitting, as custom loss functions can lead to overfitting if not properly regularized."
+  }
+]

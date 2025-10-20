@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Easy",
+    "question": "What is the main purpose of a Data Protection Impact Assessment (DPIA)?",
+    "answer": "A Data Protection Impact Assessment (DPIA) is a process used to identify and mitigate the risks associated with the processing of personal data. It helps organizations demonstrate compliance with data protection regulations."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Easy",
+    "question": "What is the difference between GDPR (General Data Protection Regulation) and HIPAA (Health Insurance Portability and Accountability Act)?",
+    "answer": "GDPR is a European Union regulation that applies to any organization processing personal data of EU residents, while HIPAA is a US federal law that applies to the healthcare industry and covers the protection of sensitive patient health information."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Easy",
+    "question": "Can you describe the concept of 'Data Localization' in the context of data protection regulations?",
+    "answer": "Data localization refers to the requirement that organizations storing or processing personal data must do so within a specific geographic region or country, often to ensure local data protection laws are applied."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Easy",
+    "question": "What is the role of a Data Protection Officer (DPO) in an organization?",
+    "answer": "A Data Protection Officer (DPO) is a designated individual responsible for ensuring an organization's compliance with data protection regulations, overseeing data protection policies, and handling data subject rights and complaints."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Easy",
+    "question": "How does ISO 27001 differ from other information security standards?",
+    "answer": "ISO 27001 is an internationally recognized standard for information security management systems (ISMS), providing a framework for organizations to implement and maintain an ISMS to manage and protect information assets. It differs from other standards, such as PCI-DSS, by providing a broader scope of security controls for all types of organizations."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Medium",
+    "question": "What is the main difference between HIPAA and PCI-DSS compliance?",
+    "answer": "HIPAA is focused on protecting sensitive patient health information, whereas PCI-DSS is primarily concerned with securing credit card data and reducing the risk of cardholder data breaches."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Medium",
+    "question": "A company has implemented a new cloud-based collaboration tool. How can they ensure this tool meets GDPR compliance requirements?",
+    "answer": "The company must conduct a Data Protection Impact Assessment (DPIA) to identify and mitigate potential data breaches. They must also ensure the cloud provider has GDPR certification and establish clear data processing agreements."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Medium",
+    "question": "What is the purpose of an Information Security Management System (ISMS) in compliance?",
+    "answer": "An ISMS is a systematic approach to managing sensitive company information so that it remains secure. It helps organizations identify, assess, and mitigate risks to ensure ongoing compliance with relevant regulations and standards."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Medium",
+    "question": "A company has been notified of a data breach that may have compromised sensitive customer information. What steps should they take to ensure compliance with breach notification regulations?",
+    "answer": "The company should promptly notify affected customers and comply with relevant breach notification regulations, such as the GDPR or HIPAA. They should also conduct a thorough investigation to determine the root cause of the breach and implement measures to prevent future occurrences."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Medium",
+    "question": "What is a common risk assessment method used in compliance frameworks, such as NIST or ISO 27001?",
+    "answer": "The NIST Cybersecurity Framework utilizes a risk management approach that involves identifying, assessing, and mitigating risks to sensitive information systems and data. It involves three main components: Identify, Protect, and Detect and Respond."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Hard",
+    "question": "Explain the difference between HIPAA and PCI-DSS in terms of data classification and security requirements.",
+    "answer": "HIPAA focuses on protecting sensitive patient health information (PHI), whereas PCI-DSS is primarily concerned with securing payment card industry data. HIPAA uses a more general risk-based approach, whereas PCI-DSS has stricter, prescriptive security requirements for data storage, transmission, and processing."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Hard",
+    "question": "A company has a data breach involving sensitive customer data. They are subject to GDPR, which requires them to notify affected parties within 72 hours. However, the company's incident response plan specifies a 7-day notification period. What should the company do?",
+    "answer": "The company should notify affected parties within the 72-hour GDPR timeframe, but they should also document their compliance with their own incident response plan to avoid potential internal policy-related issues."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Hard",
+    "question": "Suppose you're auditing a company's IT system for SOX compliance. What steps would you take to ensure accurate separation of duties for user access control?",
+    "answer": "To guarantee SOX compliance, you would need to ensure that user accounts have separate roles for authorization, accounting, and transaction processing. Implementing least privilege access and using role-based access control (RBAC) can also help enforce proper separation of duties."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Hard",
+    "question": "Explain how to assess the effectiveness of a company's compliance controls under NIST 800-53 Rev 5 using the Risk Management Framework (RMF).",
+    "answer": "To assess compliance controls under NIST 800-53 Rev 5, you would use the RMF by first identifying potential risks, then categorizing them based on control sets, and finally evaluating the effectiveness of implemented controls. This process includes monitoring and analyzing security controls to ensure they accurately mitigate identified risks."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Compliance",
+    "difficulty": "Hard",
+    "question": "A company uses AWS services and is subject to the CCPA. What AWS security features would you recommend to ensure compliance with CCPA's data minimization and data protection principles?",
+    "answer": "To ensure CCPA compliance using AWS services, you would recommend features such as AWS IAM for least privilege access, AWS VPC for network isolation, AWS CloudWatch for logging and monitoring, and AWS KMS for data encryption. Implementing these features helps minimize data exposure and protects sensitive customer information."
+  }
+]

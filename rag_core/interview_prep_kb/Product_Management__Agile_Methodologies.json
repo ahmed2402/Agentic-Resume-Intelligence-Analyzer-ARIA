@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Easy",
+    "question": "What is the main goal of a Sprint Review in Agile?",
+    "answer": "The Sprint Review is held to demonstrate the working product to stakeholders and gather feedback to improve the product."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Easy",
+    "question": "Which Agile framework is known for breaking down work into vertical slices of functionality?",
+    "answer": "Kanban"
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Easy",
+    "question": "What is a User Story in Agile?",
+    "answer": "A User Story is a natural language description of a software feature or requirement from the end-user's perspective."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Easy",
+    "question": "What is the typical duration of a Sprint in Agile?",
+    "answer": "A Sprint typically lasts 2-4 weeks, but it can vary depending on the team and project requirements."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a Product Backlog in Agile?",
+    "answer": "The Product Backlog is a prioritized list of features, requirements, and user stories that guide the development team during a Sprint."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Medium",
+    "question": "Can you explain the difference between a Sprint and an Iteration in Scrum?",
+    "answer": "An Iteration is a general term for a short period of time where specific goals and outcomes are defined. A Sprint is a special type of Iteration with a fixed duration of one week to four weeks, and a specific set of rules and best practices."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Medium",
+    "question": "How do you handle conflicting priorities and competing requirements during a Sprint planning meeting?",
+    "answer": "During Sprint planning, conflicting priorities and competing requirements are addressed by prioritizing the highest-value items, breaking down large features into smaller tasks, and negotiating with stakeholders to ensure the team can deliver the most valuable work within the available capacity."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Medium",
+    "question": "What is a Definition of Done (DoD) in Scrum, and how does it impact the development process?",
+    "answer": "A Definition of Done (DoD) is a clear understanding of the work that a team has committed to delivering at the end of a Sprint. It ensures that all stakeholders, including developers and product owners, have a shared understanding of what constitutes 'done' and helps prevent scope creep, rework, and delays."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Medium",
+    "question": "Can you describe the role of a Product Owner in a Scrum team, and how they collaborate with stakeholders?",
+    "answer": "A Product Owner is responsible for maximizing the value of the product by ensuring that the product backlog is up-to-date, prioritized, and ready for development. They collaborate with stakeholders to gather and prioritize requirements, ensure that the product meets customer needs, and make informed decisions about product development."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Medium",
+    "question": "How do you measure and track progress in Agile, and what metrics are commonly used?",
+    "answer": "Agile progress is typically measured and tracked using metrics such as Burn-down charts, Velocity, and Sprint burndown charts. These metrics provide visibility into the team's progress, help identify potential issues, and enable informed decisions about resource allocation and priority setting."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Hard",
+    "question": "Describe a situation where a Product Owner might decide to suspend iteration planning in Scrum, and explain the implications of this decision.",
+    "answer": "A Product Owner might suspend iteration planning in Scrum when significant changes in the market or customer requirements necessitate a complete re-prioritization of the product backlog. This decision would allow the team to adapt to the changes, but would also impact their ability to deliver working software at the end of the iteration. As a result, the Product Owner would need to work closely with the Development Team and stakeholders to ensure that the new priorities are integrated into the product backlog and that the team's capacity is reassigned accordingly."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Hard",
+    "question": "Imagine you're implementing Kanban in a large organization. How would you design the Kanban board to accommodate multiple product lines with varying workflows and priorities?",
+    "answer": "To design a Kanban board that accommodates multiple product lines with varying workflows and priorities, I would start by identifying the distinct workflows and priorities for each product line. Then, I would create separate 'lanes' or columns on the board for each product line, allowing teams to visualize and manage their specific workflows. Additionally, I would consider using swimlanes or columns to differentiate between different stages of work, such as development, testing, and deployment. This would enable teams to track their progress and make data-driven decisions about process improvements."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Hard",
+    "question": "Explain how to use the 'Definition of Done' (DoD) in a Lean-Kanban environment to ensure that work items are complete and meet the necessary quality standards.",
+    "answer": "In a Lean-Kanban environment, the Definition of Done (DoD) is a critical component for ensuring that work items are complete and meet the necessary quality standards. To use the DoD, I would start by defining the specific criteria that must be met for a work item to be considered complete, such as code reviews, testing, and documentation. Then, I would make sure that all team members understand and agree to the DoD, and that it is clearly communicated throughout the organization. Finally, I would use metrics such as lead time, cycle time, and throughput to regularly review and refine the DoD, ensuring that it remains relevant and effective."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Hard",
+    "question": "A Scrum team is struggling with the concept of 'Done' in their sprint backlog. How would you facilitate a discussion to help the team understand and agree on the Definition of Done?",
+    "answer": "To facilitate a discussion to help the Scrum team understand and agree on the Definition of Done, I would start by asking open-ended questions to stimulate discussion, such as 'What does 'Done' mean to you?' or 'What are the key criteria that a work item must meet to be considered complete?' I would also encourage team members to share their understanding of 'Done' and listen actively to their perspectives. Then, I would help the team to distill the key points and create a shared understanding of what 'Done' means in their context. Finally, I would work with the team to create a clear and concise Definition of Done that is easily communicable and actionable."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Agile Methodologies",
+    "difficulty": "Hard",
+    "question": "Consider a scenario where a Scrum team is working on a complex feature with multiple dependencies. How would you help the team to break down the feature into smaller, manageable pieces that can be effectively prioritized and delivered?",
+    "answer": "To help the Scrum team break down the complex feature into smaller, manageable pieces, I would recommend using techniques such as decomposition, feature mapping, or user story mapping. These techniques would enable the team to identify the key components of the feature, identify dependencies, and prioritize the work based on business value and risk. Then, I would work with the team to create a clear and concise product backlog, including user stories or features that are small enough to be estimated and delivered within a sprint. This would allow the team to focus on delivering working software in small, iterative increments, while also ensuring that the overall goal of delivering the complex feature is still achievable."
+  }
+]

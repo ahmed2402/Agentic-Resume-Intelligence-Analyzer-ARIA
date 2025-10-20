@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of a data warehouse?",
+    "answer": "A data warehouse is a centralized repository that stores integrated data from various sources to support business intelligence and reporting."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Easy",
+    "question": "A company is planning to implement a data warehouse. What are the key benefits they can expect?",
+    "answer": "The key benefits include improved data integration, enhanced business intelligence, faster reporting, and better decision-making."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Easy",
+    "question": "What is the main difference between a data mart and a data warehouse?",
+    "answer": "A data mart is a smaller, more focused repository that serves a specific business area or department, whereas a data warehouse is a larger, enterprise-wide repository that integrates data from various sources."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Easy",
+    "question": "What is ETL (Extract, Transform, Load) and its importance in data warehousing?",
+    "answer": "ETL is the process of extracting data from various sources, transforming it into a standardized format, and loading it into the data warehouse. It's crucial for ensuring data consistency, accuracy, and reliability."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Easy",
+    "question": "What is a star schema and its advantages in data warehousing?",
+    "answer": "A star schema is a data model that organizes data into a central fact table surrounded by dimension tables. Its advantages include improved query performance, reduced data redundancy, and easier data analysis."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Medium",
+    "question": "What is the primary function of a Data Warehouse?",
+    "answer": "A Data Warehouse is a centralized repository that stores data from various sources in a single location, making it easily accessible for reporting, analysis, and business intelligence."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Medium",
+    "question": "Consider a scenario where you need to integrate data from multiple sources into a Data Warehouse. Which of the following ETL tools would you use for this task?",
+    "answer": "I would recommend using a tool like Informatica PowerCenter, Talend, or Apache NiFi for ETL task automation, data transformation, and integration."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Medium",
+    "question": "What is the difference between a Star Schema and a Snowflake Schema?",
+    "answer": "A Star Schema is a type of dimensional modeling where fact tables are surrounded by a single set of dimension tables. A Snowflake Schema is a variation of Star Schema where each dimension table is further divided into multiple levels, each containing more granular data."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Medium",
+    "question": "Consider a scenario where you need to implement data aggregation on a large dataset. Which data warehousing concept would you use to optimize query performance?",
+    "answer": "I would use data partitioning to divide the dataset into smaller, more manageable chunks, and then apply data aggregation on each partition to optimize query performance."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a Data Vault in a Data Warehousing architecture?",
+    "answer": "A Data Vault is a type of data model that provides a flexible and scalable way to store and manage data from various sources, making it easier to track data lineage, version control, and data quality."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Hard",
+    "question": "Design a star schema for an e-commerce database, assuming the following dimensions: customer, order, product, and time. Describe the fact table and its relationships with the dimension tables.",
+    "answer": "The star schema would consist of a fact table 'order_fact' with the following columns: order_id, customer_id, product_id, order_date, quantity, and revenue. The dimension tables would be: 'customer_dim' with columns customer_id, name, email; 'order_dim' with columns order_id, order_date, status; 'product_dim' with columns product_id, name, category; and 'time_dim' with columns date, month, quarter, year."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Hard",
+    "question": "You are given a data warehouse with a denormalized fact table 'sales_fact'. How would you denormalize this table to improve query performance for a report that aggregates sales by region and product category?",
+    "answer": "To denormalize the 'sales_fact' table, you would create a new table 'region_product_category_fact' with the following columns: region_id, product_category_id, sales_amount. This table would be used for the report instead of the denormalized 'sales_fact' table, improving query performance."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Hard",
+    "question": "Write a SQL query to implement a slowly changing dimension (SCD) type 2 for the 'customer_dim' table, updating the 'email' column when a customer changes their email address.",
+    "answer": "You would need to create a history table 'customer_dim_history' with columns customer_id, email, effective_date, and end_date. The update query would be: INSERT INTO customer_dim_history (customer_id, email, effective_date) SELECT customer_id, email, CURRENT_DATE FROM customer_dim WHERE email IS NOT NULL AND email <> (SELECT email FROM customer_dim WHERE customer_id = customer_dim.customer_id AND effective_date = (SELECT MAX(effective_date) FROM customer_dim WHERE customer_id = customer_dim.customer_id));"
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Hard",
+    "question": "Assume you have a data warehouse with a fact table 'orders_fact' and a dimension table 'customer_dim'. Write a SQL query to calculate the average order value for each customer and rank them based on this value.",
+    "answer": "The SQL query would be: SELECT customer_id, AVG(order_total) AS avg_order_value, DENSE_RANK() OVER (ORDER BY AVG(order_total) DESC) AS rank FROM (SELECT customer_id, SUM(order_amount) AS order_total FROM orders_fact GROUP BY customer_id) AS subquery GROUP BY customer_id ORDER BY avg_order_value DESC;"
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Data Warehousing",
+    "difficulty": "Hard",
+    "question": "Design a data mart for an e-commerce company with the following requirements: provide a detailed view of sales by product category, display top-selling products, and show sales trends by quarter. What would be the best data mart schema for this scenario?",
+    "answer": "The data mart would consist of three tables: 'product_category_fact' with columns product_category_id, sales_amount, and quarter_id; 'top_selling_products_fact' with columns product_id, sales_amount, and quarter_id; and 'sales_trends_fact' with columns quarter_id, sales_amount, and product_category_id. The 'product_category_fact' table would be used for detailed sales by product category, the 'top_selling_products_fact' table for top-selling products, and the 'sales_trends_fact' table for sales trends by quarter."
+  }
+]

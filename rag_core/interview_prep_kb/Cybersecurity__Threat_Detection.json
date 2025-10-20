@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of threat detection in cybersecurity?",
+    "answer": "The primary goal of threat detection in cybersecurity is to identify and alert on potential security threats, allowing for prompt remediation and mitigation of cyber attacks."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Easy",
+    "question": "A user in your organization has reported receiving a suspicious email. What should you do next?",
+    "answer": "You should immediately report the incident to your security team and follow established incident response procedures to contain and investigate the potential threat."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Easy",
+    "question": "What is the difference between signature-based and behavior-based threat detection?",
+    "answer": "Signature-based threat detection looks for known patterns or signatures of malware, whereas behavior-based threat detection monitors the activity and behavior of systems and applications to identify potential threats, regardless of whether they have a known signature."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Easy",
+    "question": "What are some common indicators of a potential cyber attack?",
+    "answer": "Common indicators of a potential cyber attack include unusual network traffic patterns, suspicious login attempts, and unexplained changes to system configuration or data."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Easy",
+    "question": "Why is it important to keep threat detection systems up to date with the latest threat intelligence?",
+    "answer": "It is essential to keep threat detection systems up to date with the latest threat intelligence to ensure they can detect and identify new and emerging threats, as well as evolving malware and attack techniques."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of threat detection in a network?",
+    "answer": "The primary goal of threat detection is to identify and alert on potential security threats in real-time, allowing for swift response and mitigation to prevent or minimize damage."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Medium",
+    "question": "A network security engineer notices that a specific IP address is sending a high volume of HTTP requests to a web server. What could be the potential threat?",
+    "answer": "The potential threat is a Distributed Denial of Service (DDoS) attack, where the IP address is being used to overwhelm the web server with requests, causing it to become unresponsive or crash."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Medium",
+    "question": "Explain the difference between a signature-based and behavior-based threat detection approach.",
+    "answer": "Signature-based threat detection relies on a database of known malware signatures to identify threats, whereas behavior-based threat detection focuses on the actions and behavior of a process or program, regardless of whether it's known or unknown."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Medium",
+    "question": "A security analyst is reviewing network logs and notices a suspicious login attempt from an unknown IP address. What information would be useful to include in the incident report?",
+    "answer": "The incident report should include the date and time of the login attempt, the source IP address, the target system or account, and any relevant logs or evidence of the incident."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Medium",
+    "question": "What are some common indicators of a potential insider threat?",
+    "answer": "Common indicators of a potential insider threat include unusual access patterns, large data transfers, login attempts from unusual locations, and changes to system configurations or permissions."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Hard",
+    "question": "Explain how machine learning-based anomaly detection can lead to false positives in threat detection, and propose a strategy to mitigate this issue.",
+    "answer": "Machine learning-based anomaly detection can lead to false positives due to the difficulty in distinguishing between legitimate and malicious activities. To mitigate this issue, a strategy is to implement a hybrid approach that combines both machine learning and rule-based detection methods. This can be achieved by using machine learning models to identify potential threats and then applying rule-based detection to validate and verify the results."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Hard",
+    "question": "A network administrator notices that a specific IP address is accessing a large number of sensitive files. What are some potential reasons for this behavior, and how would you investigate further?",
+    "answer": "Potential reasons for this behavior include insider threats, a misconfigured access control list, or a compromised account. To investigate further, I would collect network logs, analyze the access patterns, and review the access control lists. I would also conduct a thorough risk assessment to determine the potential impact of the identified behavior."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Hard",
+    "question": "What is the difference between a 'false positive' and a 'false negative' in threat detection, and how do they impact the overall security posture of an organization?",
+    "answer": "A 'false positive' is a legitimate activity that is incorrectly identified as a threat, while a 'false negative' is a real threat that is not detected. False positives can lead to unnecessary alerts and alarms, resulting in alert fatigue and decreased effectiveness of the security team. False negatives, on the other hand, can allow real threats to go undetected, potentially leading to significant security breaches."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Hard",
+    "question": "Explain how behavioral analysis can be used to detect advanced persistent threats (APTs) in a network, and provide an example of a behavioral anomaly that might indicate an APT.",
+    "answer": "Behavioral analysis involves monitoring and analyzing the behavior of network activity to identify patterns and anomalies. To detect APTs, I would look for behavioral anomalies such as unusual login attempts, unauthorized access to sensitive files, or unexpected changes to system configurations. For example, if a user logs in from an unusual location at an unusual time and accesses sensitive files that they do not normally interact with, this could indicate an APT."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Threat Detection",
+    "difficulty": "Hard",
+    "question": "What are some potential evasion techniques used by advanced threats to evade detection by threat detection systems, and how can these techniques be mitigated?",
+    "answer": "Potential evasion techniques include code obfuscation, encryption, and sandbox evasion. To mitigate these techniques, I would implement a multi-layered defense approach that includes sandboxing, behavioral analysis, and memory analysis. I would also stay up-to-date with the latest threat intelligence and security research to identify and counter emerging evasion techniques."
+  }
+]

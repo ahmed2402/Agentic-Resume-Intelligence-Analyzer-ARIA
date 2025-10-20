@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of a low-fidelity prototype in the design process?",
+    "answer": "A low-fidelity prototype is used to test and validate design concepts, identify usability issues, and make necessary adjustments before investing time and resources into high-fidelity prototypes."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Easy",
+    "question": "Describe a scenario where you would use a digital prototype to test user interactions.",
+    "answer": "I would use a digital prototype to test user interactions when I need to simulate a complex workflow or user journey, and want to observe how users navigate and interact with the design in a more realistic and immersive way."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Easy",
+    "question": "What is the main difference between a static and an interactive prototype?",
+    "answer": "A static prototype is a non-interactive representation of a design, while an interactive prototype allows users to engage with the design and experience its functionality, enabling designers to test and validate usability and user experience."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Easy",
+    "question": "What are some common tools used for creating interactive prototypes?",
+    "answer": "Some common tools used for creating interactive prototypes include InVision, Figma, Adobe XD, and Sketch, which offer features such as click-through interactions, animations, and state changes to simulate real-world user experiences."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Easy",
+    "question": "Why is user feedback essential when testing prototypes?",
+    "answer": "User feedback is essential when testing prototypes because it provides valuable insights into how users think, behave, and interact with the design, allowing designers to refine and iterate their designs to meet user needs and expectations."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Medium",
+    "question": "What is the primary purpose of prototyping in the UX/UI design process?",
+    "answer": "The primary purpose of prototyping is to test and validate design ideas, iterate on feedback, and make data-driven design decisions."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Medium",
+    "question": "A designer is tasked with creating a clickable prototype of a mobile app. Which tool would you recommend using for this task?",
+    "answer": "I would recommend using InVision or Figma, as they offer robust prototyping tools that allow for interactive and clickable prototypes."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Medium",
+    "question": "What are some common pitfalls to avoid when creating a prototype for usability testing?",
+    "answer": "Common pitfalls to avoid include: over-optimizing the prototype, not simulating real-world scenarios, and failing to involve stakeholders in the testing process."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Medium",
+    "question": "How do you determine the level of fidelity for a prototype, and what are the benefits of each level?",
+    "answer": "The level of fidelity depends on the goals of the prototype. A low-fidelity prototype (paper sketch or wireframe) allows for quick iteration, while a high-fidelity prototype (interactive and visually appealing) provides a more accurate representation of the final product. Benefits include faster iteration and more accurate feedback."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Medium",
+    "question": "A designer is tasked with creating a prototype of a web application. What are some key interactions that should be included in the prototype to ensure a smooth user experience?",
+    "answer": "Key interactions to include are: form submissions, button clicks, navigation between pages, and any other interactions that are critical to the user's workflow."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where you would choose to use a low-fidelity prototype over a high-fidelity one, and how you would justify that decision.",
+    "answer": "I would choose a low-fidelity prototype when I need to quickly test and validate assumptions about the user's workflow or to explore multiple design directions. Justifying this decision, I would point out that low-fidelity prototypes are faster to create and test, allowing for more iterations and a better understanding of the user's needs, ultimately leading to a more effective high-fidelity design."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Hard",
+    "question": "A user feedback session with a high-fidelity prototype revealed that users are getting confused by the numerous interactive elements on the screen. How would you address this issue?",
+    "answer": "To address this issue, I would revisit the user feedback and analyze the data to identify the main pain points. Then, I would propose simplifying the design by removing or consolidating unnecessary elements, focusing on the most critical interactions and features. This would involve revising the high-fidelity prototype to better align with the user's needs and expectations."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Hard",
+    "question": "Write a function in JavaScript that generates a random layout for a grid-based prototype, given a fixed grid size and a list of element sizes. The function should return an object with the x and y coordinates for each element.",
+    "answer": "function generateGridLayout(gridSize, elementSizes) {\n  const layout = {};\n  const elements = elementSizes.map((size, index) => ({ id: index, size }));\n  elements.sort((a, b) => a.size - b.size);\n\n  for (let i = 0; i < elements.length; i++) {\n    const element = elements[i];\n    layout[element.id] = {\n      x: Math.floor(Math.random() * (gridSize - element.size)),\n      y: Math.floor(Math.random() * (gridSize - element.size)),\n    };\n  }\n\n  return layout;\n}"
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Hard",
+    "question": "What are the key differences between a functional prototype and a usability prototype, and when would you choose to use each?",
+    "answer": "A functional prototype is used to demonstrate the technical feasibility of a design, while a usability prototype is used to test and validate the user's experience. I would choose a functional prototype when I need to showcase the technical capabilities of a design or to test the performance of a complex system, and a usability prototype when I need to validate the user's workflow or to identify potential usability issues."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Prototyping",
+    "difficulty": "Hard",
+    "question": "You've been tasked with creating a prototype for a complex system that involves multiple stakeholders and requires a high degree of customizability. What approach would you take to ensure that the prototype meets the needs of all stakeholders?",
+    "answer": "To ensure that the prototype meets the needs of all stakeholders, I would take a modular and iterative approach. I would break down the complex system into smaller, independent components and create a prototype for each component, using a low-fidelity approach to quickly test and validate assumptions. This would allow me to gather feedback from stakeholders and make adjustments to the prototype as needed, ultimately resulting in a high-fidelity prototype that meets the needs of all stakeholders."
+  }
+]

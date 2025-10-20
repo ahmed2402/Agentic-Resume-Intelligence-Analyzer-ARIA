@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of enabling offline functionality in a mobile app?",
+    "answer": "To allow users to access and use the app's features even when they don't have an active internet connection."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Easy",
+    "question": "What kind of data should be stored locally in a mobile app for offline functionality to work properly?",
+    "answer": "Data that doesn't change frequently, such as user profiles, settings, and cached data."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Easy",
+    "question": "How can you ensure that data retrieved from the server is merged correctly with locally stored data when the app comes back online?",
+    "answer": "Use conflict resolution strategies, such as last writer wins or custom conflict resolution logic."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Easy",
+    "question": "What are some common use cases for offline functionality in mobile apps?",
+    "answer": "News readers, email clients, gaming apps, and productivity apps that require data to be accessed frequently offline."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Easy",
+    "question": "How can you handle network errors and disconnections in a mobile app for offline functionality?",
+    "answer": "Use try-catch blocks to catch network exceptions and handle disconnections by checking the network status before making API calls."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between a cacheable and a non-cacheable resource in a mobile app?",
+    "answer": "A cacheable resource is one that has a short expiration time and can be safely cached, while a non-cacheable resource has a long expiration time and should not be cached, or has a high likelihood of changing."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Medium",
+    "question": "How would you implement offline support for a mobile app that uses a RESTful API to fetch user data?",
+    "answer": "You would use a library like Retrofit or OkHttp that supports caching, and implement a caching strategy such as caching data in a local database or using a caching library like Room or SQLite."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a Content Provider in Android, and how does it relate to offline data storage?",
+    "answer": "A Content Provider is a mechanism for sharing data between applications, and it can be used to store and manage offline data. It provides a layer of abstraction between the data storage and the application, allowing for more flexible and scalable data management."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Medium",
+    "question": "How would you handle network errors when using a mobile app offline?",
+    "answer": "You would use a try-catch block to catch network-related exceptions, and provide a fallback solution such as displaying a message to the user or using cached data to display a partial or complete UI."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Medium",
+    "question": "What is the difference between a database and a cache, and how would you implement a hybrid approach for offline data storage in a mobile app?",
+    "answer": "A database is a persistent storage system, while a cache is a temporary storage system. A hybrid approach would involve using a database for persistent storage and a cache for temporary storage, with mechanisms for syncing data between the two."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Hard",
+    "question": "Design a system to handle conflicts when two or more devices try to sync the same data while one of them was offline. Assume the devices are using a client-server architecture.",
+    "answer": "Implement an optimistic concurrency control mechanism by including a version number in the data. When syncing, check the version number on the server-side. If it matches the version on the client-side, update the data. If it doesn't match, reject the update and notify the client to retry with the latest version."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Hard",
+    "question": "A user has a list of 1000 items and wants to download all the images associated with each item. However, the user's internet connection is slow and the app is currently running on a low-memory device. How would you implement offline image caching and ensure that the app doesn't run out of memory?",
+    "answer": "Implement a caching mechanism using a library like Glide or Picasso, which can handle caching and memory management efficiently. You can also use a service like Firebase Cloud Storage to store the images and download them in chunks, allowing the app to handle the memory usage more effectively."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Hard",
+    "question": "Explain how you would handle data synchronization when a user's device is offline and a new version of the app is released with new data. Assume the new data is not backward compatible.",
+    "answer": "Implement a hybrid approach by storing the new data in a separate cache or database, and then synchronizing it with the main data when the user comes online. Use a conflict resolution mechanism to handle cases where the new data conflicts with the existing data."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Hard",
+    "question": "A user is using your app in an area with poor internet connectivity. The user wants to continue using the app offline, but the app requires a network connection to function. How would you implement a feature that allows the user to use the app offline?",
+    "answer": "Implement a feature that allows the user to download the necessary data and cache it locally when the user is online, and then use the cached data when the user is offline. Use a service like Firebase Cloud Firestore to store the data and implement a caching mechanism to handle the data locally."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Offline Functionality",
+    "difficulty": "Hard",
+    "question": "Design a system that allows a user to edit a document offline and then sync the changes when they come online. Assume the document is stored in a cloud-based service like Google Drive or Dropbox.",
+    "answer": "Implement a system that uses a local cache to store the document and its changes, and then syncs the changes with the cloud-based service when the user comes online. Use a conflict resolution mechanism to handle cases where multiple users have edited the document offline and then synced their changes."
+  }
+]

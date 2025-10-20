@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of input validation in application security?",
+    "answer": "The primary goal of input validation is to ensure that user input is sanitized and does not contain malicious data that could be used to exploit vulnerabilities in the application."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Easy",
+    "question": "A web application is vulnerable to 'SQL Injection' attacks. What is SQL Injection?",
+    "answer": "SQL Injection is a type of attack where an attacker injects malicious SQL code into a web application's database to extract or modify sensitive data."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Easy",
+    "question": "What is the difference between a 'Cross-Site Scripting (XSS)' and a 'Cross-Site Request Forgery (CSRF)' attack?",
+    "answer": "XSS is an attack where an attacker injects malicious code into a web application to steal user data, while CSRF is an attack where an attacker tricks a user into performing an unwanted action on a web application."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Easy",
+    "question": "What is the best practice for storing sensitive data like passwords in a web application?",
+    "answer": "The best practice is to store passwords using a 'salted hash' and to use a secure password hashing algorithm like bcrypt or PBKDF2."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a 'Web Application Firewall (WAF)'?",
+    "answer": "A WAF is a security device that monitors and filters incoming and outgoing network traffic to prevent common web application attacks and vulnerabilities."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of an application security testing (AST) program?",
+    "answer": "The primary goal of an AST program is to identify vulnerabilities in an application to prevent exploitation by attackers and reduce the risk of a data breach."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Medium",
+    "question": "Describe a scenario where a 'Broken Authentication' vulnerability could occur.",
+    "answer": "A 'Broken Authentication' vulnerability occurs when an application fails to properly validate or store user credentials, allowing an attacker to gain access to the system by guessing or intercepting a valid username and password."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Medium",
+    "question": "Write a simple SQL query to prevent SQL injection attacks using parameterized queries.",
+    "answer": "SELECT * FROM users WHERE username = ? AND password = ?"
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Medium",
+    "question": "Explain the difference between a 'Cross-Site Scripting (XSS)' attack and a 'Cross-Site Request Forgery (CSRF) attack'.",
+    "answer": "A 'Cross-Site Scripting (XSS)' attack involves injecting malicious code into a user's browser, whereas a 'Cross-Site Request Forgery (CSRF) attack' involves tricking a user into performing an action on a web application that they are authenticated to."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Medium",
+    "question": "Describe the importance of 'Least Privilege' principle in application security.",
+    "answer": "The 'Least Privilege' principle ensures that an application or user has the minimum necessary permissions to perform their tasks, reducing the attack surface and minimizing the damage in case of a breach."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Hard",
+    "question": "Describe the concept of 'Data in Transit' vulnerability in the context of web applications. How would you address this issue in your code?",
+    "answer": "Data in Transit vulnerability occurs when sensitive data, such as authentication credentials or personal identifiable information, is transmitted over an insecure channel. To address this, I would implement Transport Layer Security (TLS) protocol to encrypt data, ensuring it remains confidential and integrity is maintained. This can be achieved using libraries such as OpenSSL in languages like Python and Java."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Hard",
+    "question": "A web application uses a complex business logic for authentication that involves multiple factors. However, the application is still vulnerable to an attack. Explain the potential vulnerability and suggest a secure alternative.",
+    "answer": "The potential vulnerability is a 'Business Logic Vulnerability'. This occurs when an application's complex logic is exploited by an attacker, often through a series of requests or input manipulation. A secure alternative is to use a 'Security Framework' that enforces access control and validation. For instance, OWASP's ESAPI library provides a robust API for access control and validation, reducing the risk of business logic vulnerabilities."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Hard",
+    "question": "A programmer wants to implement a secure way to store user passwords in a database. What is the recommended approach and why?",
+    "answer": "The recommended approach is to store passwords using 'Password Hashing' with a strong salt and a secure hashing algorithm like Argon2, PBKDF2, or Bcrypt. This approach protects passwords from being compromised in the event of a database breach. It also makes it computationally expensive for attackers to obtain the original password, even if they gain access to the hashed passwords."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Hard",
+    "question": "What is a 'Session Fixation' vulnerability and how can it be exploited? Provide a scenario where this vulnerability could occur.",
+    "answer": "A Session Fixation vulnerability occurs when an attacker can force a user to reuse an existing session ID, often by manipulating the session ID in a cookie or through a crafted URL. This can be exploited by an attacker to gain unauthorized access to a user's account. For instance, in an e-commerce application, if a session ID is not properly regenerated after a user logs out, an attacker can potentially hijack the session, allowing them to make purchases or access sensitive information."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Application Security",
+    "difficulty": "Hard",
+    "question": "A web application uses a framework that automatically generates SQL queries based on user input. However, this approach is vulnerable to a critical security issue. What is the vulnerability and how can it be mitigated?",
+    "answer": "The vulnerability is an 'SQL Injection' attack, where an attacker can inject malicious SQL code to manipulate or extract data from the database. To mitigate this, I would use 'Parameterized Queries' or 'Prepared Statements', which separate the SQL code from user input, preventing attackers from injecting malicious code. This approach should be used in conjunction with proper input validation and sanitization to ensure the application remains secure."
+  }
+]

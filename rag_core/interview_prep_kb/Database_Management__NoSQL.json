@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Easy",
+    "question": "What are the primary characteristics of NoSQL databases?",
+    "answer": "NoSQL databases are known for their flexibility, scalability, and ability to handle large amounts of unstructured or semi-structured data. They often trade off consistency for availability and partition tolerance, adhering to the CAP theorem."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Easy",
+    "question": "How do NoSQL databases differ from traditional relational databases?",
+    "answer": "NoSQL databases differ from traditional relational databases in their data model, scalability, and query language. They use a variety of data models, such as key-value, document, graph, or column-family stores, and often have flexible schema designs."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Easy",
+    "question": "What are some popular types of NoSQL databases?",
+    "answer": "Some popular types of NoSQL databases include MongoDB (document-oriented), Cassandra (distributed NoSQL database), Redis (in-memory data store), and Couchbase (document-oriented)."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Easy",
+    "question": "What are the benefits of using NoSQL databases?",
+    "answer": "The benefits of using NoSQL databases include improved scalability, high availability, flexible schema designs, and faster data retrieval and storage. They are particularly useful for handling big data, real-time web applications, and mobile apps."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Easy",
+    "question": "What is the CAP theorem, and how does it relate to NoSQL databases?",
+    "answer": "The CAP theorem states that a distributed database cannot simultaneously guarantee all three of the following: Consistency (all nodes see the same data), Availability (every request receives a response, without the guarantee that it contains the most recent version of the information), and Partition Tolerance (the system continues to operate even when there are network partitions). NoSQL databases often prioritize availability and partition tolerance over consistency."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Medium",
+    "question": "What are the primary benefits of using a document-oriented NoSQL database?",
+    "answer": "The primary benefits of using a document-oriented NoSQL database are its ability to handle semi-structured data, high scalability, and flexible schema design."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Medium",
+    "question": "Design a simple data model for a social media platform using a graph database. Explain the reasoning behind your design.",
+    "answer": "A simple data model for a social media platform using a graph database could include nodes for users, posts, comments, and likes, with edges representing relationships between them, such as follows, likes, and comments."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Medium",
+    "question": "What is the difference between a document-oriented and a key-value NoSQL database?",
+    "answer": "A document-oriented NoSQL database stores and retrieves data as self-contained documents, while a key-value NoSQL database stores data as a collection of key-value pairs, where each key maps to a specific value."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Medium",
+    "question": "Explain how to handle data consistency in a distributed NoSQL database.",
+    "answer": "Data consistency in a distributed NoSQL database can be handled using techniques such as eventual consistency, strong consistency, and pessimistic locking, depending on the specific use case and requirements."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Medium",
+    "question": "What are some common use cases for using a time-series NoSQL database?",
+    "answer": "Common use cases for using a time-series NoSQL database include IoT sensor data collection, financial transactions, and real-time analytics, where high performance and scalability are required to handle large amounts of timestamped data."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Hard",
+    "question": "Design a NoSQL database schema for a real-time analytics system that needs to handle high-volume data ingestion and low-latency data retrieval. Consider the trade-offs between data consistency, availability, and partition tolerance.",
+    "answer": "A suitable NoSQL database for this use case would be Apache Cassandra, which is designed for high-performance and high-availability. The schema would involve using a denormalized data model to minimize join operations and a sharded data structure to distribute data across multiple nodes, ensuring low-latency data retrieval and high-throughput data ingestion."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Hard",
+    "question": "Explain the concept of eventual consistency in NoSQL databases and provide an example of how it can be used to optimize write performance in a distributed system.",
+    "answer": "Eventual consistency is a consistency model in NoSQL databases where data is eventually consistent across all nodes in the system, but may not be consistent at any given moment. To optimize write performance, a system can use eventual consistency by allowing writes to proceed as soon as possible, and then asynchronously reconciling any inconsistencies across nodes. For example, in a distributed e-commerce system, a product's inventory can be updated on a node as soon as a purchase is made, and then the inconsistency can be resolved by a background task that synchronizes the inventory across all nodes."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Hard",
+    "question": "Describe the differences between CAP theorem and BASE theorem in the context of NoSQL databases, and explain how the choice of theorem affects the design of a distributed database system.",
+    "answer": "The CAP theorem states that a distributed database system can only guarantee two out of three properties: consistency, availability, and partition tolerance. The BASE theorem, on the other hand, relaxes the consistency requirement in favor of availability and partition tolerance. In designing a distributed database system, the choice between CAP and BASE theorem depends on the specific use case and requirements. If consistency is a top priority, CAP theorem is more suitable. If availability and partition tolerance are more important, BASE theorem is a better choice."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Hard",
+    "question": "Write a query to retrieve all documents from a MongoDB collection that contain the word 'apple' in their title field, and also filter the results to include only documents where the title field starts with 'A'.",
+    "answer": "db.collection.find({ title: /apple/i, title: /^A/ }).pretty()"
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "NoSQL",
+    "difficulty": "Hard",
+    "question": "Explain the concept of vector clocks and how they are used in distributed systems to maintain causality between events. Provide an example of how vector clocks can be used to resolve a conflict between two concurrent updates to a document in a distributed database.",
+    "answer": "Vector clocks are a data structure used to track the causality between events in a distributed system. Each event is assigned a vector clock, which is a tuple of timestamps representing the order in which events occurred. When two events occur concurrently, their vector clocks are combined to determine the causality between them. In a distributed database, vector clocks can be used to resolve conflicts between concurrent updates to a document by comparing the vector clocks of the two updates and determining which one occurred first."
+  }
+]

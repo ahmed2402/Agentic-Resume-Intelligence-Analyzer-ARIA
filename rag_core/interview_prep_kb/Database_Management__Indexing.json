@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of indexing in a database?",
+    "answer": "The primary purpose of indexing is to improve query performance by reducing the time it takes to search for data."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Easy",
+    "question": "Consider a table with a column for employee names. What type of indexing would be most beneficial for this column?",
+    "answer": "A B-tree index or a hash index would be most beneficial for this column, as it allows for efficient lookup and retrieval of employee names by name."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Easy",
+    "question": "When should you create an index on a column?",
+    "answer": "You should create an index on a column when it is frequently used in WHERE, JOIN, or ORDER BY clauses, and the column is not frequently updated."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Easy",
+    "question": "What is the difference between a B-tree index and a hash index?",
+    "answer": "A B-tree index is an ordered index that allows for efficient range queries, while a hash index is an unordered index that allows for efficient exact-match queries."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Easy",
+    "question": "Can you explain the concept of index fragmentation?",
+    "answer": "Index fragmentation occurs when the index is not stored contiguously on disk, leading to slower query performance and increased disk I/O. It can be caused by frequent insertions, deletions, or updates."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "question": "What are the main benefits of using composite indexes in a database?",
+    "answer": "Composite indexes can improve query performance by allowing the database to use a single index for multiple columns, reducing the number of indexes that need to be scanned. However, they can also increase storage requirements and may not be suitable for columns with high cardinality."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "question": "You have a table with a column 'employee_id' and another column 'department_id'. Which type of index would be suitable for a query that filters by 'employee_id' and 'department_id'?",
+    "answer": "A composite index on 'employee_id' and 'department_id' would be suitable for this query, as it can be used to filter by both columns in a single index scan."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "question": "How does the choice of index type affect the performance of an UPDATE operation?",
+    "answer": "The choice of index type can affect the performance of an UPDATE operation, as certain types of indexes, such as clustered indexes, can require a significant amount of work to update. Non-clustered indexes, on the other hand, can be updated more efficiently."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "question": "What is the difference between a clustered index and a non-clustered index, and when would you use each?",
+    "answer": "A clustered index reorders the physical storage of the table to match the index order, while a non-clustered index stores the index in a separate data structure. Clustered indexes are typically used for columns that are frequently used in WHERE and JOIN clauses, while non-clustered indexes are used for columns that are frequently used in WHERE clauses but not in JOIN clauses."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "question": "What is the concept of index fragmentation, and how can it affect query performance?",
+    "answer": "Index fragmentation occurs when the data in an index becomes discontiguous, causing the database to perform more I/O operations to retrieve data. This can lead to decreased query performance, as the database must scan more pages to retrieve the required data."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "question": "When implementing a composite index on multiple columns, in what order should the columns be listed to maximize the effectiveness of the index for a frequently executed query that selects a subset of columns?",
+    "answer": "The columns should be listed in the order of their selectivity and frequency of use in the query, with the most selective and frequently used columns listed first."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "question": "A database table has a high percentage of rows that have NULL values in a particular column. What is the impact on the effectiveness of a B-tree index on that column, and how does it compare to a hash index?",
+    "answer": "A B-tree index on a column with high NULL values will be less effective than a hash index because B-tree indexes rely on the actual values in the column, whereas hash indexes can efficiently store and retrieve NULL values."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "question": "Consider a database query that joins two tables on a column, but the join condition is not satisfied for most of the rows in one of the tables. What index structure would be most beneficial to improve the performance of this query, and why?",
+    "answer": "A covering index on the join column and the columns used in the WHERE clause would be most beneficial because it would allow the database to retrieve the required data directly from the index, reducing the need for table joins."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "question": "A database table has a large number of rows and is frequently updated. What type of index should be used to balance the trade-off between query performance and update performance?",
+    "answer": "A clustered index should be used because it stores the actual data rows in the index order, reducing the overhead of maintaining the index and improving query performance, but may slow down update performance due to the need to re-arrange the data."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "question": "A database query uses a LIKE operator with a wildcard at the end of the search string, such as 'SELECT * FROM table WHERE column LIKE '%search_string%'. What type of index would be most beneficial to improve the performance of this query, and why?",
+    "answer": "A full-text index or a function-based index that uses a prefix index would be most beneficial because they are optimized for full-text searches and can efficiently retrieve rows that match the search string, even with a wildcard at the end."
+  }
+]

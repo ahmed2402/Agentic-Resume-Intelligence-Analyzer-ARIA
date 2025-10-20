@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Easy",
+    "question": "What is the main purpose of a configuration management tool?",
+    "answer": "The main purpose of a configuration management tool is to manage and track changes to the configurations of systems, applications, and infrastructure, ensuring consistency and reproducibility across environments."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Easy",
+    "question": "Which of the following is a key benefit of using a configuration management tool for infrastructure as code (IaC)?",
+    "answer": "Version control and collaboration between teams"
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Easy",
+    "question": "What is the difference between a template and a configuration file in a configuration management tool?",
+    "answer": "A template is a placeholder for configuration data, while a configuration file contains the actual data used to provision and configure systems."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Easy",
+    "question": "Why is it essential to use a version control system when managing configurations with a configuration management tool?",
+    "answer": "To track changes, collaborate with team members, and maintain a record of configuration history and rollbacks."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of a configuration management tool when dealing with multiple environment configurations?",
+    "answer": "To ensure consistency and reproducibility of configurations across environments, making it easier to deploy and manage applications."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Medium",
+    "question": "How would you handle a situation where two development teams are using different versions of the same configuration file?",
+    "answer": "To resolve this issue, you can use version control systems like Git to track changes and create separate branches for each team. This way, each team can work on their version without affecting the other team's progress."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Medium",
+    "question": "What is the main difference between a declarative and imperative configuration syntax?",
+    "answer": "A declarative configuration syntax defines what you want to achieve, whereas an imperative configuration syntax defines how to achieve it. For example, Ansible's YAML syntax is declarative, whereas Puppet's DSL is imperative."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Medium",
+    "question": "How do you ensure that configuration files are correctly validated and parsed in a CI/CD pipeline?",
+    "answer": "You can use tools like ConfigCat, which provides a validation and parsing mechanism for configuration files, or write custom validation scripts to ensure that the configuration files are correct."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Medium",
+    "question": "Explain the concept of drift in configuration management and how it can be detected.",
+    "answer": "Drift refers to the situation where a system's configuration deviates from its intended state. It can be detected by comparing the current configuration with the desired state using tools like Ansible's `diff` command or by implementing a configuration auditing mechanism."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a configuration management database (CMDB) in an IT environment?",
+    "answer": "A CMDB is a centralized repository that stores information about an organization's hardware, software, and network infrastructure. It helps in tracking configurations, identifying relationships between components, and facilitating change management."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Hard",
+    "question": "Design a configuration management strategy to handle the following scenario: a team of 10 developers are working on a large-scale application, each with their own set of customizations, and the team is using a decentralized repository for storing application configurations.",
+    "answer": "Implement a hierarchical configuration management approach using a centralized repository for storing base configurations and decentralized repositories for storing customizations. Utilize tools like Ansible or Puppet to manage and synchronize configurations across the team."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Hard",
+    "question": "A company is using a configuration management tool that is not suitable for their growing infrastructure. Which of the following strategies would help to minimize the impact of migrating to a new tool while still achieving the desired benefits?",
+    "answer": "Implement a hybrid approach where the existing tool is used for legacy infrastructure and the new tool is used for new infrastructure, gradually phasing out the old tool over time."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Hard",
+    "question": "Write a script to generate a configuration file in YAML format using Ansible variables.",
+    "answer": "```yaml\n---\n# Example configuration file generated by Ansible variables\n\nserver:\n  ip: {{ server_ip }}\n  port: {{ server_port }}\n  username: {{ server_username }}\n  password: {{ server_password }}\n\n```\nThis script uses Ansible variables to populate the configuration file with dynamic values."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where a continuous integration and continuous deployment (CI/CD) pipeline would fail due to configuration management issues and how it could be resolved.",
+    "answer": "A CI/CD pipeline would fail due to configuration management issues when a new environment variable is introduced in the codebase but not properly updated in the configuration files used by the pipeline. This would cause the pipeline to fail when trying to deploy the updated code to the new environment. Resolving this issue would involve updating the configuration files to reflect the new environment variable and then re-running the pipeline."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Configuration Management",
+    "difficulty": "Hard",
+    "question": "What are some best practices for securing configuration data in a centralized repository, and how can you ensure that sensitive data is not leaked?",
+    "answer": "Best practices for securing configuration data include encrypting sensitive data using tools like Ansible Vault or HashiCorp's Vault, implementing role-based access control (RBAC) to restrict access to sensitive data, and regularly auditing access logs to detect any potential security breaches."
+  }
+]

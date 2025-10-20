@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of code obfuscation in mobile app security?",
+    "answer": "Code obfuscation makes it difficult for reverse engineers to understand the code logic, thus protecting intellectual property."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Easy",
+    "question": "What is the recommended approach for storing sensitive data, such as API keys, in a mobile app?",
+    "answer": "Sensitive data should be stored securely using a secure storage mechanism, such as Android's KeyStore or iOS's Keychain."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Easy",
+    "question": "How can you prevent a mobile app from being vulnerable to man-in-the-middle attacks?",
+    "answer": "Implementing HTTPS (SSL/TLS) encryption ensures data integrity and authenticity, preventing man-in-the-middle attacks."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a mobile app's Secure Sockets Layer (SSL) certificate?",
+    "answer": "The SSL certificate verifies the identity of the app and ensures the integrity of data exchanged between the app and the server."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Easy",
+    "question": "Why is it essential to validate user input in a mobile app?",
+    "answer": "Validating user input prevents common web attacks such as SQL injection and cross-site scripting (XSS)."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Medium",
+    "question": "What is the primary purpose of the Android Permission System?",
+    "answer": "The primary purpose of the Android Permission System is to provide a way for apps to request access to sensitive system features and user data, enabling users to make informed decisions about the permissions they grant to apps."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Medium",
+    "question": "Suppose you're developing a banking app that needs to store sensitive user information. How would you securely store this data on a mobile device?",
+    "answer": "To securely store sensitive user information, you should use a secure storage mechanism such as Android's KeyStore or iOS's Keychain, which provide a secure way to store and manage cryptographic keys and other sensitive data."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Medium",
+    "question": "What is the difference between SSL/TLS and HTTPS in the context of mobile app development?",
+    "answer": "SSL/TLS is a cryptographic protocol used to secure data in transit, whereas HTTPS is the combination of HTTP and SSL/TLS, which ensures that data is transmitted securely over the internet. In mobile app development, HTTPS is typically used to secure communication between the app and the server."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Medium",
+    "question": "How can you prevent malicious apps from accessing sensitive device data, such as contacts or location information?",
+    "answer": "To prevent malicious apps from accessing sensitive device data, you can use a permission model that requires explicit user consent for sensitive permissions, such as the Contacts or Location permissions. Additionally, you can use a secure coding practice, such as using the AndroidX library's PermissionManager, to manage permissions and prevent unauthorized access to sensitive data."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Medium",
+    "question": "What is a Code Signing Certificate and why is it important for mobile app development?",
+    "answer": "A Code Signing Certificate is a digital certificate that verifies the identity of the developer and ensures the integrity of the app code. It is used to sign the app bundle or APK file, which enables the app to be installed on the device and ensures that the code has not been tampered with. Code Signing Certificates are important for mobile app development because they provide a way to verify the authenticity of the app and prevent malware from being installed on the device."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where an attacker could exploit the Android's Intent system to gain unauthorized access to sensitive data. How would you prevent this attack?",
+    "answer": "An attacker could exploit the Android Intent system by crafting a malicious Intent that targets a vulnerable app, allowing them to access sensitive data. To prevent this attack, you can use intent filtering and permission checking. Implement intent filters to restrict the types of Intents an app can receive and use permission checking to ensure the app requesting data has the necessary permissions."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Hard",
+    "question": "What are the risks associated with using In-Memory Forensics (IMF) on Android devices, and how can you mitigate these risks?",
+    "answer": "Risks associated with IMF on Android devices include data tampering and volatility. To mitigate these risks, use IMF on devices that are not connected to the internet, and take regular snapshots of the device's memory to ensure data integrity."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Hard",
+    "question": "A user reports that their iPhone is being drained rapidly. Upon investigation, you find that a malicious app is secretly recording audio and sending it to a server. How would you fix the issue and prevent similar incidents in the future?",
+    "answer": "To fix the issue, identify and uninstall the malicious app. To prevent similar incidents, implement a solution that monitors network activity and detects suspicious audio/video recording. You can use frameworks like iOS's Background Time Monitoring and Network Activity Monitoring to achieve this."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Hard",
+    "question": "Explain how an attacker could use the Android's accessibility services to spy on user activity, and how you would detect and prevent this attack.",
+    "answer": "An attacker could use the Android accessibility services by creating a malicious accessibility service that captures user input and sends it to a server. To detect and prevent this attack, monitor accessibility service usage and ensure that all accessibility services have the necessary permissions. Implement additional security measures like accessibility service whitelisting."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Mobile Security",
+    "difficulty": "Hard",
+    "question": "A company's iOS app is reporting a vulnerability in the App Transport Security (ATS) implementation. Explain the issue and provide a solution to fix it.",
+    "answer": "The issue is that the company's ATS implementation is not properly configured, allowing the app to make insecure connections. To fix the issue, update the ATS configuration to specify the minimum allowed TLS version and cipher suite. You can achieve this by adding the necessary ATS entitlements to the app's Info.plist file."
+  }
+]

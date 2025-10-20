@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Easy",
+    "question": "What is the main difference between a Blue-Green deployment and a Canary release?",
+    "answer": "In a Blue-Green deployment, two identical environments are maintained, and traffic is routed to one environment at a time. In a Canary release, a subset of users or traffic is directed to a new version before rolling out to all users."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Easy",
+    "question": "What is a Rolling Update, and how does it differ from a Big Bang deployment?",
+    "answer": "A Rolling Update is a deployment strategy where new versions of an application are rolled out one by one, ensuring minimal downtime. In contrast, a Big Bang deployment involves updating all instances at once, potentially causing downtime and impacting users."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Easy",
+    "question": "Describe a situation where you would prefer to use a Rolling Back deployment strategy?",
+    "answer": "You would prefer to use a Rolling Back deployment strategy when a recent deployment has introduced issues or bugs, and you want to revert to a previous version of the application to minimize downtime and impact on users."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a Deployment Pipelines, and what are some of its key components?",
+    "answer": "The purpose of a Deployment Pipeline is to automate the build, test, and deployment of software applications. Key components of a Deployment Pipeline include Continuous Integration, Continuous Testing, Packaging, Deployment, and Monitoring."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Easy",
+    "question": "Can you explain the difference between a Deploy and a Release?",
+    "answer": "A Deploy typically involves moving code from one environment to another, whereas a Release involves the process of making the deployed application available to users, including tasks such as configuration, security, and quality assurance."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Medium",
+    "question": "What are the main differences between a blue-green deployment and a canary release?",
+    "answer": "Blue-green deployment involves routing traffic between two versions of an application, where one version is still in production and the other is the new version. Canary release involves gradually rolling out the new version to a subset of users or servers before rolling it out to the entire production environment."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Medium",
+    "question": "A team is considering using rolling updates for their deployment. What are some benefits and challenges of this approach?",
+    "answer": "Benefits of rolling updates include reduced downtime and the ability to roll back changes if issues arise. Challenges include managing the rollout process, handling edge cases, and ensuring the new version is stable and functional."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Medium",
+    "question": "A service is experiencing issues after a deployment. What can be done to quickly identify the root cause?",
+    "answer": "To quickly identify the root cause, the team can use techniques such as logging, monitoring, and blameless post-mortem analysis. They can also try rolling back the deployment, analyzing the change history, and using tools like log analysis and network debugging to isolate the issue."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Medium",
+    "question": "What is the difference between a deployment and a release?",
+    "answer": "A deployment refers to the process of making a new version of an application or service available to users. A release, on the other hand, is the process of making changes to the application or service, which may involve multiple deployments."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Medium",
+    "question": "A team is considering using a container orchestration tool like Kubernetes. What are some benefits and considerations for this approach?",
+    "answer": "Benefits of using Kubernetes include automated deployment and scaling, self-healing, and resource efficiency. Considerations include learning curve, resource requirements, and potential complexity in managing the orchestration layer."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Hard",
+    "question": "Explain the difference between a 'rolling update' and a 'blue-green deployment' in a Kubernetes cluster, and discuss their use cases.",
+    "answer": "A rolling update involves gradually replacing old pods with new ones, while a blue-green deployment involves keeping both old and new versions of the application running in parallel, with traffic routed to only one of them. Use a rolling update for canary releases or when there's no downtime tolerance, and use a blue-green deployment for larger rollouts or when there's high traffic."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Hard",
+    "question": "Design a deployment strategy for a microservices-based application with multiple teams, where each team is responsible for a separate service. Consider the challenges of deploying multiple services simultaneously.",
+    "answer": "Use a 'coordination-first' approach, where a central team or tool orchestrates the deployment of all services. This can include using a CI/CD tool to manage the deployment of each service, and using a service mesh to manage traffic routing and service discovery."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Hard",
+    "question": "Explain the concept of 'canary releases' and discuss their advantages and disadvantages.",
+    "answer": "A canary release involves deploying a small subset of users to a new version of the application before rolling it out to the entire user base. Advantages include reduced risk of disruption and ability to detect issues early, while disadvantages include added complexity and potential for uneven user experience."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Hard",
+    "question": "What is 'dark launching' and how is it different from a traditional canary release?",
+    "answer": "Dark launching involves deploying a new version of the application to a small subset of users without announcing it or making it visible to them. This is different from a traditional canary release, where the new version is explicitly tested with a subset of users before being rolled out to the entire user base."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Deployment Strategies",
+    "difficulty": "Hard",
+    "question": "Explain the concept of '10% rule' in deployment and how it can be applied to reduce the risk of deployment failures.",
+    "answer": "The 10% rule states that no more than 10% of users should be affected by a deployment at any given time. This can be applied by deploying a new version of the application to a small subset of users (e.g. 10%) before gradually increasing the percentage of users affected, allowing for rapid detection and rollback of any issues that arise."
+  }
+]

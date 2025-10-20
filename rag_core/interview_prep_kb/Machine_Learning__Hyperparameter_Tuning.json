@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Hyperparameter Tuning",
+    "difficulty": "Easy",
+    "question": "What is the main goal of hyperparameter tuning in machine learning models?",
+    "answer": "The main goal of hyperparameter tuning is to find the best combination of hyperparameters that results in the optimal model performance."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Hyperparameter Tuning",
+    "difficulty": "Easy",
+    "question": "How does grid search hyperparameter tuning work?",
+    "answer": "Grid search hyperparameter tuning works by iterating over a predefined grid of hyperparameter combinations, training a model for each combination, and selecting the one with the best performance."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Hyperparameter Tuning",
+    "difficulty": "Easy",
+    "question": "What is the difference between random search and grid search hyperparameter tuning?",
+    "answer": "Random search hyperparameter tuning is similar to grid search but randomly samples the hyperparameter space instead of exhaustively searching it, making it more efficient for large search spaces."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Hyperparameter Tuning",
+    "difficulty": "Easy",
+    "question": "Why is regularization a hyperparameter that needs to be tuned?",
+    "answer": "Regularization is a hyperparameter that needs to be tuned because its value can significantly impact the model's ability to generalize and avoid overfitting."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Hyperparameter Tuning",
+    "difficulty": "Easy",
+    "question": "What is cross-validation and how is it used in hyperparameter tuning?",
+    "answer": "Cross-validation is a technique used to evaluate the performance of a model on unseen data by splitting the available data into training and testing sets. In hyperparameter tuning, cross-validation is used to prevent overfitting by estimating the model's performance on unseen data."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Hyperparameter Tuning",
+    "difficulty": "Medium",
+    "question": "Describe the difference between grid search and random search in hyperparameter tuning. Which one is more efficient and why?",
+    "answer": "Grid search is an exhaustive search of all possible hyperparameter combinations, whereas random search involves sampling a subset of combinations based on a probability distribution. Random search is generally more efficient because it reduces the number of evaluations required, making it suitable for large hyperparameter spaces."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Hyperparameter Tuning",
+    "difficulty": "Medium",
+    "question": "You are given a dataset with 10 features and 1000 samples. You want to perform hyperparameter tuning for a random forest classifier. What are some key hyperparameters to focus on and why?",
+    "answer": "Key hyperparameters for a random forest classifier include the number of estimators (n_estimators), the maximum depth of the trees (max_depth), the minimum sample split (min_samples_split), and the minimum sample leaf (min_samples_leaf). These hyperparameters control the complexity of the forest and its ability to generalize."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Hyperparameter Tuning",
+    "difficulty": "Medium",
+    "question": "Suppose you are using Bayesian optimization for hyperparameter tuning. How does the acquisition function guide the optimization process?",
+    "answer": "The acquisition function, such as the Expected Improvement (EI) or Probability of Improvement (PI), guides the optimization process by selecting the next point to evaluate based on the trade-off between exploration and exploitation. The acquisition function balances the desire to explore the search space and the desire to exploit the most promising areas."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Hyperparameter Tuning",
+    "difficulty": "Medium",
+    "question": "What is the concept of 'over-tuning' in hyperparameter tuning, and how can you avoid it?",
+    "answer": "Over-tuning occurs when a model is over-optimized for a specific dataset or task, resulting in poor generalization performance on unseen data. To avoid over-tuning, use techniques such as cross-validation, early stopping, and ensembling, and ensure that the hyperparameter tuning process is not biased towards over-optimizing for the training data."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Hyperparameter Tuning",
+    "difficulty": "Medium",
+    "question": "Compare and contrast the use of Bayesian optimization and gradient-based optimization for hyperparameter tuning.",
+    "answer": "Bayesian optimization is a global optimization method that uses probabilistic models to search for the optimal hyperparameters, whereas gradient-based optimization is a local optimization method that uses gradient information to find the optimal solution. Bayesian optimization is suitable for expensive function evaluations and complex search spaces, whereas gradient-based optimization is suitable for smooth and convex functions."
+  }
+]

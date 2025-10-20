@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Easy",
+    "question": "What is Infrastructure as Code (IaC)?",
+    "answer": "Infrastructure as Code (IaC) is the management of infrastructure (e.g., networks, virtual machines, operating systems, and storage) in a declarative manner, using configuration files or code, to ensure consistency and repeatability in the development and deployment of infrastructure configurations."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Easy",
+    "question": "What are some popular tools used for IaC?",
+    "answer": "Some popular tools used for Infrastructure as Code (IaC) include Terraform, AWS CloudFormation, Azure Resource Manager (ARM), and Ansible."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Easy",
+    "question": "What are the benefits of using IaC?",
+    "answer": "The benefits of using Infrastructure as Code (IaC) include version control, reproducibility, improved security, and reduced costs, as well as faster and more reliable infrastructure deployments."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Easy",
+    "question": "How does IaC improve infrastructure security?",
+    "answer": "Infrastructure as Code (IaC) improves infrastructure security by enforcing consistent security configurations across environments, providing a clear audit trail, and enabling better compliance with regulatory requirements."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Easy",
+    "question": "What is the primary advantage of using a declarative approach in IaC?",
+    "answer": "The primary advantage of using a declarative approach in Infrastructure as Code (IaC) is that it allows you to specify what you want your infrastructure to look like, rather than how to build it, making it easier to manage and maintain complex infrastructure configurations."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Medium",
+    "question": "What are the benefits of using infrastructure as code compared to traditional infrastructure management methods?",
+    "answer": "Infrastructure as code provides benefits such as increased reproducibility, version control, and automation, which leads to faster deployment, reduced errors, and improved collaboration."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Medium",
+    "question": "A team is working on a project and they are using AWS CloudFormation. However, they are experiencing difficulties in managing the dependencies between different resources. How would you approach this problem?",
+    "answer": "To manage dependencies between resources in AWS CloudFormation, you can use the DependsOn attribute or create a stack set with dependencies defined between stacks."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Medium",
+    "question": "Suppose you have two teams working on different parts of a project. Team A is using Terraform to manage their infrastructure, while Team B is using AWS CloudFormation. How can you ensure consistency across both teams' infrastructure as code?",
+    "answer": "You can use a centralized infrastructure as code repository and use tools like Terraform Cloud or AWS CodePipeline to manage different teams' infrastructure as code and ensure consistency."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Medium",
+    "question": "What are some best practices for writing idempotent infrastructure as code?",
+    "answer": "Best practices for writing idempotent infrastructure as code include using resource IDs to identify unique resources, using conditional statements to check for existing resources, and using the 'create_before_destroy' or 'replace_on_change' options to handle updates."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Medium",
+    "question": "Suppose you are managing a large infrastructure with many resources. How can you ensure that your infrastructure as code remains up-to-date and reflects the current state of the infrastructure?",
+    "answer": "You can use tools like AWS CloudFormation Drift Detection or Terraform's 'validate' and 'plan' commands to detect changes in the infrastructure and ensure that the infrastructure as code is up-to-date and reflects the current state of the infrastructure."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Hard",
+    "question": "Design a strategy for managing drift between Terraform configurations and actual infrastructure state. How would you detect and resolve discrepancies?",
+    "answer": "To manage drift, implement a Terraform configuration drift detection using the Terraform 'taint' command or third-party tools like Terraformer or Terragrunt. Regularly run drift detection scripts to identify discrepancies between the configured and actual infrastructure state. Resolve discrepancies by updating the Terraform configuration to match the actual state, and then applying the updated configuration to reconcile the infrastructure."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where you would use a Terraform 'module' to manage infrastructure resources. Provide a code example of the Terraform configuration.",
+    "answer": "You would use a Terraform 'module' to manage infrastructure resources when you need to reuse a set of resources across multiple environments or projects. For example, creating a module for a database resource: `database.tf` \n\n module \"database\" { \n   source = \"path/to/database/module\" \n   instance_type = \"db.t2.micro\" \n } \n\n module \"database\" { \n   source = \"path/to/database/module\" \n   instance_type = \"db.t2.medium\" \n }`"
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Hard",
+    "question": "Explain how you would use a Terraform 'provider' to connect to a custom infrastructure provider. Provide a code example of the Terraform configuration.",
+    "answer": "To connect to a custom infrastructure provider using Terraform, you would create a custom Terraform provider by implementing a Terraform provider plugin in a programming language such as Go. You would then use the custom provider in your Terraform configuration: `provider \"custom-provider\" {   hostname = \"custom-provider.com\" }\n\n resource \"custom-provider/resource\" \"example\" {\n   name = \"example-resource\"\n }`"
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Hard",
+    "question": "Discuss the trade-offs between using Terraform 'state' files and 'remote state' storage. When would you choose each option?",
+    "answer": "Terraform 'state' files are local files that store the current state of infrastructure resources managed by Terraform. Remote state storage uses a centralized store like S3 or Azure Blob Storage to store the state. You would choose 'state' files when working on small projects or development environments where security and scalability are not concerns. Remote state storage is suitable for large, distributed teams or production environments where security, scalability, and collaboration are critical."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Infrastructure as Code",
+    "difficulty": "Hard",
+    "question": "Describe a strategy for rolling back infrastructure changes applied using Terraform. How would you use Terraform 'state' and 'remote state' to facilitate rollbacks?",
+    "answer": "To roll back infrastructure changes applied using Terraform, use Terraform 'state' or 'remote state' to store the previous state of the infrastructure. When applying changes, Terraform creates a new state and overwrites the previous one. To roll back, you can use the previous state to apply the previous configuration: `terraform init -upgrade\nterraform apply -target=resource.example.com -state=terraform.tfstate.backup`"
+  }
+]

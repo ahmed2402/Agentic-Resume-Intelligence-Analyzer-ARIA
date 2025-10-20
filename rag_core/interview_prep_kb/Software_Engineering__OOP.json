@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "What is the main purpose of the 'this' keyword in a class?",
+    "answer": "The 'this' keyword is used to refer to the current instance of the class and is used to access variables and methods of the class."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Create a simple class in Python that demonstrates inheritance.",
+    "answer": "class Animal: pass\nclass Dog(Animal): pass"
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Explain the concept of encapsulation in OOP.",
+    "answer": "Encapsulation is the concept of bundling data and its methods that operate on that data within a single unit, making it harder for other parts of the program to access or modify the data directly."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "What is the difference between 'public' and 'private' access modifiers in a class?",
+    "answer": "The 'public' access modifier allows access to members from anywhere in the program, while the 'private' access modifier restricts access to members only within the same class."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Easy",
+    "question": "Can you describe the concept of polymorphism in OOP?",
+    "answer": "Polymorphism is the ability of an object to take on multiple forms, depending on the context in which it is used. This can be achieved through method overriding or method overloading."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Explain the difference between inheritance and composition in object-oriented programming.",
+    "answer": "Inheritance is a mechanism where a child class inherits the properties and behavior of a parent class. Composition, on the other hand, is a mechanism where an object contains a reference to another object."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Design a class hierarchy for a banking system that includes a base class for accounts and subclasses for checking and savings accounts.",
+    "answer": "A possible class hierarchy could be: Account (base class) -> CheckingAccount (subclass) -> SavingsAccount (subclass)."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "What is polymorphism in object-oriented programming, and provide an example of its usage?",
+    "answer": "Polymorphism is the ability of an object to take on multiple forms. An example of polymorphism is a method that can accept different types of arguments and behave accordingly, such as a method that can accept either a string or an integer."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Implement a simple Employee class with attributes for name, salary, and department, and methods to calculate the employee's annual salary and display their information.",
+    "answer": "class Employee: def __init__(self, name, salary, department): self.name = name; self.salary = salary; self.department = department; def calculate_annual_salary(self): return self.salary * 12; def display_info(self): print(f'Name: {self.name}, Salary: {self.salary}, Department: {self.department}')"
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "question": "Describe the concept of encapsulation in object-oriented programming and provide an example of its usage.",
+    "answer": "Encapsulation is the idea of bundling data and methods that operate on that data within a single unit, making it harder for other parts of the program to access or modify the data directly. An example of encapsulation is a class that has a private attribute and a public method to access and modify that attribute."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Given a graph of object relationships, describe an algorithm to detect the presence of a cycle in the object inheritance hierarchy.",
+    "answer": "To detect a cycle, you can use a depth-first search (DFS) traversal with a set to keep track of visited nodes. When a node is revisited, it indicates the presence of a cycle. Additionally, you can use a color-based approach, where nodes are colored white (unvisited), gray (visiting), or black (visited). A node with gray color and its parent node with black color indicate a cycle."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Design a class hierarchy for a banking system, where the base class represents a financial account, and the derived classes represent different types of accounts (e.g., Checking, Savings, Credit Card). Ensure that the class hierarchy captures the common characteristics and behaviors of these accounts.",
+    "answer": "The class hierarchy can be designed as follows: Base class - Account, with attributes like account number and balance. Derived class - CheckingAccount, with attributes like overdraft limit and fees. Derived class - SavingsAccount, with attributes like interest rate and minimum balance. Derived class - CreditCardAccount, with attributes like credit limit and interest rate. The base class provides common methods like deposit, withdraw, and getBalance, while the derived classes implement specific behaviors like calculateFees for CheckingAccount or calculateInterest for SavingsAccount."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Suppose you have two objects, Person and Employee, where Person has attributes like name and age, and Employee has attributes like salary and department. If Person and Employee have a common attribute (e.g., name), how can you ensure that the derived class Employee does not override the Person's attribute, while still allowing the Employee to add its own attributes?",
+    "answer": "To achieve this, you can use interface inheritance or abstract classes. Define an interface or abstract class with the common attribute (e.g., name) and make it abstract. The derived class Employee can then implement the interface or extend the abstract class, while adding its own attributes. This way, the Employee class will not override the Person's attribute and can still add its own attributes."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Consider a scenario where you need to implement a polymorphic method in a class hierarchy. The method should behave differently based on the type of object it's called on. How can you achieve this using inheritance and polymorphism?",
+    "answer": "You can achieve this using method overriding or method overloading. In method overriding, the derived class provides a different implementation of the method, which can behave differently based on the type of object. In method overloading, the same method can be defined with different parameters, allowing the method to behave differently based on the type of object. Alternatively, you can use the Visitor design pattern, which allows you to add new behaviors to an object without modifying its class hierarchy."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "OOP",
+    "difficulty": "Hard",
+    "question": "Given a class hierarchy where some classes have a common base class, describe how you can implement a strategy to ensure that only the derived classes can access the base class's protected members, while preventing access from other classes within the same package.",
+    "answer": "You can achieve this using the private access modifier in Java or private visibility in C#. In Java, the base class can declare its protected members as private, and the derived classes can access them using the protected access modifier. In C#, the base class can declare its protected members as private, and the derived classes can access them using the protected access modifier. This way, only the derived classes can access the base class's protected members, while preventing access from other classes within the same package."
+  }
+]

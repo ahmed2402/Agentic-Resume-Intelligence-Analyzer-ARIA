@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Cross-platform Frameworks",
+    "difficulty": "Easy",
+    "question": "What are the primary advantages of using cross-platform frameworks over native development?",
+    "answer": "The primary advantages of using cross-platform frameworks are faster development time, reduced development costs, and easier maintenance. These frameworks allow developers to build apps for multiple platforms using a single codebase, which saves time and resources."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Cross-platform Frameworks",
+    "difficulty": "Easy",
+    "question": "Consider you're building a mobile app using React Native. How would you handle layout differences between iOS and Android?",
+    "answer": "You can use React Native's built-in layout components, such as View and Text, to handle layout differences. Additionally, you can use platform-specific code using the if-else statement or the Platform module to customize the layout for each platform."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Cross-platform Frameworks",
+    "difficulty": "Easy",
+    "question": "What is the difference between Flutter and React Native?",
+    "answer": "Flutter is a cross-platform framework developed by Google, which uses the Dart programming language to build native mobile apps. React Native, on the other hand, uses JavaScript and the React library to build cross-platform apps. Flutter is known for its fast performance and visually appealing UI, while React Native is popular for its ease of use and large community of developers."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Cross-platform Frameworks",
+    "difficulty": "Easy",
+    "question": "Consider you're building a mobile app that requires camera access. How would you perform camera operations using a cross-platform framework?",
+    "answer": "You can use the camera API provided by the cross-platform framework, such as the Camera module in React Native or the camera package in Flutter. These APIs allow you to access the device's camera and perform operations such as taking photos or recording videos."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Cross-platform Frameworks",
+    "difficulty": "Easy",
+    "question": "What is the role of native modules in cross-platform frameworks?",
+    "answer": "Native modules are small pieces of native code that are used to interact with platform-specific APIs. They allow cross-platform frameworks to access native features and functionality, such as hardware components or platform-specific services. Native modules are used to bridge the gap between the cross-platform framework and the native platform."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Cross-platform Frameworks",
+    "difficulty": "Medium",
+    "question": "What are the key differences between React Native and Flutter in terms of their architecture?",
+    "answer": "React Native uses a bridge to communicate between JavaScript and native code, while Flutter uses a widget-based architecture and compiles to native code using Dart."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Cross-platform Frameworks",
+    "difficulty": "Medium",
+    "question": "Describe a scenario where you would choose to use Xamarin over other cross-platform frameworks.",
+    "answer": "I would choose to use Xamarin when developing an application that requires integration with existing native code, or when the team is already familiar with C# and the .NET ecosystem."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Cross-platform Frameworks",
+    "difficulty": "Medium",
+    "question": "What are some common performance optimization techniques for cross-platform frameworks like React Native and Flutter?",
+    "answer": "Common performance optimization techniques include code splitting, lazy loading, and optimizing images and assets, as well as using native modules and optimized libraries."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Cross-platform Frameworks",
+    "difficulty": "Medium",
+    "question": "Write a brief code example of how to implement a custom font in a React Native project.",
+    "answer": "To implement a custom font in React Native, you can use the `require` method to load the font file, and then use the `setFontFamily` method to apply the font to a text component: `const CustomFont = require('./custom-font.ttf'); return <Text style={{fontFamily: CustomFont}}>Hello World!</Text>;`"
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Cross-platform Frameworks",
+    "difficulty": "Medium",
+    "question": "What are some security considerations when using cross-platform frameworks for mobile development?",
+    "answer": "Security considerations include protecting sensitive data, validating user input, and using secure communication protocols like HTTPS, as well as following best practices for code obfuscation and encryption."
+  }
+]

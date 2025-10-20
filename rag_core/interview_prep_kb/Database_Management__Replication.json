@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Easy",
+    "question": "What is replication in database management, and what are its primary benefits?",
+    "answer": "Replication is the process of maintaining multiple copies of data across different locations. The primary benefits of replication include improved data availability, increased system reliability, and faster data recovery in case of failures or disasters."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Easy",
+    "question": "Suppose you have a database with a large number of concurrent connections. How would you ensure that the data remains consistent across the replicas?",
+    "answer": "To ensure data consistency across replicas in a high-availability system, you can use techniques such as two-phase commit or multi-master replication with conflict resolution mechanisms."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Easy",
+    "question": "What is the difference between synchronous and asynchronous replication?",
+    "answer": "Synchronous replication ensures that data is written to all replicas before the client receives an acknowledgment, while asynchronous replication allows the client to receive an acknowledgment before the data is written to all replicas."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Easy",
+    "question": "You are managing a database with a large dataset and multiple replicas. How would you handle replication conflicts that may arise during updates?",
+    "answer": "Replication conflicts can be handled using conflict resolution mechanisms, such as last-writer-wins, first-writer-wins, or manual conflict resolution by database administrators."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Easy",
+    "question": "What is the primary advantage of using multi-master replication over master-slave replication?",
+    "answer": "The primary advantage of multi-master replication is that it allows writes to be accepted by any node, making it a more scalable and fault-tolerant solution for high-availability systems."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Medium",
+    "question": "Describe the main difference between asynchronous and synchronous replication in a database.",
+    "answer": "Asynchronous replication occurs when data is written to the primary database and then replicated to the secondary database at a later time, while synchronous replication occurs in real-time, ensuring data consistency between primary and secondary databases."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Medium",
+    "question": "A database has a high volume of transactions and a large dataset. Which replication strategy would you recommend to minimize latency and ensure data consistency?",
+    "answer": "I would recommend using a multi-master replication strategy with a combination of synchronous and asynchronous replication to minimize latency and ensure data consistency."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a replication lag in a database, and how can it be optimized?",
+    "answer": "Replication lag refers to the delay between the time data is written to the primary database and when it is replicated to the secondary database. It can be optimized by adjusting replication parameters, such as increasing the replication frequency or using a more efficient replication method."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Medium",
+    "question": "Design a replication setup for a distributed database system with multiple nodes. What are the key considerations for ensuring data consistency and availability?",
+    "answer": "The key considerations for a distributed database system with multiple nodes include using a distributed locking mechanism to prevent conflicts between nodes, using a conflict resolution strategy to handle data inconsistencies, and implementing a failover mechanism to ensure availability in case of node failure."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Medium",
+    "question": "How does the concept of conflict resolution apply to replication in a database? Provide an example of a conflict resolution strategy.",
+    "answer": "Conflict resolution is the process of resolving differences between data in a primary database and a secondary database. An example of a conflict resolution strategy is the 'last writer wins' approach, where the last update to a data item is considered the authoritative version."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Hard",
+    "question": "Design a conflict resolution strategy for a multi-master replication setup with three nodes. Node A has updated a record, while node B has updated the same record concurrently. How would you resolve this conflict to ensure data consistency across all nodes?",
+    "answer": "To resolve this conflict, we can implement a last-writer-wins approach or a voting system. However, a more robust solution would be to use a multi-version concurrency control (MVCC) mechanism. Each node would store multiple versions of the record, and the conflict would be resolved by comparing the versions and selecting the most up-to-date one. This approach ensures data consistency and minimizes the risk of data loss."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Hard",
+    "question": "A master node is experiencing high latency, while its slave nodes are experiencing high network traffic. What configuration changes would you suggest to optimize replication performance and ensure data consistency?",
+    "answer": "To optimize replication performance, we would need to identify the root cause of the high latency and high network traffic. We might consider changing the replication topology to a star or a hub-and-spoke configuration, where the master node is connected to multiple slaves. We could also increase the replication batch size and reduce the frequency of replication to alleviate network traffic. Additionally, we could implement asynchronous replication to minimize the impact of high latency on the master node."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Hard",
+    "question": "Design a mechanism to detect and handle replication lag in a distributed database system. The system consists of a master node and three slave nodes, each with a different replication delay.",
+    "answer": "To detect replication lag, we can implement a monitoring system that tracks the replication delay for each slave node. We can use metrics such as the last received log sequence number (LSN) or the timestamp of the last replicated transaction. When a significant replication delay is detected, we can trigger a recovery process to resynchronize the lagging slave node with the master node. This can be achieved by replaying the transactions that were missed during the replication delay."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Hard",
+    "question": "A distributed database system uses a two-phase commit protocol for transaction management. However, the system is experiencing frequent transaction rollbacks due to network failures. What changes would you suggest to improve the system's resilience to network failures?",
+    "answer": "To improve the system's resilience to network failures, we can implement a timeout mechanism to detect network failures during the two-phase commit protocol. If a timeout occurs, we can abort the transaction and roll back the changes. We can also use a consensus algorithm such as Paxos or Raft to ensure that all nodes agree on the outcome of the transaction before committing it to the database."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Replication",
+    "difficulty": "Hard",
+    "question": "Design a replication strategy for a real-time analytics database that requires low-latency data processing and high availability. The database consists of a master node and multiple slave nodes, each with a different processing capacity.",
+    "answer": "To meet the low-latency and high-availability requirements, we can implement a stream-based replication strategy that uses a publish-subscribe model. The master node would publish data streams to a messaging system, and each slave node would subscribe to the relevant streams. This approach allows for real-time data processing and ensures that all nodes have access to the latest data. We can also use a load balancer to distribute the data processing workload across the slave nodes and ensure that no single node becomes a bottleneck."
+  }
+]

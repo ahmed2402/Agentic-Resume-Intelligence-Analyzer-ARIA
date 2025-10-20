@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Easy",
+    "question": "What does the product development phase typically involve?",
+    "answer": "The product development phase involves designing and building the product, including gathering requirements, creating prototypes, and testing the product for quality and functionality."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Easy",
+    "question": "A product has reached the end-of-life stage, what is the primary goal?",
+    "answer": "The primary goal at the end-of-life stage is to minimize costs and focus on maintenance, security updates, and support for existing customers."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Easy",
+    "question": "Describe the key differences between a product's growth phase and maturity phase.",
+    "answer": "During the growth phase, the product experiences increasing adoption and revenue. In contrast, the maturity phase is characterized by stable sales and a focus on maintenance and optimization."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Easy",
+    "question": "Why is it essential to define a product's lifecycle stages?",
+    "answer": "Defining product lifecycle stages helps product managers prioritize resources, make informed decisions, and communicate effectively with stakeholders about the product's progress and future plans."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Easy",
+    "question": "What is the primary objective of the launch phase in a product's lifecycle?",
+    "answer": "The primary objective of the launch phase is to introduce the product to the market, generate buzz, and drive initial sales and adoption."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Medium",
+    "question": "What are the primary stages of a product's lifecycle, and how do they impact product development and decision-making?",
+    "answer": "The primary stages of a product's lifecycle are Introduction, Growth, Maturity, and Decline. Each stage requires different strategies, resource allocation, and decision-making processes. For example, during the Growth stage, product managers may focus on expanding the product's user base, while during the Maturity stage, they may focus on maintaining market share and optimizing profit margins."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Medium",
+    "question": "A product has reached the Maturity stage. What are some key considerations for product managers to maintain the product's competitiveness and longevity?",
+    "answer": "To maintain a product's competitiveness and longevity in the Maturity stage, product managers should consider refining the product's features, improving its performance, and enhancing its user experience. They may also explore new markets, distribution channels, or business models to sustain revenue growth and maintain market share."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Medium",
+    "question": "A company is considering discontinuing a product in the Decline stage. What are the key factors to consider when making this decision?",
+    "answer": "When deciding to discontinue a product, product managers should consider factors such as the product's profitability, customer feedback, and market trends. They should also assess the potential impact on customers, revenue, and the company's brand reputation. Additionally, they may explore alternative solutions, such as repurposing the product or transitioning customers to a new product."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Medium",
+    "question": "A product is nearing the end of its Growth stage. How can product managers balance short-term revenue goals with long-term strategic priorities?",
+    "answer": "To balance short-term revenue goals with long-term strategic priorities, product managers can prioritize investments that drive both immediate revenue growth and long-term sustainability. For example, they may focus on improving the product's user acquisition and retention rates, while also investing in features that will drive future growth and innovation."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Medium",
+    "question": "A product has a seasonal demand pattern, with peak sales during certain times of the year. How can product managers optimize the product's development and launch to meet this demand pattern?",
+    "answer": "To optimize the product's development and launch to meet seasonal demand, product managers can consider factors such as production lead times, inventory management, and marketing campaigns. They may also explore strategies such as pre-ordering, limited-time offers, or targeted marketing campaigns to capitalize on peak demand periods."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Hard",
+    "question": "A product has reached the end of its life cycle, and there is a significant customer base still using it. What is the most appropriate next step?",
+    "answer": "Sunset the product by gradually reducing support, documentation, and resources, while still providing essential maintenance and security updates to ensure customer continued use and mitigate potential security risks."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Hard",
+    "question": "A product's sales have plateaued, and the team is considering repositioning it to target a new market. What are the key factors to consider when evaluating the feasibility of this strategy?",
+    "answer": "The product's existing feature set, customer feedback, competitive landscape, and market demand for the new target market. It's essential to assess whether the product's existing features can meet the new market's needs and whether there is a viable business case to support the repositioning effort."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Hard",
+    "question": "You're tasked with determining the optimal time to launch a new feature in a product with a complex development process. What metrics should you use to inform this decision?",
+    "answer": "Key metrics include customer adoption rates, user engagement, and revenue growth. These metrics can help determine when the product's existing user base is ready to adopt the new feature and whether it will have a positive impact on the business."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Hard",
+    "question": "You're faced with a product that has multiple competing priorities and limited resources. How would you prioritize features to drive maximum business value?",
+    "answer": "Use a combination of business impact analysis, customer feedback, and technical feasibility to prioritize features. Consider implementing a framework such as MoSCoW prioritization or the Kano model to help make informed decisions and maximize business value."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Product Lifecycle",
+    "difficulty": "Hard",
+    "question": "A product has reached a critical milestone, and you need to decide whether to expand its development team to meet growing demand. What factors should you consider when making this decision?",
+    "answer": "Assess the product's growth rate, team capacity, and resource availability. Consider whether expanding the team will improve product velocity, quality, and customer satisfaction. Additionally, evaluate the potential risks and challenges associated with expanding the team, such as integration issues and increased overhead costs."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Easy",
+    "question": "What is the primary function of a vertex shader in a graphics pipeline?",
+    "answer": "A vertex shader is used to transform and project 3D vertices into 2D screen coordinates."
+  },
+  {
+    "id": "q2",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Easy",
+    "question": "What is the difference between a sprite and a texture?",
+    "answer": "A sprite is a 2D object with its own transformation and rendering properties, while a texture is a 2D image that can be applied to multiple sprites."
+  },
+  {
+    "id": "q3",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Easy",
+    "question": "How do you implement a simple lighting effect in a 2D game?",
+    "answer": "You can use a basic shader that takes a texture and a lighting value as input, and outputs the resulting color after applying the lighting effect."
+  },
+  {
+    "id": "q4",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Easy",
+    "question": "What are the main components of a graphics pipeline?",
+    "answer": "The main components of a graphics pipeline are the vertex shader, geometry shader, pixel shader, and rasterizer."
+  },
+  {
+    "id": "q5",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a frame buffer object (FBO) in graphics programming?",
+    "answer": "An FBO is used to render a scene to a texture, allowing for post-processing effects and other off-screen rendering techniques."
+  },
+  {
+    "id": "q1",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Medium",
+    "question": "Explain the difference between a frame buffer and a render target in DirectX.",
+    "answer": "A frame buffer is a buffer that stores the final, finished frame of a 3D scene, whereas a render target is a buffer where the graphics pipeline renders its output. A frame buffer is typically used for final rendering, while a render target is used for intermediate rendering or for special effects like depth of field or motion blur."
+  },
+  {
+    "id": "q2",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Medium",
+    "question": "Write a short code snippet in C# to initialize a vertex buffer with vertex positions and texture coordinates for a simple 2D sprite.",
+    "answer": "This is a simple example using DirectX 11 and SharpDX:\n```csharp\nusing SharpDX;\n\n// Define the vertex structure\npublic struct Vertex\n{\n    public Vector2 Position;\n    public Vector2 TextureCoordinate;\n}\n\n// Create a new vertex buffer\nVertexBuffer vertexBuffer = new VertexBuffer(device, typeof(Vertex), 4, BufferUsage.None);\n\n// Initialize the vertex buffer with vertex positions and texture coordinates\nvertexBuffer.SetData(new Vertex[]\n{\n    new Vertex { Position = new Vector2(-1, -1), TextureCoordinate = new Vector2(0, 0) },\n    new Vertex { Position = new Vector2(1, -1), TextureCoordinate = new Vector2(1, 0) },\n    new Vertex { Position = new Vector2(1, 1), TextureCoordinate = new Vector2(1, 1) },\n    new Vertex { Position = new Vector2(-1, 1), TextureCoordinate = new Vector2(0, 1) }\n});\n```\nNote: Vector2 is a class from the SharpDX library."
+  },
+  {
+    "id": "q3",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a viewport in 3D graphics, and how does it differ from other concepts like camera frustums and screen space?",
+    "answer": "A viewport is a 2D region of the screen where the 3D scene is rendered. It defines the area of the screen where the graphics pipeline should render the scene. The viewport differs from the camera frustum in that the frustum is a 3D region in the scene that is visible to the camera, whereas the viewport is a 2D region on screen. Screen space refers to the coordinates of the pixels on the screen, which can be used for various purposes like collision detection or debugging. The viewport is used to define the mapping between the 3D scene and the 2D screen space."
+  },
+  {
+    "id": "q4",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Medium",
+    "question": "Explain the concept of MIP mapping and its purpose in texture filtering.",
+    "answer": "MIP mapping is a technique used in texture filtering to improve the quality of texture rendering. It involves storing multiple resolutions of a texture at different scales, and selecting the appropriate resolution based on the distance between the texture and the viewer. This approach reduces aliasing and artifacts that can occur when rendering high-resolution textures at a distance. MIP mapping is commonly used in games to improve texture rendering quality and reduce visual artifacts."
+  },
+  {
+    "id": "q5",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Medium",
+    "question": "What is the difference between a shader model 3.x and shader model 4.x, and how do they affect graphics performance and capabilities?",
+    "answer": "Shader model 3.x is an older graphics shader model that supports some basic effects like lighting, but has limitations in terms of complexity and precision. Shader model 4.x is a newer model that supports more advanced effects like physics-based rendering, displacement mapping, and tessellation. The main differences between shader model 3.x and 4.x are the introduction of floating-point texture sampling, hardware-based tessellation, and support for more complex shaders. Shader model 4.x requires more powerful graphics hardware and can provide improved graphics performance and capabilities."
+  },
+  {
+    "id": "q1",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Hard",
+    "question": "Describe the differences between Mipmap, Anisotropic Filtering, and Texture Atlasing in the context of texture mapping.",
+    "answer": "Mipmap is a texture pyramid used for reducing texture details based on distance. Anisotropic Filtering improves texture quality by accounting for texture anisotropy. Texture Atlasing is a technique used for packing multiple textures into a single texture atlas to reduce texture switching overhead."
+  },
+  {
+    "id": "q2",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Hard",
+    "question": "Write a GLSL fragment shader that implements a basic screen space ambient occlusion (SSAO) using a depth buffer.",
+    "answer": "precision highp float; uniform sampler2D gDepthMap; uniform vec2 resolution; uniform float occlusionStrength; float getAmbientOcclusion(vec2 texCoord) { float depthValue = texture2D(gDepthMap, texCoord).r; if (texCoord.x > 0.0 && texCoord.x < 1.0 && texCoord.y > 0.0 && texCoord.y < 1.0) { float neighborDepthValue = texture2D(gDepthMap, texCoord + vec2(0.01, 0.0)).r; if (neighborDepthValue > depthValue) return occlusionStrength; } return 0.0; } void main() { vec2 texCoord = gl_FragCoord.xy / resolution; float ao = getAmbientOcclusion(texCoord); gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0) - (ao * occlusionStrength); }"
+  },
+  {
+    "id": "q3",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Hard",
+    "question": "Explain how to implement a bloom effect using a technique like the 'light bloom' method or 'screen-space blur'. Which one is more suitable for which situations?",
+    "answer": "The 'light bloom' method is more suitable for scenes with bright light sources and subtle texture details. It involves rendering a bright pass into a render target, then blurring it and combining it with the original scene. The 'screen-space blur' method is more flexible and suitable for a wide range of scenes. It involves rendering the scene and then applying a blur effect to the entire screen."
+  },
+  {
+    "id": "q4",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Hard",
+    "question": "Describe the differences between a 32-bit and a 64-bit floating-point representation in graphics rendering, including the implications for floating-point precision and performance.",
+    "answer": "A 32-bit floating-point representation uses 23 bits for the mantissa, 8 bits for the exponent, and 1 bit for the sign, resulting in a precision of approximately 7 decimal places. A 64-bit floating-point representation uses 52 bits for the mantissa, 11 bits for the exponent, and 1 bit for the sign, resulting in a precision of approximately 15 decimal places. The 64-bit representation has higher precision but also requires more memory and computational resources."
+  },
+  {
+    "id": "q5",
+    "domain": "Game Development",
+    "topic": "Graphics Programming",
+    "difficulty": "Hard",
+    "question": "Explain how to optimize the performance of a graphics pipeline by using techniques like tile-based rendering, instancing, or level of detail (LOD) rendering.",
+    "answer": "Tile-based rendering involves dividing the screen into smaller tiles and rendering each tile independently. Instancing involves rendering multiple copies of a 3D model with minimal state changes. LOD rendering involves rendering a 3D model at different levels of detail based on distance or other criteria. These techniques can reduce the number of draw calls, minimize state changes, and improve rendering performance."
+  }
+]

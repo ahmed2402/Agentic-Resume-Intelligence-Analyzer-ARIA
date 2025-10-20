@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Easy",
+    "question": "What is the time complexity of a linear search algorithm in an array?",
+    "answer": "The time complexity of a linear search algorithm is O(n), where n is the number of elements in the array."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Easy",
+    "question": "Write a simple algorithm to find the maximum value in an array.",
+    "answer": "To find the maximum value in an array, iterate through each element and keep track of the maximum value encountered so far."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Easy",
+    "question": "What is the difference between Big O notation and Big Ω notation?",
+    "answer": "Big O notation represents the upper bound of an algorithm's time complexity, while Big Ω notation represents the lower bound."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Easy",
+    "question": "How does the bubble sort algorithm work?",
+    "answer": "Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the Fibonacci sequence in algorithms?",
+    "answer": "The Fibonacci sequence is often used as a test case for algorithms that have exponential time complexity, as it can produce large numbers of test cases with relatively simple input values."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of the Bubble Sort algorithm?",
+    "answer": "The time complexity of Bubble Sort is O(n^2) in the worst case, where n is the number of elements in the array."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Medium",
+    "question": "Given two sorted arrays, write a function to find the common elements between them without using any extra space.",
+    "answer": "You can compare the two arrays from the start and maintain two pointers. If the elements are equal, add it to the result and move both pointers. If the element in the first array is smaller, move the pointer in the first array. If the element in the second array is smaller, move the pointer in the second array."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Medium",
+    "question": "Can you explain the difference between a hash table and a binary search tree? Both data structures are used for efficient lookups.",
+    "answer": "A hash table uses a hash function to map keys to indices in an array, allowing for constant time lookups on average. A binary search tree uses a binary tree structure where each node has a key and two child nodes, allowing for log(n) time lookups on average."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Medium",
+    "question": "How do you determine if a graph is connected or not?",
+    "answer": "You can use a depth-first search (DFS) or breadth-first search (BFS) algorithm to traverse the graph. If there is a path between all nodes, the graph is connected. If there is no path between some nodes, the graph is not connected."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the Floyd-Warshall algorithm?",
+    "answer": "The Floyd-Warshall algorithm is used to find the shortest path between all pairs of vertices in a weighted graph. It can be used to detect negative cycles and can be applied to both directed and undirected graphs."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Hard",
+    "question": "Given a set of intervals, find the maximum number of non-overlapping intervals that can be selected. The intervals are represented as arrays of two integers, where the first integer is the start time and the second integer is the end time.",
+    "answer": "To solve this problem, you can use dynamic programming to find the longest increasing subsequence of the end times of the intervals, and then select the corresponding intervals. The time complexity is O(n log n), where n is the number of intervals."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Hard",
+    "question": "Design a function to find the first duplicate in an unsorted array of integers. The function should return the first duplicate it finds, and if no duplicates are found, it should return -1.",
+    "answer": "You can use a HashSet to keep track of the numbers you've seen so far. Iterate through the array and for each number, check if it's in the HashSet. If it is, return that number as the first duplicate. If not, add it to the HashSet. If you reach the end of the array without finding a duplicate, return -1."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Hard",
+    "question": "Given a graph represented as an adjacency matrix, find the shortest path between two nodes using Dijkstra's algorithm. However, in this version of Dijkstra's algorithm, you can only move to a neighboring node if the neighboring node has not been visited before.",
+    "answer": "To solve this problem, you can use a modified version of Dijkstra's algorithm. First, create a priority queue to keep track of the nodes to visit. Then, iterate through the adjacency matrix and add the unvisited neighbors of each node to the priority queue. Use a visited set to keep track of the nodes that have been visited. When selecting the next node to visit, choose the node with the minimum distance that has not been visited yet."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Hard",
+    "question": "Implement a function to find the maximum sum of a subarray within a given array. The subarray can be empty, and the maximum sum can be negative.",
+    "answer": "You can use Kadane's algorithm to solve this problem. Iterate through the array and at each position, calculate the maximum sum of the subarray ending at that position. This can be done by adding the current element to the maximum sum of the subarray ending at the previous position, or by starting a new subarray at the current position."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Algorithms",
+    "difficulty": "Hard",
+    "question": "Given a string of parentheses, determine if it is a valid representation of a nested structure. A valid representation is one where every open parenthesis has a corresponding close parenthesis that is not matched by any open parenthesis that comes after it.",
+    "answer": "You can use a stack to solve this problem. Iterate through the string and for each open parenthesis, push it onto the stack. For each close parenthesis, check if the stack is empty or if the top of the stack does not match the close parenthesis. If either condition is true, return False. Otherwise, pop the top of the stack. If you reach the end of the string without returning False, return True."
+  }
+]

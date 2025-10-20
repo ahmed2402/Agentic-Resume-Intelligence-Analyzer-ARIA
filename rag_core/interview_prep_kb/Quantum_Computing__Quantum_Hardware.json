@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Easy",
+    "question": "What is the primary component of a qubit in a quantum computer that allows it to exist in multiple states simultaneously?",
+    "answer": "Superposition, a fundamental property of quantum mechanics that enables a qubit to represent multiple binary digits (0 and 1) at the same time."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Easy",
+    "question": "Compare and contrast the two types of quantum computing architectures: gate-based and annealer.",
+    "answer": "Gate-based architecture uses a sequence of quantum gates to perform operations, whereas annealer uses a specific type of quantum circuit to find the ground state of a problem. Gate-based is more general-purpose, while annealer is optimized for specific problems like optimization and machine learning."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a quantum error correction code, and how does it help in maintaining the integrity of quantum computations?",
+    "answer": "Quantum error correction codes detect and correct errors that occur due to decoherence and other sources of noise in quantum systems, ensuring the reliability of quantum computations and preserving the fragile quantum states."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Easy",
+    "question": "What is a trapped ion quantum computer, and how do ions trap quantum bits in this architecture?",
+    "answer": "A trapped ion quantum computer uses ions as qubits that are trapped and manipulated using electromagnetic fields. The ions are confined in a trap, allowing for precise control over their quantum states."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Easy",
+    "question": "What is a superconducting qubit, and how do superconducting circuits enable quantum computing?",
+    "answer": "A superconducting qubit is a type of qubit that uses a superconducting circuit to store and manipulate quantum information. The superconducting circuit enables the creation of a quantum bit that can exist in a superposition of states, allowing for quantum computing."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Medium",
+    "question": "What is the primary advantage of using superconducting qubits in quantum computing?",
+    "answer": "Superconducting qubits have a long coherence time, which enables more precise control over quantum states and reduces error rates in quantum computations."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Medium",
+    "question": "A quantum computer is designed to perform a certain quantum algorithm. If the quantum computer's qubits are not properly calibrated, what is the likely outcome?",
+    "answer": "The qubits may not behave as expected, leading to errors in the computation or even causing the algorithm to fail entirely."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Medium",
+    "question": "Describe the function of a quantum error correction code in a quantum computer.",
+    "answer": "A quantum error correction code is a set of mathematical procedures that detect and correct errors caused by decoherence or other sources of noise in a quantum computer. These codes encode the quantum information in a way that allows it to be recovered even if errors occur."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Medium",
+    "question": "Suppose you are designing a quantum computer with a fixed number of qubits. How would you optimize the layout of the qubits to minimize the impact of crosstalk?",
+    "answer": "You would arrange the qubits in a way that maximizes the physical distance between them, such as in a two-dimensional grid or a three-dimensional lattice. This helps to reduce the likelihood of crosstalk, which can cause errors in the computation."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Medium",
+    "question": "What is the primary challenge in scaling up a quantum computer to hundreds or thousands of qubits?",
+    "answer": "The primary challenge is maintaining coherence across the entire system, as the number of possible interactions between qubits increases exponentially with the number of qubits. This requires sophisticated control systems and error correction techniques to mitigate the effects of decoherence and other sources of noise."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Hard",
+    "question": "Explain the fundamental difference between a superconducting qubit and a trapped ion qubit in terms of coherence times.",
+    "answer": "Superconducting qubits have relatively short coherence times, typically on the order of microseconds, due to the presence of charge noise and other sources of decoherence. In contrast, trapped ion qubits have much longer coherence times, often on the order of seconds, due to the ability to isolate the ions from their environment and reduce decoherence."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Hard",
+    "question": "A quantum computer architecture consists of a linear chain of 10 superconducting qubits, each connected to its nearest neighbors. What is the maximum number of entangled pairs that can be created in this architecture using a single entanglement gate?",
+    "answer": "Using a single entanglement gate, the maximum number of entangled pairs that can be created in this architecture is 9. This is because each entanglement gate can entangle two qubits, and there are 9 pairs of adjacent qubits in the chain."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Hard",
+    "question": "Describe the principles behind the operation of a Josephson junction and its role in superconducting qubit circuits.",
+    "answer": "A Josephson junction is a device that consists of two superconducting electrodes separated by a thin insulating barrier. When a current is applied to the electrodes, a quantum tunneling effect occurs, allowing the supercurrent to flow through the barrier. In superconducting qubit circuits, Josephson junctions are used to create the non-linear inductance required for quantum oscillations."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Hard",
+    "question": "A quantum computer uses a surface code with a 5x5 grid of qubits to perform quantum error correction. What is the minimum number of measurements required to correct errors in this code?",
+    "answer": "For a surface code with a 5x5 grid of qubits, the minimum number of measurements required to correct errors is 25. This is because each qubit measurement can correct one error, and there are 25 qubits in the grid."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Hardware",
+    "difficulty": "Hard",
+    "question": "A superconducting qubit is described by the Hamiltonian H = E0|0〉〈0| + E1|1〉〈1| + (A|0〉〈1| + h.c.), where E0 = 1 GHz, E1 = 4 GHz, and A = 2 MHz. What is the Rabi frequency of this qubit?",
+    "answer": "The Rabi frequency of this qubit is given by the formula Ω = 2A = 4 MHz."
+  }
+]

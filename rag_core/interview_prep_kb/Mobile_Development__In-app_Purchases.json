@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of the SKPaymentTransactionObserver protocol in iOS?",
+    "answer": "The SKPaymentTransactionObserver protocol is used to receive notifications when an in-app purchase transaction has been completed, allowing the app to handle the resulting state changes."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Easy",
+    "question": "What is the difference between a consumable and a non-consumable in-app purchase?",
+    "answer": "A consumable in-app purchase is one that can be used up, such as a virtual currency, whereas a non-consumable in-app purchase is one that grants access to a feature or content without being depleted, such as a digital premium."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Easy",
+    "question": "How do you implement a restore purchase feature in an iOS app?",
+    "answer": "To implement a restore purchase feature, you need to call the restoreCompletedTransactions method of the SKPaymentQueue class."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the SKProductsRequest class in iOS?",
+    "answer": "The SKProductsRequest class is used to retrieve product information, such as prices and descriptions, for in-app purchases."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Easy",
+    "question": "What happens when an in-app purchase fails?",
+    "answer": "When an in-app purchase fails, the app's delegate will receive an error from the SKPaymentTransactionObserver protocol, indicating the reason for the failure."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Medium",
+    "question": "Explain the difference between consumable and non-consumable in-app purchases.",
+    "answer": "Consumable in-app purchases are temporary and can be used up, such as virtual currency, while non-consumable in-app purchases are permanent and cannot be used up, such as unlocking a premium feature."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Medium",
+    "question": "How would you implement a 'restore purchases' feature in your in-app purchase system?",
+    "answer": "To implement a 'restore purchases' feature, you would need to use the store's restore purchases API, which retrieves the user's previously purchased items and updates the in-app purchase system accordingly."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Medium",
+    "question": "What are the security risks associated with in-app purchases, and how can you mitigate them?",
+    "answer": "The security risks associated with in-app purchases include unauthorized purchases, refund scams, and data breaches. To mitigate these risks, you can use secure payment processing, implement a robust authentication system, and monitor user behavior for suspicious activity."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Medium",
+    "question": "How would you handle a scenario where a user makes a purchase but does not receive the product or service?",
+    "answer": "To handle this scenario, you would need to implement a robust support system to handle user complaints, retrieve purchase information, and provide refunds or replacements as necessary."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Medium",
+    "question": "What is the Apple App Store's 'sandbox environment' and how does it affect in-app purchases?",
+    "answer": "The Apple App Store's 'sandbox environment' is a testing environment that simulates real-world conditions to test in-app purchases without affecting actual users. In this environment, you can test your in-app purchase system without the need for real money or user accounts."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Hard",
+    "question": "Explain the difference between consumable and non-consumable in-app purchases in the context of a game. How would you implement this in your code?",
+    "answer": "Consumable in-app purchases are items that can be purchased multiple times, such as in-game currency or power-ups. Non-consumable in-app purchases are one-time purchases, such as premium features or exclusive content. To implement this in code, you can use a combination of boolean flags and inventory systems to track the availability of consumable items and ensure that non-consumable items are only purchased once."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Hard",
+    "question": "A user has purchased a subscription-based in-app purchase, but it has not yet been acknowledged by your server. How would you handle this situation in your app to ensure the user receives the benefits of the subscription?",
+    "answer": "To handle this situation, you can implement a feature that detects the subscription status on the client-side and temporarily grants the user access to the subscription benefits until the server confirms the purchase. This can be achieved by using a flag or a cache to store the subscription status and update it accordingly when the server response is received."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Hard",
+    "question": "Design a system to prevent users from exploiting in-app purchase mechanics by buying and selling in-game items or currency on third-party platforms.",
+    "answer": "To prevent exploitation, you can implement a system that checks the user's account information and transaction history against a database of known exploiters. You can also use digital rights management (DRM) techniques to ensure that in-game items or currency are stored securely on the server-side and cannot be easily transferred or duplicated."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Hard",
+    "question": "A user has encountered an error while making an in-app purchase, causing the app to crash. How would you handle this situation and provide a good user experience?",
+    "answer": "To handle this situation, you can implement a try-catch block to catch the error and display a user-friendly error message to the user. You can also include a callback to retry the purchase or provide additional error details to the user. Additionally, you can use crash reporting tools to collect error data and improve the app's stability."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "In-app Purchases",
+    "difficulty": "Hard",
+    "question": "Design a system to handle in-app purchases across multiple platforms (e.g., iOS, Android, web) with different payment gateways and currencies.",
+    "answer": "To handle in-app purchases across multiple platforms, you can implement a server-side system that acts as a payment gateway aggregator. This system would handle the payment processing and currency conversion for each platform, and provide a unified API for the app to interact with. You can also use APIs from payment gateway providers to simplify the integration process."
+  }
+]

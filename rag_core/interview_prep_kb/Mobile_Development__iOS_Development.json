@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "iOS Development",
+    "difficulty": "Easy",
+    "question": "What is the main difference between a view and a view controller in iOS development?",
+    "answer": "A view is a visual representation of the user interface, while a view controller manages the view and its interactions with other objects and systems."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "iOS Development",
+    "difficulty": "Easy",
+    "question": "How do you handle keyboard dismissal in iOS when the user taps outside of the active text field?",
+    "answer": "You can use the `resignFirstResponder()` method to dismiss the keyboard when the user taps outside of the active text field."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "iOS Development",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the `@objc` attribute in Swift?",
+    "answer": "The `@objc` attribute is used to make Swift classes, methods, and properties accessible from Objective-C and to allow for interoperability between Swift and Objective-C code."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "iOS Development",
+    "difficulty": "Easy",
+    "question": "How do you display a simple alert message to the user in an iOS app?",
+    "answer": "You can use the `UIAlertController` class to display a simple alert message to the user. Create an instance of `UIAlertController`, set its title and message, and then present it using `present(_:animated:completion:)`."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "iOS Development",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the `Storyboard` in iOS development?",
+    "answer": "The `Storyboard` is a visual representation of the app's user interface that allows you to design and arrange the views, view controllers, and other UI components in a hierarchical manner."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "iOS Development",
+    "difficulty": "Medium",
+    "question": "What is the difference between the presentViewController:animated:completion: and pushViewController:animated: methods in iOS?",
+    "answer": "The presentViewController:animated:completion: method is used to present a new view controller modally, whereas pushViewController:animated: is used to push a new view controller onto a navigation stack."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "iOS Development",
+    "difficulty": "Medium",
+    "question": "How do you handle a scenario where a user tries to perform an action when the app is in the background?",
+    "answer": "To handle this scenario, you can use the AppDelegate's applicationWillResignActive: and applicationDidEnterBackground: methods to save any unsaved data and the applicationDidEnterBackground: method to perform any necessary cleanup."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "iOS Development",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the Core Animation layer property?",
+    "answer": "The Core Animation layer property is used to animate views and their properties. It allows for the addition of animation to views without requiring the use of manual animation techniques."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "iOS Development",
+    "difficulty": "Medium",
+    "question": "What is the difference between a strong and weak reference in ARC (Automatic Reference Counting)?",
+    "answer": "A strong reference retains an object, preventing it from being deallocated until all strong references to it are released. A weak reference does not retain an object, allowing it to be deallocated even if it is still referenced by other objects."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "iOS Development",
+    "difficulty": "Medium",
+    "question": "How do you optimize the performance of a UICollectionView when it has a large amount of data?",
+    "answer": "You can optimize the performance of a UICollectionView by using a UICollectionViewDiffableDataSource, which can efficiently update the collection view's data without having to reload the entire view. Additionally, you can use batch updates to update the data in batches instead of one item at a time."
+  }
+]

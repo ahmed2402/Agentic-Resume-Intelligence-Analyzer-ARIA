@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of quantum error correction in a quantum computer?",
+    "answer": "To prevent the loss of quantum coherence, which is essential for quantum computing, due to decoherence and noise in the quantum system."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Easy",
+    "question": "What is a common technique used to detect errors in a quantum system?",
+    "answer": "Parity checks, such as those used in quantum error correction codes like the surface code, can be used to detect errors in a quantum system."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Easy",
+    "question": "What is the difference between a quantum error correction code and a classical error correction code?",
+    "answer": "A quantum error correction code corrects for errors in the quantum states of qubits, whereas a classical error correction code corrects for errors in classical bits."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Easy",
+    "question": "Which of the following quantum error correction codes is used for 2D quantum systems?",
+    "answer": "The surface code is a popular quantum error correction code used for 2D quantum systems."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Easy",
+    "question": "What is the process of correcting errors in a quantum system called?",
+    "answer": "Error correction is the process of correcting errors in a quantum system."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Medium",
+    "question": "Describe the concept of quantum error correction and its importance in large-scale quantum computing.",
+    "answer": "Quantum error correction is a technique used to detect and correct errors caused by decoherence and quantum noise in quantum computations. It's essential for large-scale quantum computing as it ensures the reliable execution of complex quantum algorithms."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Medium",
+    "question": "Explain the difference between a stabilizer code and a surface code in quantum error correction.",
+    "answer": "Stabilizer codes and surface codes are both quantum error correction codes, but they have different architectures. Stabilizer codes are based on the principle of stabilizer groups, while surface codes are topological codes that use a 2D lattice to encode and correct errors."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Medium",
+    "question": "Given a 5-qubit quantum register, design a simple quantum error correction code using the Steane code.",
+    "answer": "To design a 5-qubit Steane code, we need to encode a single logical qubit into 5 physical qubits using the following operation: |0_L> = (|00000>+|11000>+|10100>+|01100>+|10010>)/√5, where |0_L> is the encoded logical qubit."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Medium",
+    "question": "What is the primary advantage of using concatenated codes in quantum error correction?",
+    "answer": "The primary advantage of using concatenated codes is that they can provide arbitrarily high error thresholds, making them suitable for large-scale quantum computing applications."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Medium",
+    "question": "How does the surface code correct for errors in a quantum computation?",
+    "answer": "The surface code corrects for errors by measuring the syndromes of the errors and using them to determine the type and location of the errors. It then applies a correction operation to the affected qubits to restore the original state of the computation."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Hard",
+    "question": "Describe the key differences between the surface code and Shor's code in terms of their error correction thresholds and implementation complexities.",
+    "answer": "The surface code has a lower error correction threshold (around 10%) compared to Shor's code (around 20%), but it's also easier to implement and more fault-tolerant in practice. Surface codes are typically used for 2D architectures, while Shor's code is more suitable for 1D architectures."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Hard",
+    "question": "Suppose you're implementing a quantum error correction code on a noisy quantum computer. If the error rate of the quantum computer is 5%, what's the minimum number of qubits required to encode a single logical qubit using the Steane code?",
+    "answer": "The Steane code requires 7 physical qubits to encode a single logical qubit. However, to achieve a 5% error rate, you'd need to use a higher-order Steane code or a combination of codes, but even the basic implementation would require at least 7 qubits."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Hard",
+    "question": "A quantum error correction code has a 4-qubit block code with three data qubits and one ancilla qubit. If a single-qubit error occurs during a quantum computation, what's the probability that the error will go undetected by the error correction code?",
+    "answer": "Since the code is a [3,1,3] code, it has a 3-out-of-4 syndrome decoding threshold. If a single-qubit error occurs, there's a 3/4 chance that the error will be corrected, and a 1/4 chance that it will go undetected."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Hard",
+    "question": "The 9-qubit Shor code has a higher error correction threshold than the 7-qubit Steane code, but it's also more complex to implement. What's the main reason for this increased complexity?",
+    "answer": "The 9-qubit Shor code has more ancilla qubits and a more complex syndrome measurement process compared to the 7-qubit Steane code. This increased complexity makes it more challenging to implement the Shor code in practice."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Error Correction",
+    "difficulty": "Hard",
+    "question": "Suppose you're using a concatenated quantum error correction code to suppress errors in a noisy quantum computer. If the error rate of the quantum computer is reduced to 2% after the first level of concatenation, what's the theoretical limit on the achievable error rate after the second level of concatenation?",
+    "answer": "Using a concatenated code, the achievable error rate after the second level of concatenation is bounded by the square of the error rate after the first level. Therefore, the theoretical limit on the achievable error rate after the second level of concatenation would be (2%)^2 = 0.04 or 4%."
+  }
+]

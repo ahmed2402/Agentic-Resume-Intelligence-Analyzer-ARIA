@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "A/B Testing",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of an A/B testing experiment?",
+    "answer": "The primary goal of an A/B testing experiment is to compare the performance of two or more variants of a product, feature, or process to determine which one is more effective."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "A/B Testing",
+    "difficulty": "Easy",
+    "question": "A company wants to increase the conversion rate of their website. What is the best approach to achieve this using A/B testing?",
+    "answer": "The best approach is to identify the most impactful factors affecting the conversion rate, such as button color or form layout, and test different variants to determine the optimal configuration."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "A/B Testing",
+    "difficulty": "Easy",
+    "question": "What is the term for the group of users who are exposed to the original version of a product or feature?",
+    "answer": "The term is 'control group'."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "A/B Testing",
+    "difficulty": "Easy",
+    "question": "How do you calculate the statistical significance of an A/B test result?",
+    "answer": "You can use statistical tests such as the z-test or t-test to determine the statistical significance of the results, or use software tools that provide automatic calculation."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "A/B Testing",
+    "difficulty": "Easy",
+    "question": "What is the term for the proportion of the sample size that is allocated to the treatment group in an A/B test?",
+    "answer": "The term is 'allocation ratio'."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "A/B Testing",
+    "difficulty": "Medium",
+    "question": "Explain the concept of p-value in A/B testing and how it relates to the null hypothesis.",
+    "answer": "The p-value represents the probability of observing the results of the experiment, or more extreme, assuming that the null hypothesis is true. In A/B testing, the null hypothesis typically states that there is no significant difference between the treatment and control groups."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "A/B Testing",
+    "difficulty": "Medium",
+    "question": "What is the difference between a fixed effect and a random effect in a regression analysis of A/B test results?",
+    "answer": "In a fixed effect model, the treatment effect is estimated as a fixed parameter. In a random effect model, the treatment effect is assumed to be randomly drawn from a larger population."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "A/B Testing",
+    "difficulty": "Medium",
+    "question": "You are given two A/B test results with the same confidence level and sample size, but one test has a larger effect size. Which test is more statistically significant?",
+    "answer": "Neither test is more statistically significant. Statistical significance is determined by the p-value, not the effect size."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "A/B Testing",
+    "difficulty": "Medium",
+    "question": "Suppose you run an A/B test and find that the treatment group has a higher conversion rate than the control group. However, the confidence interval for the treatment effect includes zero. What can you conclude about the results?",
+    "answer": "We cannot conclude that there is a statistically significant difference between the treatment and control groups. The confidence interval including zero suggests that the observed effect may be due to chance."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "A/B Testing",
+    "difficulty": "Medium",
+    "question": "A company wants to estimate the lift in sales conversion due to a new marketing campaign. What type of A/B test design should they use?",
+    "answer": "A regression-based A/B test design is suitable for estimating the lift in sales conversion due to the new marketing campaign."
+  }
+]

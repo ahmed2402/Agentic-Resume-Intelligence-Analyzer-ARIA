@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Easy",
+    "question": "What is the primary difference between a classical bit and a qubit?",
+    "answer": "A classical bit can have a value of either 0 or 1, whereas a qubit can exist in a superposition of both 0 and 1 simultaneously."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Easy",
+    "question": "Describe the effect of a Hadamard gate on a qubit.",
+    "answer": "A Hadamard gate applies a 50-50 superposition to a qubit, resulting in a state of equal probability of being 0 and 1."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a Pauli-X gate?",
+    "answer": "A Pauli-X gate flips the state of a qubit, effectively swapping the 0 and 1 states."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Easy",
+    "question": "What is the difference between a CNOT gate and a controlled-NOT gate?",
+    "answer": "There is no difference, the terms CNOT gate and controlled-NOT gate are often used interchangeably to describe a gate that flips the target qubit if the control qubit is 1."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a Pauli-Y gate?",
+    "answer": "A Pauli-Y gate rotates the phase of a qubit, effectively changing the relative phase between the 0 and 1 states."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between a Pauli-X gate and a Pauli-Y gate in a quantum circuit?",
+    "answer": "The primary difference between a Pauli-X gate and a Pauli-Y gate is that a Pauli-X gate flips the state of a qubit (|0→|1, |1→|0), whereas a Pauli-Y gate rotates the state of a qubit around the Y-axis in the Bloch sphere."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Medium",
+    "question": "Suppose we have a qubit in the state |ψ= (|0+|1√2). What is the effect of applying a Hadamard gate to this qubit?",
+    "answer": "Applying a Hadamard gate to this qubit would result in the state |ψ= (|0+|1√2) being transformed into the equally weighted superposition state |ψ= (|0+|1√2)."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a measurement gate in a quantum circuit, and how does it affect the qubits?",
+    "answer": "The purpose of a measurement gate in a quantum circuit is to collapse the superposition state of a qubit into one of its possible eigenstates, effectively 'measuring' the qubit's state. This process introduces randomness and can affect the outcome of subsequent operations on the qubit."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Medium",
+    "question": "In a quantum circuit, what is the effect of applying a controlled-NOT gate to two qubits?",
+    "answer": "The effect of applying a controlled-NOT gate to two qubits is to flip the state of the target qubit if the control qubit is in the state |1, and leave the target qubit unchanged if the control qubit is in the state |0."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Medium",
+    "question": "What is the relationship between the CNOT gate and the NOT gate in a quantum circuit?",
+    "answer": "The CNOT gate (controlled-NOT gate) is equivalent to a NOT gate applied to the target qubit only when the control qubit is in the state |1, and leaves the target qubit unchanged when the control qubit is in the state |0."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Hard",
+    "question": "Consider a system of two qubits with a Hadamard gate applied to the first qubit. If the initial state of the first qubit is |0+ and the second qubit is in the state |0, what is the state of the system after applying a CNOT gate?",
+    "answer": "Since the first qubit is in the state |0+ = (|0 + |1)/√2, the CNOT gate will apply the Pauli-X gate to the second qubit only if the first qubit is in the state |1. However, since the first qubit is in a superposition of |0 and |1, the CNOT gate will apply the Pauli-X gate to the second qubit with a probability of 50%. Therefore, the state of the system after applying the CNOT gate is (|00 + |11)/√2."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Hard",
+    "question": "Implement a controlled rotation gate (CRZ) using a combination of quantum gates, where the rotation angle is θ. Assume that the rotation is around the z-axis.",
+    "answer": "To implement the CRZ gate, we can use the following sequence of gates: Rz(2θ) H C-NOT Hadamard Rz(θ). This sequence will first apply a Hadamard gate to the control qubit, then apply a rotation around the z-axis to the target qubit, then apply the CNOT gate, and finally apply the inverse of the Hadamard gate to the control qubit."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Hard",
+    "question": "Prove that the Hadamard gate is a unitary gate, and find its matrix representation in the computational basis.",
+    "answer": "To prove that the Hadamard gate is a unitary gate, we need to show that it is a square matrix with orthonormal columns, and that its adjoint is its inverse. The Hadamard gate has the matrix representation H = 1/√2 \n[ 1  1 \n 1 -1]. Its adjoint is H† = 1/√2 \n[ 1  1 \n 1 -1], which is equal to its inverse, proving that it is a unitary gate."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Hard",
+    "question": "A qubit is in the state |ψ = a|0 + b|1, where a and b are complex coefficients. If the qubit is measured in the Hadamard basis, what is the probability of obtaining the outcome |+?",
+    "answer": "To obtain the probability of measuring the outcome |+ in the Hadamard basis, we need to calculate the squared absolute value of the inner product between the state |ψ and the Hadamard basis state |+. The inner product is given by: <+, ψ| = (a+b)/√2. The probability of measuring |+ is therefore |(a+b)/√2|^2 = |a+b|^2/2 = (|a|^2 + |b|^2 + a*b* + a*b*)/2."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Qubits & Gates",
+    "difficulty": "Hard",
+    "question": "Consider a sequence of two quantum gates: U1 and U2, where U1 is a rotation gate around the x-axis and U2 is a rotation gate around the y-axis. If the initial state of the qubit is |0, what is the state of the qubit after applying the sequence of gates U2(-θ) U1(2θ)?",
+    "answer": "To find the state of the qubit after applying the sequence of gates, we need to apply the two gates in sequence. The rotation gate U1(2θ) will rotate the state of the qubit around the x-axis by an angle of 2θ, resulting in the state cos(2θ)|0 + sin(2θ)|1. Then, the rotation gate U2(-θ) will rotate the state around the y-axis by an angle of -θ, resulting in the state (cos(2θ)cos(θ) - sin(2θ)sin(θ))|0 + (-cos(2θ)sin(θ) - sin(2θ)cos(θ))|1."
+  }
+]

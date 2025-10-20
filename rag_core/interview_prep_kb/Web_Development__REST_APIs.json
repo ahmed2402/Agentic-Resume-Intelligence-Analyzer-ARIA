@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Easy",
+    "question": "What is the main difference between HTTP GET and HTTP POST requests in a REST API?",
+    "answer": "HTTP GET is used to retrieve data, while HTTP POST is used to create new data."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Easy",
+    "question": "What is a typical use case for HTTP PUT in a REST API?",
+    "answer": "Updating an existing resource in a REST API, replacing the original data."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Easy",
+    "question": "What is the purpose of HTTP Status Codes in a REST API?",
+    "answer": "To indicate the outcome of a request, providing the client with information about the result."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Easy",
+    "question": "How do you handle authentication in a REST API?",
+    "answer": "Typically using HTTP headers (e.g., Authorization), query parameters, or token-based authentication."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Easy",
+    "question": "What is the difference between a URL and a URI in a REST API?",
+    "answer": "A URL (Uniform Resource Locator) specifies how to access a resource, while a URI (Uniform Resource Identifier) is a more general term for identifying a resource."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Medium",
+    "question": "What is the main difference between a POST and PUT request in RESTful APIs?",
+    "answer": "A POST request is used to create a new resource, while a PUT request is used to update an existing resource."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Medium",
+    "question": "Can you describe a scenario where you would use the 'PATCH' method in a RESTful API?",
+    "answer": "Yes, a PATCH method would be used to update a specific part of a resource without overwriting the entire resource."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Medium",
+    "question": "How would you design a RESTful API endpoint to handle pagination for a list of resources?",
+    "answer": "You would use query parameters such as 'page' and 'limit' to control the pagination, and provide a 'next' or 'previous' link in the response for navigation."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Medium",
+    "question": "Can you explain the concept of 'Content Negotiation' in RESTful APIs, and how it is typically implemented?",
+    "answer": "Content Negotiation is a mechanism to determine the format of the response based on the 'Accept' header in the request. It is typically implemented using the 'Accept' and 'Content-Type' headers, and media types such as JSON and XML."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Medium",
+    "question": "How would you handle rate limiting in a RESTful API to prevent abuse?",
+    "answer": "You would implement rate limiting using a token bucket algorithm or a fixed window approach, where the client is allowed a certain number of requests within a given time frame before being blocked or throttled."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Hard",
+    "question": "Describe the difference between a stateless and a stateful API, including how they handle client sessions.",
+    "answer": "A stateless API does not store any information about the client session, relying on the client to pass necessary information in each request. In contrast, a stateful API stores client session information on the server, allowing for more complex interactions but also introducing potential scalability issues."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Hard",
+    "question": "Design a REST API endpoint that allows clients to upload large files to the server, considering file size limits, partial uploads, and resumable uploads.",
+    "answer": "Implement a chunked upload system where the client breaks the file into smaller chunks and uploads them individually, allowing the server to process each chunk as it is received. Use HTTP headers to track progress and resume upload in case of interruptions."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Hard",
+    "question": "How would you handle caching in a REST API, including the use of cache-control headers and cache invalidation strategies?",
+    "answer": "Implement cache-control headers to specify cache validity and expiration times. Use cache invalidation strategies such as time-to-live (TTL), cache busting, or cache tagging to ensure cache freshness and prevent stale data from being served to clients."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Hard",
+    "question": "What are the security considerations when implementing OAuth 2.0 in a REST API, and how would you secure your API endpoints using OAuth?",
+    "answer": "Use OAuth 2.0 to secure API endpoints by implementing authorization servers, resource servers, and client applications. Secure API endpoints using access tokens, refresh tokens, and scopes to control access and prevent unauthorized access."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "REST APIs",
+    "difficulty": "Hard",
+    "question": "How would you implement pagination and sorting in a REST API, considering the use of query parameters, URI parameters, and request body parameters?",
+    "answer": "Implement pagination using query parameters such as page number and page size, or URI parameters like limit and offset. Use sorting parameters like sort, order, or direction to allow clients to sort data in various ways, while also handling edge cases and invalid input."
+  }
+]

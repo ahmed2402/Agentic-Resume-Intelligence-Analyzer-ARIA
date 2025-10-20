@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Easy",
+    "question": "What is a time series, and why is it important in data analysis?",
+    "answer": "A time series is a sequence of data points measured at regular time intervals. It's essential in data analysis as it helps identify patterns, trends, and anomalies, enabling informed decision-making in various fields, such as finance, economics, and healthcare."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Easy",
+    "question": "What is the primary difference between a time series and a regular sequence?",
+    "answer": "The primary difference between a time series and a regular sequence is the inclusion of a time component in the former, allowing for the analysis of temporal relationships and patterns."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Easy",
+    "question": "Which time series decomposition method focuses on separating a series into its trend, seasonality, and residual components?",
+    "answer": "The Decomposition method focuses on separating a series into its trend, seasonality, and residual components. However, I believe you might be referring to STL decomposition (Seasonal-Trend Decomposition) or possibly the more traditional Hodrick-Prescott decomposition, both of which separate a series into its trend and cyclical components. However, in this case, it's best to assume the question meant the additive decomposition which separates the series into trend, seasonality, and residuals."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Easy",
+    "question": "How can you determine if a time series is stationary or non-stationary?",
+    "answer": "To determine if a time series is stationary or non-stationary, apply statistical tests such as the Augmented Dickey-Fuller (ADF) test or the KPSS test. Alternatively, visually inspect the series for constant mean, variance, and autocorrelation over time."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Easy",
+    "question": "What is the purpose of differencing in time series analysis?",
+    "answer": "The purpose of differencing in time series analysis is to make a non-stationary time series stationary, which helps in removing the effect of trend and making the series amenable to analysis using traditional statistical techniques."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Medium",
+    "question": "Explain how to handle missing values in a time series dataset.",
+    "answer": "To handle missing values in a time series dataset, you can use interpolation methods such as linear interpolation, polynomial interpolation, or fill missing values with the mean, median, or mode of the surrounding data points."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Medium",
+    "question": "A company wants to predict sales based on historical sales data. You have been provided with a dataset containing monthly sales data for the past 5 years. How would you approach this problem?",
+    "answer": "I would approach this problem by first splitting the dataset into training and testing sets. Then, I would use techniques such as ARIMA, SARIMA, or LSTM to model the time series data and make predictions for future sales."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Medium",
+    "question": "How do you determine the optimal time lag in a time series analysis?",
+    "answer": "The optimal time lag in a time series analysis can be determined using techniques such as autocorrelation function (ACF) and partial autocorrelation function (PACF), or by using a trial-and-error approach to determine the lag that produces the best model fit."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Medium",
+    "question": "What is the difference between a stationary and non-stationary time series?",
+    "answer": "A stationary time series has constant mean and variance over time, whereas a non-stationary time series has varying mean and variance over time. Non-stationarity can be addressed using techniques such as differencing or using models that can handle non-stationarity, such as ARIMA or SARIMA."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Medium",
+    "question": "How would you evaluate the performance of a time series forecasting model?",
+    "answer": "To evaluate the performance of a time series forecasting model, you can use metrics such as mean absolute error (MAE), mean squared error (MSE), or mean absolute percentage error (MAPE), as well as visualizations such as plots of the forecasted values against the actual values."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Hard",
+    "question": "Given a time series with seasonality and trend, describe a method to decompose the series into its trend and seasonal components while accounting for the potential presence of a non-stationary trend.",
+    "answer": "One suitable method is the STL decomposition (Seasonal-Trend decomposition using Loess), which uses local regression to estimate the trend and seasonal components separately. This approach is particularly effective for handling non-stationary trends."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Hard",
+    "question": "In a scenario where you have multiple time series with varying frequencies (e.g., daily and quarterly), how would you align them for comparison and analysis?",
+    "answer": "You can use techniques like interpolation (e.g., linear or spline interpolation) to resample the time series to a common frequency, or use aggregation methods (e.g., sum or average) to align the series at a coarser frequency."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Hard",
+    "question": "Suppose you're analyzing a time series with a strong non-linear relationship and a large number of missing observations. Which model would you recommend and why?",
+    "answer": "I would recommend using a Vector Autoregression (VAR) model to capture the non-linear relationships and a Multiple Imputation by Chained Equations (MICE) approach to handle the missing values. VAR models can handle complex relationships, and MICE allows for the estimation of missing values based on the relationships between variables."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Hard",
+    "question": "Describe a method to evaluate the performance of a time series forecasting model, particularly when the target variable is not normally distributed.",
+    "answer": "You can use metrics like Mean Absolute Scaled Error (MASE), Symmetric Mean Absolute Percentage Error (sMAPE), or Mean Absolute Error (MAE), which are robust to non-normality and outliers. Additionally, you can use visualizations like time series plots or Quantile-Quantile (Q-Q) plots to assess the model's performance and distributional assumptions."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Time Series Analysis",
+    "difficulty": "Hard",
+    "question": "A company wants to forecast sales using a SARIMA model. However, the data exhibits significant anomalies and outliers. How would you preprocess the data for SARIMA modeling?",
+    "answer": "I would apply a combination of data cleaning and preprocessing techniques, such as: 1) handling outliers using winsorization or trimming, 2) removing anomalies by flagging and replacing them with interpolated values, 3) transforming the data using log or square root transformations to stabilize variance, and 4) checking for stationarity using tests like the Augmented Dickey-Fuller (ADF) test before applying SARIMA modeling."
+  }
+]

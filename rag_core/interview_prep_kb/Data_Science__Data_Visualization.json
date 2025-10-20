@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of data visualization in data science?",
+    "answer": "To communicate insights and trends in data effectively to stakeholders."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Easy",
+    "question": "What are some common data visualization tools used in data science?",
+    "answer": "Matplotlib, Seaborn, Tableau, Power BI, and D3.js are popular data visualization tools."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Easy",
+    "question": "What type of chart is best suited to show comparison between two categorical variables?",
+    "answer": "A bar chart is often the best choice for comparing two categorical variables."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Easy",
+    "question": "What is the difference between a scatter plot and a line graph?",
+    "answer": "A scatter plot displays the relationship between two continuous variables, while a line graph shows the trend of a single continuous variable over time."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Easy",
+    "question": "Why is it essential to choose the right color palette in data visualization?",
+    "answer": "Choosing the right color palette helps to effectively communicate insights and avoid visual overload, making it easier for stakeholders to understand the data."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Medium",
+    "question": "What is the main difference between a bar chart and a histogram in data visualization?",
+    "answer": "A bar chart is used to compare categorical data across different groups, while a histogram is used to display the distribution of a single continuous variable."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Medium",
+    "question": "Design a data visualization workflow to analyze the sales of a company over time. How would you approach this task?",
+    "answer": "To analyze sales over time, I would first clean and preprocess the data, then use a line chart or area chart to visualize the trends. Next, I would use a scatter plot to identify any correlations between sales and other variables such as seasonality or marketing campaigns. Finally, I would use a bar chart to compare sales across different regions or product categories."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Medium",
+    "question": "What is the difference between a Treemap and a Sunburst chart in data visualization? When would you use each?",
+    "answer": "A Treemap is a type of rectangle-based visualization where each rectangle represents a category, and its size is proportional to the value of that category. A Sunburst chart is similar but uses a radial layout. I would use a Treemap when comparing categorical data across different levels of hierarchy, and a Sunburst chart when displaying hierarchical data in a more interactive and exploratory way."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Medium",
+    "question": "How would you optimize a visualization to improve its readability and effectiveness in communicating insights?",
+    "answer": "To optimize a visualization, I would use color, size, and position effectively to avoid visual clutter. I would also use clear and concise labels, and limit the number of variables displayed. Additionally, I would use interactivity and animations judiciously to help users explore the data without overwhelming them."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a heat map in data visualization, and how would you use it to analyze data?",
+    "answer": "A heat map is a visualization used to display the relationship between two continuous variables. It is useful for identifying clusters, correlations, and outliers in the data. I would use a heat map to analyze customer demographics, such as age and income, to identify patterns and trends that could inform marketing strategies."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Hard",
+    "question": "Design a data visualization system that can handle extremely large datasets and scale horizontally. How would you approach the problem and what considerations would you take?",
+    "answer": "To design a data visualization system that can handle large datasets, I would consider using distributed computing frameworks such as Apache Spark or Dask. I would also use a scalable data storage solution like Apache Cassandra or Amazon S3. Additionally, I would implement a data processing pipeline that can handle data in real-time, using techniques like data streaming or batch processing. Finally, I would use a visualization library like D3.js or Matplotlib that can handle large datasets and provide interactive visualizations."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Hard",
+    "question": "A company has a dataset with millions of rows and multiple categorical variables. How would you perform dimensionality reduction and create a visualization that effectively communicates the insights to business stakeholders?",
+    "answer": "To perform dimensionality reduction, I would use techniques like PCA or t-SNE to reduce the number of features while preserving the most important information. Then, I would use a visualization like a scatter plot or a heatmap to show the relationships between the variables. To effectively communicate the insights to business stakeholders, I would use a storytelling approach, highlighting the key findings and creating a narrative around the results."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Hard",
+    "question": "Develop a Python function that takes a Pandas DataFrame and creates a Sankey diagram using the Plotly library to visualize the flow of data between different categories.",
+    "answer": "import plotly.graph_objects as go\nfrom plotly.offline import iplot\nimport pandas as pd\n\ndef create_sankey_diagram(df):\n  # Create a Sankey diagram\n  fig = go.Figure(data=[go.Sankey(\n    node=dict(\n      pad=15,\n      thickness0=20,\n      line=dict(color=\"black\"),\n      label=df['category'].unique(),\n      color=\"blue\n    ),\n    link=dict(\n      source=df['source'],\n      target=df['target'],\n      value=df['value']\n    )\n  )])\n  return fig"
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Hard",
+    "question": "A company has a dataset with time-series data that shows seasonal patterns. How would you create a visualization that effectively communicates the seasonal patterns and trends to business stakeholders?",
+    "answer": "To create a visualization that effectively communicates the seasonal patterns and trends, I would use a time-series visualization like a line plot or a area chart to show the overall trend. Then, I would use a technique like seasonal decomposition or a moving average to highlight the seasonal patterns. Finally, I would use a visualization like a bar chart or a heatmap to show the magnitude of the seasonal patterns and trends."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Data Visualization",
+    "difficulty": "Hard",
+    "question": "Develop a Matplotlib function that takes a 2D array and creates a contour plot to visualize the relationships between two variables.",
+    "answer": "import matplotlib.pyplot as plt\nimport numpy as np\n\ndef create_contour_plot(arr):\n  # Create a contour plot\n  plt.contourf(arr, cmap='hot')\n  plt.colorbar()\n  plt.show()"
+  }
+]

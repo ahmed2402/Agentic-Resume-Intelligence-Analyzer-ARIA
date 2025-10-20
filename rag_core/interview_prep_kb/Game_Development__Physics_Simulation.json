@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Game Development",
+    "topic": "Physics Simulation",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of a physics engine in game development?",
+    "answer": "A physics engine simulates the behavior of objects in a virtual environment, enabling realistic collisions, movements, and interactions."
+  },
+  {
+    "id": "q2",
+    "domain": "Game Development",
+    "topic": "Physics Simulation",
+    "difficulty": "Easy",
+    "question": "How does a game developer typically implement gravity in a physics simulation?",
+    "answer": "Gravity is typically implemented by applying a constant downward force to objects, often represented by a vector (0, -gravity_value)."
+  },
+  {
+    "id": "q3",
+    "domain": "Game Development",
+    "topic": "Physics Simulation",
+    "difficulty": "Easy",
+    "question": "What is a common challenge when simulating friction in a physics engine?",
+    "answer": "A common challenge is determining the correct friction value, as it can vary depending on the surface type, object size, and other factors."
+  },
+  {
+    "id": "q4",
+    "domain": "Game Development",
+    "topic": "Physics Simulation",
+    "difficulty": "Easy",
+    "question": "How does a game developer handle collisions between objects in a physics simulation?",
+    "answer": "Collisions are typically handled using collision detection algorithms, which identify when objects intersect, and then apply response forces to resolve the collision."
+  },
+  {
+    "id": "q5",
+    "domain": "Game Development",
+    "topic": "Physics Simulation",
+    "difficulty": "Easy",
+    "question": "What is the main difference between a rigid body and a soft body in physics simulation?",
+    "answer": "A rigid body is an object that maintains its shape and size during simulation, while a soft body is an object that can deform and change shape under external forces."
+  },
+  {
+    "id": "q1",
+    "domain": "Game Development",
+    "topic": "Physics Simulation",
+    "difficulty": "Medium",
+    "question": "What is the primary advantage of using a physics engine in game development?",
+    "answer": "The primary advantage of using a physics engine in game development is that it allows for the simulation of realistic physical behavior, such as gravity, friction, and collisions, without requiring developers to manually implement these behaviors."
+  },
+  {
+    "id": "q2",
+    "domain": "Game Development",
+    "topic": "Physics Simulation",
+    "difficulty": "Medium",
+    "question": "How would you handle the collision between a ball and a wall in a physics-based game?",
+    "answer": "In a physics-based game, you would use a physics engine to handle the collision between a ball and a wall by applying the laws of physics, such as momentum and energy conservation, to determine the outcome of the collision."
+  },
+  {
+    "id": "q3",
+    "domain": "Game Development",
+    "topic": "Physics Simulation",
+    "difficulty": "Medium",
+    "question": "What is the difference between a static and dynamic simulation in physics-based games?",
+    "answer": "In physics-based games, a static simulation is used for objects that do not move, such as scenery, while a dynamic simulation is used for objects that do move, such as characters and projectiles."
+  },
+  {
+    "id": "q4",
+    "domain": "Game Development",
+    "topic": "Physics Simulation",
+    "difficulty": "Medium",
+    "question": "How would you implement a bouncy ball effect in a physics-based game using a physics engine?",
+    "answer": "To implement a bouncy ball effect in a physics-based game using a physics engine, you would set the ball's elasticity property to a high value, which would cause it to bounce back from collisions with a high amount of kinetic energy."
+  },
+  {
+    "id": "q5",
+    "domain": "Game Development",
+    "topic": "Physics Simulation",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a contact manifold in physics-based games?",
+    "answer": "In physics-based games, a contact manifold is used to store information about the points of contact between colliding objects, which is necessary for accurate collision detection and response."
+  }
+]

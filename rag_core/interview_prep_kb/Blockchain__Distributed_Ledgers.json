@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Easy",
+    "question": "What is a key characteristic of a blockchain-based distributed ledger?",
+    "answer": "Decentralized and resistant to tampering."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Easy",
+    "question": "How do participants in a blockchain network achieve consensus on the state of the ledger?",
+    "answer": "Through a consensus algorithm, such as Proof of Work (PoW) or Proof of Stake (PoS)."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of a blockchain's hash function?",
+    "answer": "To create a unique digital fingerprint of the data in a block, making it difficult to alter or manipulate the data."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Easy",
+    "question": "How does a blockchain network ensure the integrity of its data over time?",
+    "answer": "Through the use of cryptography and a decentralized network of nodes that verify and agree on the state of the ledger."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Easy",
+    "question": "What is the difference between a public and private blockchain?",
+    "answer": "A public blockchain is open to anyone and is used for decentralized applications, whereas a private blockchain is restricted to a specific group and is used for enterprise applications."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Medium",
+    "question": "What is the primary advantage of using a distributed ledger in a blockchain system?",
+    "answer": "The primary advantage of using a distributed ledger in a blockchain system is its immutability and transparency, which ensures that all nodes on the network have a consistent view of the data and prevents tampering or censorship."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Medium",
+    "question": "Suppose you are designing a blockchain-based supply chain management system. How would you handle the scenario where a node on the network becomes compromised and starts broadcasting incorrect data?",
+    "answer": "To handle the scenario where a node on the network becomes compromised, you can implement a mechanism called 'voting' or 'consensus', where a majority of the nodes on the network agree on the validity of the data before it is added to the blockchain."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Medium",
+    "question": "Explain the concept of 'forking' in a blockchain network. What are the implications of a hard fork?",
+    "answer": "Forking in a blockchain network occurs when a node on the network disagrees with the proposed changes to the blockchain and creates a new, parallel chain. A hard fork is a type of fork where the entire network is split, resulting in two separate blockchains with different rules and consensus algorithms, which can lead to a permanent divergence of the two networks."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Medium",
+    "question": "Compare and contrast the 'UTXO' (Unspent Transaction Output) model with the 'account-based' model used in some blockchain systems.",
+    "answer": "The UTXO model represents each transaction output as a unique identifier, while the account-based model represents each account as a balance. The UTXO model is more efficient for complex transactions, but the account-based model provides better security and easier account management."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Medium",
+    "question": "What are some of the key differences between a 'Private' and a 'Public' blockchain?",
+    "answer": "The primary differences between a 'Private' and a 'Public' blockchain are accessibility, security, and decentralization. A private blockchain is restricted to a specific group of nodes or organizations, while a public blockchain is open to anyone and requires a consensus mechanism to secure transactions."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Hard",
+    "question": "Discuss the advantages and disadvantages of using Byzantine Fault Tolerance (BFT) algorithms in achieving consensus in a distributed ledger.",
+    "answer": "BFT algorithms, such as PBFT, achieve consensus by requiring all nodes to agree on a single state of the ledger. Advantages include high fault tolerance and low latency, but disadvantages include high computational overhead and potential for network congestion. Additionally, BFT algorithms can be vulnerable to Sybil attacks, where an attacker creates multiple identities to manipulate the consensus process."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Hard",
+    "question": "Suppose you are designing a distributed ledger system with 5 nodes, each with a different level of computational power. How would you optimize the consensus process to account for these differences?",
+    "answer": "To optimize the consensus process, you would use a weighted voting system, where each node's voting power is proportional to its computational power. This ensures that nodes with higher computational power have more influence on the consensus process, but also prevents them from dominating the decision-making process. Additionally, you could use a leader-based approach, where the node with the highest computational power serves as the leader and coordinates the consensus process."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where a distributed ledger system using Proof of Stake (PoS) consensus mechanism is vulnerable to a 51% attack. What measures can be taken to prevent such an attack?",
+    "answer": "A PoS system is vulnerable to a 51% attack if a single entity controls more than 50% of the network's total stake. This can occur if a malicious actor accumulates a large amount of stake or if the network's stake distribution becomes concentrated. To prevent such an attack, measures can be taken such as implementing a decentralized stake distribution mechanism, using a combination of PoS and Proof of Work (PoW) consensus mechanisms, or introducing a randomization factor to make it more difficult for an attacker to accumulate a majority of the stake."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Hard",
+    "question": "Explain the concept of a 'liveness' property in a distributed ledger system and how it can be achieved using a combination of consensus protocols.",
+    "answer": "Liveness in a distributed ledger system refers to the guarantee that a legitimate transaction will eventually be committed to the ledger. Achieving liveness requires a combination of consensus protocols that ensure that a node's proposed transaction is eventually accepted by the network. This can be achieved using a combination of BFT and PoW consensus protocols, where BFT is used for initial validation and PoW is used for finalization and verification of the transaction."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Distributed Ledgers",
+    "difficulty": "Hard",
+    "question": "Suppose you are implementing a distributed ledger system that requires a high degree of decentralization and fault tolerance. How would you design the system to ensure that it can recover from a network partition?",
+    "answer": "To ensure recovery from a network partition, the system would need to implement a distributed consensus protocol that can operate in a partially connected network. A suitable approach would be to use a BFT algorithm such as PBFT, which can operate even in the presence of network partitions. Additionally, the system would need to implement a mechanism for detecting and recovering from network partitions, such as using a combination of heartbeat mechanisms and network topology analysis."
+  }
+]

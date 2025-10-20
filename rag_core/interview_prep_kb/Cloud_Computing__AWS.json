@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Easy",
+    "question": "What is Amazon S3, and what is its main use case?",
+    "answer": "Amazon S3 is a highly available object storage service offered by AWS. Its main use case is to store and serve large amounts of data, such as images, videos, and backup files, with high durability and availability."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Easy",
+    "question": "What is the difference between AWS EC2 and AWS Lightsail?",
+    "answer": "AWS EC2 (Elastic Compute Cloud) is a virtual server service that allows users to create and manage their own virtual machines. AWS Lightsail, on the other hand, is a managed platform that provides a simplified way to create and manage virtual private servers (VPS) with a managed control panel and automated setup."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Easy",
+    "question": "Explain the concept of load balancing in AWS Elastic Load Balancer (ELB).",
+    "answer": "Load balancing in ELB distributes incoming traffic across multiple EC2 instances, directing requests to the instance that is best suited to handle them. This helps to improve responsiveness, reliability, and scalability of applications by ensuring that no single instance is overwhelmed by traffic."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Easy",
+    "question": "What is AWS IAM, and what is its purpose?",
+    "answer": "AWS IAM (Identity and Access Management) is a service that enables users to manage access to AWS resources and services securely. Its purpose is to provide a centralized way to create and manage users, groups, roles, and permissions for access to AWS resources, ensuring that the right people have the right level of access."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Easy",
+    "question": "What is Amazon RDS, and what types of databases can it support?",
+    "answer": "Amazon RDS (Relational Database Service) is a managed database service offered by AWS that makes it easy to set up, manage, and scale a relational database in the cloud. It supports various database engines, including MySQL, PostgreSQL, Oracle, SQL Server, and Amazon Aurora."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Medium",
+    "question": "What is the main difference between an Amazon S3 bucket and an Amazon S3 bucket policy?",
+    "answer": "An Amazon S3 bucket is a container that stores objects, while an Amazon S3 bucket policy is a set of rules that define access permissions for a bucket and its contents."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Medium",
+    "question": "Suppose you have an AWS Lambda function that needs to send an email using Amazon SES. How would you configure the function to use the SES service?",
+    "answer": "You would configure the function to use the Amazon SES service by providing the ARN of the SES service in the function's environment variables, and then using the SES client in your code to send the email."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Medium",
+    "question": "How do you handle database migrations in a serverless architecture using AWS Lambda and Amazon DynamoDB?",
+    "answer": "You would use AWS Lambda's event sourcing pattern, where you store the current state of the database in DynamoDB and apply migrations by replaying the event history to update the state."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Medium",
+    "question": "What is the purpose of an Amazon VPC peering connection?",
+    "answer": "An Amazon VPC peering connection allows two VPCs to communicate with each other, enabling cross-VPC services and resource sharing."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Medium",
+    "question": "Suppose you have an application that uses Amazon Elasticsearch Service. How do you set up the service to encrypt data at rest and in transit?",
+    "answer": "You would enable encryption at rest by setting up an EBS volume with an encrypted snapshot, and enable encryption in transit by setting up an HTTPS endpoint and using SSL/TLS certificates."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Hard",
+    "question": "Describe the difference between an AWS Elastic Beanstalk environment and an AWS ECS cluster, and provide a scenario where you would choose one over the other.",
+    "answer": "An AWS Elastic Beanstalk environment is a managed service that provisions and manages the underlying infrastructure for a web application, whereas an AWS ECS cluster is a highly scalable, high-performance container orchestration service that allows you to run and manage containers at scale. You would choose Elastic Beanstalk over ECS when you need a managed service that can handle the entire deployment process, including provisioning and scaling, whereas you would choose ECS when you need more control over the container orchestration and want to leverage AWS services like ECR and Fargate."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Hard",
+    "question": "Explain the process of setting up an AWS Lambda function with a custom runtime. Provide an example of a custom runtime and the code required to set it up.",
+    "answer": "To set up an AWS Lambda function with a custom runtime, you need to create a custom image that includes the runtime environment, package the runtime, and then create a Lambda function with the custom image. For example, if you want to use a custom Python runtime, you would create a Docker image with the Python runtime environment, package the image, and then create a Lambda function with the custom image. The code required to set up the custom image would be in a Dockerfile, which would include commands to install the Python runtime environment and any dependencies required by your function."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Hard",
+    "question": "Describe the difference between an AWS API Gateway REST API and an AWS API Gateway WebSocket API, and provide a scenario where you would choose one over the other.",
+    "answer": "An AWS API Gateway REST API is a fully managed service that enables you to create RESTful APIs, whereas an AWS API Gateway WebSocket API is a fully managed service that enables you to create WebSocket APIs. You would choose a REST API when you need to expose a traditional API with HTTP verbs like GET, PUT, and POST, whereas you would choose a WebSocket API when you need to establish bidirectional, real-time communication between the client and server. For example, you would choose a WebSocket API for a live chat application or a gaming application that requires real-time updates."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Hard",
+    "question": "Explain the process of setting up an AWS Glue Data Catalog with a custom schema. Provide an example of a custom schema and the code required to set it up.",
+    "answer": "To set up an AWS Glue Data Catalog with a custom schema, you need to create a Glue database, create a schema, and then populate the database with data. For example, if you have a custom JSON schema for a customer database, you would create a Glue database, create a schema with the custom fields, and then populate the database with JSON data. The code required to set up the custom schema would be in a Glue script, which would include commands to create the schema and populate the database."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "AWS",
+    "difficulty": "Hard",
+    "question": "Describe the difference between an AWS Aurora MySQL database and an AWS RDS MySQL database, and provide a scenario where you would choose one over the other.",
+    "answer": "An AWS Aurora MySQL database is a high-performance relational database service that provides automatic failover and patching, whereas an AWS RDS MySQL database is a managed relational database service that provides a single MySQL instance. You would choose Aurora over RDS when you need high performance and automatic failover, whereas you would choose RDS when you need a more traditional relational database experience. For example, you would choose Aurora for a high-traffic e-commerce application, whereas you would choose RDS for a small to medium-sized business application."
+  }
+]

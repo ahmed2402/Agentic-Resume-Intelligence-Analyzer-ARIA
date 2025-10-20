@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Easy",
+    "question": "What is a token in the context of blockchain?",
+    "answer": "A token is a digital asset that exists on a blockchain, representing a unit of value, utility, or ownership."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Easy",
+    "question": "How does the supply of tokens affect their value?",
+    "answer": "A limited supply of tokens can increase their value due to scarcity, while an unlimited supply can decrease their value due to increased circulation."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a token's total supply?",
+    "answer": "The total supply of a token determines the maximum amount of tokens that can exist, influencing their scarcity and potential value."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Easy",
+    "question": "How does token distribution affect its adoption?",
+    "answer": "A fair and accessible token distribution can foster adoption, while a concentrated distribution can hinder it."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Easy",
+    "question": "What is the difference between a coin and a token?",
+    "answer": "A coin is a cryptocurrency with its own blockchain, while a token exists on an existing blockchain, such as Ethereum."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between a fixed supply and a variable supply token?",
+    "answer": "A fixed supply token has a predetermined and unchangeable total token supply, whereas a variable supply token can adjust its supply dynamically through mechanisms such as inflation or deflation."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Medium",
+    "question": "Consider a token with a 10% annual inflation rate. If the initial token supply is 100 million, how many new tokens would be minted in the first year?",
+    "answer": "1 billion (100 million * 10%)."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Medium",
+    "question": "What is a common use case for a token with a high supply and low scarcity?",
+    "answer": "Utility tokens, which are used to access a particular service or product, often have a high supply and low scarcity to encourage widespread adoption and usage."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Medium",
+    "question": "Design a token distribution strategy for a new cryptocurrency. The project has a 10% founding team allocation, a 20% developer allocation, and a 70% community allocation. What percentage of the total token supply would each group receive?",
+    "answer": "Founding team: 10%, developers: 20%, community: 70%."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Medium",
+    "question": "What is the term for the rate at which tokens are being burned (removed) from circulation?",
+    "answer": "Deflation rate."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Hard",
+    "question": "Describe the differences between a fixed-supply token and a deflationary token, and provide an example of a deflationary token.",
+    "answer": "A fixed-supply token has a limited total supply that does not change over time, whereas a deflationary token has a decreasing total supply due to a mechanism such as a burn tax. An example of a deflationary token is BUSD, which has a 1% burn tax on each transaction."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Hard",
+    "question": "Suppose you are designing a token model for a decentralized finance (DeFi) platform. How would you implement a token distribution strategy that incentivizes liquidity provision and rewards long-term holders?",
+    "answer": "To incentivize liquidity provision and reward long-term holders, I would implement a token distribution strategy with the following components: (1) an initial liquidity pool with a portion of the total supply, (2) a reward system for liquidity providers based on their time-weighted average liquidity, and (3) a vesting schedule for token holders that rewards them for holding tokens over time."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Hard",
+    "question": "Explain how the concept of 'token velocity' relates to tokenomics and provide an example of how it can be measured.",
+    "answer": "Token velocity refers to the rate at which tokens are transferred and used within a network. It can be measured by tracking the number of transactions per unit of time and dividing it by the total number of tokens in circulation. For example, if a token has a velocity of 10 transactions per second and there are 10 million tokens in circulation, the token velocity would be 100 transactions per second per million tokens."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Hard",
+    "question": "Design a token pricing model that incorporates factors such as supply and demand, network activity, and market sentiment. Assume you have access to historical data on token price, trading volume, and social media sentiment.",
+    "answer": "To design a token pricing model, I would use a machine learning approach that incorporates the following features: (1) historical token price and trading volume, (2) network activity metrics such as transaction volume and node count, and (3) social media sentiment analysis. The model would use a combination of linear regression and support vector machines to predict token price based on these factors."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Tokenomics",
+    "difficulty": "Hard",
+    "question": "Discuss the implications of token dilution on the token economics of a project, and provide an example of how token dilution can occur.",
+    "answer": "Token dilution occurs when new tokens are created, reducing the value of existing tokens. This can happen through mechanisms such as airdrops, token swaps, or inflationary token models. For example, if a project has a token model with a 10% annual inflation rate and the total supply is 100 million tokens, the token value would decrease by 10% each year due to the increased supply, leading to token dilution."
+  }
+]

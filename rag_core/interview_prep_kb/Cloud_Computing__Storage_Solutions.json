@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Easy",
+    "question": "What is the primary difference between Block Storage and File Storage in cloud computing?",
+    "answer": "Block Storage is a raw, unformatted storage solution that provides a block device, whereas File Storage provides a formatted file system and is typically used for applications that require a specific file system structure."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Easy",
+    "question": "Compare the usage of Object Storage and File Storage in a cloud-based data archiving system.",
+    "answer": "Object Storage is suitable for large-scale data archiving due to its scalability, durability, and cost-effectiveness, whereas File Storage is better suited for applications that require frequent file access and modification."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Easy",
+    "question": "What is the key benefit of using a Content Delivery Network (CDN) in conjunction with cloud storage?",
+    "answer": "The key benefit is improved data retrieval performance by caching frequently accessed data at edge locations closer to users, reducing latency and improving overall user experience."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Easy",
+    "question": "Explain the concept of data tiering in cloud storage and its benefits.",
+    "answer": "Data tiering is the practice of storing frequently accessed data in high-performance storage and less frequently accessed data in lower-cost storage, improving performance and reducing storage costs."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Easy",
+    "question": "What is the primary advantage of using a cloud storage gateway in an on-premises environment?",
+    "answer": "The primary advantage is the ability to centrally manage and access cloud storage from on-premises applications, simplifying data migration and providing a unified storage infrastructure."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between Amazon S3 and Amazon EBS in terms of data storage?",
+    "answer": "S3 is a cloud-based object storage service for storing and retrieving large amounts of data, while EBS provides block-level storage for ephemeral instances."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Medium",
+    "question": "Design a scenario where you would choose to use Amazon Elastic File System (EFS) over Amazon S3 for file storage.",
+    "answer": "Choose EFS when you need to store and share files across multiple instances within a single Amazon Virtual Private Cloud (VPC), requiring seamless integration and concurrent access to files."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Medium",
+    "question": "Explain the concept of durability in cloud storage. How does it relate to data availability and reliability?",
+    "answer": "Durability in cloud storage refers to the ability of a storage system to withstand failures and ensure that data remains accessible. It directly relates to data availability and reliability by providing a high degree of confidence that data can be recovered in case of failures or errors."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Medium",
+    "question": "How do you optimize data transfer between Amazon S3 and a data warehouse like Amazon Redshift for a large-scale data migration?",
+    "answer": "Use S3 Transfer Acceleration, S3 Select, and/or S3 Batch operations to optimize data transfer for large-scale data migration. Additionally, consider using AWS Data Pipeline or AWS Glue to automate the data transfer process and ensure efficient processing."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Medium",
+    "question": "What is the role of storage classes in Amazon S3, and how do they affect storage costs?",
+    "answer": "Storage classes in Amazon S3, such as Standard, Intelligent-Standard, Infrequent Access (IA), and Glacier, enable you to store data at various levels of durability and availability. Each class has a different storage cost based on the level of service and data retrieval frequency required."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Hard",
+    "question": "Design a distributed file system that can handle massive scale and high availability using a cloud provider's storage services.",
+    "answer": "A distributed file system can be designed using a combination of cloud provider's storage services such as Amazon S3, HDFS, and Ceph. The system would consist of a master node, multiple data nodes, and a replication mechanism. The master node would be responsible for managing metadata, while the data nodes would store the actual data. Data would be replicated across multiple nodes for redundancy and high availability. The system would use a distributed locking mechanism to ensure consistency across nodes."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Hard",
+    "question": "A company is considering migrating its on-premises storage to a cloud-based object storage service. What are the key factors to consider when evaluating cloud storage providers?",
+    "answer": "When evaluating cloud storage providers, the key factors to consider are data sovereignty and compliance, data durability and availability, scalability and performance, security and access control, cost and pricing, and data transfer and egress fees."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Hard",
+    "question": "Compare and contrast the block storage services offered by Amazon Elastic Block Store (EBS) and Azure Disk Storage.",
+    "answer": "Amazon Elastic Block Store (EBS) and Azure Disk Storage are both block storage services that provide persistent storage for virtual machines. However, they differ in their architecture and features. EBS is a block-level storage service that provides high performance and low latency, while Disk Storage is a file-level storage service that provides high capacity and low cost. EBS is optimized for high-I/O workloads, while Disk Storage is optimized for high-capacity workloads."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Hard",
+    "question": "Explain the concept of immutable storage and its benefits in a cloud-based storage system.",
+    "answer": "Immutable storage is a storage system where data is written only once and never modified. This is achieved by creating a new version of the data whenever it is updated. Immutable storage provides several benefits, including improved data integrity, reduced data corruption, and enhanced security. It also enables versioning and auditing, making it easier to track changes to data over time."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Storage Solutions",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where a company would use a cloud-based file system, such as Amazon Elastic File System (EFS), and a cloud-based object storage service, such as Amazon S3.",
+    "answer": "A company that needs to store large files, such as videos and images, and requires high-performance access to these files would use a cloud-based file system, such as Amazon Elastic File System (EFS). However, for files that are accessed less frequently, such as backups and archives, a cloud-based object storage service, such as Amazon S3, would be more cost-effective. The company could use EFS for storing and serving files in real-time, while using S3 for storing and retrieving files that are accessed less frequently."
+  }
+]

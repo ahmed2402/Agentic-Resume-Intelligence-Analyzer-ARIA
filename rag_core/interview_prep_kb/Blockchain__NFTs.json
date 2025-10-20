@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of an NFT?",
+    "answer": "An NFT (Non-Fungible Token) is a unique digital asset that represents ownership of a specific item, such as art, collectibles, or even in-game items."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Easy",
+    "question": "How do NFTs differ from cryptocurrencies like Bitcoin?",
+    "answer": "NFTs are unique digital assets, while cryptocurrencies like Bitcoin are interchangeable and fungible."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Easy",
+    "question": "What is the role of a blockchain in NFTs?",
+    "answer": "A blockchain serves as a secure and decentralized platform to store and verify the ownership and existence of NFTs."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Easy",
+    "question": "Can you explain the process of minting an NFT?",
+    "answer": "Minting an NFT involves creating a unique digital asset on a blockchain platform, which is then stored and verified on the blockchain."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Easy",
+    "question": "What is an NFT marketplace?",
+    "answer": "An NFT marketplace is a platform where creators can list, buy, and sell NFTs, acting as a bridge between buyers and sellers."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between an NFT and a unique physical item?",
+    "answer": "The primary difference is that an NFT is a digital representation of ownership, whereas a unique physical item is a tangible object that exists in the physical world."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Medium",
+    "question": "Explain the concept of fractional ownership in the context of NFTs.",
+    "answer": "Fractional ownership in NFTs refers to the ability to divide ownership of a digital asset into smaller, tradable pieces, allowing multiple parties to collectively own a portion of the asset."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Medium",
+    "question": "Design a simple smart contract that allows users to mint and manage their own NFTs on a blockchain.",
+    "answer": "While specific code may vary depending on the blockchain platform, a basic structure could be implemented using Solidity on Ethereum: `pragma solidity ^0.8.0; contract NFTContract { address public owner; mapping (string => uint256) public tokenIds; function mintNFT(string memory _name, string memory _description) public { // code to handle token creation } }`"
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Medium",
+    "question": "Describe the role of digital scarcity in the value and appeal of NFTs.",
+    "answer": "Digital scarcity, achieved through the use of blockchain technology and limited supply, is a key factor in the value and appeal of NFTs. It creates a sense of exclusivity and rarity, which can drive demand and increase the value of the NFT."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Medium",
+    "question": "How do NFTs facilitate the creation of digital art marketplaces and communities?",
+    "answer": "NFTs enable the creation of digital art marketplaces and communities by providing a secure and transparent way to buy, sell, and own unique digital art pieces. They also facilitate ownership tracking, provenance, and royalties for artists and creators."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where a smart contract for an NFT auction is vulnerable to a front-running attack. How can this be mitigated?",
+    "answer": "A smart contract for an NFT auction is vulnerable to a front-running attack when bidders can see the current bid and the auction's end time. To mitigate this, the contract can be designed to use a randomized end time, or the bids can be made off-chain and then settled on-chain, making it difficult for attackers to anticipate and front-run the auction."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Hard",
+    "question": "What is the difference between a 'fixed supply' and 'variable supply' NFT, and how do they impact the market dynamics?",
+    "answer": "A 'fixed supply' NFT has a predetermined number of tokens, whereas a 'variable supply' NFT allows for the creation of new tokens. Fixed supply NFTs can lead to scarcity-driven price appreciation, whereas variable supply NFTs can be more susceptible to inflation and market volatility."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Hard",
+    "question": "Design a data structure to store and manage a large collection of NFT metadata, including images, descriptions, and ownership information. Consider scalability and query efficiency.",
+    "answer": "A suitable data structure for storing NFT metadata would be a combination of a hash table and a key-value store. The hash table can store the unique NFT IDs as keys and the corresponding metadata hashes as values. The key-value store can then store the actual metadata, including images and descriptions, with the metadata hashes as keys."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Hard",
+    "question": "Explain the concept of 'tokenization' in the context of NFTs and how it relates to the concept of 'fractional ownership'. Provide an example use case.",
+    "answer": "Tokenization refers to the process of representing a physical or digital asset as a unique digital token. Fractional ownership allows multiple parties to own a portion of the same NFT. An example use case is a luxury car, where the owner can create a tokenized representation of the car and sell fractions of ownership to multiple investors, enabling access to the asset without requiring full ownership."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "NFTs",
+    "difficulty": "Hard",
+    "question": "Describe the technical challenges associated with implementing a decentralized NFT marketplace, and propose a solution to address these challenges.",
+    "answer": "Technical challenges include scalability, security, and interoperability. A solution could involve the use of off-chain ordering and on-chain settlement, combined with a decentralized oracle network to provide pricing and market data. This would enable a scalable, secure, and interoperable marketplace for NFT trading."
+  }
+]

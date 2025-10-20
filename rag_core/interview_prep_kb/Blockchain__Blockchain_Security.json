@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of hash functions in blockchain security?",
+    "answer": "Hash functions are used to create a digital fingerprint of data, which ensures data integrity and prevents tampering."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Easy",
+    "question": "A miner includes a malicious transaction in a block they are trying to mine. What will happen to the blockchain?",
+    "answer": "The malicious transaction will be rejected by the network, and the miner will be forced to start over with a new block."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Easy",
+    "question": "What is the difference between a 51% attack and a 25% attack in a decentralized network?",
+    "answer": "A 51% attack occurs when an attacker controls more than 50% of the network's mining power, while a 25% attack is less severe but still a potential threat."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Easy",
+    "question": "What is the purpose of digital signatures in blockchain transactions?",
+    "answer": "Digital signatures verify the authenticity and integrity of transactions, ensuring that the sender is who they claim to be and that the transaction has not been tampered with."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Easy",
+    "question": "How do consensus algorithms like Proof of Work (PoW) ensure the integrity of the blockchain?",
+    "answer": "Consensus algorithms like PoW ensure the integrity of the blockchain by requiring miners to solve complex mathematical puzzles, which helps to prevent double-spending and ensures that all nodes agree on the same state of the blockchain."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Medium",
+    "question": "What is a 51% Attack, and how can it compromise a blockchain network's security?",
+    "answer": "A 51% Attack occurs when a malicious entity controls more than half of the network's mining power, allowing them to manipulate the blockchain by reversing transactions, preventing new transactions from being confirmed, and altering the block reward. This can compromise the network's security by making it vulnerable to double-spending and other attacks."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Medium",
+    "question": "How does a blockchain's consensus algorithm impact its security?",
+    "answer": "A blockchain's consensus algorithm determines how nodes agree on the state of the blockchain. A secure consensus algorithm, such as Proof of Work (PoW) or Proof of Stake (PoS), ensures that the network reaches a consensus quickly and reliably, preventing an attacker from manipulating the blockchain. A weak or vulnerable consensus algorithm can compromise the network's security."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Medium",
+    "question": "What is a smart contract, and how can it be used to compromise a blockchain network's security?",
+    "answer": "A smart contract is a self-executing program that automates the transfer of assets or data on a blockchain. However, if a smart contract contains a vulnerability or is maliciously designed, it can be used to compromise the network's security by allowing an attacker to manipulate or drain assets. This highlights the importance of secure smart contract development and auditing."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Medium",
+    "question": "How does a blockchain's data encryption impact its security?",
+    "answer": "A blockchain's data encryption affects its security by protecting the confidentiality and integrity of the data stored on the blockchain. Strong encryption methods, such as Elliptic Curve Digital Signature Algorithm (ECDSA) or Elliptic Curve Integrated Encryption Scheme (ECIES), ensure that sensitive data remains secure and tamper-proof, preventing unauthorized access and manipulation."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Medium",
+    "question": "What is a side channel attack, and how can it compromise a blockchain network's security?",
+    "answer": "A side channel attack involves exploiting information leaks or timing differences in a system to compromise its security. In a blockchain context, side channel attacks can target the network's protocol or hardware, allowing an attacker to gather valuable information about the network's internal state, potentially leading to a security breach or denial-of-service attack."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Hard",
+    "question": "Explain the concept of a 51% attack in the context of a proof-of-work (PoW) blockchain. How can a group of miners mitigate this risk?",
+    "answer": "A 51% attack occurs when a group of miners controls more than 50% of the network's mining power, allowing them to manipulate the blockchain by denying confirmation of transactions or blocks from other miners. To mitigate this risk, a group of miners can implement a decentralized governance model, such as a decentralized autonomous organization (DAO), to distribute decision-making power and ensure that no single entity controls a majority of the network's mining power."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where a smart contract vulnerability leads to a denial-of-service (DoS) attack on a blockchain network. How can the contract be secured?",
+    "answer": "A smart contract vulnerability can lead to a DoS attack if an attacker exploits a logic error or buffer overflow in the contract's code, causing it to consume excessive resources and slow down the network. To secure the contract, the developer can use a static analysis tool, such as a formal verification method, to identify and fix the vulnerability. Additionally, the contract can be designed with a fail-safe mechanism, such as a timeout or a kill switch, to prevent the attack from causing significant harm."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Hard",
+    "question": "Implement a cryptographic hash function to prevent a replay attack on a blockchain-based system. Explain the properties of the function that make it suitable for this purpose.",
+    "answer": "To prevent a replay attack, a cryptographic hash function with the following properties can be implemented: collision resistance, preimage resistance, and non-invertibility. One suitable hash function is SHA-256, which takes input data of any size and produces a fixed-size output that is unique for each input. The function is collision-resistant, meaning it is computationally infeasible to find two different inputs with the same output, and preimage-resistant, meaning it is computationally infeasible to find the input that produces a given output."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Hard",
+    "question": "A blockchain-based system uses a combination of public-key cryptography and digital signatures to ensure the integrity and authenticity of transactions. Describe a scenario where an attacker exploits a vulnerability in the system's key management, leading to a private key compromise. What measures can be taken to prevent such an attack?",
+    "answer": "An attacker can exploit a vulnerability in the system's key management by stealing or obtaining a user's private key, which allows them to forge transactions and manipulate the blockchain. To prevent such an attack, the system can implement a secure key management policy, such as key rotation, encryption, and secure storage. Additionally, the system can use a decentralized key management system, such as a decentralized identity management protocol, to distribute and manage private keys in a secure and decentralized manner."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Blockchain Security",
+    "difficulty": "Hard",
+    "question": "A blockchain-based system uses a proof-of-stake (PoS) consensus algorithm to validate transactions. Describe a scenario where an attacker exploits a vulnerability in the PoS algorithm, leading to a chain split. What measures can be taken to prevent such an attack?",
+    "answer": "An attacker can exploit a vulnerability in the PoS algorithm by manipulating the voting process, causing a chain split. To prevent such an attack, the system can implement a robust voting protocol, such as a Byzantine fault-tolerant consensus algorithm, to ensure that the voting process is secure and decentralized. Additionally, the system can use a mechanism, such as a supermajority threshold, to ensure that a minimum number of validators must agree on a block before it is considered valid."
+  }
+]

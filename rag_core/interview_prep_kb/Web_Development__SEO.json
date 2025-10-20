@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Easy",
+    "question": "What is the purpose of meta tags in HTML?",
+    "answer": "Meta tags provide search engines with information about a web page's content, such as title, description, and keywords, to help them understand the page's relevance and ranking."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Easy",
+    "question": "A website has a slow load time of 10 seconds. What can be done to improve its SEO ranking?",
+    "answer": "To improve SEO ranking, the website's load time should be optimized by compressing images, minifying CSS and JavaScript files, and leveraging browser caching."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Easy",
+    "question": "What is the difference between internal and external links in SEO?",
+    "answer": "Internal links point to other pages on the same website, while external links point to other websites. Internal links help with site navigation and can improve SEO ranking, while external links can harm it if they are low-quality or spammy."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Easy",
+    "question": "How often should a website's content be updated to improve its SEO ranking?",
+    "answer": "A website's content should be updated regularly, ideally at least once a week, to keep search engines crawling and indexing fresh content, which can improve SEO ranking."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Easy",
+    "question": "What is the role of alt text in SEO for images?",
+    "answer": "Alt text provides a text description of an image, which helps search engines understand the image's content and can improve SEO ranking for image searches."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Medium",
+    "question": "What is the main difference between on-page and off-page SEO techniques?",
+    "answer": "On-page SEO focuses on optimizing website elements such as content, meta tags, and internal linking, whereas off-page SEO involves building relationships and acquiring high-quality backlinks from external sources to improve website authority and rankings."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Medium",
+    "question": "A developer has optimized a webpage for a specific keyword. However, the webpage still doesn't rank well. What could be the possible reason?",
+    "answer": "The possible reason could be that the webpage's content is not engaging or relevant to the target audience, or there may be a more authoritative webpage ranking for the same keyword, making it harder for the optimized webpage to rank."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Medium",
+    "question": "Explain the concept of keyword density in SEO and how it affects page rankings.",
+    "answer": "Keyword density refers to the percentage of times a target keyword is used in a webpage's content. A high keyword density can lead to penalties from search engines, while a low density can make it difficult for the webpage to rank for the target keyword. The ideal keyword density is between 0.5% to 1.5%."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Medium",
+    "question": "A developer needs to decide between implementing an HTTPS (SSL) certificate or an SSI (Server-Side Includes) technology on a website. What would be the SEO benefits of using HTTPS?",
+    "answer": "Using HTTPS provides several SEO benefits, including improved security, trust, and faster page loading times. It also helps to prevent keyword cannibalization and ensures that search engines can crawl and index website content more efficiently."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Medium",
+    "question": "What is the impact of using too many internal links on a webpage, and how can it be avoided?",
+    "answer": "Using too many internal links can lead to a negative user experience and can be considered spammy by search engines. This can result in penalties and decreased website rankings. To avoid this, it's recommended to use a moderate number of internal links and to make sure they are relevant and contextual."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Hard",
+    "question": "Explain how to optimize the website's page speed for better SEO, considering the impact of multiple third-party scripts on page loading time.",
+    "answer": "To optimize website page speed, use tools like Google PageSpeed Insights to identify areas for improvement. Remove unnecessary third-party scripts, minify and compress code, leverage browser caching, and consider lazy loading for non-essential content. Use a content delivery network (CDN) to reduce latency and consider using a plugin or module to defer third-party script loading until the page has finished rendering."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Hard",
+    "question": "Describe a strategy for implementing schema markup on a complex e-commerce site with multiple product types and variations.",
+    "answer": "For a complex e-commerce site, implement schema markup using JSON-LD (JavaScript Object Notation for Linked Data). Start by defining a base schema for the site, then create specific schema types for each product category. Use a combination of schema properties, such as 'name', 'image', 'description', and 'price', to describe each product. Utilize schema.org vocabularies for product types and variations, and ensure proper validation with Google's Structured Data Markup Helper."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Hard",
+    "question": "How would you approach rewriting a poorly written, lengthy article for better SEO, considering readability, content quality, and user experience?",
+    "answer": "To rewrite a poorly written article, start by analyzing its content structure, identifying key points and main ideas. Break up lengthy paragraphs into shorter, bite-sized chunks, and use subheadings to improve readability. Use a conversational tone and clear, concise language to enhance user experience. Add relevant, high-quality internal and external links to improve content authority and user engagement. Use header tags (H1, H2, H3) to structure the content and make it more scannable, and ensure proper keyword usage and meta tags for better SEO."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Hard",
+    "question": "Design a plan for implementing a mobile-first approach to website development, considering the impact on SEO and user experience.",
+    "answer": "To implement a mobile-first approach, start by designing and developing the website for smaller screens (mobile devices) first. Ensure that the layout, navigation, and content are optimized for mobile users. Use responsive design techniques, such as media queries and flexible grids, to ensure that the website adapts to different screen sizes and devices. Test the website on various mobile devices to ensure a smooth user experience. Consider implementing Accelerated Mobile Pages (AMP) to improve page loading speed on mobile devices, which can positively impact SEO."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "SEO",
+    "difficulty": "Hard",
+    "question": "Explain the concept of 'link equity' in SEO and describe how to measure and track its impact on website rankings.",
+    "answer": "Link equity refers to the value and authority passed from one website to another through incoming links. To measure and track link equity, use tools such as Ahrefs, Moz, or SEMrush to analyze the number and quality of backlinks pointing to your website. Consider metrics such as Domain Authority (DA), Page Authority (PA), and Spam Score to evaluate the credibility and trustworthiness of incoming links. Monitor link growth, lost links, and link equity over time to identify trends and areas for improvement. Regularly clean up broken links, disavow spammy links, and focus on acquiring high-quality, relevant links to increase link equity and boost website rankings."
+  }
+]

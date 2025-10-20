@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Easy",
+    "question": "What is the main function of a Load Balancer in a cloud network?",
+    "answer": "A Load Balancer distributes incoming network traffic across multiple servers to improve responsiveness, reliability, and scale."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Easy",
+    "question": "Explain the difference between a Public IP address and a Private IP address in a cloud environment.",
+    "answer": "A Public IP address is a unique address visible on the internet, while a Private IP address is a non-routable address used within a private network."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of a Virtual Private Cloud (VPC)?",
+    "answer": "A VPC provides a virtual network within a cloud environment, allowing users to create isolated networks with custom IP address ranges and security settings."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Easy",
+    "question": "What is a common use case for a Site-to-Site VPN in a cloud environment?",
+    "answer": "A Site-to-Site VPN allows two or more networks to securely connect over the internet, enabling communication between on-premises and cloud resources."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Easy",
+    "question": "What is the role of a Network Address Translation (NAT) device in a cloud network?",
+    "answer": "A NAT device translates private IP addresses to public IP addresses, allowing multiple devices to share a single public IP address and access the internet."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Medium",
+    "question": "What is the primary purpose of a Load Balancer in a cloud computing environment?",
+    "answer": "The primary purpose of a Load Balancer is to distribute incoming network traffic across multiple servers to improve responsiveness, reliability, and scalability."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Medium",
+    "question": "Suppose you're migrating a web application to a cloud provider. How would you ensure that the application can communicate with the database hosted in a different virtual network?",
+    "answer": "You would create a virtual network peering between the two virtual networks, allowing the application to communicate with the database across the peered networks."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Medium",
+    "question": "Explain the concept of a VPC (Virtual Private Cloud) in cloud computing. How does it provide security and isolation?",
+    "answer": "A VPC is a virtual network dedicated to a single account. It provides a secure and isolated environment for resources, allowing users to define their own IP address range, subnets, and security groups, thereby isolating their resources from the public internet and other accounts."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a VPN (Virtual Private Network) in a cloud computing environment, and how does it differ from a VPC?",
+    "answer": "A VPN is a secure connection between two networks over the internet. In a cloud environment, it allows users to securely access a virtual network from a remote location. Unlike a VPC, which is a virtual network within a cloud provider, a VPN provides secure access to a virtual network from outside the cloud provider's network."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Medium",
+    "question": "What are the benefits of using a Hybrid Cloud Networking architecture compared to a single-cloud architecture?",
+    "answer": "A Hybrid Cloud Networking architecture allows for greater flexibility, scalability, and cost-effectiveness by leveraging the strengths of multiple cloud providers and on-premises environments. It enables seamless communication and data transfer between clouds and on-premises environments, reducing latency and improving overall performance."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Hard",
+    "question": "Explain the difference between a VXLAN and a VLAN in a cloud environment.",
+    "answer": "A VLAN (Virtual Local Area Network) is a broadcast domain that allows for segmentation of a physical network into multiple logical networks. In contrast, a VXLAN (Virtual Extensible LAN) is a tunneling protocol used to extend a VLAN across a large Layer 3 network, allowing for the creation of virtual networks that span multiple physical networks."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Hard",
+    "question": "A cloud provider has implemented a hierarchical network architecture with multiple VNets. How can you configure a route table to direct traffic from one VNet to another?",
+    "answer": "You can configure a route table to direct traffic from one VNet to another by creating a custom route and specifying the next hop IP address. This will allow the cloud provider to route traffic between the two VNets. Alternatively, you can use a transit VNet to connect the two VNets and simplify the routing configuration."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Hard",
+    "question": "What is the difference between an IP address and a private IP address in a cloud environment?",
+    "answer": "An IP address is a unique identifier assigned to a device on a network, while a private IP address is an IP address that is not routable on the internet and is used for communication within a private network. In a cloud environment, private IP addresses are used to assign addresses to virtual machines and other resources, while public IP addresses are used to connect to the internet."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Hard",
+    "question": "Explain the concept of network security groups (NSGs) in a cloud environment and provide an example of how to use them.",
+    "answer": "Network security groups (NSGs) are virtual firewalls that allow you to define security rules for a virtual network. They provide a way to control inbound and outbound traffic to and from virtual machines and other resources. An example of how to use NSGs would be to create a rule that allows incoming traffic on port 80 from the internet, but blocks all other traffic."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Networking",
+    "difficulty": "Hard",
+    "question": "Describe the process of implementing a VPN (Virtual Private Network) in a cloud environment and provide an example of how to configure it.",
+    "answer": "Implementing a VPN in a cloud environment involves creating a virtual network and defining a VPN gateway. The VPN gateway is used to establish a secure, encrypted connection between the cloud environment and the on-premises network. An example of how to configure a VPN would be to create a virtual network and a VPN gateway, then create a connection between the two. This would involve specifying the VPN protocol, authentication methods, and encryption settings."
+  }
+]

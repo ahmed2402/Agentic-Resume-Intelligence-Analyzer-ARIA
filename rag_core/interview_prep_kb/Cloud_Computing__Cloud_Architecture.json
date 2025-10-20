@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Easy",
+    "question": "What is the main goal of a cloud architecture?",
+    "answer": "The main goal of a cloud architecture is to design a scalable, flexible, and secure system that can efficiently utilize cloud resources while meeting business requirements."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Easy",
+    "question": "Describe the characteristics of a multi-cloud architecture.",
+    "answer": "A multi-cloud architecture is a cloud computing strategy that utilizes two or more cloud platforms (e.g., AWS, Azure, Google Cloud) to reduce dependence on a single provider, improve redundancy, and increase flexibility."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Easy",
+    "question": "What is a microservices architecture in cloud computing?",
+    "answer": "A microservices architecture is an architectural style where a large application is broken down into small, independent services that communicate with each other using APIs, enabling greater scalability, flexibility, and maintainability."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Easy",
+    "question": "Explain the concept of a hybrid cloud architecture.",
+    "answer": "A hybrid cloud architecture combines on-premises infrastructure with cloud services, allowing organizations to leverage the benefits of both worlds and create a flexible, scalable, and secure environment."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a cloud native architecture?",
+    "answer": "A cloud native architecture is designed to take full advantage of cloud computing by using cloud-native technologies, such as containers and serverless computing, to create scalable, resilient, and highly available systems."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Medium",
+    "question": "What are the key differences between a monolithic architecture and a microservices architecture in the cloud?",
+    "answer": "A monolithic architecture is a single, self-contained system, whereas a microservices architecture is composed of multiple, loosely coupled services, each responsible for a specific business capability."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Medium",
+    "question": "Suppose you're designing a cloud-based e-commerce platform. How would you implement load balancing and autoscaling to ensure high availability?",
+    "answer": "To implement load balancing and autoscaling, you would use a load balancer to distribute incoming traffic across multiple instances of the e-commerce platform, and configure autoscaling to automatically provision or de-provision instances based on demand."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Medium",
+    "question": "How does a service-oriented architecture (SOA) differ from a function-as-a-service (FaaS) architecture in the cloud?",
+    "answer": "A SOA is a design paradigm where services are loosely coupled and communicate with each other using APIs, whereas a FaaS architecture is a serverless model where functions are stateless and executed in response to events, without the need for infrastructure management."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Medium",
+    "question": "What are the benefits and trade-offs of using a cloud provider's managed database service versus a self-managed database instance?",
+    "answer": "Managed database services provide ease of use, scalability, and high availability, but may incur additional costs and limit customization options. Self-managed database instances offer flexibility and control, but require more administrative effort and resource management."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Medium",
+    "question": "Assuming you're designing a cloud-based API gateway. What are the key considerations for implementing API security, including authentication and authorization?",
+    "answer": "When designing a cloud-based API gateway, key considerations for API security include implementing authentication using OAuth or JWT tokens, authorization using RBAC or attribute-based access control, and encryption using HTTPS or API keys."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Hard",
+    "question": "Describe a use case for a multi-tenant architecture in a cloud-based SaaS application, considering scalability, security, and cost-effectiveness.",
+    "answer": "A multi-tenant architecture is suitable for a SaaS application where multiple customers share the same instance, but with isolated resources and data. This approach allows for scalability, as resources can be dynamically allocated and deallocated based on customer demand, while maintaining security through role-based access control and encryption. It also reduces costs, as a single instance can support multiple customers, making it more cost-effective than dedicated instances per customer."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Hard",
+    "question": "Explain how to design a cloud-based data warehousing solution to handle large volumes of data from multiple sources, considering data latency, throughput, and cost constraints.",
+    "answer": "To design a cloud-based data warehousing solution, consider using a data lake architecture, which can handle large volumes of data from multiple sources. This can be achieved by using a scalable storage solution such as Amazon S3 or Google Cloud Storage, and a data processing service such as Apache Spark or AWS Glue. To manage data latency and throughput, consider using a data pipeline service such as AWS Data Pipeline or Google Cloud Dataflow, which can automate data ingestion, processing, and loading into the data warehouse. Lastly, consider using a cost-effective storage solution such as Amazon Redshift or Google BigQuery to store the data warehouse, which can handle large volumes of data and provide fast query performance."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Hard",
+    "question": "Design a cloud-based API gateway to handle high traffic and provide security, scalability, and monitoring features.",
+    "answer": "To design a cloud-based API gateway, consider using a service like Amazon API Gateway or Google Cloud Endpoints, which provides a scalable and secure entry point for APIs. To handle high traffic, consider using a load balancer service like Amazon Elastic Load Balancer or Google Cloud Load Balancing, which can distribute traffic across multiple instances. For security, consider using a service like AWS IAM or Google Cloud Identity and Access Management, which can provide role-based access control and encryption. For scalability, consider using a service like AWS Auto Scaling or Google Cloud Autoscaling, which can automatically scale instances based on demand. Finally, consider using a monitoring service like Amazon CloudWatch or Google Cloud Monitoring, which can provide real-time metrics and logs for API performance and security."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Hard",
+    "question": "Explain how to implement a cloud-based disaster recovery solution to ensure high availability and business continuity in the event of a disaster.",
+    "answer": "To implement a cloud-based disaster recovery solution, consider using a service like Amazon RDS for Aurora or Google Cloud SQL, which provides a managed database service that can be replicated across multiple regions. Consider also using a service like Amazon S3 or Google Cloud Storage, which provides a durable and highly available storage solution for data. For high availability and business continuity, consider using a service like AWS Elastic Beanstalk or Google Cloud App Engine, which provides a managed platform for running applications and can automatically scale instances based on demand. Finally, consider using a service like AWS CloudFormation or Google Cloud Deployment Manager, which can automate the deployment and management of cloud resources, ensuring that the disaster recovery solution is always up-to-date and aligned with business requirements."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Cloud Architecture",
+    "difficulty": "Hard",
+    "question": "Describe a cloud-based architecture for a real-time analytics platform that can handle large volumes of streaming data from IoT devices and provide insights in near real-time.",
+    "answer": "To design a cloud-based architecture for a real-time analytics platform, consider using a service like Apache Kafka or AWS Kinesis, which provides a scalable and fault-tolerant messaging system for handling large volumes of streaming data from IoT devices. Consider also using a service like Apache Spark or AWS Glue, which provides a unified analytics engine for processing and analyzing data in real-time. For near real-time insights, consider using a service like Amazon Redshift or Google BigQuery, which provides a fast and scalable data warehouse for storing and querying large volumes of data. Finally, consider using a service like AWS Lambda or Google Cloud Functions, which provides a serverless compute service for processing and analyzing data in real-time, without the need for provisioning or managing infrastructure."
+  }
+]

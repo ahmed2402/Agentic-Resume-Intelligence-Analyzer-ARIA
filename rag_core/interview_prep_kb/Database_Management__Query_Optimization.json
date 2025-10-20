@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of query optimization?",
+    "answer": "The primary goal of query optimization is to improve the performance of a query by minimizing the time and resources required to execute it."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Easy",
+    "question": "A database query is taking too long to execute. What can you do to speed it up?",
+    "answer": "You can use indexes on columns used in the WHERE, JOIN, and ORDER BY clauses to speed up the query execution."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Easy",
+    "question": "What is the difference between a clustered and non-clustered index?",
+    "answer": "A clustered index rearranges the data in the table according to the index key, while a non-clustered index simply stores a list of values and their corresponding row locations."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Easy",
+    "question": "How can you optimize a query with a large number of JOIN operations?",
+    "answer": "You can optimize a query with a large number of JOIN operations by using JOIN conditions that limit the number of rows to be joined and by using subqueries instead of JOINs when possible."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the EXPLAIN command in query optimization?",
+    "answer": "The EXPLAIN command displays the query execution plan, which shows the steps the database will take to execute the query and can help identify potential performance bottlenecks."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Medium",
+    "question": "What is the main goal of query optimization in database systems?",
+    "answer": "The main goal of query optimization is to improve the performance of a query by choosing the most efficient execution plan, typically measured in terms of time and resources used."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Medium",
+    "question": "A database contains two tables, 'orders' and 'customers'. The 'orders' table has 10 million rows and the 'customers' table has 5 million rows. What is a good candidate for a join operation in this scenario?",
+    "answer": "A good candidate for a join operation would be the 'orders' table and the 'customers' table when joining on a common column such as 'customer_id', as this operation can significantly reduce the number of rows being processed."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Medium",
+    "question": "Which of the following query optimization techniques focuses on reordering the conditions in a WHERE clause to minimize the number of rows being processed?",
+    "answer": "The query optimization technique that focuses on reordering the conditions in a WHERE clause is called Predicate Movement."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Medium",
+    "question": "A query is executing with a full table scan on the 'orders' table, which contains 10 million rows. How can this query be optimized?",
+    "answer": "This query can be optimized by creating an index on the column being queried in the 'orders' table, which will allow the database to quickly locate the relevant rows instead of scanning the entire table."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Medium",
+    "question": "A query contains a subquery that is executed for every row in the outer query. How can this query be optimized?",
+    "answer": "This query can be optimized by rewriting the subquery as a join operation, which can reduce the number of times the subquery is executed and improve performance."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Hard",
+    "question": "Describe a situation where re-ordering the joins in a SQL query can significantly improve performance. Justify your answer.",
+    "answer": "Re-ordering the joins can improve performance when one of the joined tables has a very small number of rows compared to the other tables. By placing the join with the smaller table first, the number of rows being joined decreases rapidly, resulting in fewer rows to process in subsequent joins."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Hard",
+    "question": "A query optimizer is able to choose between two different execution plans for a query. One plan has a lower cost but requires more disk I/O, while the other plan has a higher cost but requires less disk I/O. Which plan would you choose, and why?",
+    "answer": "I would choose the plan with the lower cost. While the plan with less disk I/O may seem more attractive, the cost of disk I/O operations is often significantly lower than the cost of CPU cycles. In this case, the lower cost plan is likely to be more efficient overall."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Hard",
+    "question": "A database contains a large table with a million rows and a single index on a column named 'age'. Write a SQL query that retrieves all rows where the 'age' is greater than 30. How would you optimize this query for performance?",
+    "answer": "To optimize this query, I would create a covering index on the 'age' column, which includes all the columns required by the query. This would eliminate the need to read the original table, resulting in significant performance improvements."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Hard",
+    "question": "Explain the concept of 'query re-writing' in the context of query optimization. Provide an example of a query that would benefit from re-writing.",
+    "answer": "Query re-writing is the process of transforming a query into a more efficient form, often by re-ordering operations or using alternative algorithms. An example of a query that would benefit from re-writing is a query with a large number of joins, which could be optimized by breaking it down into smaller, more manageable sub-queries."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Query Optimization",
+    "difficulty": "Hard",
+    "question": "A query takes a long time to execute because it is accessing a large number of rows from a table. How would you optimize this query using the 'EXPLAIN' statement?",
+    "answer": "To optimize this query using the 'EXPLAIN' statement, I would first run the 'EXPLAIN' statement to analyze the query plan and identify the bottleneck. Then, I would use the information from the 'EXPLAIN' statement to optimize the query by selecting the most efficient index, re-ordering the joins, or breaking down the query into smaller sub-queries."
+  }
+]

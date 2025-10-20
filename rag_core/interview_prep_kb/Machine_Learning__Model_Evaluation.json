@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of using a validation set during model evaluation?",
+    "answer": "To estimate the model's performance on unseen data and prevent overfitting."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Easy",
+    "question": "True or False: Mean Squared Error (MSE) is a suitable metric for evaluating classification models.",
+    "answer": "False, because MSE is used for regression tasks, not classification tasks."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Easy",
+    "question": "What is the difference between Precision and Recall in the context of classification models?",
+    "answer": "Precision measures the proportion of true positives among all predicted positive instances, while Recall measures the proportion of true positives among all actual positive instances."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Easy",
+    "question": "Why is it essential to use a robust metric, such as the F1-score, when evaluating the performance of a classifier?",
+    "answer": "Because it provides a balanced measure of Precision and Recall, which is essential for evaluating the performance of a classifier."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Easy",
+    "question": "How would you describe the difference between Training Error and Test Error in the context of model evaluation?",
+    "answer": "Training Error represents the model's performance on the training data, while Test Error represents the model's performance on unseen data."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Medium",
+    "question": "What is the difference between precision and recall in the context of classification models?",
+    "answer": "Precision measures the proportion of true positives among all positive predictions, while recall measures the proportion of true positives among all actual positive instances."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Medium",
+    "question": "Suppose you have a binary classification model that achieves an F1 score of 0.8 on a validation set. How would you interpret this result?",
+    "answer": "An F1 score of 0.8 indicates that the model achieves a balanced performance between precision and recall, with a moderate to high level of accuracy."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Medium",
+    "question": "A model has a high accuracy but low precision and recall. What could be the reason for this?",
+    "answer": "This could be due to the model predicting a large number of false positives, which skews its accuracy upwards while decreasing its precision and recall."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Medium",
+    "question": "What is the advantage of using the ROC-AUC metric for model evaluation compared to accuracy?",
+    "answer": "The ROC-AUC metric provides a more comprehensive assessment of a model's performance by considering the trade-off between true and false positives across all thresholds, whereas accuracy only considers the model's performance at a single threshold."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Medium",
+    "question": "How would you handle class imbalance in a binary classification problem when evaluating model performance?",
+    "answer": "You would use metrics like precision, recall, F1 score, or ROC-AUC, which are more robust to class imbalance compared to accuracy alone."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Hard",
+    "question": "Consider a binary classification problem with an imbalanced dataset, where one class has 10 times more instances than the other. Which evaluation metric would you recommend to avoid overestimating the model's performance, and why?",
+    "answer": "I would recommend using the F1-score or the area under the precision-recall curve (AUC-PR) as evaluation metrics. These metrics take into account both precision and recall, which are more relevant in imbalanced classification problems."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Hard",
+    "question": "You have two machine learning models, A and B, that achieve similar performance on the training set but significantly different performance on the validation set. How would you determine which model is more robust and explain your reasoning?",
+    "answer": "I would use techniques like cross-validation, where I split the data into multiple folds and evaluate each model on a different fold. I would also use techniques like bootstrapping, where I resample the data with replacement and evaluate each model on the resampled data. This would help me determine which model is more robust to overfitting or data variability."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Hard",
+    "question": "You are given a dataset with multiple features and a binary target variable. You want to evaluate the performance of a model that uses a feature selection technique to select the most relevant features. How would you evaluate the performance of the model, and what metrics would you use?",
+    "answer": "I would use metrics like the area under the receiver operating characteristic curve (AUC-ROC) and the area under the precision-recall curve (AUC-PR) to evaluate the model's performance. I would also use metrics like the mutual information score or the recursive feature elimination (RFE) to evaluate the feature selection technique's performance."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Hard",
+    "question": "You are given a dataset with a continuous target variable and multiple features. You want to evaluate the performance of a model that uses a dimensionality reduction technique to reduce the feature space. How would you evaluate the performance of the model, and what metrics would you use?",
+    "answer": "I would use metrics like the mean squared error (MSE) or the mean absolute error (MAE) to evaluate the model's performance. I would also use metrics like the explained variance score or the R^2 score to evaluate the dimensionality reduction technique's performance."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Hard",
+    "question": "Consider a scenario where you have multiple models that achieve similar performance on the validation set, but have different computational complexity and training times. How would you select the best model, and what trade-offs would you consider?",
+    "answer": "I would consider the trade-offs between model performance, computational complexity, and training time. I would use metrics like the model's size, number of parameters, and training time to compare the models' efficiency. I would also consider the model's interpretability and explainability, as well as its ability to generalize to new data."
+  }
+]

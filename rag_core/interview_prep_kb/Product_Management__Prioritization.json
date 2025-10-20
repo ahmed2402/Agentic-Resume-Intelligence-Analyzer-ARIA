@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of prioritization in product management?",
+    "answer": "The primary goal of prioritization in product management is to allocate resources effectively by focusing on the most important features or tasks that deliver the greatest value to customers and the business."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Easy",
+    "question": "A product team has five features to prioritize: improving user experience, increasing security, fixing bugs, enhancing analytics, and developing a new feature. Which one should be prioritized first?",
+    "answer": "Fixing bugs should be prioritized first, as it directly impacts the product's stability and user experience, and is a critical task that should not be neglected."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Easy",
+    "question": "What is the difference between Must-Haves, Should-Haves, and Nice-to-Haves in product prioritization?",
+    "answer": "Must-Haves are essential features that are critical to the product's success, Should-Haves are features that are important but not critical, and Nice-to-Haves are features that are desirable but not essential."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Easy",
+    "question": "How do you handle conflicting priorities between different stakeholders in a product development team?",
+    "answer": "You can handle conflicting priorities by gathering input from all stakeholders, weighing the importance of each priority, and making a decision based on the overall goals and objectives of the product and the business."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Easy",
+    "question": "What is the Kano model in product prioritization?",
+    "answer": "The Kano model is a framework that categorizes customer expectations into three categories: Basic, Performance, and Excitement, helping product teams to prioritize features that meet customer expectations and create a competitive advantage."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Medium",
+    "question": "When prioritizing features, what is the main goal of a MoSCoW analysis?",
+    "answer": "The main goal of a MoSCoW analysis is to categorize features into Must-Haves, Should-Haves, Could-Haves, and Won't-Haves based on their business value and customer requirements."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Medium",
+    "question": "A product team needs to prioritize features for the next sprint. Which of the following prioritization methods would you recommend for this scenario?",
+    "answer": "The Kano model or the RICE framework would be suitable for this scenario, as they help teams prioritize features based on their business value and customer satisfaction."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Medium",
+    "question": "You are a product manager responsible for a team that is building a new feature. The feature has a high development cost but a relatively low business value. What should you do?",
+    "answer": "You should prioritize the feature as a 'Nice-to-Have' and consider whether it aligns with the product's overall strategy and goals. If not, you may want to re-evaluate the feature's priority or consider deferring it to a future sprint."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Medium",
+    "question": "A product team is using the Kano model to prioritize features. What does the 'Basic' category represent?",
+    "answer": "The 'Basic' category in the Kano model represents features that are expected by customers but do not create a significant positive impact if delivered. These features are considered 'must-haves' and are often prioritized based on their functionality and quality."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Medium",
+    "question": "A product team is considering prioritizing a feature based on its potential to create a 'wow' factor for customers. What prioritization method would you recommend for this scenario?",
+    "answer": "The RICE framework would be suitable for this scenario, as it helps teams prioritize features based on their potential impact and satisfaction. This framework can help the team evaluate the feature's potential to create a 'wow' factor and prioritize it accordingly."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Hard",
+    "question": "A product team has identified 10 features for the next release, but the engineering team can only handle 3-5 features per release. How would you prioritize these features to ensure that the most valuable features are developed first?",
+    "answer": "To prioritize features, I would use the MoSCoW method, which categorizes features into Must-Haves, Should-Haves, Could-Haves, and Won't-Haves. We would then identify the Must-Haves and prioritize them, followed by the Should-Haves, and so on. This would ensure that the most critical features are developed first."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Hard",
+    "question": "A product manager is tasked with prioritizing features to meet the needs of two conflicting stakeholder groups. How would you approach this challenge?",
+    "answer": "To resolve this conflict, I would facilitate a workshop with both stakeholder groups to understand their needs and priorities. I would then use techniques such as voting, weighting, or pairwise comparison to aggregate the priorities and identify a clear set of features that meet the needs of both groups."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Hard",
+    "question": "A product team has to decide whether to prioritize a feature that has a high business value but is highly complex and resource-intensive, or a feature that has a lower business value but is relatively easy to implement. How would you approach this decision?",
+    "answer": "To make this decision, I would use a cost-benefit analysis to evaluate the trade-offs between the two features. I would consider factors such as the return on investment, the risk associated with each feature, and the potential impact on the product roadmap. This would help us make an informed decision that aligns with our business goals."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Hard",
+    "question": "A product manager is tasked with prioritizing features for a product release, but the team is short-staffed and has limited resources. How would you prioritize features in this situation?",
+    "answer": "To prioritize features in a resource-constrained environment, I would use a technique called 'Prioritization by Resource Availability.' We would identify the features that can be developed with the available resources and prioritize them accordingly. We would also consider features that can be developed in parallel or with minimal resources to maximize productivity."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Prioritization",
+    "difficulty": "Hard",
+    "question": "A product team is considering prioritizing a feature that has a high technical debt associated with it. How would you approach this decision?",
+    "answer": "To make this decision, I would weigh the benefits of addressing the technical debt against the potential costs and risks. I would consider factors such as the impact on the product roadmap, the potential for future feature development, and the opportunity costs of investing in technical debt versus other features. This would help us make an informed decision that balances short-term needs with long-term goals."
+  }
+]

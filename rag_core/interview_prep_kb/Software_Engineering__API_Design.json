@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of API design?",
+    "answer": "The primary goal of API design is to create a clear, concise, and easy-to-use interface for interacting with a system or service, allowing developers to easily integrate it into their applications."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Easy",
+    "question": "What is RESTful API design, and why is it popular?",
+    "answer": "RESTful API design is an architectural style for designing networked applications. It's popular because it's simple, scalable, and easy to implement, following the principles of Resource, Representation, State Transfer."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Easy",
+    "question": "What is an API endpoint, and how does it differ from an API method?",
+    "answer": "An API endpoint is a URL that identifies a specific resource or action, while an API method is a specific operation that can be performed on that resource. For example, a GET /users endpoint might have methods like GET, POST, PUT, and DELETE."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Easy",
+    "question": "What are some best practices for designing an API?",
+    "answer": "Some best practices for designing an API include using clear and concise naming conventions, following standard HTTP methods, using HTTP status codes, and implementing proper error handling and documentation."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Easy",
+    "question": "What is the difference between a POST and a PUT request in an API?",
+    "answer": "A POST request is used to create a new resource, while a PUT request is used to update an existing resource. For example, a POST /users endpoint would create a new user, while a PUT /users/123 endpoint would update the user with ID 123."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Medium",
+    "question": "What's the key difference between RESTful and GraphQL APIs?",
+    "answer": "RESTful APIs are based on resource-based endpoints, whereas GraphQL APIs are query-based, allowing clients to specify exactly what data they need."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Medium",
+    "question": "A microservice architecture has 10 services. How would you design an API gateway to handle requests from the clients?",
+    "answer": "An API gateway can be designed to act as an entry point for clients, routing requests to the respective microservices based on path-based routing, query parameters, or headers."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Medium",
+    "question": "What's the benefit of using HATEOAS (Hypermedia As The Engine Of Application State) in API design?",
+    "answer": "HATEOAS allows clients to discover available actions and links within the API, making it easier to navigate and interact with the API without prior knowledge of the API's structure."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Medium",
+    "question": "Suppose you're designing a public API for a payment processing system. How would you handle errors and exceptions?",
+    "answer": "Errors and exceptions can be handled using HTTP status codes, such as 4xx for client errors and 5xx for server errors, along with providing informative error messages in a standardized format, like JSON or XML."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Medium",
+    "question": "How would you implement pagination in an API to handle large datasets?",
+    "answer": "Pagination can be implemented using query parameters, such as 'limit' and 'offset', to control the number of records returned and the starting point of the result set. This allows clients to efficiently handle large datasets and reduce API load."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Hard",
+    "question": "Design an API for a microservices-based e-commerce platform, considering the separation of concerns and scalability. Provide a high-level overview of the API's endpoints and data formats.",
+    "answer": "The API would be designed as a RESTful API with separate endpoints for each microservice, such as 'product', 'order', and 'customer'. Each endpoint would have its own set of HTTP methods (e.g., GET, POST, PUT, DELETE) for CRUD operations. The data formats would be JSON or XML, depending on the client requirements. For scalability, the API would use a load balancer, and each microservice would be deployed on a separate container, with its own database. The API would also use caching mechanisms and implement rate limiting to prevent abuse."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Hard",
+    "question": "You are designing a GraphQL API for a social media platform. How would you handle pagination and sorting of a large dataset, such as a list of user posts?",
+    "answer": "To handle pagination and sorting, I would use a combination of GraphQL resolvers and directives. The 'posts' query would return a cursor-based pagination, where each page would contain a 'next' cursor pointing to the next page and a 'previous' cursor pointing to the previous page. The 'sort' directive would be used to sort the posts based on a specific field, such as 'createdAt' or 'likes'. The resolver would then use a database query to retrieve the sorted and paginated data."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Hard",
+    "question": "Design an API for a real-time analytics platform, which requires millisecond-level precision in data processing and aggregation. Describe the API's architecture, data formats, and caching mechanisms.",
+    "answer": "The API would be designed as a WebSocket-based API, where clients would establish a persistent connection to receive real-time updates. The API would use a message queue (e.g., Apache Kafka) to process and aggregate data in real-time. The data formats would be binary formats like Protocol Buffers or Apache Avro for efficient serialization and deserialization. The API would also use caching mechanisms like Redis or Memcached to store frequently accessed data and reduce the load on the message queue."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Hard",
+    "question": "You are designing a RESTful API for a large-scale IoT platform with millions of devices connected. Describe the API's security mechanisms to prevent data tampering and ensure device authenticity.",
+    "answer": "The API would use a combination of security mechanisms to prevent data tampering and ensure device authenticity. These mechanisms would include: 1) JSON Web Tokens (JWT) for authentication and authorization, 2) Message Authentication Codes (MACs) to ensure data integrity, 3) Device-specific public-private key pairs for encryption and decryption, and 4) Regular security audits and penetration testing to identify vulnerabilities."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "API Design",
+    "difficulty": "Hard",
+    "question": "Design an API for a cloud-based collaboration platform, which requires seamless integration with various third-party services like Google Drive, Dropbox, and Slack. Describe the API's architecture, data formats, and service composition mechanisms.",
+    "answer": "The API would be designed as a microservices-based API, with separate services for each third-party integration. The API would use a service composition mechanism like API Gateway or Service Mesh to orchestrate the communication between services. The data formats would be JSON or XML, depending on the client requirements. The API would also use API keys or OAuth for authentication and authorization with third-party services."
+  }
+]

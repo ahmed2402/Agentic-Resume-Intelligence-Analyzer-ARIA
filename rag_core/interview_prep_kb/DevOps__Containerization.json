@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of Docker images?",
+    "answer": "Docker images serve as a blueprint for creating containers, providing a consistent and reproducible environment for applications."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Easy",
+    "question": "How do you persist data in a Docker container?",
+    "answer": "You can persist data in a Docker container by using volumes, which allow you to mount a file or directory from the host machine into the container, or by using Docker's built-in support for persistent storage with containers like Docker volumes or bind mounts."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Easy",
+    "question": "What is the difference between a Docker container and a virtual machine?",
+    "answer": "A Docker container is a lightweight and portable environment for running an application, whereas a virtual machine is a self-contained operating system that runs on top of a host operating system."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Easy",
+    "question": "How do you troubleshoot issues with a Docker container that is not starting?",
+    "answer": "You can troubleshoot issues with a Docker container that is not starting by checking the container's logs, checking the Docker daemon logs, and using the `docker inspect` command to get information about the container's configuration and state."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Easy",
+    "question": "What is Docker Compose, and how is it used?",
+    "answer": "Docker Compose is a tool for defining and running multi-container Docker applications. It allows you to define a set of services that make up your application, and then run them all with a single command, using a YAML file to specify the services and their dependencies."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Medium",
+    "question": "What is the primary benefit of using a Dockerfile in containerization?",
+    "answer": "The primary benefit of using a Dockerfile is to automate the process of building and configuring a Docker image, ensuring consistency and reproducibility across different environments."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Medium",
+    "question": "Suppose you have two containers running on the same host, one using port 80 and the other using port 8080. How can you ensure they don't conflict with each other?",
+    "answer": "You can use a container networking driver such as Docker's built-in networking or a third-party driver like Calico to create a separate network namespace for each container, allowing them to use the same port numbers."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Medium",
+    "question": "What is the difference between Docker and Kubernetes in terms of their primary functions?",
+    "answer": "Docker is primarily used for container creation, deployment, and management, whereas Kubernetes is used for orchestration, scaling, and managing multiple containers across a cluster of hosts."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Medium",
+    "question": "A developer is experiencing issues with a container not starting due to a missing dependency. How would you troubleshoot the issue?",
+    "answer": "You would check the container's logs, Dockerfile, and the image's dependencies to identify the missing dependency. You can also use Docker's `build` and `run` commands with the `-v` flag to enable verbose output and gain more insight into the issue."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Medium",
+    "question": "Suppose you have a multi-container application with a web server and a database container. How would you persist data in the database container even after the container is restarted?",
+    "answer": "You would use a persistent storage solution like a Docker volume or a cloud-based storage service like AWS EBS to store the database data outside of the container, ensuring it persists even after the container is restarted or deleted."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Hard",
+    "question": "Design a strategy for implementing a canary release using Kubernetes, where the canary release is a new version of a containerized application that is deployed to a subset of users. Describe the steps involved and the tools used.",
+    "answer": "To implement a canary release, create a new deployment for the new version of the application, and specify a percentage of the total replica count for the new deployment. Use a rolling update strategy to gradually replace the old replicas with the new ones. Monitor the performance of both the old and new deployments and switch all traffic to the new deployment once the new version is deemed stable."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Hard",
+    "question": "A containerized application is experiencing high CPU usage due to a memory leak. Describe a step-by-step approach to debugging the issue using Docker and Kubernetes tools.",
+    "answer": "To debug a memory leak in a containerized application, use Docker's `docker logs` command to check for any error messages or warnings. Then, use `docker exec` to attach to the container and use a debugging tool like `gdb` or a memory profiler to identify the source of the memory leak. Use Kubernetes' `kubectl debug` command to attach a debug container to the problematic pod and gain additional insights into the issue."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Hard",
+    "question": "Describe a method for implementing containerized microservices using Docker and Kubernetes. How would you handle service discovery and communication between microservices?",
+    "answer": "To implement containerized microservices, use Docker to package each microservice into a separate container. Use Kubernetes to deploy and manage the containers. For service discovery and communication, use a service mesh like Istio or Linkerd, which provides features like load balancing, circuit breaking, and traffic management. Additionally, use Kubernetes' built-in service discovery mechanism, which allows containers to discover and communicate with each other using service names."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Hard",
+    "question": "A Kubernetes cluster is experiencing high latency due to network partitions between nodes. Describe a strategy for optimizing network performance and reducing latency in the cluster.",
+    "answer": "To optimize network performance and reduce latency, use Kubernetes' `kube-proxy` component to configure the network settings for the cluster. Use `ipvs` (IP Virtual Server) to distribute load balancing across multiple nodes, and `conntrack` to enable connection tracking. Additionally, use tools like `tcpdump` and `iftop` to analyze network traffic and identify bottlenecks. Finally, consider migrating to a faster network storage solution like NVMe or Ceph."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Containerization",
+    "difficulty": "Hard",
+    "question": "A containerized application is experiencing issues with data persistence due to the ephemeral nature of container storage. Describe a solution for persisting data across container restarts using Docker and Kubernetes.",
+    "answer": "To persist data across container restarts, use a persistent storage solution like a cloud-based block storage service (e.g., AWS EBS, GCP Persistent Disk) or a Kubernetes-managed persistent volume (PV) and claim (PVC). Use Docker's `docker volume` command to create a named volume, and then mount it to the container. Alternatively, use a database like MySQL or PostgreSQL that can persist data across container restarts."
+  }
+]

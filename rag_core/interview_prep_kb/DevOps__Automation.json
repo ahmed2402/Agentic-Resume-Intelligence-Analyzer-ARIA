@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Automation",
+    "difficulty": "Medium",
+    "question": "What are the benefits of using infrastructure as code (IaC) in DevOps automation?",
+    "answer": "The benefits of using IaC include version control, reproducibility, and automated deployment, making it easier to manage and scale infrastructure."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Automation",
+    "difficulty": "Medium",
+    "question": "Write a script to automate the deployment of a web application using Ansible and a CI/CD pipeline.",
+    "answer": "This can be achieved using Ansible's playbook and a CI/CD tool like Jenkins. The script would involve writing a playbook to deploy the web application and then integrating it with Jenkins to automate the deployment process."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Automation",
+    "difficulty": "Medium",
+    "question": "How do you ensure consistency in deployment configurations across multiple environments in a DevOps automation pipeline?",
+    "answer": "This can be achieved by using environment variables and configuration management tools like Ansible or Puppet to define and manage deployment configurations."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Automation",
+    "difficulty": "Medium",
+    "question": "What are the key differences between a CI/CD pipeline and a deployment pipeline in DevOps automation?",
+    "answer": "A CI/CD pipeline focuses on building, testing, and deploying code continuously, whereas a deployment pipeline focuses specifically on deploying code to production environments."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Automation",
+    "difficulty": "Medium",
+    "question": "Describe the role of continuous monitoring in DevOps automation and how it differs from continuous integration and continuous deployment.",
+    "answer": "Continuous monitoring involves real-time monitoring and feedback to ensure application health and performance. It differs from CI/CD in that it focuses on ongoing monitoring and feedback rather than the automated build, test, and deployment process."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Automation",
+    "difficulty": "Hard",
+    "question": "Design a system that uses event-driven automation to detect and deploy code changes across multiple environments, while ensuring consistency and reproducibility.",
+    "answer": "Implement an event-driven architecture using a message broker like Apache Kafka or RabbitMQ. Use a tool like Ansible or Terraform to detect code changes and trigger automated deployments across environments, while utilizing a configuration management tool like Puppet or Chef to ensure consistency and reproducibility."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Automation",
+    "difficulty": "Hard",
+    "question": "You are tasked with automating the deployment of a web application that has a complex dependency tree. The application consists of multiple microservices, each with its own set of dependencies. Write a script to automate the deployment process, taking into account the dependencies and ensuring that each service is deployed in the correct order.",
+    "answer": "Use a tool like Docker Compose or Kubernetes to define the application's service dependencies. Then, write a deployment script using a tool like Ansible or Terraform, which uses the service definitions to deploy each service in the correct order, taking into account any dependencies between services."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Automation",
+    "difficulty": "Hard",
+    "question": "Imagine you are working with a team that uses a continuous integration and continuous deployment (CI/CD) pipeline. However, the pipeline is experiencing high latency, causing delays in deployment. Suggest a strategy to improve the pipeline's performance without compromising its reliability.",
+    "answer": "Implement a caching mechanism, such as Redis or Memcached, to store frequently accessed data, reducing the number of database queries and improving pipeline performance. Additionally, consider using a pipeline parallelization tool like Jenkins X or CircleCI to run multiple stages of the pipeline concurrently, reducing overall pipeline latency."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Automation",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where you would use a templating engine like Jinja2 or Mustache to automate the creation of infrastructure as code (IaC) templates. Provide an example of how the templating engine would be used to generate IaC templates for a cloud provider like AWS or GCP.",
+    "answer": "Use a templating engine like Jinja2 or Mustache to generate IaC templates for cloud provider resources, such as AWS EC2 instances or GCP Compute Engine instances. For example, the templating engine could be used to generate a Terraform template for creating an AWS EC2 instance with a specified instance type, region, and security group."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Automation",
+    "difficulty": "Hard",
+    "question": "Design an automated testing framework that uses a tool like Selenium or Appium to test web and mobile applications. The framework should be able to generate test cases automatically based on the application's UI, and provide detailed test reports with metrics on test coverage and execution time.",
+    "answer": "Implement an automated testing framework using a tool like Selenium or Appium, which can generate test cases automatically based on the application's UI using a tool like TestCafe or Cypress. The framework should also use a test reporting tool like Allure or JUnit to provide detailed test reports with metrics on test coverage and execution time."
+  }
+]

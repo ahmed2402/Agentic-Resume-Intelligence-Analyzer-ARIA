@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Easy",
+    "question": "What is A/B testing, and how is it used in product development?",
+    "answer": "A/B testing is a method used to compare two versions of a product, feature, or process to determine which one performs better. It involves dividing users into two groups, showing one group the control version and the other group the variant version, and then analyzing the results to determine which version is more effective."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Easy",
+    "question": "What are key performance indicators (KPIs), and why are they important in product management?",
+    "answer": "Key performance indicators (KPIs) are measurable values that demonstrate how effectively a company is achieving its objectives. In product management, KPIs are essential for tracking progress, making data-driven decisions, and measuring the success of products and features."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Easy",
+    "question": "How do you determine which metrics to track for a product?",
+    "answer": "To determine which metrics to track for a product, you should consider the product's goals and objectives, as well as the questions you want to answer with the data. This may include metrics such as user acquisition, retention, engagement, and revenue growth."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Easy",
+    "question": "What is the difference between a metric and a dimension?",
+    "answer": "A metric is a quantifiable value that measures the performance or behavior of a product or users, while a dimension is a characteristic or attribute of the data that can be used to filter or segment the results. For example, 'Revenue' is a metric, while 'Date' or 'User Type' are dimensions."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Easy",
+    "question": "How do you interpret the results of an A/B test?",
+    "answer": "To interpret the results of an A/B test, you should consider the statistical significance of the results, the size of the effect, and the practical implications of the findings. If the test results are statistically significant and the effect is large enough to be considered meaningful, you can conclude that the variant version is more effective and make decisions based on the results."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Medium",
+    "question": "What are some common pitfalls when selecting key performance indicators (KPIs) for a product, and how can they be avoided?",
+    "answer": "Common pitfalls include selecting KPIs that are too broad or too narrow, failing to account for seasonality or other external factors, and not regularly reviewing and adjusting KPIs. To avoid these pitfalls, it's essential to establish clear goals and objectives, involve stakeholders in the KPI selection process, and regularly review and update KPIs to ensure they remain relevant and effective."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Medium",
+    "question": "Suppose you're considering two different pricing strategies for a product, and you want to determine which one is more effective. How would you use A/B testing and analytics to inform your decision?",
+    "answer": "To compare the two pricing strategies using A/B testing and analytics, you would create two separate groups of users and assign each group to a different pricing strategy. You would then track key metrics such as conversion rates, revenue, and customer satisfaction for each group and compare the results. By analyzing the data, you can determine which pricing strategy is more effective and make data-driven decisions about which one to implement."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Medium",
+    "question": "What are some common challenges associated with implementing a data-driven culture within a product organization, and how can these challenges be addressed?",
+    "answer": "Common challenges include a lack of data literacy, insufficient data quality, and inadequate tools and infrastructure. To address these challenges, it's essential to invest in data training and education, implement data quality checks and processes, and leverage cloud-based tools and infrastructure to support data-driven decision-making."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Medium",
+    "question": "Suppose you're responsible for a product with a complex customer journey that involves multiple touchpoints and interactions. How would you design a data model to effectively track and analyze customer behavior across these different touchpoints?",
+    "answer": "To design an effective data model for tracking and analyzing customer behavior across multiple touchpoints, you would create a data model that captures key customer interactions and events at each touchpoint. This could include data on user behavior, such as clicks, conversions, and feedback, as well as metadata about each interaction, such as the channel used and the time of day. By leveraging data warehousing and ETL tools, you can integrate and analyze data from multiple sources to gain a comprehensive understanding of customer behavior."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Medium",
+    "question": "What are some key metrics that you would track to measure the effectiveness of a product's user onboarding process, and how would you use these metrics to inform product development and improvement?",
+    "answer": "Key metrics for measuring the effectiveness of a product's user onboarding process include time-to-first-login, completion rate of onboarding flows, and user retention rates after onboarding. By tracking these metrics and analyzing user behavior, you can identify areas of improvement and make data-driven decisions about how to enhance the onboarding experience. This could involve simplifying the onboarding process, reducing friction points, or providing additional guidance and support to users."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where using a regression analysis to model user engagement metrics would be more beneficial than relying solely on averages or means.",
+    "answer": "Regression analysis is beneficial when analyzing user engagement metrics over time, as it can capture non-linear relationships and trends between variables, providing a more accurate understanding of user behavior. This is particularly useful in identifying the impact of specific features or changes on user engagement, allowing for more informed product decisions."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Hard",
+    "question": "What are some common pitfalls when implementing A/B testing for product feature launches, and how can they be mitigated?",
+    "answer": "Common pitfalls include: 1) poor experiment design, 2) inadequate sample size, and 3) failure to account for external factors. To mitigate these risks, ensure experiments are well-defined, have adequate statistical power, and control for external variables through techniques like regression analysis or matching."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Hard",
+    "question": "Compare and contrast the use of cohort analysis versus time-series analysis for understanding user behavior and product metrics.",
+    "answer": "Cohort analysis examines user behavior across multiple time periods, while time-series analysis focuses on trends over a single time period. Cohort analysis is beneficial for understanding user retention, while time-series analysis is better suited for identifying seasonal or trending patterns in user behavior. Choose the appropriate analysis based on the specific question being asked."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Hard",
+    "question": "How would you determine the optimal retention rate for a freemium product, and what factors would you consider when making this decision?",
+    "answer": "Retention rate is a function of both user churn and acquisition rates. To determine the optimal retention rate, consider factors such as: 1) customer lifetime value, 2) competitor retention rates, 3) revenue growth goals, and 4) user acquisition costs. A more nuanced approach involves using a Pareto analysis to identify the most valuable user segments and optimizing retention strategies accordingly."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Metrics & Analytics",
+    "difficulty": "Hard",
+    "question": "Explain how to calculate the return on investment (ROI) for a product feature launch, and what assumptions are necessary for this calculation?",
+    "answer": "To calculate ROI, divide the revenue generated by the feature by the costs incurred (development, marketing, etc.). Assume that revenue is directly attributed to the feature, and that costs are accurately accounted for. Consider additional factors like opportunity costs, user lifetime value, and marginal revenue to provide a more comprehensive understanding of the feature's value."
+  }
+]

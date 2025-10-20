@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Easy",
+    "question": "What is caching, and how can it improve web application performance?",
+    "answer": "Caching stores frequently accessed data in a temporary location, reducing the need for redundant database queries or computations. It can improve web application performance by loading static resources, storing dynamic data, or minimizing server-side requests."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Easy",
+    "question": "What is the difference between minification and compression in web development?",
+    "answer": "Minification removes unnecessary characters from code, such as whitespace and comments, to reduce file size. Compression transforms code into a more compact format, using algorithms like Gzip or Brotli, to achieve further size reduction."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Easy",
+    "question": "How can lazy loading improve the user experience of a web application?",
+    "answer": "Lazy loading delays the loading of non-essential resources until they are actually needed, reducing initial page load times and improving the overall user experience. This is particularly useful for large images, videos, or third-party scripts."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Easy",
+    "question": "What is the purpose of Content Delivery Networks (CDNs) in web development?",
+    "answer": "CDNs distribute static resources across multiple servers worldwide, reducing the distance between users and the resources they need. This speeds up page load times, improves content availability, and enhances overall web application performance."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Easy",
+    "question": "How can developers use browser caching to improve web application performance?",
+    "answer": "Browser caching stores frequently accessed resources, such as images, CSS files, or JavaScript files, locally on the user's device. This enables faster access to these resources on subsequent visits, reducing the need for server-side requests and improving overall performance."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Medium",
+    "question": "What is the main difference between lazy loading and eager loading in the context of JavaScript libraries like React?",
+    "answer": "Lazy loading loads data or components only when they are needed, while eager loading loads all data or components upfront. Lazy loading can improve performance by reducing unnecessary computations, but it may introduce additional complexity due to the need for conditional rendering."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Medium",
+    "question": "A web page takes 3 seconds to load, but the browser is idle for 2 seconds of that time. What optimization technique could be used to improve the page load time?",
+    "answer": "Using browser idle time to perform tasks like image compression, JavaScript minification, or server-side rendering can help improve the page load time."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Medium",
+    "question": "A web application uses a lot of DOM manipulations, and the browser's garbage collector is running frequently. What optimization technique could be used to reduce the frequency of garbage collection?",
+    "answer": "Using a library like Immutable.js to create immutable data structures can help reduce the frequency of garbage collection by minimizing the number of objects created and manipulated."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Medium",
+    "question": "A web page has many images, and the browser is taking a long time to render them. What optimization technique could be used to improve image rendering time?",
+    "answer": "Using image compression techniques like WebP or JPEG XR, or using a library like ImageOptim to optimize image sizes and formats, can help improve image rendering time."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Medium",
+    "question": "A web application is experiencing slow page load times due to a large number of HTTP requests. What optimization technique could be used to reduce the number of HTTP requests?",
+    "answer": "Using a technique called code splitting or dynamic import, or using a library like Webpack Bundle Analyzer to optimize bundle sizes and reduce unnecessary module imports, can help reduce the number of HTTP requests."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Hard",
+    "question": "Design a caching strategy for a web application that relies heavily on third-party APIs with unpredictable response times. Assume the application has a high volume of concurrent requests.",
+    "answer": "Implement a multi-layered caching approach, consisting of a Redis cache for frequently accessed data, a Memcached cache for less frequently accessed data, and a Least Recently Used (LRU) cache for volatile data. Utilize a circuit breaker pattern to handle API rate limiting and implement exponential backoff for temporary service disruptions."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Hard",
+    "question": "You've been tasked with optimizing a complex web application with multiple microservices. Identify the most significant performance bottlenecks and describe a strategy for profiling and analyzing the application's performance.",
+    "answer": "Utilize a combination of tools such as New Relic, Datadog, and Prometheus to collect performance metrics. Implement distributed tracing using OpenTracing or Jaeger to identify performance bottlenecks across microservices. Leverage CPU profiling and memory profiling to pinpoint performance issues within individual services. Prioritize optimization efforts based on the most significant performance bottlenecks identified."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Hard",
+    "question": "Write a JavaScript function to minimize the number of database queries in a complex web application with a large number of users. Assume the application uses an ORM framework.",
+    "answer": "function minimizeQueries(orm, query) { const cache = {}; const cacheKey = query.toString(); if (cache[cacheKey]) return cache[cacheKey]; const result = orm.query(query); cache[cacheKey] = result; return result; }"
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Hard",
+    "question": "Explain the difference between HTTP/1.1 keep-alive and HTTP/2 multiplexing. How would you choose between these two options for a high-traffic web application?",
+    "answer": "HTTP/1.1 keep-alive allows multiple requests to be sent over a single TCP connection, whereas HTTP/2 multiplexing enables multiple requests and responses to be sent over a single connection, with each request-response pair represented as a stream. Choose HTTP/2 multiplexing for high-traffic applications where multiple concurrent requests are common, as it provides better resource utilization and reduced latency. However, consider HTTP/1.1 keep-alive for applications with a high ratio of long-lived connections, as it can reduce the overhead of connection establishment."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Performance Optimization",
+    "difficulty": "Hard",
+    "question": "You're tasked with optimizing the image loading process for a web application that relies heavily on responsive images. Describe a strategy for lazy loading images and leveraging browser caching.",
+    "answer": "Implement lazy loading using IntersectionObserver to load images only when they enter the viewport. Utilize the 'loading' attribute on images to enable lazy loading in modern browsers. Leverage browser caching by setting the 'cache-control' header to 'max-age=31536000' and the 'expires' header to a far-future date. Consider using a CDN to reduce the number of requests and improve caching efficiency."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Easy",
+    "question": "What is a key characteristic of a well-crafted product roadmap?",
+    "answer": "A well-crafted product roadmap is flexible and adaptable to changing market conditions and customer needs."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Easy",
+    "question": "How often should a product roadmap be reviewed and updated?",
+    "answer": "A product roadmap should be reviewed and updated quarterly or bi-annually to ensure alignment with changing priorities and customer needs."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of a product roadmap?",
+    "answer": "The primary purpose of a product roadmap is to communicate a product's vision, goals, and key initiatives to stakeholders, including customers, investors, and internal teams."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Easy",
+    "question": "What should a product roadmap include?",
+    "answer": "A product roadmap should include key product initiatives, milestones, and deadlines, as well as high-level features and requirements."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Easy",
+    "question": "What is the benefit of using a product roadmap?",
+    "answer": "The benefit of using a product roadmap is that it helps to align product development efforts with business goals, prioritize initiatives, and communicate product vision and direction to stakeholders."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of a product roadmap, and how does it relate to the product vision?",
+    "answer": "The primary goal of a product roadmap is to communicate the product strategy and goals to stakeholders, while aligning with the product vision. It outlines the key initiatives, milestones, and timelines that will be taken to achieve the product vision."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Medium",
+    "question": "Suppose you're building a new feature, and the development team estimates it will take 3 months to complete. However, the stakeholders want it to be done in 2 months. How would you handle this situation?",
+    "answer": "I would discuss the feasibility of the timeline with the development team and stakeholders, and provide a revised estimate with options for either accelerating the development process or adjusting the scope of the feature. This would ensure that everyone is aligned and aware of the potential risks and trade-offs."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Medium",
+    "question": "What are some common mistakes to avoid when creating a product roadmap, and how can you mitigate them?",
+    "answer": "Some common mistakes to avoid include overcommitting on features, underestimating development time, and failing to prioritize core product initiatives. To mitigate these mistakes, it's essential to regularly review and refine the roadmap, engage with stakeholders, and focus on delivering high-priority features that align with the product vision."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Medium",
+    "question": "You're tasked with creating a product roadmap for a new product category. Describe the key elements you would include in the roadmap, and why they're essential.",
+    "answer": "The key elements I would include in the roadmap are the product vision, target market analysis, competitive landscape, key performance indicators (KPIs), and a phased development plan with milestones and timelines. These elements provide a clear understanding of the product's purpose, target audience, and development trajectory, enabling informed decision-making and alignment with stakeholders."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Medium",
+    "question": "A product roadmap is often used as a communication tool, but how can you ensure that it's not just a static document, but a living, breathing guide for the product team?",
+    "answer": "To make a product roadmap a living guide, I would establish a regular review and refinement process, involve the product team in the creation and maintenance of the roadmap, and ensure that it's easily accessible and up-to-date. Additionally, I would encourage the team to use the roadmap as a tool for prioritization, decision-making, and goal-setting, fostering a culture of alignment and accountability."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Hard",
+    "question": "Suppose you're given a fixed product development budget and two competing product roadmaps, each with a unique set of features, timelines, and resource requirements. How would you prioritize and select the most optimal roadmap?",
+    "answer": "To prioritize and select the most optimal roadmap, I would first identify the key objectives and constraints of the project. Then, I would use a weighted scoring system to evaluate each roadmap based on factors such as business value, customer needs, technical feasibility, and resource requirements. Finally, I would select the roadmap with the highest weighted score that meets the project's objectives and constraints."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Hard",
+    "question": "A customer wants to add a new feature to their product, but this feature will require significant changes to the underlying architecture. What advice would you give to the customer on how to balance the need for this new feature with the potential risks and costs associated with changing the architecture?",
+    "answer": "I would advise the customer to consider the following factors: the business value of the new feature, the potential risks and costs associated with changing the architecture, and the potential impact on existing features and users. I would also suggest a phased approach, where we first prototype and test the new feature in a controlled environment, and then gradually integrate it into the existing architecture. This would allow us to mitigate risks and minimize costs while still delivering the desired business value."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Hard",
+    "question": "A product has multiple competing priorities and stakeholders with different requirements. How would you develop a roadmapping process that takes into account the diverse needs and opinions of all stakeholders?",
+    "answer": "To develop a roadmapping process that takes into account the diverse needs and opinions of all stakeholders, I would use a collaborative approach that involves direct stakeholder involvement. This could include workshops, surveys, and regular check-ins to gather input and feedback from stakeholders. I would also use tools such as personas, user journeys, and business models to help stakeholders visualize and prioritize their needs. Finally, I would use a consensus-driven decision-making process to ensure that all stakeholders are aligned and committed to the final road map."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Hard",
+    "question": "A product has a complex and evolving technology stack, and the roadmapping process needs to account for potential technical debt and future-proofing. How would you approach this challenge?",
+    "answer": "To approach this challenge, I would first conduct a thorough technical assessment of the product's architecture and infrastructure. This would involve identifying areas of technical debt, assessing the risk of technical obsolescence, and evaluating the impact of future technology trends on the product. I would then use this information to develop a road map that prioritizes technical debt repayment, future-proofing, and innovation. This could involve breaking down large technical initiatives into smaller, manageable chunks, and using agile methodologies to iteratively develop and test new features and technologies."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Roadmapping",
+    "difficulty": "Hard",
+    "question": "A product has a significant backlog of features and fixes that need to be addressed. How would you prioritize and allocate resources to the most critical items, while also considering the needs of the business and the customer?",
+    "answer": "To prioritize and allocate resources to the most critical items, I would use a combination of qualitative and quantitative methods to evaluate the backlog. This could involve using techniques such as MoSCoW prioritization, Kano analysis, and cost-benefit analysis to identify the most critical items. I would also use data-driven metrics such as customer satisfaction, Net Promoter Score (NPS), and business outcomes to inform prioritization decisions. Finally, I would use agile methodologies to iteratively develop and test the prioritized items, and to continuously gather feedback and adjust priorities as needed."
+  }
+]

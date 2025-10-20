@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the Web Content Accessibility Guidelines (WCAG 2.1)?",
+    "answer": "The Web Content Accessibility Guidelines (WCAG 2.1) are a set of guidelines that provide recommendations for making digital content accessible to people with disabilities and impairments. They help ensure that digital products are usable by everyone, regardless of their abilities."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Easy",
+    "question": "Describe a scenario where color alone should not be used to convey meaning.",
+    "answer": "A scenario where color alone should not be used to convey meaning is when communicating with someone who is colorblind or has low vision. In this case, relying on color alone may lead to confusion or misinterpretation of information."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Easy",
+    "question": "What is the purpose of an alt attribute in an image?",
+    "answer": "The purpose of an alt attribute in an image is to provide a text description of the image for screen readers and other assistive technologies, allowing users with visual impairments to understand the content of the image."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Easy",
+    "question": "How can you make interactive elements (such as buttons and links) more accessible?",
+    "answer": "To make interactive elements more accessible, ensure that they have sufficient color contrast, are not too small or too close together, and provide a clear and consistent visual indication of their state (e.g., hover, focus, active)."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Easy",
+    "question": "What is the difference between a link and a button in terms of accessibility?",
+    "answer": "A link should be used for navigation, while a button should be used for actions. In terms of accessibility, buttons typically have a clearer and more consistent visual indication of their state (e.g., hover, focus, active), whereas links rely on the underline and color change to indicate their state."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Medium",
+    "question": "What is the importance of semantic HTML in improving accessibility?",
+    "answer": "Semantic HTML provides a clear structure to web content, making it easier for screen readers and other assistive technologies to interpret and present the content to users with disabilities."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Medium",
+    "question": "Design a scenario where a user with a visual impairment is navigating a website. What steps would you take to ensure a seamless experience?",
+    "answer": "I would use high contrast colors, provide text alternatives for images, ensure a clear and consistent navigation menu, and provide audio cues for interactive elements to guide the user through the website."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Medium",
+    "question": "How do you ensure that a website's keyboard-only navigation is accessible to users with mobility impairments?",
+    "answer": "I would ensure that all interactive elements can be accessed and triggered using a keyboard, either by tabbing through the elements or by using keyboard shortcuts, and that the focus state is clearly indicated to avoid confusion."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Medium",
+    "question": "What is the role of alt text in making an image accessible, and how would you write effective alt text?",
+    "answer": "Alt text is used to describe the content of an image to screen readers and other assistive technologies. Effective alt text should be concise, accurate, and provide a clear description of the image, avoiding phrases like 'image of' or 'picture of'."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Medium",
+    "question": "Design a form that is accessible to users with motor impairments. What steps would you take to ensure that the form is usable by all users?",
+    "answer": "I would use clear and consistent labeling for form fields, provide sufficient space between fields for users to easily navigate, use auto-complete functionality for form fields, and provide feedback for form validation to avoid errors and frustration."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Hard",
+    "question": "Design a UI component that allows users to navigate through a complex form without relying on a mouse or keyboard. Consider users with severe motor impairments or visual impairments.",
+    "answer": "Implement a voice-controlled interface using speech recognition technology, allowing users to navigate the form using voice commands. Additionally, provide a screen reader-friendly design with clear and consistent labeling, and use ARIA attributes to provide auditory feedback for visually impaired users."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Hard",
+    "question": "How would you approach designing an accessible mobile app for users with cognitive disabilities, such as autism or dementia?",
+    "answer": "I would focus on creating a consistent and predictable user experience, using clear and simple language, and providing visual and auditory cues to help users understand the app's functionality. I would also consider using a simplified navigation menu, and providing a 'reset' or 'restart' feature to help users who become overwhelmed."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Hard",
+    "question": "What are some common pitfalls to avoid when designing accessible color schemes, and how would you ensure that your color scheme is accessible for users with visual impairments?",
+    "answer": "Common pitfalls to avoid include using colors that are too similar, and failing to provide sufficient contrast between colors. To ensure accessibility, I would use the Web Content Accessibility Guidelines (WCAG) 2.1 color contrast ratio, and test the color scheme with colorblind simulators to ensure that it is accessible for users with visual impairments."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Hard",
+    "question": "Design a video player that is accessible for users with hearing impairments. Consider users who rely on audio descriptions or sign language interpretation.",
+    "answer": "I would provide closed captions for all videos, and ensure that the captions are accurate and synchronized with the audio. I would also provide an option to display audio descriptions, and consider using sign language interpretation for videos that require it. Additionally, I would provide a 'transcript' or 'text summary' feature to allow users to read the content of the video."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Accessibility",
+    "difficulty": "Hard",
+    "question": "How would you design an accessible virtual reality (VR) experience for users with motor impairments or visual impairments?",
+    "answer": "I would prioritize providing clear and consistent navigation controls, using voice commands or gestures that are easy to execute. I would also ensure that the VR experience is compatible with assistive technologies, such as eye-tracking or head-tracking, and provide auditory or tactile feedback to help users navigate the environment."
+  }
+]

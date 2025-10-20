@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of using transfer learning in machine learning?",
+    "answer": "The primary purpose of using transfer learning is to apply knowledge gained while training a model on one task to a different but related task, often requiring less training data and reducing the risk of overfitting."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Easy",
+    "question": "Suppose you are building a model to classify images of dogs and cats. You have a pre-trained model that has been trained on a large dataset of images. What can you do to adapt this pre-trained model for your specific task?",
+    "answer": "You can fine-tune the pre-trained model by retraining it on your specific dataset, or you can use the pre-trained model as a feature extractor and add a new classification layer on top of it."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Easy",
+    "question": "What is the difference between feature extraction and fine-tuning in transfer learning?",
+    "answer": "Feature extraction involves using a pre-trained model as a feature extractor, where the pre-trained model is used to extract features from input data, and a new classification layer is added on top. Fine-tuning involves retraining the pre-trained model on the target task, allowing the model to adapt to the new task."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Easy",
+    "question": "Why is transfer learning useful for tasks with limited training data?",
+    "answer": "Transfer learning is useful for tasks with limited training data because it allows the model to leverage knowledge gained from a larger source dataset, reducing the risk of overfitting and improving generalization performance."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Easy",
+    "question": "Can you give an example of a scenario where transfer learning is not suitable?",
+    "answer": "An example of a scenario where transfer learning is not suitable is when the task has a fundamentally different data distribution or requires a completely different set of features, such as image classification vs. natural language processing."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Medium",
+    "question": "What is the primary advantage of using transfer learning in a deep neural network?",
+    "answer": "The primary advantage of using transfer learning is that it allows the model to leverage pre-trained weights and fine-tune them for a specific task, reducing the need for large amounts of labeled training data."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Medium",
+    "question": "You are given a pre-trained model and its corresponding weights. What is the best approach to modify the model for a new task with limited labeled data?",
+    "answer": "The best approach is to freeze the pre-trained weights and add new layers on top of the existing model, fine-tuning the new layers for the specific task."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Medium",
+    "question": "Can you explain the concept of feature extraction in the context of transfer learning?",
+    "answer": "Feature extraction is the process of utilizing the pre-trained model's weights to extract relevant features from the input data, which can be used as input for a new model or for fine-tuning the pre-trained model for a specific task."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Medium",
+    "question": "What are some common pre-trained models that can be used for transfer learning?",
+    "answer": "Some common pre-trained models include VGG, ResNet, and DenseNet, which have been pre-trained on large datasets such as ImageNet and can be used for a variety of computer vision tasks."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Medium",
+    "question": "How does the choice of pre-trained model affect the performance of a transfer learning-based model?",
+    "answer": "The choice of pre-trained model can significantly affect the performance of a transfer learning-based model, as some models may be more suitable for specific tasks or datasets due to their architecture and pre-training data."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where fine-tuning a pre-trained language model on a domain-specific dataset would be more beneficial than using a pre-trained model from a different domain.",
+    "answer": "Fine-tuning a pre-trained language model on a domain-specific dataset would be more beneficial when the domain-specific dataset is significantly smaller, and the domain-specific knowledge is more critical than the general knowledge from a different domain."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Hard",
+    "question": "Explain how the concept of domain shift affects the performance of a transfer learning model, and propose a method to mitigate this issue.",
+    "answer": "Domain shift occurs when the distribution of the target domain is different from the source domain, affecting the model's performance. A method to mitigate this issue is to use domain-invariant feature learning techniques, such as adversarial training or multi-task learning, to learn features that are invariant across domains."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Hard",
+    "question": "Design an experiment to evaluate the effectiveness of transfer learning for image classification tasks across different datasets, and discuss the results.",
+    "answer": "The experiment would involve training a convolutional neural network (CNN) on a pre-trained model, such as VGG16 or ResNet50, on a large dataset like ImageNet, and then fine-tuning the model on a smaller dataset like CIFAR-10 or SVHN. The results would show significant improvements in accuracy and faster convergence time for the fine-tuned model compared to training from scratch."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Hard",
+    "question": "How does the choice of pre-trained model architecture and the number of pre-trained layers affect the transferability of knowledge in a deep neural network?",
+    "answer": "The choice of pre-trained model architecture and the number of pre-trained layers can significantly affect the transferability of knowledge in a deep neural network. A well-designed pre-trained model with a suitable architecture and sufficient pre-trained layers can transfer knowledge more effectively, while an over-complex or under-complex model may not transfer knowledge well."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Transfer Learning",
+    "difficulty": "Hard",
+    "question": "Discuss the trade-offs between using a pre-trained model with a fixed architecture and fine-tuning the model versus using a pre-trained model with a dynamic architecture and adapting the model to the target task.",
+    "answer": "Using a pre-trained model with a fixed architecture and fine-tuning it may be faster and more efficient but may not adapt well to the target task. Using a pre-trained model with a dynamic architecture and adapting the model to the target task can be more effective but may be slower and more computationally expensive."
+  }
+]

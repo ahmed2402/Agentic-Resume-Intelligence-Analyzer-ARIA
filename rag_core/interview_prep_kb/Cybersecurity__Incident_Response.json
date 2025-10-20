@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of an incident response plan?",
+    "answer": "The primary goal of an incident response plan is to quickly and effectively contain, eradicate, and recover from a cyber security incident to minimize its impact on the organization."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Easy",
+    "question": "What are the three stages of incident response?",
+    "answer": "The three stages of incident response are: Detection/Identification, Containment, and Eradication/Remediation."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a Computer Incident Response Team (CIRT)?",
+    "answer": "A CIRT is a team established to respond to and manage cyber security incidents to minimize their impact on an organization."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Easy",
+    "question": "What should be done with compromised systems during incident response?",
+    "answer": "Compromised systems should be isolated from the network to prevent further damage and potential propagation of the incident."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Easy",
+    "question": "What is the importance of documentation in incident response?",
+    "answer": "Documentation is crucial in incident response as it helps track the incident's progression, identifies root causes, and aids in future incident response efforts."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of an incident response plan?",
+    "answer": "To quickly and effectively contain and remediate the incident, minimizing downtime and data loss."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Medium",
+    "question": "A user reports suspicious activity on their account. What should be the immediate action taken by the incident response team?",
+    "answer": "To immediately isolate the user's account, preventing any further potential damage."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Medium",
+    "question": "What is the difference between containment and eradication in incident response?",
+    "answer": "Containment involves isolating the affected area to prevent further damage, while eradication involves removing or fixing the root cause of the incident."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Medium",
+    "question": "A security breach has been detected, and the incident response team is tasked with remediating the issue. What is the first step they should take?",
+    "answer": "To identify and document the scope of the breach, including the affected systems and data."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Medium",
+    "question": "What is the purpose of an incident response team's post-incident activities?",
+    "answer": "To review and analyze the incident, identify lessons learned, and implement improvements to the incident response plan."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Hard",
+    "question": "An attacker has compromised a critical system, and you've identified the root cause as a zero-day vulnerability in a third-party library. Describe a plan to mitigate the incident without causing unnecessary downtime or impacting business operations.",
+    "answer": "Develop a containment plan to isolate the compromised system and prevent further spread of the vulnerability. Utilize a patch management system to deploy a temporary fix or a security patch to the affected systems. Collaborate with the development team to implement a permanent fix, and schedule a maintenance window to roll out the update with minimal disruption to business operations."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Hard",
+    "question": "An insider threat has been identified, and you've collected logs indicating the employee has been accessing sensitive data without authorization. Walk me through the steps to investigate the incident and identify potential vulnerabilities that may have contributed to the breach.",
+    "answer": "Conduct a preliminary interview with the employee to gather more information and assess their level of involvement. Review the collected logs to identify patterns of behavior and potential vulnerabilities. Utilize a risk-based approach to prioritize the investigation and focus on the most critical areas. Review system configurations, network access controls, and access management policies to identify potential weaknesses that may have enabled the insider threat."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Hard",
+    "question": "A ransomware attack has encrypted critical data, and the attacker is demanding a ransom in exchange for the decryption key. Describe a plan to negotiate with the attacker and ensure the safe recovery of the encrypted data.",
+    "answer": "Do not pay the ransom. Instead, develop a plan to work with law enforcement to track and identify the attacker. Utilize a backup and recovery strategy to restore the data from a previous point in time. Collaborate with a third-party incident response team to implement a containment plan and prevent further spread of the ransomware. Consider engaging a digital forensics expert to analyze the attack and identify potential vulnerabilities that may have enabled the attack."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Hard",
+    "question": "A security incident has occurred, and you've identified a potential Denial of Service (DoS) attack. Describe a plan to mitigate the incident and restore normal operations.",
+    "answer": "Implement a traffic filtering plan to block the source IP addresses of the attacking systems. Utilize a content delivery network (CDN) or a load balancer to distribute traffic and prevent overload on the affected systems. Collaborate with a third-party incident response team to analyze the attack and identify potential vulnerabilities that may have enabled the attack. Review system configurations and network access controls to identify potential weaknesses that may have contributed to the breach."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Incident Response",
+    "difficulty": "Hard",
+    "question": "A security incident has occurred, and you've identified a potential Advanced Persistent Threat (APT) attack. Describe a plan to detect and respond to the incident.",
+    "answer": "Utilize a combination of security information and event management (SIEM) tools and threat intelligence platforms to detect and identify potential indicators of compromise (IOCs). Develop a plan to contain the incident and prevent further spread of the threat. Collaborate with a third-party incident response team to analyze the attack and identify potential vulnerabilities that may have enabled the attack. Review system configurations and network access controls to identify potential weaknesses that may have contributed to the breach."
+  }
+]

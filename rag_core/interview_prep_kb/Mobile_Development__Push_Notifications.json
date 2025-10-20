@@ -1,0 +1,42 @@
+[
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Push Notifications",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of push notifications in mobile apps?",
+    "answer": "Push notifications are used to send messages to users when they are not actively using the app, to re-engage them and encourage them to open the app."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Push Notifications",
+    "difficulty": "Easy",
+    "question": "Which of the following platforms provides a service for sending push notifications to mobile devices?",
+    "answer": "Google Firebase Cloud Messaging (FCM) for Android and Apple Push Notification service (APNs) for iOS."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Push Notifications",
+    "difficulty": "Easy",
+    "question": "What is the difference between a silent push and a regular push notification?",
+    "answer": "A silent push notification does not display a notification to the user, whereas a regular push notification is displayed to the user as a notification."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Push Notifications",
+    "difficulty": "Easy",
+    "question": "Why are push notifications useful for mobile app developers?",
+    "answer": "Push notifications are useful for mobile app developers as they help to increase user engagement, retention, and revenue."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Push Notifications",
+    "difficulty": "Easy",
+    "question": "What are the benefits of using Firebase Cloud Messaging (FCM) for sending push notifications?",
+    "answer": "FCM provides scalability, reliability, and ease of integration for sending push notifications to Android devices."
+  }
+]

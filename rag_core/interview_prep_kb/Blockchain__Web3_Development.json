@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Easy",
+    "question": "What is Web3 and how does it differ from Web2?",
+    "answer": "Web3 refers to the next generation of the internet, built on blockchain technology and decentralized systems. Unlike Web2, which relies on centralized servers and intermediaries, Web3 enables direct interactions between users, allowing for greater control and security."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Easy",
+    "question": "What is the main purpose of a Web3 wallet?",
+    "answer": "A Web3 wallet is used to securely store, manage, and interact with cryptocurrencies and decentralized applications (dApps). It allows users to send and receive transactions, execute smart contracts, and manage their digital assets."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Easy",
+    "question": "Explain the difference between HTTP and WebSocket in Web3 development.",
+    "answer": "HTTP is a request-response protocol used for server-to-client communication, while WebSockets enable bidirectional, real-time communication between clients and servers. In Web3 development, WebSockets are often used for real-time updates and notifications."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Easy",
+    "question": "What is a smart contract, and how is it executed?",
+    "answer": "A smart contract is a self-executing program stored on a blockchain that automates the enforcement of a specific rule or agreement. It is executed when certain conditions are met, and the outcome is based on the contract's logic and the inputs provided."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Easy",
+    "question": "What is the role of Ethereum Virtual Machine (EVM) in Web3 development?",
+    "answer": "The Ethereum Virtual Machine (EVM) is a runtime environment for executing smart contracts on the Ethereum blockchain. It enables developers to write and deploy decentralized applications (dApps) that can interact with the blockchain and other EVM-based platforms."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between Ethers.js and Web3.js libraries in Web3 development?",
+    "answer": "Ethers.js is a more modern, TypeScript-friendly alternative to Web3.js, with a focus on simplicity, security, and better error handling."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Medium",
+    "question": "How do you handle transactions in a smart contract using Web3.js, and what are the common pitfalls to avoid?",
+    "answer": "To handle transactions in a smart contract using Web3.js, you would need to create a transaction object, sign it with a private key, and then send it to the network. Common pitfalls include incorrect gas prices, insufficent funds, and incorrect contract addresses."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Medium",
+    "question": "What is the role of an ERC-20 token in a smart contract, and how do you interact with it using Solidity?",
+    "answer": "An ERC-20 token is a standard for fungible tokens on the Ethereum blockchain. In a smart contract, an ERC-20 token represents a transferable asset. To interact with it using Solidity, you would use functions like `transfer()`, `balanceOf()`, and `approve()`."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Medium",
+    "question": "What are some best practices for securing private keys in a Web3 development environment, and how do you store sensitive data safely?",
+    "answer": "Best practices for securing private keys include using environment variables, secrets management tools, and never hardcoding private keys. To store sensitive data safely, use encrypted storage, never store sensitive data in plaintext, and follow the principle of least privilege."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Medium",
+    "question": "How do you optimize gas usage in a smart contract deployed on the Ethereum network, and what are some common optimization techniques?",
+    "answer": "To optimize gas usage in a smart contract, use techniques such as minimizing the number of operations, reusing variables, and avoiding unnecessary computations. You can also use gas-optimization tools like ORE, and consider using alternative EVM implementations like Hardhat."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Hard",
+    "question": "How do you handle multiple wallet connections in a Web3 DApp, ensuring seamless switching between them?",
+    "answer": "You can use Web3.js's `eth.accounts` and `eth.defaultAccount` methods to manage multiple wallet connections. When switching between wallets, update the `defaultAccount` and use the `requestAccounts` method to retrieve the new account's information."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Hard",
+    "question": "Write a function in Solidity to recursively traverse a Merkle tree and verify its integrity.",
+    "answer": "You can use a recursive function to traverse the Merkle tree, starting from the root node and traversing down to the leaf nodes. To verify the tree's integrity, calculate the Merkle root hash from the leaf nodes and compare it with the provided Merkle root hash."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where you would use a decentralized storage solution like IPFS in a Web3 Application, and how you would integrate it with your front-end application.",
+    "answer": "You would use a decentralized storage solution like IPFS when storing large files or sensitive data, such as user profiles or medical records. To integrate it with your front-end application, use a library like `ipfs-http-client` to upload files to IPFS and retrieve the content-addressed hashes, which can then be used to fetch the files from IPFS and display them in your application."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Hard",
+    "question": "How do you handle gas price estimation and optimization in a real-world Web3 application, considering factors like network congestion and varying gas prices?",
+    "answer": "You can use APIs like `Etherscan's API` or `QuickNode's API` to estimate gas prices based on current network conditions. To optimize gas prices, implement a gas price oracles system that adjusts gas prices dynamically based on network congestion and other factors. This can be achieved using a combination of on-chain and off-chain data sources."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Web3 Development",
+    "difficulty": "Hard",
+    "question": "Design a Web3 API endpoint to fetch a user's NFT collection, including metadata and ownership information, and describe how you would secure this endpoint to prevent unauthorized access.",
+    "answer": "You can design a Web3 API endpoint using GraphQL or RESTful API, where the endpoint takes the user's address as input and returns their NFT collection. To secure this endpoint, implement authentication and authorization mechanisms, such as using JSON Web Tokens (JWT) for authentication and IP whitelisting or rate limiting for authorization. You can also use Web3 middleware libraries like `web3-middleware` to handle authentication and authorization for Web3 API requests."
+  }
+]

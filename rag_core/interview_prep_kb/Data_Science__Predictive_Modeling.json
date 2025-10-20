@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of a predictive model?",
+    "answer": "The primary goal of a predictive model is to make accurate predictions about future outcomes based on historical data."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Easy",
+    "question": "A dataset contains 80% training data and 20% testing data. What is the benefit of this split?",
+    "answer": "The benefit of this split is to train the model on a large dataset and test its performance on a smaller, unseen dataset, to prevent overfitting."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Easy",
+    "question": "What is the difference between a linear model and a nonlinear model?",
+    "answer": "A linear model assumes a linear relationship between the input variables and the target variable, while a nonlinear model assumes a curved or complex relationship."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Easy",
+    "question": "Suppose you have a predictive model that classifies customers as either 'high-value' or 'low-value'. What is an example of a metric to evaluate the performance of this model?",
+    "answer": "An example of a metric to evaluate the performance of this model is the accuracy score, which measures the proportion of correctly classified instances."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Easy",
+    "question": "What is regularization in the context of predictive modeling?",
+    "answer": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function, which reduces the model's complexity and improves its generalizability."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Medium",
+    "question": "What is the difference between a polynomial regression and a decision tree regression in terms of model interpretability?",
+    "answer": "A polynomial regression model provides a mathematical equation that represents the relationship between the independent and dependent variables, making it easier to understand the interactions between features. On the other hand, a decision tree regression model provides a series of if-then statements that describe the decision-making process, but it can be more challenging to interpret due to its hierarchical structure."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Medium",
+    "question": "You have a dataset with a categorical feature that has more than 10 categories. What type of encoding would you use for this feature, and why?",
+    "answer": "I would use one-hot encoding for this feature. This encoding method creates a new binary column for each category, allowing the model to capture the unique contribution of each category. This is particularly useful when dealing with high-cardinality categorical features."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Medium",
+    "question": "Suppose you have a dataset with two features: X and Y. You have calculated the correlation between X and Y and found a strong positive correlation. However, when you run a linear regression model, the coefficient for X is not significant. What could be the possible reasons for this discrepancy?",
+    "answer": "There could be several reasons for this discrepancy. One possible reason is multicollinearity, where X and Y are highly correlated with each other, making it difficult for the model to isolate the unique effect of X. Another possible reason is that the relationship between X and Y is non-linear, which is not captured by the linear regression model."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Medium",
+    "question": "How would you handle missing values in a feature if you have a dataset with a large number of missing values?",
+    "answer": "If I have a dataset with a large number of missing values, I would consider using imputation methods such as mean/median imputation or more sophisticated methods like multiple imputation by chained equations (MICE). I would also carefully evaluate the impact of missing values on the model's performance and consider whether there are any patterns or correlations between the missing values and other features that need to be addressed."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Medium",
+    "question": "What is regularization in the context of predictive modeling, and how does it help prevent overfitting?",
+    "answer": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. This penalty term, also known as the regularization term, discourages the model from fitting the noise in the data, resulting in a more generalizable model. Common regularization techniques include L1 (Lasso) and L2 (Ridge) regularization, which add a penalty term proportional to the absolute value or square of the model coefficients, respectively."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Hard",
+    "question": "Explain the difference between overfitting and underfitting in the context of predictive modeling. Provide a scenario where a model is overfitting and how you would address it.",
+    "answer": "Overfitting occurs when a model is too complex and fits the training data too closely, resulting in poor performance on new, unseen data. Underfitting occurs when a model is too simple and fails to capture the underlying patterns in the data. To address overfitting, techniques such as regularization, feature selection, and ensemble methods can be used to reduce the model's complexity and improve its generalizability."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Hard",
+    "question": "Design a predictive model to forecast electricity demand for a power grid given the following features: temperature, humidity, day of the week, and time of day. Consider the non-linear relationships between the features and the target variable.",
+    "answer": "One possible approach is to use a Random Forest Regressor with polynomial features for temperature and humidity. The model would also include interaction terms between the categorical features (day of the week and time of day) and the numerical features. Additionally, a seasonal decomposition can be applied to capture the periodic patterns in the data."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Hard",
+    "question": "Suppose you're given a dataset of customers with their purchase history. The target variable is a binary indicator of whether the customer will churn within the next 6 months. What metrics would you use to evaluate the performance of a predictive model in this scenario, and why?",
+    "answer": "I would use metrics such as AUC-ROC, precision, recall, and the F1-score to evaluate the model's performance. AUC-ROC measures the model's ability to distinguish between customers who will churn and those who will not, while precision and recall measure the model's ability to identify true positives (customers who will churn) and true negatives (customers who will not churn). The F1-score provides a balanced measure of precision and recall."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Hard",
+    "question": "Consider a scenario where you have a large dataset with millions of rows and hundreds of features. However, a significant portion of the features are irrelevant or redundant. Describe a strategy for feature selection and dimensionality reduction that you would employ in this scenario, and provide an example of how you would implement it in Python.",
+    "answer": "One strategy for feature selection and dimensionality reduction is to use a combination of techniques such as recursive feature elimination (RFE) and PCA. RFE would be used to select the most important features based on their mutual information with the target variable, while PCA would be used to reduce the dimensionality of the selected features. In Python, this could be implemented using the `sklearn` library, specifically with the `RFE` and `PCA` classes."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Predictive Modeling",
+    "difficulty": "Hard",
+    "question": "Suppose you're building a predictive model to forecast the stock price of a company given its historical price data. The model uses a combination of linear regression and a non-linear transformation of the data. What would be the implications of using this model for decision-making, and how would you address potential biases in the model?",
+    "answer": "Using a model that combines linear regression and a non-linear transformation of the data can lead to overfitting and poor generalizability. Additionally, the model may be sensitive to outliers and anomalies in the data. To address potential biases in the model, I would use techniques such as walk-forward optimization to evaluate the model's performance on out-of-sample data, and I would also use metrics such as Sharpe ratio and Calmar ratio to evaluate the model's risk-adjusted performance."
+  }
+]

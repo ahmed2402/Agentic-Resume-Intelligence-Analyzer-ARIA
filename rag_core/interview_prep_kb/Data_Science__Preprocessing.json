@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Preprocessing",
+    "difficulty": "Easy",
+    "question": "What is the purpose of normalization in data preprocessing?",
+    "answer": "Normalization is used to scale numeric data to a common range, typically between 0 and 1, to prevent features with large ranges from dominating the model."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Preprocessing",
+    "difficulty": "Easy",
+    "question": "You are working with a dataset containing missing values. What is your approach to handling missing values?",
+    "answer": "There are three common approaches to handling missing values: imputation (e.g., mean, median), interpolation, and deletion (e.g., listwise, pairwise). The choice depends on the nature of the data and the specific problem."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Preprocessing",
+    "difficulty": "Easy",
+    "question": "Explain the difference between encoding categorical variables using one-hot encoding and label encoding.",
+    "answer": "One-hot encoding creates a binary vector for each category, while label encoding assigns a unique integer to each category. One-hot encoding is often preferred because it avoids the problem of ordinality in label encoding."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Preprocessing",
+    "difficulty": "Easy",
+    "question": "What is the purpose of feature scaling in machine learning?",
+    "answer": "Feature scaling is used to ensure that all features are on the same scale, preventing features with large ranges from dominating the model. This improves the convergence of many machine learning algorithms."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Preprocessing",
+    "difficulty": "Easy",
+    "question": "How do you handle outliers in your data?",
+    "answer": "There are several methods to handle outliers, including Winsorization, clipping, and transformation (e.g., log transformation). The choice depends on the nature of the data and the specific problem."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "Preprocessing",
+    "difficulty": "Medium",
+    "question": "How do you handle missing values in a dataset? Provide a scenario where you had to deal with missing values in a real-world project.",
+    "answer": "I handle missing values by first identifying their nature and distribution. If missing at random, I may use imputation techniques like mean, median, or mode. If missing not at random, I may use regression-based imputation or multiple imputation. In a real-world project, I had to deal with missing values in a customer satisfaction survey dataset. I used multiple imputation by regression to account for the missing values, which resulted in a significant improvement in model accuracy."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "Preprocessing",
+    "difficulty": "Medium",
+    "question": "What is the difference between categorical and numerical encoding in data preprocessing? Provide an example of when to use each.",
+    "answer": "Categorical encoding is used for unordered categorical variables, where we assign a unique integer to each category. Numerical encoding is used for ordered categorical variables, where we assign a numerical value to each category. For example, if we have a categorical variable 'color' with values 'red', 'green', and 'blue', we would use categorical encoding. However, if we have a categorical variable 'temperature' with values 'cold', 'mild', and 'hot', we would use numerical encoding, where 'cold' is assigned a value of 1, 'mild' is assigned a value of 2, and 'hot' is assigned a value of 3."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "Preprocessing",
+    "difficulty": "Medium",
+    "question": "Write a Python function to perform standardization of a dataset using the StandardScaler from scikit-learn.",
+    "answer": "from sklearn.preprocessing import StandardScaler\n\ndef standardize_dataset(X):\n    scaler = StandardScaler()\n    X_scaled = scaler.fit_transform(X)\n    return X_scaled"
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "Preprocessing",
+    "difficulty": "Medium",
+    "question": "How do you determine the optimal number of principal components to retain in a Principal Component Analysis (PCA)?",
+    "answer": "To determine the optimal number of principal components to retain in a PCA, we can use the scree plot, which plots the eigenvalues of the principal components against their index. We can also use the Kaiser criterion, which suggests retaining components with eigenvalues greater than 1. Additionally, we can use cross-validation to select the optimal number of components based on the model's performance."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "Preprocessing",
+    "difficulty": "Medium",
+    "question": "What is the purpose of feature scaling in machine learning, and how does it affect model performance?",
+    "answer": "Feature scaling is used to ensure that all features are on the same scale, which is important for many machine learning algorithms. This is because some algorithms are sensitive to the scale of the features, and can be dominated by features with large ranges. Feature scaling can improve model performance by reducing the impact of features with large ranges, allowing the model to focus on the relationships between the features. It can also improve the stability of the model and reduce the risk of overfitting."
+  }
+]

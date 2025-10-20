@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Easy",
+    "question": "What is the single responsibility principle in system design, and why is it important?",
+    "answer": "The single responsibility principle states that a module or class should have only one reason to change. This means that it should have a single, well-defined responsibility or functionality. It's important because it promotes modularity, maintainability, and scalability in system design."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Easy",
+    "question": "Design a simple database schema for an e-commerce website. Consider the tables for users, products, and orders.",
+    "answer": "A simple database schema for an e-commerce website could have the following tables: users (id, name, email, password), products (id, name, description, price), and orders (id, user_id, product_id, order_date)."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Easy",
+    "question": "What is the difference between a microservice and a monolithic architecture? Provide an example of when to use each.",
+    "answer": "A microservice architecture is a collection of small, independent services that communicate with each other to achieve a common goal. A monolithic architecture is a single, self-contained application that performs all the necessary tasks. You would use a microservice architecture when you need to scale individual components of your system, and a monolithic architecture when you have a small application with a simple workflow."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Easy",
+    "question": "Design a simple caching system using a hash table. Explain how it would work.",
+    "answer": "A simple caching system using a hash table would store key-value pairs in memory. When a request is made for a specific key, the system would check if the key exists in the hash table. If it does, it would return the corresponding value from the cache. Otherwise, it would retrieve the value from the original source and store it in the cache for future requests."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Easy",
+    "question": "What is load balancing, and how does it help improve system performance?",
+    "answer": "Load balancing is a technique that distributes incoming network traffic across multiple servers to improve responsiveness, reliability, and scalability. It helps improve system performance by preventing any single server from becoming a bottleneck, reducing the risk of server overload, and increasing the overall throughput of the system."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Medium",
+    "question": "Explain the trade-offs between a monolithic architecture and a microservices architecture",
+    "answer": "A monolithic architecture is a single, self-contained system that performs all necessary functions, while a microservices architecture is composed of multiple, independent services that work together to achieve a common goal. Monolithic systems are generally easier to develop and maintain, but can become rigid and inflexible. Microservices, on the other hand, are more scalable and adaptable, but can be more difficult to coordinate and integrate."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Medium",
+    "question": "Design a system to handle a large number of concurrent user logins, with a requirement to store user data in a database.",
+    "answer": "To handle a large number of concurrent user logins, a system could use a load-balanced architecture with multiple web servers and a central database. Each web server would handle incoming login requests and then forward them to a shared database for authentication. The database could use connection pooling and caching to improve performance and scalability."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Medium",
+    "question": "What is the difference between a RESTful API and a GraphQL API, and when would you choose one over the other?",
+    "answer": "A RESTful API uses a client-server architecture with resources identified by URIs, and data is exchanged in the form of HTTP requests and responses. A GraphQL API, on the other hand, uses a query language to specify exactly what data is required, reducing the amount of data transferred. Choose a RESTful API for simple, stateless systems, and GraphQL for complex, data-driven systems with a large number of queries."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Medium",
+    "question": "Design a caching system to improve the performance of a database-driven application, with a requirement to store cache data in memory and disk.",
+    "answer": "A caching system could use a combination of in-memory caching (e.g. Redis) and disk-based caching (e.g. LevelDB) to store frequently accessed data. The in-memory cache would store data that is accessed frequently, while the disk-based cache would store data that is less frequently accessed but still needs to be preserved across restarts."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Medium",
+    "question": "What are some common anti-patterns to avoid when designing a system for high availability and scalability?",
+    "answer": "Some common anti-patterns to avoid include: over-engineering a solution with unnecessary complexity, using a monolithic architecture, not designing for fault tolerance, and not implementing proper error handling and logging. Instead, focus on designing a system with loosely coupled components, using a service-oriented architecture, and implementing features such as load balancing, auto-scaling, and disaster recovery."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Hard",
+    "question": "Design a system to handle 10 million user profiles with a search query latency of less than 50ms. Each user profile should have around 100 attributes and 10,000 friends.",
+    "answer": "To achieve this, we can use a graph database like Neo4j to store user profiles as nodes and friends as relationships. We can use a caching layer like Redis to store frequently accessed user profiles and their attributes. Additionally, we can use a search engine like Elasticsearch to index user profiles and attributes, allowing for fast search queries."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Hard",
+    "question": "You are given a system with 10,000 servers, each with 16 CPU cores and 64GB of RAM. The system is experiencing a 50% CPU utilization and a 20% memory utilization. How would you redesign the system to handle a 5x increase in traffic without adding any new servers?",
+    "answer": "We can achieve this by implementing horizontal scaling using containerization (e.g. Docker) and orchestration (e.g. Kubernetes). We can scale out the application by launching more containers on existing servers, taking advantage of the idle CPU cores and RAM. Additionally, we can implement load balancing and autoscaling to dynamically adjust the number of containers based on traffic."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Hard",
+    "question": "Design a system to handle 100,000 real-time streaming data from IoT sensors, with a latency of less than 1 second. The system should also support data processing and analytics on the stream.",
+    "answer": "We can use a distributed streaming platform like Apache Kafka to handle the high-volume data stream. We can use a real-time processing engine like Apache Flink to process and analyze the data. Additionally, we can use a SQL engine like Apache Hive to store and query the processed data."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Hard",
+    "question": "You are given a system with a single point of failure (e.g. a database server). How would you redesign the system to make it highly available and fault-tolerant?",
+    "answer": "We can achieve this by implementing a master-slave replication strategy for the database. We can have multiple slave databases that replicate the data from the master database. This way, if the master database fails, one of the slave databases can take over as the new master. Additionally, we can use a load balancer to distribute traffic across multiple instances of the application."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "System Design",
+    "difficulty": "Hard",
+    "question": "Design a system to handle 10 million users with a high rate of concurrent requests, with a latency of less than 100ms. The system should also support caching and content delivery.",
+    "answer": "We can use a service-oriented architecture (SOA) to design the system. We can have multiple services for different functions, such as authentication, authorization, and content delivery. We can use a caching layer like Redis to store frequently accessed data. Additionally, we can use a content delivery network (CDN) like Akamai to distribute content across multiple edge locations."
+  }
+]

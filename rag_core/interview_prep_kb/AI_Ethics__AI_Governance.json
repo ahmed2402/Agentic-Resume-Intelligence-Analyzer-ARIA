@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "AI Governance",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of AI governance in ensuring transparency in AI decision-making processes?",
+    "answer": "The primary goal is to provide clear explanations and justifications for AI-driven outcomes, fostering trust and accountability in AI systems."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "AI Governance",
+    "difficulty": "Easy",
+    "question": "A company uses AI to automate hiring processes. What is a key consideration for AI governance in this scenario?",
+    "answer": "Bias detection and mitigation to prevent unfair treatment of applicants based on protected characteristics such as race, gender, or age."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "AI Governance",
+    "difficulty": "Easy",
+    "question": "What is an effective strategy for implementing AI governance in an organization?",
+    "answer": "Establishing a clear framework for AI development and deployment, including policies, procedures, and accountability mechanisms."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "AI Governance",
+    "difficulty": "Easy",
+    "question": "A new AI-powered product is being developed. What is a key consideration for AI governance in this product's development?",
+    "answer": "Conducting thorough risk assessments and impact analyses to identify potential risks and mitigate them before deployment."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "AI Governance",
+    "difficulty": "Easy",
+    "question": "What is the role of human oversight in AI governance?",
+    "answer": "Human oversight ensures that AI systems operate within predetermined parameters and corrects any deviations, maintaining accountability and preventing unintended consequences."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "AI Governance",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of AI governance, and how does it differ from traditional regulatory frameworks?",
+    "answer": "The primary goal of AI governance is to develop a framework that ensures the development and deployment of AI systems are transparent, accountable, and beneficial to society. Unlike traditional regulatory frameworks that focus on compliance and punishment, AI governance emphasizes proactive measures, stakeholder engagement, and continuous monitoring to mitigate risks and promote responsible AI development."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "AI Governance",
+    "difficulty": "Medium",
+    "question": "A company is developing an AI-powered hiring tool that uses facial recognition to evaluate job candidates. What are some potential AI governance considerations in this scenario?",
+    "answer": "Several AI governance considerations come into play, including bias detection and mitigation, data protection, transparency about the use of facial recognition, and compliance with anti-discrimination laws. The company should also ensure that the AI system is audited for fairness and that there are clear procedures in place for addressing any potential biases or errors."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "AI Governance",
+    "difficulty": "Medium",
+    "question": "What is the role of stakeholder engagement in AI governance, and how can it contribute to more effective regulation?",
+    "answer": "Stakeholder engagement is crucial in AI governance as it brings together diverse perspectives and expertise to inform decision-making. This can include input from experts, civil society organizations, industry leaders, and the public. Effective stakeholder engagement can contribute to more effective regulation by ensuring that AI governance frameworks are tailored to address specific challenges and are responsive to the needs of various stakeholders."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "AI Governance",
+    "difficulty": "Medium",
+    "question": "Consider a scenario where an AI system is designed to predict recidivism rates for prisoners. How can AI governance principles be applied to ensure the system is fair and unbiased?",
+    "answer": "AI governance principles can be applied by ensuring that the AI system is transparent about its decision-making processes, that the data used to train the system is diverse and representative, and that the system is regularly audited for bias. Additionally, the system should be designed to consider multiple factors beyond just recidivism rates, and there should be clear procedures in place for addressing any potential biases or errors."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "AI Governance",
+    "difficulty": "Medium",
+    "question": "What is the relationship between AI governance and human rights, and how can AI governance frameworks be designed to respect and protect human rights?",
+    "answer": "AI governance and human rights are closely linked, as AI systems can have significant impacts on human rights. AI governance frameworks should be designed to respect and protect human rights by ensuring that AI systems are transparent, accountable, and do not perpetuate bias or discrimination. This can be achieved by incorporating human rights principles into AI governance frameworks, conducting regular human rights impact assessments, and establishing clear procedures for addressing human rights concerns."
+  }
+]

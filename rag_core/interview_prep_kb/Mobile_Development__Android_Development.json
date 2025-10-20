@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Easy",
+    "question": "What is the primary function of the AndroidManifest.xml file in an Android project?",
+    "answer": "The AndroidManifest.xml file is used to declare the application's components, such as activities, services, and permissions, to the Android system."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Easy",
+    "question": "What is the difference between a Fragment and an Activity in Android?",
+    "answer": "A Fragment is a reusable piece of a user interface or behavior that can be combined with other Fragments to create a single Activity, whereas an Activity represents a single screen or view in an Android application."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the onResume() method in an Android Activity?",
+    "answer": "The onResume() method is called when the Activity is about to become visible to the user, allowing it to perform any necessary initialization or setup before resuming its normal operation."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Easy",
+    "question": "How can you handle orientation changes in an Android Activity?",
+    "answer": "You can handle orientation changes by overriding the onConfigurationChanged() method and updating your layout accordingly, or by using the android:configChanges attribute in your AndroidManifest.xml file to prevent the Activity from being recreated when the orientation changes."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the setContentView() method in an Android Activity?",
+    "answer": "The setContentView() method is used to set the content view of an Activity, which is the view that will be displayed on the screen when the Activity is launched."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between a Service and a Thread in Android?",
+    "answer": "A Service is a component that can run in the background, performing long-running operations without blocking the application's main thread, whereas a Thread is a lightweight process that can run in parallel with the application's main thread."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Medium",
+    "question": "How do you handle a situation where the user presses the back button on an activity with a FragmentManager?",
+    "answer": "You can override the onBackPressed() method in the activity to handle the back button press. In this method, you can call the popBackStack() method on the FragmentManager to remove the current fragment from the back stack."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Medium",
+    "question": "Explain how to implement a custom view in Android using XML and Java.",
+    "answer": "You can create a custom view in Android by extending the View class and overriding its methods such as onMeasure(), onLayout(), and onDraw(). You can then define the view's layout in XML and inflate it in your Java code. Alternatively, you can also use a custom view XML file to define the view's layout and then inflate it in your Java code."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the Application Context in Android, and how is it used?",
+    "answer": "The Application Context is used to access application-wide resources and services, such as SharedPreferences, databases, and network connections. It is obtained by calling the getApplicationContext() method on the application object. The Application Context is used instead of the Activity or Fragment Context to avoid memory leaks and improve performance."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Medium",
+    "question": "How do you implement data persistence in an Android app using Room Persistence Library?",
+    "answer": "To implement data persistence using Room, you need to create an entity class that represents the data you want to store, a DAO interface to interact with the data, and a database class that extends RoomDatabase. You can then use the DAO interface to perform CRUD operations on the data, and Room will take care of the data storage and retrieval."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Hard",
+    "question": "What is the difference between a WeakReference and a SoftReference in Android?",
+    "answer": "A WeakReference is used to reference objects that can be garbage collected if memory is low. A SoftReference is used to reference objects that can be garbage collected when memory is low but not as aggressively as WeakReference."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Hard",
+    "question": "How do you handle a situation where your Android app is running low on memory and you want to free up some memory by removing some of its assets?",
+    "answer": "You can use the Android LruCache class to cache images and remove them from memory when it's running low. Alternatively, you can use the Android's AssetManager to load assets lazily or use caching libraries like Picasso or Glide to handle image caching and memory management."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Hard",
+    "question": "What are the differences between a Service and an IntentService in Android?",
+    "answer": "A Service is a longer-running process that can perform operations in the background, while an IntentService is a subclass of Service designed for processing Intents in the background. IntentService is designed to handle one-time tasks and automatically stops itself after finishing the task, whereas a Service needs to be manually stopped."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Hard",
+    "question": "What is the best way to handle threading in Android, especially when dealing with UI components?",
+    "answer": "The best way to handle threading in Android is by using Handler and its associated classes like HandlerThread, Looper, and Message. You can also use Android's built-in threading classes like AsyncTask and ExecutorService for performing background tasks, and for accessing UI components, you can use the runOnUiThread method to execute code on the main thread."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Android Development",
+    "difficulty": "Hard",
+    "question": "What is the correct way to implement a Singleton class in Android?",
+    "answer": "A correct way to implement a Singleton class in Android is using a synchronized method and a volatile variable. However, a more efficient and thread-safe way is to use the Double-Checked Locking pattern with volatile or the Bill Pugh Singleton pattern."
+  }
+]

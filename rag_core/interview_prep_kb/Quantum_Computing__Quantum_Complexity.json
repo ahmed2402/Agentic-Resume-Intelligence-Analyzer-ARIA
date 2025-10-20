@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Easy",
+    "question": "What is the relationship between the number of qubits and the number of possible states in a quantum computer?",
+    "answer": "The number of possible states in a quantum computer grows exponentially with the number of qubits, specifically 2^n, where n is the number of qubits."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Easy",
+    "question": "How does the complexity of a quantum algorithm change if we increase the number of iterations in a quantum circuit?",
+    "answer": "The complexity of the quantum algorithm increases polynomially with the number of iterations, as each additional iteration adds a polynomial number of gates to the circuit."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Easy",
+    "question": "What is the difference in complexity between a quantum algorithm and its classical counterpart?",
+    "answer": "In general, quantum algorithms can solve certain problems exponentially faster than their classical counterparts, while in other cases they may not offer significant improvements in terms of computational complexity."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Easy",
+    "question": "Can you provide an example of a quantum algorithm that has a lower complexity than its classical counterpart?",
+    "answer": "The Shor's algorithm for factorizing large numbers is an example of a quantum algorithm that has a lower complexity than its classical counterpart, as it can factorize a number exponentially faster than the best known classical algorithms."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Easy",
+    "question": "What is the relationship between quantum parallelism and computational complexity?",
+    "answer": "Quantum parallelism allows a quantum computer to perform many computations simultaneously, which can lead to exponential speedup over classical computers for certain problems, reducing the computational complexity of those problems."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Medium",
+    "question": "What is the relationship between the number of qubits in a quantum circuit and its computational complexity?",
+    "answer": "The number of qubits in a quantum circuit determines the dimension of the Hilbert space, which in turn affects the circuit's computational complexity. Specifically, a quantum circuit with n qubits can be exponentially more complex than its classical counterpart, depending on the problem being solved."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Medium",
+    "question": "Explain the concept of quantum parallelism and how it relates to computational complexity.",
+    "answer": "Quantum parallelism refers to the ability of a quantum computer to perform multiple calculations simultaneously, thanks to the principles of superposition and entanglement. This allows quantum computers to solve certain problems exponentially faster than classical computers, making them particularly useful for certain types of computational complexity, such as factoring large numbers."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Medium",
+    "question": "Consider a quantum Turing machine with a 5-qubit register. What is the maximum number of possible states it can be in, and what implications does this have for its computational complexity?",
+    "answer": "A 5-qubit register can be in 2^5 = 32 possible states, assuming each qubit can be in one of two states (0 or 1). This means the quantum Turing machine can explore an exponentially large solution space, leading to potential exponential speedup over classical algorithms for certain problems."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Medium",
+    "question": "How do quantum circuits with multiple layers of gates affect computational complexity, and what are some common techniques for optimizing them?",
+    "answer": "Multiple layers of gates in a quantum circuit can increase its computational complexity, as each gate operation affects the entire quantum state. Techniques for optimizing multi-layer quantum circuits include gate teleportation, circuit synthesis, and quantum error correction, which can help reduce the number of gates required and improve overall efficiency."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Medium",
+    "question": "Consider a quantum algorithm that solves a problem in O(2^n) time. What does this imply about the problem's computational complexity, and how does it compare to classical algorithms?",
+    "answer": "A quantum algorithm with O(2^n) time complexity implies that the problem is exponentially harder than classical problems, which typically have polynomial time complexity. This means the quantum algorithm can solve the problem much faster than any classical algorithm, but the problem itself remains computationally intractable in the worst-case scenario."
+  },
+  {
+    "id": "q1",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Hard",
+    "question": "Consider a quantum algorithm that has a quadratic speedup over its classical counterpart. If the classical algorithm runs in O(n^2) time, what is the time complexity of the quantum algorithm in terms of n?",
+    "answer": "The time complexity of the quantum algorithm is O(n^(3/2 + ε)) for any ε > 0, due to the overhead of quantum preprocessing and measurement."
+  },
+  {
+    "id": "q2",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Hard",
+    "question": "Show that QMA (Quantum Merlin-Arthur) is contained in QEXP (Quantum Exponential Time) with a polynomial reduction. Assume the existence of a QEXP algorithm for QMA.",
+    "answer": "Given a QMA problem instance and a QEXP algorithm for QMA, we can simulate the QEXP algorithm on the QMA problem instance. The simulation requires O(poly(log n)) space and O(poly(log n)) time, where n is the size of the problem instance."
+  },
+  {
+    "id": "q3",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Hard",
+    "question": "Suppose we have a quantum circuit with N qubits and a polynomial number of gates. If the circuit is applied to a uniform superposition state, what is the expected number of marked outcomes?",
+    "answer": "The expected number of marked outcomes is approximately (1 ± ε)2^(-N/2) for any ε > 0."
+  },
+  {
+    "id": "q4",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Hard",
+    "question": "Consider a quantum circuit that implements the quantum approximate optimization algorithm (QAOA). If the circuit is applied to a uniform superposition state, what is the expected value of the cost Hamiltonian?",
+    "answer": "The expected value of the cost Hamiltonian is approximately E[<H>], where H is the cost Hamiltonian and E[<H>] is the average value of H over the uniform superposition state."
+  },
+  {
+    "id": "q5",
+    "domain": "Quantum Computing",
+    "topic": "Quantum Complexity",
+    "difficulty": "Hard",
+    "question": "Show that the quantum query complexity of the element distinctness problem is Ω(√n). Assume we have a quantum circuit that solves the element distinctness problem with a number of queries less than √n.",
+    "answer": "Given a quantum circuit that solves the element distinctness problem with a number of queries less than √n, we can convert the circuit to a classical circuit using Grover's algorithm. The resulting classical circuit has a query complexity of O(n^(1/4 + ε)) for any ε > 0, which contradicts the assumption that the classical circuit has a query complexity of O(√n)."
+  }
+]

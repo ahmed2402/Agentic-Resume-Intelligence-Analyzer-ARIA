@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of user research in product development?",
+    "answer": "The primary goal of user research is to gain a deep understanding of the target users, their needs, behaviors, and pain points to inform product decisions and create a user-centered product."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Easy",
+    "question": "Describe a scenario where user research helped inform a product decision.",
+    "answer": "A product team conducted user interviews to understand why users were abandoning a feature. The research revealed that users found the feature difficult to use, leading to a redesign that improved user experience and increased adoption."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Easy",
+    "question": "What are some common methods used in user research?",
+    "answer": "Common methods used in user research include user interviews, surveys, usability testing, and A/B testing."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Easy",
+    "question": "How does user research contribute to product development?",
+    "answer": "User research contributes to product development by identifying user needs, validating product ideas, and informing product design and development decisions."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Easy",
+    "question": "What is the difference between user research and market research?",
+    "answer": "User research focuses on understanding the needs and behaviors of individual users, while market research examines broader market trends, competitors, and customer demographics."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Medium",
+    "question": "What are the key differences between a user interview and a usability test?",
+    "answer": "A user interview is an in-depth, open-ended conversation to gather qualitative data, while a usability test assesses users' ability to complete specific tasks, often with a more controlled and structured environment."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Medium",
+    "question": "Suppose you've conducted user research and identified a key pain point in the current product experience. How would you prioritize and address this issue?",
+    "answer": "First, validate the solution with a smaller user group to ensure it aligns with their needs. Then, prioritize the solution based on business objectives, technical feasibility, and user impact. Finally, develop a detailed plan to implement the change and monitor its effectiveness."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Medium",
+    "question": "What are some common pitfalls to avoid when conducting user research?",
+    "answer": "Pitfalls include confirmation bias, leading questions, and sampling bias. It's also essential to ensure user consent, maintain participant anonymity, and avoid influencing users' responses with existing product knowledge or assumptions."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Medium",
+    "question": "How would you decide on the ideal sample size for a user research study?",
+    "answer": "The ideal sample size depends on the research goals, available resources, and the required level of statistical significance. A general rule of thumb is to aim for a sample size that allows for at least 5-10 participants per variable or condition, while also considering the costs and time constraints of the study."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Medium",
+    "question": "Can you describe a scenario where you would use contextual inquiry versus a lab-based usability study?",
+    "answer": "Contextual inquiry is more suitable when you need to understand users' behaviors and experiences in their natural environment, such as in the home or workplace. A lab-based usability study, on the other hand, is more effective for assessing users' ability to complete specific tasks in a controlled environment, often with a focus on product interactions and usability."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Hard",
+    "question": "How do you ensure that the user research methods and tools you use do not introduce bias or influence the results of the study?",
+    "answer": "To mitigate bias, it's essential to use a mix of qualitative and quantitative research methods, involve multiple stakeholders in the research design, and use data analysis techniques that minimize researcher influence. Additionally, researchers should be aware of their own biases and take steps to manage them, such as through debiasing techniques or using objective measures."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Hard",
+    "question": "A user research study indicates that a product feature is not being used as expected. However, further analysis of user feedback suggests that the issue lies in the product's onboarding process rather than the feature itself. What would you do to address this issue?",
+    "answer": "To address this issue, I would work with the product team to identify the root cause of the onboarding problem and develop a plan to improve it. This might involve conducting additional user research to better understand the users' needs and pain points during onboarding, refining the onboarding flow to make it more intuitive and user-friendly, and testing the changes with a new user group to validate the improvements."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Hard",
+    "question": "You're conducting user interviews as part of a product research study. How would you ensure that you're capturing the most relevant and actionable insights from the users' feedback?",
+    "answer": "During the interviews, I would be actively listening for specific pain points, goals, and motivations, and asking follow-up questions to drill deeper into the users' thoughts and behaviors. After the interviews, I would conduct a thorough analysis of the feedback data, using techniques such as affinity diagramming or thematic analysis to identify patterns and themes. Finally, I would prioritize the insights based on their relevance and impact on the product."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Hard",
+    "question": "A product team wants to conduct a usability test to validate the design of a new feature. However, due to resource constraints, they can only conduct a small number of participants. What would you do to ensure that the results of the usability test are still actionable and representative of the target user population?",
+    "answer": "To ensure the usability test results are representative, I would select participants who are representative of the target user population in terms of demographics, behaviors, and goals. Additionally, I would use a combination of quantitative and qualitative data analysis methods, such as task completion rates, time on task, and think-aloud protocols, to gather a comprehensive understanding of the usability issues. Finally, I would prioritize the results based on the severity and impact of the usability problems, and work with the product team to develop a plan to address the most critical issues."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "User Research",
+    "difficulty": "Hard",
+    "question": "You've conducted a series of user research studies and identified a number of product issues. However, the product team is hesitant to make changes to the product based on the research findings. What would you do to effectively communicate the value of the user research and persuade the product team to make the necessary changes?",
+    "answer": "To effectively communicate the value of the user research, I would create a clear and concise summary of the research findings, highlighting the key insights and recommendations. I would also provide data-driven evidence to support the recommendations, using metrics such as user engagement, retention, and satisfaction. Additionally, I would work with the product team to develop a plan to address the issues, including a timeline, resources, and metrics for measuring success. Finally, I would involve stakeholders and subject matter experts in the decision-making process to build support for the changes and ensure that they align with the company's goals and priorities."
+  }
+]

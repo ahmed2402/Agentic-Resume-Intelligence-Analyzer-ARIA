@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Information Architecture",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of information architecture in UX design?",
+    "answer": "The primary goal of information architecture is to organize and structure content in a way that is intuitive and easily accessible for users."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Information Architecture",
+    "difficulty": "Easy",
+    "question": "A user is trying to find a specific product on an e-commerce website. What is the recommended approach to solve this issue?",
+    "answer": "The recommended approach is to use a clear and concise navigation system, with categories and filters that allow the user to quickly find the product they are looking for."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Information Architecture",
+    "difficulty": "Easy",
+    "question": "What is the difference between a taxonomy and an ontology in information architecture?",
+    "answer": "A taxonomy is a hierarchical classification system, while an ontology is a more comprehensive framework that includes relationships between concepts and entities."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Information Architecture",
+    "difficulty": "Easy",
+    "question": "A user is trying to understand the content of a webpage. What is a good way to structure the content?",
+    "answer": "A good way to structure the content is to use a clear and concise hierarchy, with headings, subheadings, and bullet points that make it easy for the user to scan and understand the content."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Information Architecture",
+    "difficulty": "Easy",
+    "question": "What is a sitemap in information architecture?",
+    "answer": "A sitemap is a visual representation of the structure and organization of a website's content, showing the relationships between pages and sections."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Information Architecture",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of card sorting in the context of information architecture?",
+    "answer": "The primary goal of card sorting is to understand how users categorize and organize information to inform the structure of a website or application."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Information Architecture",
+    "difficulty": "Medium",
+    "question": "A user is having trouble finding a specific piece of information on your website. What is a potential solution to this issue?",
+    "answer": "A potential solution is to re-evaluate the website's information architecture and consider implementing a site search function or a more robust navigation system."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Information Architecture",
+    "difficulty": "Medium",
+    "question": "Describe the difference between a flat and hierarchical information architecture.",
+    "answer": "A flat information architecture is a structure where all content is at the same level, while a hierarchical information architecture is a structure where content is organized into a tree-like structure with parent and child categories."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Information Architecture",
+    "difficulty": "Medium",
+    "question": "A user is complaining that a particular feature is difficult to find on your website. What is a potential solution to this issue?",
+    "answer": "A potential solution is to conduct user research and testing to identify the cause of the issue and make changes to the information architecture and navigation to make the feature more discoverable."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Information Architecture",
+    "difficulty": "Medium",
+    "question": "What is a key consideration when designing an information architecture for an e-commerce website?",
+    "answer": "A key consideration is to ensure that the information architecture is intuitive and easy to use, with clear navigation and a logical structure that facilitates easy product discovery and checkout."
+  }
+]

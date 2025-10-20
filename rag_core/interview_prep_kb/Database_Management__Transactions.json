@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Easy",
+    "question": "What is the main purpose of a transaction in a database?",
+    "answer": "The main purpose of a transaction is to ensure atomicity, consistency, isolation, and durability (ACID) of database operations."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Easy",
+    "question": "Suppose we have two queries: 'INSERT INTO table1 VALUES (1)' and 'INSERT INTO table2 VALUES (1)'. What happens if we execute these queries in a transaction, but the second query fails?",
+    "answer": "If the second query fails, the entire transaction will be rolled back, and the changes made by the first query will also be undone."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Easy",
+    "question": "What is the difference between a COMMIT and a ROLLBACK in a database transaction?",
+    "answer": "A COMMIT saves the changes made by the transaction, making them permanent, while a ROLLBACK undoes the changes, returning the database to its previous state."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Easy",
+    "question": "What is a transaction isolation level, and why is it important?",
+    "answer": "A transaction isolation level determines how transactions interact with each other. It's essential to prevent inconsistencies and ensure data integrity."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Easy",
+    "question": "What happens when two transactions attempt to update the same row in a database?",
+    "answer": "This is known as a concurrency issue. The database management system will resolve this by either aborting one transaction and re-executing it, or by locking the row to prevent concurrent updates."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a transaction log in a database management system?",
+    "answer": "A transaction log is used to store a record of all changes made to the database during a transaction, allowing for recovery in case of a failure or rollback of the transaction."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "question": "A user is trying to update a record in a table with a foreign key constraint. If the update fails, what will happen to the transaction?",
+    "answer": "If the update fails, the transaction will be rolled back, and any changes made to the table or other involved tables will be undone."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "question": "What is the difference between a read uncommitted and a read committed isolation level in a database?",
+    "answer": "A read uncommitted isolation level allows a transaction to read data that has not been committed by another transaction, while a read committed isolation level only allows a transaction to read data that has been committed by another transaction."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "question": "A database supports nested transactions. What does this mean?",
+    "answer": "A database that supports nested transactions allows multiple transactions to be executed within a single outer transaction, allowing for more complex transactional logic."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "question": "What is the term for the process of undoing all changes made by a failed transaction in a database?",
+    "answer": "The term for the process of undoing all changes made by a failed transaction is rollback."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Hard",
+    "question": "Describe a situation where a 'Dirty Read' can occur in a database system, and explain how to prevent it using a transaction isolation level.",
+    "answer": "A 'Dirty Read' occurs when a transaction reads uncommitted changes made by another transaction. This can be prevented by setting the transaction isolation level to 'Serializable', which ensures that all transactions are executed in a serial order, or by using 'Read Committed' isolation level with row-level locking, which prevents a transaction from reading uncommitted changes."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Hard",
+    "question": "A database system supports three transaction modes: Read Uncommitted, Read Committed, and Repeatable Read. Given a scenario where two transactions are executing concurrently, explain which isolation level would allow both transactions to read the same data without causing any deadlocks or concurrency issues.",
+    "answer": "In this scenario, the 'Read Committed' isolation level would be suitable as it ensures that each transaction reads committed data only, thus preventing dirty reads and ensuring data consistency."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Hard",
+    "question": "A database system is experiencing performance issues due to high contention between concurrent transactions. Write a SQL query to demonstrate the use of transaction-level locking, which can help minimize contention and improve performance.",
+    "answer": "To demonstrate transaction-level locking, we can use the following SQL query: BEGIN TRANSACTION; LOCK TABLE orders IN EXCLUSIVE MODE; UPDATE orders SET quantity = quantity + 1; COMMIT;"
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Hard",
+    "question": "A database system is designed to support a high-concurrency environment. Describe the differences between 'Pessimistic Concurrency Control' and 'Optimistic Concurrency Control', and explain which approach would be more suitable for this environment.",
+    "answer": "Pessimistic Concurrency Control locks the data immediately before updating it, preventing other transactions from accessing the data. Optimistic Concurrency Control, on the other hand, allows multiple transactions to access the data simultaneously, checking for conflicts only when one transaction attempts to commit. In a high-concurrency environment, 'Optimistic Concurrency Control' would be more suitable as it minimizes the overhead of locking and allows for greater concurrency."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Transactions",
+    "difficulty": "Hard",
+    "question": "A database system is designed to support atomicity and consistency in transactions. Explain how database systems can handle transactions that involve multiple database operations, including inserts, updates, and deletes, while maintaining atomicity and consistency.",
+    "answer": "Database systems can handle transactions involving multiple database operations by using a 'Transaction Log' to record all changes made during the transaction. In the event of a failure or rollback, the transaction log is used to undo the changes, ensuring atomicity and consistency. Additionally, database systems can use locking mechanisms to ensure that multiple transactions do not interfere with each other, thus maintaining consistency."
+  }
+]

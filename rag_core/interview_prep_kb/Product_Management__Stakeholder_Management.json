@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Easy",
+    "question": "Who are the primary stakeholders in a product development project, and why are they important?",
+    "answer": "The primary stakeholders in a product development project are customers, developers, designers, product owners, and project managers. They are important because their needs, expectations, and inputs directly impact the project's success, feasibility, and adoption."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Easy",
+    "question": "How would you communicate a product roadmap to stakeholders during a meeting?",
+    "answer": "I would communicate a product roadmap to stakeholders by using a clear and concise presentation, breaking down complex information into bite-sized chunks, and prioritizing key messages. I would also leave time for questions and feedback to ensure stakeholders understand and are aligned with the roadmap."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Easy",
+    "question": "What is the difference between a customer and a stakeholder?",
+    "answer": "A customer is an individual or organization that buys or uses a product or service, whereas a stakeholder is an individual or group that has a vested interest in the product or service, such as investors, partners, or team members."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Easy",
+    "question": "How would you handle conflicting priorities between stakeholders?",
+    "answer": "I would handle conflicting priorities between stakeholders by empathetically listening to their concerns, evaluating the impact of each request, and making informed decisions that balance competing priorities and align with the product's goals and vision."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Easy",
+    "question": "What are some common mistakes to avoid when managing stakeholders?",
+    "answer": "Some common mistakes to avoid when managing stakeholders include failing to communicate regularly, not setting clear expectations, and not soliciting feedback, which can lead to confusion, mistrust, and poor outcomes."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Medium",
+    "question": "You're leading a cross-functional team to develop a new feature. Who should be included in the stakeholder list, and why?",
+    "answer": "Stakeholders should include team members, customers, and business leaders who will be impacted by the feature's success or failure. This includes developers, designers, project managers, product owners, market analysts, sales teams, and end-users."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Medium",
+    "question": "A customer is unhappy with the current product roadmap and wants a feature that's not aligned with your company's goals. How would you manage this stakeholder?",
+    "answer": "You would communicate the company's goals and priorities, explain the reasoning behind the current roadmap, and offer alternative solutions that meet the customer's needs while staying aligned with company goals. This could involve offering a similar feature or a workaround that meets their requirements."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Medium",
+    "question": "What tools or techniques would you use to effectively communicate with stakeholders across different departments and levels of the organization?",
+    "answer": "You would use tools like project management software, collaboration platforms (e.g., Slack, Trello), and stakeholder management software (e.g., Asana, Monday.com). Additionally, you would use techniques like regular meetings, progress updates, and clear, concise communication to keep stakeholders informed and engaged."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Medium",
+    "question": "A stakeholder is not getting the level of support they need from your team. How would you address this issue?",
+    "answer": "You would listen to their concerns, provide clear explanations for the current support levels, and offer alternative solutions such as increasing support resources, adjusting timelines, or implementing a support plan that meets their needs."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Medium",
+    "question": "How would you prioritize and manage a large number of stakeholders with competing demands and interests?",
+    "answer": "You would use a stakeholder matrix to categorize stakeholders based on their level of influence and interest. Then, prioritize stakeholders based on their level of influence and interest, focusing on high-priority stakeholders first. You would also establish clear expectations and communication channels to manage competing demands and interests."
+  },
+  {
+    "id": "q1",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Hard",
+    "question": "A product manager has identified multiple stakeholders with conflicting priorities for a new feature. How would you prioritize these stakeholders and justify your decision?",
+    "answer": "To prioritize stakeholders, I would analyze their relative impact, urgency, and influence on the project. This involves creating a stakeholder matrix, considering their level of support and resistance. I would then rank them based on their alignment with business objectives, technical feasibility, and resource availability. This approach ensures a rational decision-making process and helps to maintain stakeholder relationships."
+  },
+  {
+    "id": "q2",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Hard",
+    "question": "Suppose you're building a new product with a complex feature set that affects multiple teams. How would you manage stakeholder expectations across these teams?",
+    "answer": "To manage stakeholder expectations, I would establish clear communication channels with each team, set realistic expectations, and provide regular updates on progress. This involves creating a stakeholder communication plan, defining key performance indicators (KPIs), and conducting regular status meetings to ensure alignment and address any concerns."
+  },
+  {
+    "id": "q3",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Hard",
+    "question": "A key stakeholder is pushing for an aggressive timeline, which may compromise the product's quality. How would you negotiate with this stakeholder to find a balance between timeline and quality?",
+    "answer": "To negotiate with the stakeholder, I would first understand their motivations and constraints. Then, I would propose a compromise, such as a phased rollout or a beta launch with a clear plan for post-launch improvements. This approach demonstrates a willingness to collaborate and find a mutually beneficial solution, while also ensuring the product meets the required quality standards."
+  },
+  {
+    "id": "q4",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Hard",
+    "question": "You're working on a product with multiple stakeholders, each with their own data requirements. How would you manage data access and security for these stakeholders?",
+    "answer": "To manage data access and security, I would implement a role-based access control system, ensuring each stakeholder has the necessary permissions to access relevant data. I would also define data governance policies, including data encryption, backups, and compliance with relevant regulations. This approach ensures data security and integrity while meeting stakeholder needs."
+  },
+  {
+    "id": "q5",
+    "domain": "Product Management",
+    "topic": "Stakeholder Management",
+    "difficulty": "Hard",
+    "question": "A stakeholder is requesting a custom feature that's not aligned with the product's overall strategy. How would you communicate the product's strategic direction and prioritize features accordingly?",
+    "answer": "To communicate the product's strategic direction, I would provide a clear and concise explanation of the product's vision, mission, and goals. I would then use a prioritization framework, such as the MoSCoW method, to evaluate the requested feature against these objectives. This approach ensures stakeholders understand the product's strategic priorities and helps to focus on features that align with these objectives."
+  }
+]

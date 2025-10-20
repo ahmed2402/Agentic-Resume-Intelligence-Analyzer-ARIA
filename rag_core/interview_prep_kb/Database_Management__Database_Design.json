@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Easy",
+    "question": "What is normalization in database design, and why is it important?",
+    "answer": "Normalization is the process of organizing data in a database to minimize data redundancy and dependency. It's essential for maintaining data consistency, reducing data anomalies, and improving data scalability."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Easy",
+    "question": "Explain the difference between a primary key and a unique key in a database table.",
+    "answer": "A primary key is a unique identifier for each row in a table, and it cannot be null. A unique key is a column or set of columns that ensures uniqueness for each row, but it can be null."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Easy",
+    "question": "Design a simple database schema for storing information about customers, including their names, addresses, and phone numbers.",
+    "answer": "Create three tables: Customers, Addresses, and Phones. The Customers table would have a primary key (CustomerID), and foreign keys referencing Addresses and Phones tables to store customer address and phone number information."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a many-to-many relationship in database design?",
+    "answer": "A many-to-many relationship is used to establish a relationship between two tables where one row in one table can be related to multiple rows in another table, and vice versa."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Easy",
+    "question": "When designing a database, what is the benefit of using an entity-relationship diagram (ERD)?",
+    "answer": "An ERD provides a clear visual representation of the relationships between entities in a database, helping to identify potential issues and improve the overall design and data integrity."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Medium",
+    "question": "What is the difference between a database schema and a database instance?",
+    "answer": "A database schema represents the overall structure of the database, including tables, relationships, and data types. A database instance represents the actual data stored in the database at a particular point in time."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Medium",
+    "question": "Consider a database that stores information about customers. What is an example of a many-to-many relationship in this context?",
+    "answer": "A many-to-many relationship could exist between customers and their purchases, where a customer can make multiple purchases and a purchase can be made by multiple customers."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Medium",
+    "question": "Suppose you are designing a database for an online shopping platform. What are some key considerations for normalizing the database?",
+    "answer": "When normalizing the database, consider eliminating data redundancy, reducing data anomalies, and improving data integrity by breaking down large tables into smaller, more focused ones."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Medium",
+    "question": "What is a database view and how does it differ from a physical table?",
+    "answer": "A database view is a virtual table based on the result of a query, whereas a physical table is a physical storage location for data. Views can be used to simplify complex queries, hide sensitive data, or present data in a different format."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Medium",
+    "question": "Consider designing a database for a library catalog. What is an example of a database index and why might you use it?",
+    "answer": "A database index is a data structure used to speed up data retrieval by providing a quick way to locate specific data. In the library catalog database, an index on the author's last name could speed up queries that search for books by a specific author."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where you would use a many-to-many relationship in a database design, and explain the challenges associated with implementing it.",
+    "answer": "A many-to-many relationship occurs when a single record in one table can be associated with multiple records in another table, and vice versa. For example, in a database for an online course platform, a student can enroll in multiple courses, and a course can have multiple students enrolled. The challenges associated with implementing many-to-many relationships include ensuring data consistency, handling cascading updates and deletions, and maintaining efficient query performance."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Hard",
+    "question": "Design a database schema for a social media platform that allows users to follow multiple friends, post updates, and comment on posts. Ensure that your design can efficiently handle the following queries: finding all posts from a user's friends, finding all comments on a specific post, and finding all posts by a specific user.",
+    "answer": "The database schema would consist of four main tables: Users, Posts, Comments, and Friendships. The Users table would store user information, the Posts table would store post content and metadata, the Comments table would store comments on posts, and the Friendships table would store relationships between users. The schema would use the following relationships: one user can have many posts (one-to-many), one post can have many comments (one-to-many), and one user can follow many users (many-to-many). The queries would be optimized using indexes on the relationships between tables."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Hard",
+    "question": "Explain the difference between normalization and denormalization in database design. Provide an example of when you would use each approach.",
+    "answer": "Normalization is the process of organizing data in a database to minimize data redundancy and improve data integrity. It involves dividing large tables into smaller tables and linking them through relationships. Denormalization is the process of deliberately introducing redundancy into a database to improve performance at the cost of data consistency. For example, in a database for an e-commerce platform, you might normalize the product catalog to reduce data redundancy, but denormalize the order information to improve query performance by storing calculated values such as the total cost of an order."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where you would use a materialized view in a database design, and explain the benefits of using it.",
+    "answer": "A materialized view is a physical table that stores the result of a query. It is often used in data warehousing and business intelligence applications where complex queries are run frequently. For example, in a database for a financial institution, you might create a materialized view to store the current market value of a portfolio. The benefits of using materialized views include improved query performance, reduced computational overhead, and the ability to perform analytics on pre-computed data."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Database Design",
+    "difficulty": "Hard",
+    "question": "Explain the concept of data warehousing and describe the different components of a data warehouse.",
+    "answer": "Data warehousing is a process of collecting and storing data from multiple sources in a centralized repository, known as a data warehouse, for analysis and reporting. The components of a data warehouse include: the data mart, which stores data for a specific business unit or department; the data cube, which stores pre-aggregated data for faster query performance; and the ETL (Extract, Transform, Load) process, which extracts data from source systems, transforms it into a standardized format, and loads it into the data warehouse."
+  }
+]

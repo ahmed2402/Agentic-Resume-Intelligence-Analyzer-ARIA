@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of implementing General Data Protection Regulation (GDPR) in AI systems?",
+    "answer": "The primary purpose of implementing GDPR in AI systems is to ensure the protection and rights of individuals with regards to their personal data, including the right to access, correct, and erase their data."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Easy",
+    "question": "A data scientist wants to use historical medical records to train a machine learning model. What is the first step they should take to ensure compliance with data protection regulations?",
+    "answer": "The data scientist should obtain explicit consent from the patients or their representatives for the use of their medical records for the specific purpose of training the machine learning model."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Easy",
+    "question": "How would you describe the concept of 'minimization' in the context of data protection?",
+    "answer": "Minimization refers to the practice of collecting and processing only the minimum amount of personal data necessary to achieve the intended purpose, reducing the risk of data breaches and protecting individual privacy."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Easy",
+    "question": "A company wants to implement a facial recognition system for security purposes. What data protection principle should they prioritize?",
+    "answer": "The company should prioritize the principle of 'transparency', which requires them to inform individuals about the use of their biometric data and provide clear information about the purpose and scope of the facial recognition system."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Easy",
+    "question": "What is the difference between 'anonymization' and 'pseudonymization' in data protection?",
+    "answer": "Anonymization refers to the process of rendering personal data unidentifiable, whereas pseudonymization replaces identifying information with pseudonyms, allowing for the data to be reversible. Anonymization provides stronger protection for individual privacy."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Medium",
+    "question": "Explain the concept of 'data minimization' and its relevance to AI systems that handle sensitive personal data.",
+    "answer": "Data minimization refers to the practice of collecting, storing, and processing only the minimum amount of personal data necessary to achieve a specific purpose. This principle is essential for AI systems that handle sensitive personal data, as it reduces the risk of data breaches and unauthorized access."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Medium",
+    "question": "A healthcare company plans to use machine learning models to analyze patient data for research purposes. How would you ensure that patient data is anonymized and protected from unauthorized access?",
+    "answer": "To ensure that patient data is anonymized and protected, the company should implement techniques such as data masking, encryption, and pseudonymization. Additionally, access to the data should be restricted to authorized personnel, and the company should obtain informed consent from patients before using their data for research purposes."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Medium",
+    "question": "A chatbot uses natural language processing to collect user queries and respond accordingly. What are some potential privacy concerns associated with this chatbot, and how can they be addressed?",
+    "answer": "Potential privacy concerns associated with this chatbot include data collection, storage, and processing. To address these concerns, the chatbot should be designed to collect only necessary data, store it securely, and process it transparently. Furthermore, users should be informed about data collection and be provided with options to opt out or delete their data."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Medium",
+    "question": "What is the difference between 'de-identification' and 'anonymization' of personal data, and when should each be used?",
+    "answer": "De-identification involves removing identifiable information from data, making it difficult to re-identify individuals. Anonymization, on the other hand, involves making data completely irretrievable and impossible to link to individuals. De-identification should be used when data is still useful for analysis, while anonymization should be used when data is no longer needed and should be completely removed."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Medium",
+    "question": "A company plans to use AI-powered advertising based on user browsing history. What data protection principles should be implemented to ensure that users' personal data is protected?",
+    "answer": "To ensure that users' personal data is protected, the company should implement data minimization, pseudonymization, and transparency. Users should be informed about data collection and be provided with options to opt out or delete their data. Additionally, the company should implement robust data protection policies and procedures to prevent unauthorized access and data breaches."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Hard",
+    "question": "Design a data anonymization technique to protect sensitive information while allowing for the analysis of medical records. Ensure that the technique can be applied to a dataset of arbitrary size.",
+    "answer": "A suitable approach is to use a combination of generalization and suppression techniques. First, generalization can be applied to attributes such as age, location, and date of birth by replacing exact values with ranges or categories. Then, suppression can be used to remove sensitive information such as medical history, social security numbers, and patient IDs. The resulting anonymized dataset can be analyzed while protecting sensitive information."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Hard",
+    "question": "Explain the concept of 'data minimization' in the context of data protection. Provide a hypothetical example of a company that fails to implement data minimization and its consequences.",
+    "answer": "Data minimization is a principle in data protection that requires collecting and processing only the minimum amount of personal data necessary to achieve a specific purpose. A hypothetical example is a company that collects and stores the browsing history of its customers to provide personalized advertising. However, they also collect and store unnecessary data such as IP addresses, device information, and search queries. This failure to implement data minimization leads to a data breach, compromising the sensitive information of thousands of customers."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Hard",
+    "question": "Suppose you are developing an AI-powered chatbot that requires access to user data to improve its conversational skills. What steps would you take to ensure the data is handled in accordance with data protection regulations?",
+    "answer": "To ensure data handling in accordance with data protection regulations, I would implement the following steps: (1) conduct a data protection impact assessment to identify potential risks and mitigate them; (2) obtain explicit consent from users for data collection and processing; (3) implement appropriate data minimization and pseudonymization techniques; (4) use secure data storage solutions and encrypted communication protocols; and (5) establish a data protection officer to oversee the handling of user data and ensure compliance with regulations."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Hard",
+    "question": "A researcher is working on a project that involves machine learning models to predict patient outcomes based on their medical history. However, the researcher wants to use a publicly available dataset that contains sensitive patient information. What would be the most appropriate action for the researcher to take?",
+    "answer": "The most appropriate action for the researcher to take would be to request permission from the data owners or to obtain a waiver from the Institutional Review Board (IRB) to use the publicly available dataset. If permission is granted, the researcher should take steps to de-identify the data and ensure that it is handled in accordance with data protection regulations. Additionally, the researcher should ensure that the machine learning models are trained and validated using techniques that preserve patient confidentiality and anonymity."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Privacy & Data Protection",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where a data protection authority would intervene in the data processing activities of a company, and what actions the authority might take to enforce data protection regulations.",
+    "answer": "A data protection authority might intervene in the data processing activities of a company if they discover a massive data breach affecting millions of customers. The authority might take the following actions: (1) issue a formal warning and order the company to cease data processing activities; (2) conduct an on-site audit to assess the company's data protection practices; (3) impose fines or penalties for non-compliance with data protection regulations; and (4) require the company to implement corrective measures to prevent future data breaches and ensure the protection of personal data."
+  }
+]

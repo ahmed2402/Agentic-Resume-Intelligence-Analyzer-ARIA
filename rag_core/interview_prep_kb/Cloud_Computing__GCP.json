@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Easy",
+    "question": "What is the primary function of the Google Cloud Resource Manager in GCP?",
+    "answer": "The primary function of the Google Cloud Resource Manager is to manage and organize resources across projects and organizations in GCP."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Easy",
+    "question": "What is the difference between a GCP region and a zone?",
+    "answer": "A GCP region is a geographical area that contains one or more zones, while a zone is a location within a region that is used to host resources such as Compute Engine instances."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Easy",
+    "question": "Which GCP service allows you to store, manage, and serve static web content?",
+    "answer": "Cloud Storage is the GCP service that allows you to store, manage, and serve static web content."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Easy",
+    "question": "How do you set up a firewall rule in GCP to allow incoming traffic on port 80?",
+    "answer": "You can set up a firewall rule in GCP to allow incoming traffic on port 80 by creating a rule with the source IP ranges set to 0.0.0.0/0 and the protocol set to TCP on port 80."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the Cloud Function trigger?",
+    "answer": "The purpose of the Cloud Function trigger is to specify when a Cloud Function should be executed, such as in response to HTTP requests or changes to Cloud Storage buckets."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a service account in Google Cloud Platform?",
+    "answer": "A service account is used to authenticate and authorize cloud resources and applications, allowing them to interact with other services on behalf of the account."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Medium",
+    "question": "Suppose you have a large dataset stored in Google Cloud Storage. How would you optimize its storage costs?",
+    "answer": "You can use data compression, tiered storage (cold storage for infrequently accessed data), and lifecycle management policies to optimize storage costs."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Medium",
+    "question": "How would you implement load balancing in a GCP environment for a web application?",
+    "answer": "You can use Google Cloud Load Balancing (Network Load Balancing, HTTP(S) Load Balancing, or SSL Proxy Load Balancing) to distribute traffic across multiple instances."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Medium",
+    "question": "How do you enable authentication for a Google Cloud Function using a service account?",
+    "answer": "You can use the 'GOOGLE_APPLICATION_CREDENTIALS' environment variable to point to a service account key file, or you can use the 'gcloud auth application-default login' command to authenticate."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Medium",
+    "question": "Suppose you're working on a GCP project and need to scale your application horizontally. What GCP service would you use to manage the scaling process?",
+    "answer": "You can use Google Cloud App Engine or Google Kubernetes Engine (GKE) to manage scaling, but for App Engine, it would be 'Scaling' and 'Auto Scaling'."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Hard",
+    "question": "Explain the differences between using a GCP load balancer and an Ingress resource in a Kubernetes cluster.",
+    "answer": "A GCP load balancer is a traditional load balancer that distributes traffic across multiple instances, whereas an Ingress resource is a Kubernetes concept that manages incoming HTTP requests and routes them to a specific service. While both can be used for load balancing, an Ingress resource is more flexible and can be used for routing and SSL termination."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Hard",
+    "question": "You have a GCP project with a large dataset stored in Cloud Storage. How would you implement a data pipeline using Cloud Functions and Cloud Pub/Sub to trigger a data processing workflow when new files are added to the bucket?",
+    "answer": "You would create a Cloud Function that listens for new files in the bucket using the Cloud Storage Pub/Sub trigger. When a new file is added, the function would publish a message to a Cloud Pub/Sub topic. A Cloud Function subscribed to this topic would then be triggered to perform the data processing workflow."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Hard",
+    "question": "What are the main differences between using a GCP Persistent Disk and a GCP Local SSD as a boot disk for a Compute Engine instance?",
+    "answer": "A GCP Persistent Disk is a block-level storage device that can be attached to an instance as a boot disk, whereas a GCP Local SSD is a high-performance storage device that is directly attached to the instance's local SSD. While both can be used as boot disks, Local SSDs are more expensive but offer better performance, and Persistent Disks are more cost-effective but may have higher latency."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Hard",
+    "question": "How would you implement a CI/CD pipeline for a GCP-based application using Cloud Build and Cloud Deploy?",
+    "answer": "You would create a Cloud Build trigger that listens for changes to your application code and triggers a build process when changes are detected. The build process would produce a container image, which would then be deployed to Cloud Run or App Engine using Cloud Deploy. Cloud Deploy would manage the rollout of the new image to production and can be configured to handle canary releases or blue-green deployments."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "GCP",
+    "difficulty": "Hard",
+    "question": "Explain how to use GCP's AutoML service to automate the process of training a machine learning model.",
+    "answer": "To use AutoML, you would first create a dataset in BigQuery or upload a CSV file to Cloud Storage. You would then create an AutoML dataset and specify the type of model you want to train (e.g., classification, regression). AutoML would automatically select the best algorithm and hyperparameters for the model, train it on your dataset, and provide a trained model that you can use for predictions."
+  }
+]

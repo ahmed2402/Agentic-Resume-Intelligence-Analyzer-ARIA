@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of a microservices architecture?",
+    "answer": "The primary goal of a microservices architecture is to break down a monolithic system into smaller, independent services that communicate with each other to achieve a specific business capability."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Easy",
+    "question": "Consider a microservices architecture with multiple services. How would you handle service discovery?",
+    "answer": "Service discovery in a microservices architecture can be handled using a centralized registry such as Eureka, Etcd, or Consul, which maintains a list of available services and their instances."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Easy",
+    "question": "What is the benefit of using RESTful APIs in a microservices architecture?",
+    "answer": "RESTful APIs provide a uniform interface for communication between microservices, allowing for flexibility, scalability, and easier maintenance."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Easy",
+    "question": "Describe a scenario where you would use a message broker like RabbitMQ in a microservices architecture.",
+    "answer": "A message broker like RabbitMQ is used to handle asynchronous communication between microservices, allowing them to send and receive messages in a decoupled manner."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Easy",
+    "question": "How would you ensure data consistency in a microservices architecture with multiple services writing to a shared database?",
+    "answer": "Data consistency in a microservices architecture can be ensured by implementing optimistic concurrency control, transactions, or by using a distributed database that supports ACID properties."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Medium",
+    "question": "What is the primary benefit of using a service registry in a microservices architecture?",
+    "answer": "The primary benefit of using a service registry is that it helps manage service instances, handle service discovery, and implement circuit breakers, making it easier to scale and maintain microservices."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Medium",
+    "question": "Consider a microservices system with multiple services, each with its own database. How would you handle transactions across multiple services?",
+    "answer": "To handle transactions across multiple services, you would use a distributed transaction management system like XA (eXtended Architecture) or a message broker like Apache Kafka, which supports transactions and ensures data consistency across services."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Medium",
+    "question": "Suppose you have a microservices system where each service has its own authentication mechanism. How would you implement authentication across multiple services?",
+    "answer": "To implement authentication across multiple services, you can use an identity management system like OAuth, OpenID Connect, or a Single Sign-On (SSO) solution like Keycloak. These systems provide a centralized authentication mechanism that can be used across multiple services."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Medium",
+    "question": "Consider a microservices system where services communicate with each other using REST APIs. How would you handle retries and timeouts in your service?",
+    "answer": "To handle retries and timeouts in your service, you can use a library like Apache Hystrix, which provides circuit breakers and fallback mechanisms to handle failure scenarios. You can also use a client-side library like Ribbon, which provides load balancing and retries for REST APIs."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Medium",
+    "question": "What is the trade-off between using synchronous and asynchronous communication in a microservices system?",
+    "answer": "The trade-off between synchronous and asynchronous communication is that synchronous communication provides real-time responses, but it can lead to cascading failures if one service fails. Asynchronous communication, on the other hand, provides loose coupling between services and allows for fault tolerance, but it requires additional infrastructure and can introduce latency."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Hard",
+    "question": "Design a system to handle distributed transactions across multiple microservices, ensuring atomicity and consistency.",
+    "answer": "To handle distributed transactions, you can use a two-phase commit protocol. During the first phase, each microservice prepares for the transaction, and in the second phase, they either commit or rollback the transaction. To ensure atomicity and consistency, you can use a centralized transaction manager that coordinates the two-phase commit protocol."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Hard",
+    "question": "Explain the concept of API composition in microservices, and provide an example of how to implement it using service discovery.",
+    "answer": "API composition refers to the process of combining multiple microservices to provide a new API. This can be achieved using service discovery, which allows clients to find and interact with microservices dynamically. For example, you can use a service registry like etcd or ZooKeeper to store information about available microservices, and then use a client-side library to discover and invoke the required services."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Hard",
+    "question": "A microservice-based system is experiencing high latency due to network partitions. How would you design a solution to improve the system's availability and responsiveness?",
+    "answer": "To improve the system's availability and responsiveness, you can implement a circuit breaker pattern, which detects network partitions and prevents additional requests from being sent to the unresponsive microservice. Additionally, you can use a fallback strategy, which provides a default response or alternative service when the primary service is unavailable. This can be achieved using a combination of load balancing, service discovery, and caching."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Hard",
+    "question": "Suppose you have a microservices-based system with multiple services that communicate using REST APIs. How would you implement authentication and authorization across these services?",
+    "answer": "To implement authentication and authorization across multiple microservices, you can use a token-based approach, such as OAuth 2.0 or JWT (JSON Web Token). Each microservice can validate the token and verify the user's permissions before allowing access to its resources. You can also use a centralized identity management system to manage user identities and permissions across the entire system."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Microservices",
+    "difficulty": "Hard",
+    "question": "A microservice-based system is experiencing issues with data consistency due to eventual consistency. How would you design a solution to ensure data consistency across the system?",
+    "answer": "To ensure data consistency across the system, you can implement a consistency model such as strong consistency or eventual consistency. For eventual consistency, you can use a combination of conflict resolution and data replication strategies, such as last-writer-wins or vector clocks. Additionally, you can use a event-sourcing approach, which stores the entire history of events and allows for more efficient conflict resolution and data consistency checks."
+  }
+]

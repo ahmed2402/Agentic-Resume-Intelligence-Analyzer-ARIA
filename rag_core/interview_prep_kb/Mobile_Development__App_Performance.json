@@ -1,0 +1,123 @@
+[
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Easy",
+    "question": "What is the primary reason for the delay in a mobile app's startup?",
+    "answer": "The primary reason for the delay in a mobile app's startup is the time it takes to load the app's resources and initialize its components."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Easy",
+    "question": "Describe a scenario where using a RecyclerView in Android would improve app performance.",
+    "answer": "A scenario where using a RecyclerView in Android would improve app performance is when displaying a large list of items. By reusing views, RecyclerView reduces the number of views created and garbage collected, resulting in improved performance and memory efficiency."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Easy",
+    "question": "What is the difference between a Fragment and a View in Android, in terms of performance?",
+    "answer": "In Android, a Fragment is a lightweight View that allows for easier reuse of code and layout. Compared to a View, a Fragment has better performance because it is designed to be instantiated and destroyed frequently, which reduces the overhead of View creation and destruction."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Easy",
+    "question": "How does image compression impact app performance?",
+    "answer": "Image compression improves app performance by reducing the file size of images, resulting in faster loading times and reduced memory usage. This is especially important for mobile devices with limited resources."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Easy",
+    "question": "Why is it essential to use asynchronous programming in Android?",
+    "answer": "It is essential to use asynchronous programming in Android because it allows your app to perform tasks in the background without blocking the UI thread, preventing UI freezes and improving responsiveness."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Medium",
+    "question": "What is the primary reason for using a LayoutManager in Android?",
+    "answer": "A LayoutManager is used in Android to manage the layout of views within a RecyclerView or ViewPager, improving performance by only laying out the views that are currently visible."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Medium",
+    "question": "How do you handle network latency in a mobile app to improve the user experience?",
+    "answer": "You can handle network latency in a mobile app by using caching mechanisms, such as memoization or caching libraries like Picasso or Retrofit, and by implementing pagination or lazy loading to reduce the amount of data transferred over the network."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Medium",
+    "question": "What is the difference between a synchronous and asynchronous load of images in a mobile app?",
+    "answer": "A synchronous load of images blocks the main thread until the image is loaded, whereas an asynchronous load of images uses a background thread to load the image, allowing the main thread to continue executing other tasks."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Medium",
+    "question": "How do you optimize the performance of a mobile app that uses a lot of database queries?",
+    "answer": "You can optimize the performance of a mobile app that uses a lot of database queries by using techniques such as query optimization, caching query results, and using a NoSQL database or a graph database that can handle complex queries more efficiently."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Medium",
+    "question": "What is the purpose of enabling multithreading in a mobile app that uses a lot of CPU-intensive tasks?",
+    "answer": "Enabling multithreading in a mobile app that uses a lot of CPU-intensive tasks allows the app to execute multiple tasks concurrently, improving performance by utilizing multiple CPU cores and reducing the time it takes to complete tasks."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Hard",
+    "question": "Describe the differences between asynchronous and synchronous I/O operations in the context of mobile app development, and provide an example of when each would be preferred.",
+    "answer": "Asynchronous I/O operations allow the app to continue executing other tasks while waiting for I/O completion, improving responsiveness and reducing perceived latency. Synchronous I/O operations, on the other hand, block the app's execution until the I/O operation completes. Asynchronous operations are preferred when dealing with network requests or disk I/O, while synchronous operations are suitable for simple database queries or file access."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Hard",
+    "question": "Suppose we're experiencing high CPU usage in our app due to frequent garbage collection. How would you optimize the code to reduce the frequency of garbage collection and improve overall performance?",
+    "answer": "To reduce garbage collection frequency, we can use techniques like lazy loading, caching frequently accessed objects, and avoiding unnecessary object creations. We can also use object pooling to reuse existing objects instead of creating new ones. Additionally, we can consider using a third-party library like OkHttp for networking, which has built-in caching and connection pooling features."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Hard",
+    "question": "Given the following code snippet, explain why it can lead to poor app performance and suggest a more efficient solution:",
+    "code": "for (int i = 0; i < 100000; i++) {\n    someMethod();\n}\n\npublic void someMethod() {\n    // Simulate expensive operation\n    Thread.sleep(10);\n}",
+    "answer": "This code snippet will lead to poor app performance because it uses a blocking sleep() method that can cause the app to freeze or become unresponsive. A more efficient solution would be to use an asynchronous or parallel approach, such as using an ExecutorService or a thread pool to execute someMethod() concurrently. This would allow the app to continue executing other tasks while waiting for the expensive operation to complete."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Hard",
+    "question": "Explain the concept of 'cold start' in mobile app development, and describe a strategy to mitigate its impact on app performance.",
+    "answer": "A 'cold start' occurs when an app is launched for the first time, and its code and resources need to be loaded into memory. This can result in a noticeable delay or 'launch time' penalty. To mitigate the impact of cold start, we can use techniques like code splitting, where critical app components are loaded lazily or on demand. We can also use a 'pre-warming' strategy, where we load frequently used resources or components in the background before the app is launched."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "App Performance",
+    "difficulty": "Hard",
+    "question": "Suppose we're experiencing frame rate issues in our game app due to complex graphics rendering. How would you optimize the graphics pipeline to improve frame rates and reduce power consumption?",
+    "answer": "To optimize the graphics pipeline, we can use techniques like level of detail (LOD) rendering, where we use lower-resolution models or textures for distant objects. We can also use occlusion culling, where we render only the objects that are visible on the screen. Additionally, we can use a rendering engine that supports multi-threading and async rendering, which can help to reduce the load on the CPU and improve frame rates. Finally, we can consider using a graphics library that provides power-saving features, such as dynamic texture compression or multi-resolution rendering."
+  }
+]

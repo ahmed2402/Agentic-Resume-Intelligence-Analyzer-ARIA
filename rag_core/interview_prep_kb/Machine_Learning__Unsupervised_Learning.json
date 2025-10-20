@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of k-means clustering?",
+    "answer": "The primary goal of k-means clustering is to partition a set of data points into K clusters based on their similarity, minimizing the sum of squared distances between data points and the centroid of their assigned cluster."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Easy",
+    "question": "A dataset has 10 features and 1000 samples. What type of dimensionality reduction technique would you choose to reduce the number of features while preserving most of the information?",
+    "answer": "I would choose PCA (Principal Component Analysis) for dimensionality reduction, as it is an unsupervised technique that can reduce the number of features while preserving most of the information contained in the dataset."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Easy",
+    "question": "What is the main difference between hierarchical clustering and k-means clustering?",
+    "answer": "The main difference between hierarchical clustering and k-means clustering is that hierarchical clustering builds a hierarchy of clusters, whereas k-means clustering partitions the data into a fixed number of clusters."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Easy",
+    "question": "You are given a dataset of customer purchase history. What unsupervised learning algorithm would you use to identify customers with similar purchasing behavior?",
+    "answer": "I would use clustering algorithms such as k-means or hierarchical clustering to identify customers with similar purchasing behavior."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Easy",
+    "question": "What is DBSCAN (Density-Based Spatial Clustering of Applications with Noise)?",
+    "answer": "DBSCAN is a density-based clustering algorithm that groups data points into clusters based on their density and proximity to each other. It can handle noise and outliers in the data."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of K-Means clustering?",
+    "answer": "The primary goal of K-Means clustering is to partition the data into K clusters such that the features within each cluster are similar, and the features between clusters are dissimilar."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Medium",
+    "question": "How does DBSCAN clustering handle noise in the data?",
+    "answer": "DBSCAN (Density-Based Spatial Clustering of Applications with Noise) handles noise in the data by considering points with fewer than a minimum number of neighbors as noise and assigning them to a separate cluster."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Medium",
+    "question": "What is the key difference between PCA and t-SNE for dimensionality reduction?",
+    "answer": "The key difference between PCA (Principal Component Analysis) and t-SNE (t-Distributed Stochastic Neighbor Embedding) is that PCA is a linear method that preserves the global structure of the data, while t-SNE is a non-linear method that preserves the local structure of the data."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Medium",
+    "question": "How would you evaluate the performance of a clustering model?",
+    "answer": "To evaluate the performance of a clustering model, you can use metrics such as silhouette score, calinski-harabasz index, and davies-bouldin index, which measure the separation and cohesion of the clusters."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Medium",
+    "question": "Suppose you have a dataset with a mix of continuous and categorical features. Which clustering algorithm would you use, and why?",
+    "answer": "I would use hierarchical clustering for this dataset. Hierarchical clustering can handle both continuous and categorical features and can be used to visualize the dendrogram of the clusters."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Hard",
+    "question": "Explain how to detect anomalies in a dataset using one-class SVM. What are the advantages and disadvantages of this approach?",
+    "answer": "One-class SVM works by finding a decision boundary that maximizes the margin between the inliers and the anomalous data points. Advantages include handling high-dimensional data and being robust to outliers. However, it can be sensitive to the choice of parameters and may not perform well on datasets with varying densities."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where using k-means clustering would not be suitable, and suggest an alternative clustering algorithm that would be more effective.",
+    "answer": "K-means clustering assumes that the data is normally distributed and the clusters are spherical. However, if the data has varying densities or non-linear structures, k-means may not be effective. In such cases, using DBSCAN (Density-Based Spatial Clustering of Applications with Noise) would be more suitable, as it can handle varying densities and non-linear structures."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Hard",
+    "question": "Given a dataset with 1000 features and 1000 samples, describe how you would apply PCA (Principal Component Analysis) to reduce the dimensionality of the data, and explain the benefits of this approach.",
+    "answer": "To apply PCA, I would first standardize the data using mean normalization and then calculate the covariance matrix. I would then compute the eigenvectors and eigenvalues of the covariance matrix and select the top k eigenvectors corresponding to the largest eigenvalues. The benefits of this approach include reducing the dimensionality of the data, preserving most of the variance, and making the data more interpretable."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Hard",
+    "question": "Explain how to use hierarchical clustering to identify clusters in a dataset, and describe the trade-offs between agglomerative and divisive clustering.",
+    "answer": "Hierarchical clustering works by building a dendrogram that represents the hierarchical structure of the data. Agglomerative clustering starts with individual data points and merges them into clusters, while divisive clustering starts with a single cluster and splits it into smaller clusters. The trade-offs between the two approaches include agglomerative clustering being more computationally efficient but potentially less accurate, while divisive clustering can be more accurate but computationally expensive."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Unsupervised Learning",
+    "difficulty": "Hard",
+    "question": "Given a dataset with missing values, describe how you would apply imputation using k-NN (k-Nearest Neighbors) and explain the benefits and limitations of this approach.",
+    "answer": "To apply k-NN imputation, I would select the k nearest neighbors for each data point with missing values and use their values as the imputed values. The benefits of this approach include being able to handle non-linear relationships and handling missing values without assuming a specific distribution. However, the limitations include requiring a good choice of k and being sensitive to noisy data."
+  }
+]

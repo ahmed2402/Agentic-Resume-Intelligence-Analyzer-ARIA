@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of performance optimization in DevOps?",
+    "answer": "The primary goal of performance optimization in DevOps is to identify and eliminate bottlenecks that impede the delivery of high-quality software, ensuring it meets performance and reliability requirements."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Easy",
+    "question": "What is caching, and how does it improve application performance?",
+    "answer": "Caching is a technique where frequently accessed data is stored temporarily in a faster storage location, such as memory, reducing the need for repeated database queries and improving application responsiveness."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Easy",
+    "question": "What is the difference between a CPU-intensive task and an I/O-bound task?",
+    "answer": "A CPU-intensive task requires significant processing power and is typically bound by the speed of the CPU, whereas an I/O-bound task is limited by the speed of input/output operations, such as disk access or network requests."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Easy",
+    "question": "What is a simple way to identify performance bottlenecks in your application?",
+    "answer": "Using profiling tools, such as CPU or memory profiling, can help identify performance bottlenecks by analyzing where the application spends most of its time and resources."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Easy",
+    "question": "What is the purpose of load testing in the DevOps performance optimization process?",
+    "answer": "Load testing helps determine an application's ability to handle a large number of users or requests, simulating real-world conditions to identify scalability issues and performance degradation."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of using a content delivery network (CDN) in performance optimization?",
+    "answer": "The primary goal of using a CDN is to reduce the latency and improve the loading speed of web assets by caching them at edge locations closer to end-users."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Medium",
+    "question": "Suppose you have a web application with a large number of requests. What strategy would you use to improve its response time without increasing the server's processing power?",
+    "answer": "You would use a load balancing strategy to distribute the incoming requests across multiple servers, ensuring that no single server is overwhelmed and can handle the load efficiently."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Medium",
+    "question": "What is the difference between HTTP/1.1 and HTTP/2 in terms of performance optimization?",
+    "answer": "HTTP/1.1 is a connection-oriented protocol that uses multiple requests over multiple connections, whereas HTTP/2 is a connection-oriented protocol that multiplexes multiple requests over a single connection, reducing the overhead of establishing multiple connections and improving performance."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Medium",
+    "question": "How can you identify and troubleshoot performance bottlenecks in an application using the 'top' command?",
+    "answer": "You can identify and troubleshoot performance bottlenecks by using the 'top' command to monitor CPU, memory, and disk usage, and then sorting the processes to find the ones consuming the most resources. You can then use the 'ps' command to get more detailed information about the process and identify the bottleneck."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Medium",
+    "question": "Suppose you have a database with a high number of queries. What indexing strategy would you use to improve query performance?",
+    "answer": "You would use a composite indexing strategy, creating indexes on the columns used in the WHERE and JOIN clauses of the query, and also consider using covering indexes to reduce the number of disk I/O operations required to satisfy the query."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where using an in-memory caching mechanism would lead to a significant performance bottleneck, and explain why.",
+    "answer": "A scenario where in-memory caching would lead to a significant performance bottleneck is when a high-traffic web application uses a cache with a limited capacity, causing the cache to become a bottleneck as it struggles to keep up with the high volume of requests. This would happen because the application has to constantly clear out old items to make room for new ones, leading to increased latency and reduced throughput."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Hard",
+    "question": "Explain the concept of NUMA (Non-Uniform Memory Access) and how it affects performance in a distributed system. Provide an example of how to mitigate its impact.",
+    "answer": "NUMA refers to a memory access pattern where different CPU cores have non-uniform access times to memory. In a distributed system, this can cause performance issues when multiple nodes access shared memory resources. To mitigate this impact, use NUMA-aware scheduling algorithms or pin threads to specific CPU cores to minimize inter-node communication and improve performance."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Hard",
+    "question": "A service written in Node.js is experiencing high CPU usage due to frequent garbage collection. What steps would you take to optimize the service without modifying the existing code?",
+    "answer": "To optimize the service without modifying the existing code, you would use the --expose-gc flag to disable garbage collection in development mode, then use the 'npx node --prof' command to generate a CPU profile. Analyze the profile to identify performance bottlenecks, and use the 'npx node --heapsnapshot' command to take a heap snapshot to identify memory leaks. Use Node.js built-in performance tools or external libraries like 'node-heapdump' to further optimize the service."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where using a Just-In-Time (JIT) compilation mechanism would significantly improve the performance of an application, and explain why.",
+    "answer": "A scenario where using a JIT compilation mechanism would significantly improve the performance of an application is when an interpreted language like Java or Python is used in a mission-critical, high-performance application. JIT compilation can translate the interpreted code into native machine code, reducing the overhead of interpretation and improving execution speed. This would be especially beneficial for applications with long-running computations or complex algorithms."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Performance Optimization",
+    "difficulty": "Hard",
+    "question": "Explain the concept of 'thrashing' in memory allocation and provide an example of how to identify and mitigate its impact in a system.",
+    "answer": "Thrashing occurs when an application constantly allocates and frees memory, causing the operating system to spend more time searching for free memory than actually allocating it. To identify and mitigate thrashing, use memory profiling tools to analyze memory allocation patterns. Use techniques like memory pooling, object caching, or lazy loading to reduce the frequency of memory allocations and deallocations, and consider applying heuristics to predict memory usage and allocate memory in advance."
+  }
+]

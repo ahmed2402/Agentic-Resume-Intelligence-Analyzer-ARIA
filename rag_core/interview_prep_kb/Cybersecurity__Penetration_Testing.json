@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of a penetration test?",
+    "answer": "The primary goal of a penetration test is to simulate a real-world cyber attack on an organization's computer system, network, or web application to identify vulnerabilities and weaknesses."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Easy",
+    "question": "A penetration tester discovers a vulnerability in a web application that allows an attacker to inject malicious SQL code. What type of vulnerability is this?",
+    "answer": "This is an example of a SQL injection vulnerability."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Easy",
+    "question": "What is the difference between a black box, white box, and gray box penetration test?",
+    "answer": "A black box penetration test involves testing an application or system without any prior knowledge of its internal workings. A white box penetration test involves testing an application or system with full knowledge of its internal workings. A gray box penetration test involves testing an application or system with limited knowledge of its internal workings."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Easy",
+    "question": "What is a common type of attack used in penetration testing to gain unauthorized access to a network or system?",
+    "answer": "Phishing is a common type of attack used in penetration testing to gain unauthorized access to a network or system."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Easy",
+    "question": "What is the term for a security test that attempts to bypass a system's authentication mechanisms?",
+    "answer": "The term for a security test that attempts to bypass a system's authentication mechanisms is called a 'cracking' test."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Medium",
+    "question": "What is a typical goal of a penetration test, and how does it differ from a vulnerability scan?",
+    "answer": "The primary goal of a penetration test is to simulate a real-world attack to assess an organization's defenses and identify potential entry points that an attacker could exploit. This differs from a vulnerability scan, which focuses on identifying known vulnerabilities within a system, but does not provide the same level of simulation and hands-on analysis as a penetration test."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Medium",
+    "question": "Imagine you are conducting a penetration test on a network with a DMZ. What considerations would you take into account when planning your attack?",
+    "answer": "When planning an attack on a network with a DMZ, I would consider the following factors: the security controls in place on the DMZ, the communication protocols and services allowed through the DMZ, and the potential entry points and vulnerabilities that an attacker could exploit to gain access to the internal network."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a 'reconnaissance' phase in a penetration test, and what are some common tools used for this phase?",
+    "answer": "The purpose of the reconnaissance phase in a penetration test is to gather information about the target system, network, or organization before launching an attack. Common tools used for this phase include Nmap for network scanning, DNSRecon for DNS enumeration, and Burp Suite for web application reconnaissance."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Medium",
+    "question": "You have discovered a SQL injection vulnerability in a web application. What would be your next steps in exploiting this vulnerability?",
+    "answer": "My next steps would be to use a tool such as Burp Suite or SQLMap to inject malicious SQL code and extract sensitive information from the database, such as user credentials or database schema information. I would also aim to escalate privileges to gain a higher level of access within the database or the underlying operating system."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Medium",
+    "question": "What is the difference between a 'white-hat' and a 'black-hat' hacker in the context of a penetration test?",
+    "answer": "A 'white-hat' hacker, also known as an ethical hacker, is a penetration tester who uses their skills for good, conducting authorized and controlled attacks on a system or network to identify vulnerabilities and strengthen its defenses. A 'black-hat' hacker, on the other hand, is a malicious attacker who uses their skills for personal gain or to cause harm to others."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Hard",
+    "question": "Explain the difference between a zero-day vulnerability and a zero-hour vulnerability. Provide an example of each.",
+    "answer": "A zero-day vulnerability is an unknown vulnerability that is exploited before a patch or fix is available. A zero-hour vulnerability is a vulnerability that is discovered and exploited within the same hour, essentially on the same day, as its discovery. Example: A zero-day vulnerability could be a previously unknown vulnerability in a software package, while a zero-hour vulnerability could be a vulnerability in a recent software update that is exploited immediately after its release."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Hard",
+    "question": "A penetration tester is engaged by an organization to test their web application. During the test, the tester discovers a SQL injection vulnerability. However, the tester also discovers that the vulnerability is being used by an attacker in the wild. What are the tester's responsibilities and obligations in this scenario?",
+    "answer": "The penetration tester's primary responsibility is to report the vulnerability and provide a detailed report to the organization. However, in this scenario, the tester also has a responsibility to report the vulnerability to the organization and to consider reporting it to the relevant authorities, such as CERT or US-CERT, to prevent further exploitation by malicious actors."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Hard",
+    "question": "A penetration tester is tasked with simulating a reconnaissance phase on a target network. The tester discovers a series of DNS queries from a server on the network that appear to be related to a known malware command and control (C2) server. What steps should the tester take next?",
+    "answer": "The tester should attempt to validate the DNS queries by sending a reverse DNS query to the C2 server to see if it responds. If the DNS query is validated, the tester should escalate the findings to the client and recommend further investigation and mitigation measures, such as isolating the affected server or blocking the DNS queries."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Hard",
+    "question": "A penetration tester is testing an organization's email system and discovers a vulnerability in the email server that allows them to send spoofed emails. What should the tester do?",
+    "answer": "The tester should report the vulnerability and provide a detailed report to the organization. The tester should also attempt to exploit the vulnerability to see if they can deliver malicious emails to users on the network. The tester should then provide recommendations to the organization on how to mitigate the vulnerability, such as implementing SPF, DKIM, or DMARC."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Penetration Testing",
+    "difficulty": "Hard",
+    "question": "A penetration tester is testing a web application using a custom-built tool. The tester discovers a vulnerability in the application that allows them to bypass authentication. However, the tool is also vulnerable to a buffer overflow vulnerability. What steps should the tester take to ensure the integrity of the testing process?",
+    "answer": "The tester should immediately stop using the tool and switch to a different testing methodology or tool. The tester should then report the vulnerability in the tool and provide a detailed report to the organization. The tester should also recommend to the organization to patch or update the vulnerable tool and to implement additional security controls to prevent similar vulnerabilities in the future."
+  }
+]

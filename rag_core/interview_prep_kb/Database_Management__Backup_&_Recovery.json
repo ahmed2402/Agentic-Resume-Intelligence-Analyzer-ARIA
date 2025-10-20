@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of database backups?",
+    "answer": "To restore the database to a known good state in the event of data loss or corruption."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Easy",
+    "question": "What is the difference between a full backup and an incremental backup?",
+    "answer": "A full backup includes all data, while an incremental backup includes only the data that has changed since the last backup."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Easy",
+    "question": "You need to recover a database after a hardware failure. What should you do first?",
+    "answer": "Restore the most recent full backup and apply any necessary incremental backups."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Easy",
+    "question": "What is a common database backup strategy?",
+    "answer": "A 3-2-1 backup strategy, which includes three copies of the data, two of which are local and one is offsite."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Easy",
+    "question": "Why is it important to verify the integrity of database backups?",
+    "answer": "To ensure that the backups are complete and can be successfully restored in the event of a disaster."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Medium",
+    "question": "What is the primary purpose of the recovery point objective (RPO) in a database backup strategy?",
+    "answer": "The primary purpose of the recovery point objective (RPO) is to define the maximum acceptable period of time that data might be lost in the event of a disaster or system failure."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Medium",
+    "question": "A database administrator is implementing a backup strategy for a large database. Which of the following backup types would provide the most recent copy of the database?",
+    "answer": "Incremental backup"
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Medium",
+    "question": "How often should you perform a full backup of a database, and what is the recommended frequency for differential backups in between?",
+    "answer": "A full backup should be performed daily, and differential backups should be performed at least once a day, but often at the end of the day or at specific intervals during the day."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Medium",
+    "question": "A database has a complex schema with many tables, indexes, and relationships. What type of backup approach would be most suitable for this type of database?",
+    "answer": "A combination of transaction log backups and full or differential backups would be most suitable for a complex database schema."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Medium",
+    "question": "What is the difference between a hot backup and a cold backup in database backup strategies?",
+    "answer": "A hot backup occurs while the database is running, while a cold backup occurs when the database is shut down or taken offline."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Hard",
+    "question": "Design a backup strategy for a distributed database system with multiple nodes, considering network partitions and node failures.",
+    "answer": "Implement a multi-level backup approach: (1) Node-level backups using incremental snapshots, (2) Cluster-level backups with a periodic full snapshot, and (3) Cross-site backups using a redundant storage system. Ensure network partitions are handled by using asynchronous backups and node-level recovery."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Hard",
+    "question": "A user accidentally deletes a critical table in a production database. Describe the steps to recover the deleted table using point-in-time recovery and logical backups.",
+    "answer": "1. Identify the point-in-time recovery timestamp using the database's transaction log. 2. Apply the transaction log up to the identified timestamp to revert the database state. 3. Restore the logical backup taken prior to the deletion, overwriting the modified database state."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Hard",
+    "question": "How would you implement a self-healing database cluster that can recover from node failures and network partitions without administrator intervention?",
+    "answer": "Implement a distributed consensus protocol, such as Raft or Paxos, to ensure quorum-based decision-making. Utilize distributed lock management and transactional logging to maintain consistency across nodes. Configure automated node recovery and network partition detection, triggering self-healing actions as needed."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Hard",
+    "question": "What are the key differences between a logical backup and a physical backup in a database context? Provide an example scenario to illustrate the difference.",
+    "answer": "A logical backup captures the database schema and data, whereas a physical backup stores the actual database files. Example: Suppose a database contains sensitive customer data. A logical backup would save the altered table structure and data, allowing for easy migration to a different database system. A physical backup, however, would store the entire database file, including sensitive data, which may not be desirable for security reasons."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Backup & Recovery",
+    "difficulty": "Hard",
+    "question": "Develop a plan for recovering a database from a corrupted storage device, ensuring minimal downtime and data loss.",
+    "answer": "1. Identify the corrupted storage device and isolate it from the database cluster. 2. Create a new storage device and mount it as a replacement. 3. Restore a recent logical backup onto the new storage device. 4. Apply transaction logs from the isolated device, up to the point of corruption, to recover any recent changes."
+  }
+]

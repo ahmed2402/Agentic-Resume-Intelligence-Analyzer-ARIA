@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the ORDER BY clause in SQL?",
+    "answer": "The ORDER BY clause is used to sort the result set in ascending or descending order based on one or more columns."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "question": "Write a SQL query to retrieve all rows from a table where a specific column meets a certain condition.",
+    "answer": "SELECT * FROM table_name WHERE column_name = 'condition';"
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "question": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
+    "answer": "INNER JOIN returns records that have matching values in both tables, while LEFT JOIN returns all records from the left table and matching records from the right table."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "question": "How can you insert a new record into a table with a primary key?",
+    "answer": "You can use an INSERT INTO statement with a VALUES clause to insert a new record, and then use an INSERT INTO statement with a SELECT clause to insert multiple records at once."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the LIMIT clause in SQL?",
+    "answer": "The LIMIT clause is used to limit the number of rows returned in the result set."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "question": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
+    "answer": "An INNER JOIN returns records that have matching values in both tables, whereas a LEFT JOIN returns all records from the left table and matching records from the right table."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "question": "You have a table with the following schema: `id` (primary key), `name`, and `age`. Write a SQL query to select all records where the age is greater than 30.",
+    "answer": "SELECT * FROM table WHERE age > 30;"
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the `EXISTS` clause in SQL?",
+    "answer": "The `EXISTS` clause is used to test for the existence of any records in a subquery."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "question": "You have two tables: `orders` with columns `id`, `customer_id`, and `order_date`, and `customers` with columns `id` and `name`. Write a SQL query to select all orders for customers named 'John'.",
+    "answer": "SELECT o.* FROM orders o INNER JOIN customers c ON o.customer_id = c.id WHERE c.name = 'John';"
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "question": "What is the difference between `ASC` and `DESC` in SQL sorting?",
+    "answer": "The `ASC` keyword is used to sort in ascending order, while the `DESC` keyword is used to sort in descending order."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Hard",
+    "question": "Design a SQL query to find the top 10% of sales by employee ID, grouped by department, that also exceed the department average sales.",
+    "answer": "WITH dept_avg AS (SELECT department, AVG(sales) as avg_sales FROM sales GROUP BY department) SELECT employee_id, department, sales FROM (SELECT employee_id, department, sales, PERCENT_RANK() OVER (PARTITION BY department ORDER BY sales DESC) as pr FROM sales) WHERE pr <= 0.1 AND sales > (SELECT avg_sales FROM dept_avg WHERE department = (SELECT department FROM sales WHERE employee_id = employee_id))"
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Hard",
+    "question": "You are given two tables: customers and orders. The customers table has a column 'customer_id' and the orders table has a column 'customer_id' and a column 'order_status'. Write a SQL query to find the customer_id of customers who have placed at least one order with status 'shipped' or 'delivered' and at least one order with status 'cancelled' or 'rejected'.",
+    "answer": "SELECT customer_id FROM customers WHERE customer_id IN (SELECT customer_id FROM orders WHERE order_status IN ('shipped', 'delivered')) INTERSECT SELECT customer_id FROM customers WHERE customer_id IN (SELECT customer_id FROM orders WHERE order_status IN ('cancelled', 'rejected'))"
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Hard",
+    "question": "Write a SQL query to find the product with the highest price that has a discount available. The product table has columns 'product_id', 'price', and 'discount', and the discount table has columns 'product_id' and 'discount_amount'.",
+    "answer": "SELECT product_id FROM product WHERE price > (SELECT price - discount_amount FROM product p JOIN discount d ON p.product_id = d.product_id WHERE d.discount_amount IS NOT NULL) GROUP BY product_id ORDER BY price DESC LIMIT 1"
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Hard",
+    "question": "Create a SQL query to find the total amount spent by each customer in the past year. The orders table has columns 'customer_id', 'order_date', and 'total_amount'.",
+    "answer": "SELECT customer_id, SUM(total_amount) as total_spent FROM orders WHERE order_date >= DATE_TRUNC('year', CURRENT_DATE) - INTERVAL '1 year' GROUP BY customer_id"
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "SQL",
+    "difficulty": "Hard",
+    "question": "Write a SQL query to find all customers who have placed an order with a status that is not in the list of valid statuses. The valid statuses are 'shipped', 'delivered', 'cancelled', and 'rejected'. The orders table has a column 'order_status'.",
+    "answer": "SELECT customer_id FROM customers c WHERE customer_id IN (SELECT customer_id FROM orders o WHERE o.order_status NOT IN ('shipped', 'delivered', 'cancelled', 'rejected'))"
+  }
+]

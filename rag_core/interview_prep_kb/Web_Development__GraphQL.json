@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Easy",
+    "question": "What is the primary difference between GraphQL and RESTful APIs?",
+    "answer": "GraphQL is schema-driven and uses a query language to fetch specific data, whereas RESTful APIs use a fixed API endpoint to retrieve data in a predefined format."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Easy",
+    "question": "Write a simple GraphQL query to fetch a user's name and email.",
+    "answer": "query { user { name email } }"
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Easy",
+    "question": "Explain the concept of resolvers in GraphQL.",
+    "answer": "Resolvers are functions that fetch the actual data for a field in a GraphQL schema. They take the parent object, arguments, and context as inputs and return the data for the field."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the __typename field in GraphQL?",
+    "answer": "The __typename field is used to identify the type of an object, which is useful for clients to determine the type of the object and handle it accordingly."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Easy",
+    "question": "How does GraphQL handle pagination?",
+    "answer": "GraphQL provides a built-in pagination mechanism using the skip, take, and cursor arguments. The skip argument skips a specified number of items, the take argument specifies the number of items to return, and the cursor argument uses a unique identifier to fetch the next set of items."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Medium",
+    "question": "Explain the difference between a GraphQL schema and a GraphQL query. Can you provide an example of a simple schema and a corresponding query?",
+    "answer": "A GraphQL schema defines the types, fields, and possible queries that can be executed on a server, while a GraphQL query is a specific request made to the server to retrieve a subset of data. For example, consider a simple schema for a library system: `type Book { id: ID!, title: String!, author: Author } type Author { id: ID!, name: String }`. A corresponding query could be `query { book(id: 1) { title author { name } } }`."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Medium",
+    "question": "Write a GraphQL mutation to create a new user with a username and email. Assume the User type has fields id, username, and email.",
+    "answer": "mutation createUser($username: String!, $email: String!) { createUser(username: $username, email: $email) { id username email } }"
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Medium",
+    "question": "Describe a scenario where you would use a GraphQL subscription over a mutation or query.",
+    "answer": "You would use a GraphQL subscription when you need to establish a real-time communication channel between the client and server, such as for live updates, notifications, or collaborative editing."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Medium",
+    "question": "How do you handle pagination in a GraphQL API? Provide an example of a query that includes pagination.",
+    "answer": "You can handle pagination in a GraphQL API by adding pagination fields to your schema, such as offset and limit. For example, consider a schema for a blog with a Post type: `type Post { id: ID!, title: String!, content: String } type Query { posts(offset: Int, limit: Int): [Post!] }`. A corresponding query could be `query { posts(offset: 0, limit: 10) { id title } }`."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Medium",
+    "question": "Explain how GraphQL resolvers work and provide an example of a resolver function.",
+    "answer": "GraphQL resolvers are functions that are called by the GraphQL server to resolve the fields of a query, mutation, or subscription. They typically take three arguments: the parent object, the args object, and the context object. For example, consider a resolver function for a query that returns a list of posts: `const resolvers = { posts: (parent, args, context) => context.db.getPosts(args.offset, args.limit) }`."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Hard",
+    "question": "Describe a use case where implementing a resolver function with caching would be beneficial, and explain how it would improve performance.",
+    "answer": "Implementing a resolver function with caching would be beneficial in a use case where the same query is executed multiple times within a short time frame. For example, in a real-time analytics dashboard, the resolver function can cache the result of a query to fetch user data, allowing subsequent requests to return the cached result instead of executing the query again. This would significantly improve performance by reducing the load on the database and minimizing network latency."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Hard",
+    "question": "Write a GraphQL schema that includes a mutation to update a user's profile information, including their name, email, and bio. The mutation should also validate the input data before updating the user's profile.",
+    "answer": "type Mutation { updateProfile(name: String!, email: String!, bio: String): User } type User { id: ID! name: String! email: String! bio: String }"
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Hard",
+    "question": "Explain how to handle server-side pagination with GraphQL, including how to implement pagination using a connection type and how to handle edge cases.",
+    "answer": "To handle server-side pagination with GraphQL, you can implement a connection type that includes pagination metadata, such as a cursor and a total count. The resolver function can then use the cursor to fetch the next page of results. For example, using the Relay specification, the connection type might look like this: type PageInfo { hasNextPage: Boolean! hasPreviousPage: Boolean! startCursor: String endCursor: String } type UserConnection { edges: [UserEdge!]! pageInfo: PageInfo! } type UserEdge { cursor: String node: User! }"
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Hard",
+    "question": "Describe a strategy for handling concurrent requests to a GraphQL API using a pool of worker threads, and explain how to implement it using a library like GraphQL.js.",
+    "answer": "To handle concurrent requests to a GraphQL API using a pool of worker threads, you can use a library like GraphQL.js to create a worker pool that executes resolvers in parallel. When a request is received, the API can add a task to the worker pool, which will execute the resolver function in a separate thread. The API can then return a promise that resolves when the task is complete. For example, using GraphQL.js, you can create a worker pool like this: const { createWorkerPool } = require('graphql/js'); const workerPool = createWorkerPool({ maxWorkers: 10 });"
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "GraphQL",
+    "difficulty": "Hard",
+    "question": "Explain how to implement a GraphQL API that uses a third-party service to authenticate users, including how to handle authentication errors and how to cache authentication tokens.",
+    "answer": "To implement a GraphQL API that uses a third-party service to authenticate users, you can create a resolver function that authenticates the user using the third-party service and returns an authentication token. The resolver function should handle authentication errors by returning an error message to the client. To cache authentication tokens, you can use a caching layer like Redis or Memcached to store the token and its expiration time. For example, using Apollo Server, you can implement an authentication resolver like this: const { ApolloServer } = require('apollo-server'); const server = new ApolloServer({ typeDefs, resolvers: { auth: async (parent, args, context) => { const token = await authenticateUser(args.username, args.password); return { token }; } } });"
+  }
+]

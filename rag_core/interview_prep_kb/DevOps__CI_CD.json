@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of a Continuous Integration (CI) process?",
+    "answer": "To automatically build and test code changes as soon as they are committed to the repository, ensuring that the code is stable and functional."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Easy",
+    "question": "What is the typical workflow for deploying a change to production using a CI/CD pipeline?",
+    "answer": "Build, Test, Deploy, and Monitor. This workflow ensures that changes are thoroughly tested before being deployed to production."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Easy",
+    "question": "Why is it essential to automate the testing process in a CI/CD pipeline?",
+    "answer": "Automating testing ensures that code changes are thoroughly tested, reducing the likelihood of errors and defects being introduced into the production environment."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Easy",
+    "question": "What is the benefit of using a CI/CD pipeline with automated deployment to production?",
+    "answer": "It allows for faster and more reliable deployment of changes to production, reducing the time and effort required for manual deployment and minimizing the risk of human error."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a Continuous Delivery (CD) process?",
+    "answer": "To automate the delivery of code changes to production, making it possible to deploy changes quickly and reliably, while maintaining a stable and functional production environment."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between Continuous Integration (CI) and Continuous Deployment (CD) in a CI/CD pipeline?",
+    "answer": "Continuous Integration (CI) focuses on automating the build and testing process, while Continuous Deployment (CD) involves automatically deploying the application to production after successful CI."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Medium",
+    "question": "A development team is implementing a CI/CD pipeline using Jenkins. However, they notice that the pipeline is taking a long time to complete due to a slow database operation. How can they optimize the pipeline?",
+    "answer": "The team can use a technique called 'staging' or 'caching' to speed up the pipeline. This involves storing the results of previous database operations and reusing them instead of re-running the operation every time."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Medium",
+    "question": "What is a 'pipeline as code' approach, and how does it benefit CI/CD?",
+    "answer": "A 'pipeline as code' approach involves defining CI/CD pipelines using version-controlled code (e.g., YAML files). This allows teams to track changes, collaborate, and reproduce pipelines consistently, improving pipeline reliability and reducing errors."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Medium",
+    "question": "A team wants to implement automated testing in their CI/CD pipeline. Which of the following testing types is most suitable for this purpose?",
+    "answer": "Unit testing is most suitable for automated testing in a CI/CD pipeline. Unit tests verify individual components or functions of the application, ensuring they work correctly before integrating them into the larger codebase."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Medium",
+    "question": "How does a CI/CD pipeline handle rollbacks or failed deployments?",
+    "answer": "A CI/CD pipeline can handle rollbacks or failed deployments by storing previous versions of the application and allowing teams to revert to a previous version if a deployment fails. This process is often automated using tools like rollback scripts or version control systems."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Hard",
+    "question": "Design a CI/CD pipeline that integrates with a monorepo containing multiple microservices, each with its own build and deployment process. The pipeline should be able to handle feature branches, multiple environments (dev, staging, prod), and high availability.",
+    "answer": "To achieve this, we can use a tool like GitLab CI/CD or Jenkins, and implement the following steps: 1) Create a separate GitLab CI/CD configuration file (or Jenkinsfile) for each microservice, defining the build and deployment process for that service. 2) Use a monorepo-aware dependency management tool like Bazel or Buck to manage the dependencies between microservices. 3) Use a feature branch-aware tool like GitLab CI/CD's feature branches or Jenkins' feature branches plugin to automate the deployment of feature branches to the dev environment. 4) Use a multi-environment-aware tool like Kubernetes or OpenShift to manage the deployment of microservices to multiple environments (dev, staging, prod). 5) Implement high availability using load balancers, service discovery, and self-healing mechanisms."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Hard",
+    "question": "A CI/CD pipeline is experiencing high latency due to a long-running integration test. How would you optimize the pipeline to reduce the latency without compromising the test coverage?",
+    "answer": "To optimize the pipeline, we can use a combination of techniques: 1) Use a distributed test framework like JUnit or TestNG to run the integration tests in parallel across multiple nodes. 2) Implement a test isolation mechanism, where each test runs in its own isolated environment, reducing the risk of test interference. 3) Use a test caching mechanism to store the results of long-running tests and reuse them on subsequent pipeline runs. 4) Implement a test filtering mechanism, where only the relevant tests are executed based on the pipeline's configuration and environment."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Hard",
+    "question": "A CI/CD pipeline is failing due to a missing dependency. However, the dependency is only required for a specific subset of the pipeline's jobs. How would you handle this scenario without blocking the entire pipeline?",
+    "answer": "To handle this scenario, we can use a combination of techniques: 1) Use a dependency management tool like Maven or Gradle to manage the dependencies for each job individually. 2) Implement a conditional dependency mechanism, where the pipeline only installs the required dependency if it's needed for the current job. 3) Use a dependency caching mechanism to store the dependencies for each job and reuse them on subsequent pipeline runs."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Hard",
+    "question": "Design a CI/CD pipeline that integrates with a legacy system, where the build and deployment process requires manual intervention from an operator. How would you design the pipeline to handle this scenario?",
+    "answer": "To design the pipeline, we can use a combination of techniques: 1) Use a custom script or tool to automate the build and deployment process as much as possible. 2) Implement a manual intervention step in the pipeline, where the operator is notified and required to intervene manually. 3) Use a visual workflow tool like a graphical UI or a flowchart to represent the pipeline and provide visibility into the manual intervention step. 4) Implement a feedback loop mechanism, where the pipeline stores the results of the manual intervention and provides feedback to the operator for future improvements."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "CI/CD",
+    "difficulty": "Hard",
+    "question": "A CI/CD pipeline is experiencing security vulnerabilities due to outdated dependencies. How would you identify and remediate these vulnerabilities in the pipeline?",
+    "answer": "To identify and remediate the vulnerabilities, we can use a combination of techniques: 1) Use a vulnerability scanning tool like OWASP Dependency Check or Semgrep to scan the pipeline's dependencies for known vulnerabilities. 2) Implement a dependency updating mechanism, where the pipeline automatically updates the dependencies to the latest version. 3) Use a security-focused CI/CD tool like Snyk or Veracode to integrate security scanning and vulnerability remediation into the pipeline."
+  }
+]

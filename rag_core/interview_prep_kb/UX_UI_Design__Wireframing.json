@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of wireframing in the UX/UI design process?",
+    "answer": "The primary purpose of wireframing is to create a low-fidelity visual representation of a website or application's layout and functionality, allowing designers to communicate ideas, test user flows, and make data-driven design decisions."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Easy",
+    "question": "When creating a wireframe, what is the recommended approach to labeling elements?",
+    "answer": "It's recommended to use placeholder text and labels in a wireframe, rather than actual text, to avoid committing to specific content and to focus on the layout and functionality of the design."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Easy",
+    "question": "What is the difference between a wireframe and a mockup?",
+    "answer": "A wireframe is a low-fidelity representation of a design, focusing on layout and functionality, whereas a mockup is a higher-fidelity representation, often including visual design elements, to give a more realistic preview of the final product."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Easy",
+    "question": "What tools are commonly used for wireframing?",
+    "answer": "Commonly used tools for wireframing include Sketch, Figma, Adobe XD, and Balsamiq, which provide a range of features and functionality to create and collaborate on wireframes."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Easy",
+    "question": "Why is it essential to iterate on wireframes during the design process?",
+    "answer": "Iterating on wireframes allows designers to test assumptions, gather user feedback, and refine the design based on data and user insights, ultimately resulting in a more user-centered and effective design."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Medium",
+    "question": "What is the primary purpose of wireframing in the design process?",
+    "answer": "Wireframing is used to create low-fidelity, low-detail sketches of a website or application's layout, allowing designers to visualize and communicate the user interface and user experience without getting bogged down in visual design elements."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Medium",
+    "question": "You're tasked with creating a wireframe for a mobile app's login screen. What key elements should be included in the wireframe?",
+    "answer": "The key elements to include in the wireframe are the login form with fields for username and password, a call-to-action button, and any other relevant UI elements, such as a forgot password link or social media login options."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Medium",
+    "question": "What are some common tools used for creating wireframes, and what are their advantages?",
+    "answer": "Common tools used for creating wireframes include Sketch, Figma, Adobe XD, and Microsoft Visio. Each tool has its own advantages, such as Sketch's intuitive interface and Figma's real-time collaboration features."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Medium",
+    "question": "How does wireframing differ from user flow diagrams?",
+    "answer": "Wireframing focuses on the visual representation of a specific screen or interface, whereas user flow diagrams show the sequence of screens and interactions that a user will experience throughout a website or application."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Medium",
+    "question": "What is the importance of iterating and refining wireframes during the design process?",
+    "answer": "Iterating and refining wireframes allows designers to test and validate their design decisions, make adjustments based on user feedback and testing results, and ultimately create a more user-centered and effective design."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Hard",
+    "question": "Describe the importance of a design system in wireframing, and how it can impact the overall user experience.",
+    "answer": "A design system provides consistency and cohesion throughout the product's interface, making it easier for users to navigate and understand the product's functionality. It also enables designers to make informed decisions and iterate on the design more efficiently."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Hard",
+    "question": "A product has multiple features that require different layouts and interactions. How would you approach creating wireframes for these features while maintaining a consistent design language?",
+    "answer": "I would start by identifying the key components and interactions for each feature, and then create a set of reusable wireframes that can be adapted to each feature. This would involve creating a modular design system that includes standardized components and layouts."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Hard",
+    "question": "A complex product requires wireframes that showcase multiple states (e.g. hover, active, focused). How would you create and document these states in a clear and concise manner?",
+    "answer": "I would use a state diagram to visualize the different states and interactions, and then create separate wireframes for each state. I would also use notation and annotations to clearly indicate the state and any relevant interactions or behaviors."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Hard",
+    "question": "A product has a large dataset that needs to be presented in a concise and organized manner. How would you approach creating a data-driven wireframe that effectively communicates this information?",
+    "answer": "I would start by identifying the key data points and interactions, and then create a wireframe that uses clear typography, concise labels, and intuitive navigation to present the data in a clear and organized manner. I would also consider using visualizations and charting tools to help communicate complex data insights."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Wireframing",
+    "difficulty": "Hard",
+    "question": "A product has multiple user personas with different needs and behaviors. How would you create wireframes that cater to these different user groups while maintaining a cohesive design language?",
+    "answer": "I would start by researching and understanding the different user personas and their needs, and then create wireframes that cater to each persona's specific requirements. I would also ensure that the design language is consistent across all wireframes, using a modular design system that includes standardized components and layouts."
+  }
+]

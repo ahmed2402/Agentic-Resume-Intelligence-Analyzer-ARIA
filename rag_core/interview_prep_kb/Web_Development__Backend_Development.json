@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Easy",
+    "question": "What is RESTful API and why is it commonly used in backend development?",
+    "answer": "A RESTful API, or Representational State of Resource, is an architectural style for designing networked applications. It's commonly used because it's stateless, cacheable, and follows a client-server architecture, making it scalable and easy to implement."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Easy",
+    "question": "How do you handle errors in a Node.js application?",
+    "answer": "In a Node.js application, you can use try-catch blocks to handle errors. You can also use the built-in error handling mechanism provided by Node.js, such as the 'error-handling' middleware in Express.js."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Easy",
+    "question": "What is the difference between a GET and POST request?",
+    "answer": "The main difference between a GET and POST request is that GET requests are used to retrieve data from the server, whereas POST requests are used to send data to the server for creation or updating."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a database schema in a backend application?",
+    "answer": "A database schema defines the structure and organization of data in a database. It's used to ensure data consistency, improve data integrity, and facilitate data retrieval and manipulation."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Easy",
+    "question": "How do you optimize database queries in a Django application?",
+    "answer": "In a Django application, you can optimize database queries by using Django's ORM (Object-Relational Mapping) to write efficient queries. You can also use database indexing, caching, and querysets to improve performance."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Medium",
+    "question": "Explain the difference between PUT and PATCH HTTP requests in terms of updating resources.",
+    "answer": "PUT is used to replace the entire resource, while PATCH is used to update a partial resource. For example, PUT /users/1 would replace the entire user record, whereas PATCH /users/1 would update only the attributes provided in the request body."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Medium",
+    "question": "Design a simple login system using authentication headers. How would you handle invalid credentials or expired tokens?",
+    "answer": "Implement a system where the client sends their username and password in the request body, and the server responds with a success status code and an authentication token. On subsequent requests, the client includes the token in the Authorization header. If the token is invalid or has expired, the server should return a 401 Unauthorized status code with a relevant error message."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Medium",
+    "question": "What are the main differences between monolithic architecture and microservices architecture? Provide an example scenario where you would prefer one over the other.",
+    "answer": "Monolithic architecture involves a single, self-contained application, whereas microservices architecture is composed of multiple independent services that communicate with each other. In a scenario where the application has multiple, independent features, microservices architecture would be more suitable, as it allows for greater scalability, flexibility, and maintainability."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Medium",
+    "question": "How would you implement rate limiting to prevent abuse of your API endpoint?",
+    "answer": "Implement a token bucket algorithm, where a certain number of tokens are added to a bucket at regular intervals. Each time the API endpoint is accessed, a token is removed from the bucket. If the bucket is empty, the request is blocked until tokens are replenished or a certain number of requests are made within a certain time frame."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Medium",
+    "question": "Suppose you have a RESTful API endpoint that returns a list of users. How would you implement pagination to limit the number of results returned?",
+    "answer": "Add query parameters to the endpoint for page number and page size, such as ?page=1&size=10. In the API endpoint, use these parameters to limit the query results and return the relevant page of data, along with metadata about the total number of results and the available pages."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Hard",
+    "question": "Design a database schema for a high-traffic e-commerce application that requires fast retrieval and insertion of products with various attributes, including images and reviews.",
+    "answer": "The schema should utilize a combination of tables, including products, product_images, reviews, and product_review. The products table would store product metadata, while the product_images table would store product image references with foreign keys to the products table. The reviews table would store review metadata, and the product_review table would establish many-to-many relationships between products and reviews."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Hard",
+    "question": "Explain the differences between optimistic concurrency control and pessimistic concurrency control in database transactions. Provide examples of when to use each approach.",
+    "answer": "Optimistic concurrency control assumes that concurrent updates are rare, so it checks for conflicts after updating the data. If a conflict is detected, the transaction is rolled back and retried. Pessimistic concurrency control assumes that concurrent updates are common, so it locks the data before updating it to prevent other transactions from accessing it. Optimistic concurrency control is suitable for read-heavy workloads, while pessimistic concurrency control is suitable for write-heavy workloads."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Hard",
+    "question": "A user reports that their account is locked out after multiple failed login attempts. The application is built using a Node.js backend with a MySQL database. What could be the cause of this issue, and how would you debug it?",
+    "answer": "The cause of this issue could be a MySQL query that is not properly handling failed login attempts, resulting in a lockout. To debug this, I would start by examining the Node.js code and the MySQL queries to identify any potential issues. I would then use tools such as the MySQL slow query log or Node.js debugging tools to identify the problematic query and optimize it to prevent lockouts."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where you would use caching in a web application, and explain the benefits and trade-offs of using caching.",
+    "answer": "A scenario where caching would be beneficial is in an e-commerce application that requires fast retrieval of product information. Caching would store frequently accessed product data in memory, reducing the number of database queries and improving response times. However, caching would require careful consideration of cache expiration, invalidation, and replacement policies to ensure data consistency and prevent stale data."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Backend Development",
+    "difficulty": "Hard",
+    "question": "Explain the concept of microservices architecture and its benefits. Provide an example of how a monolithic application could be refactored into a microservices-based architecture.",
+    "answer": "Microservices architecture is a design pattern that structures an application as a collection of small, independent services that communicate with each other using APIs. Each service is responsible for a specific business capability and can be developed, deployed, and scaled independently. The benefits of microservices architecture include improved scalability, flexibility, and fault tolerance. An example of refactoring a monolithic application into microservices would involve breaking down the application into smaller services, such as authentication, order processing, and inventory management, each with its own API and database schema."
+  }
+]

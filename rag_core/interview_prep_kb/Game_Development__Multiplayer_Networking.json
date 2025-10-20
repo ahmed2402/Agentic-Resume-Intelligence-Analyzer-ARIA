@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Easy",
+    "question": "What is the primary advantage of using a client-server architecture in multiplayer games?",
+    "answer": "The primary advantage of using a client-server architecture is that it allows for centralized game state management, making it easier to implement game logic and ensure consistency across all clients."
+  },
+  {
+    "id": "q2",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Easy",
+    "question": "A player is experiencing lag while playing an online multiplayer game. What could be the cause?",
+    "answer": "The cause of lag could be packet loss, high latency, or network congestion, which can be mitigated by implementing features such as packet retransmission, latency compensation, and network optimization techniques."
+  },
+  {
+    "id": "q3",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Easy",
+    "question": "What is the difference between a TCP and UDP connection?",
+    "answer": "TCP (Transmission Control Protocol) is a connection-oriented protocol that guarantees delivery and order of packets, while UDP (User Datagram Protocol) is a connectionless protocol that prioritizes speed over reliability, making it suitable for applications that require low latency and can tolerate packet loss."
+  },
+  {
+    "id": "q4",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Easy",
+    "question": "How can you handle disconnections in a multiplayer game?",
+    "answer": "You can handle disconnections by implementing a timeout mechanism, where if a client doesn't send any data within a certain time period, it is considered disconnected and removed from the game session. Alternatively, you can use a heartbeat system, where clients send periodic heartbeat messages to indicate they are still connected."
+  },
+  {
+    "id": "q5",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a game server's matchmaking system?",
+    "answer": "The purpose of a game server's matchmaking system is to match players with similar skills, interests, and game settings to ensure a fair and enjoyable experience for all players involved in a multiplayer game session."
+  },
+  {
+    "id": "q1",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Medium",
+    "question": "What is the primary concern when implementing client-side prediction in a multiplayer game?",
+    "answer": "To prevent desyncs, the server must be authoritative and correct any discrepancies between the client and server states."
+  },
+  {
+    "id": "q2",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Medium",
+    "question": "How can you handle the situation where a player joins a match in progress and receives outdated state information from other clients?",
+    "answer": "Use interpolation or extrapolation to estimate the missing state information, and then correct it with the received state from other clients."
+  },
+  {
+    "id": "q3",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Medium",
+    "question": "What is the purpose of using a lockstep approach in a multiplayer game?",
+    "answer": "To ensure that all clients and the server execute the same sequence of commands and maintain a consistent game state."
+  },
+  {
+    "id": "q4",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Medium",
+    "question": "How do you prevent a malicious client from injecting fake input into the game state?",
+    "answer": "Use secure authentication and authorization mechanisms, such as digital signatures or encryption, to verify the authenticity of incoming data."
+  },
+  {
+    "id": "q5",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Medium",
+    "question": "What is latency compensation, and why is it necessary in a multiplayer game?",
+    "answer": "Latency compensation is used to account for delays in communication between clients and the server by adjusting the game state to match the expected position of an entity based on its intended movement."
+  },
+  {
+    "id": "q1",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Hard",
+    "question": "Explain the concept of client-server architecture in multiplayer gaming and its implications on latency and packet loss.",
+    "answer": "In client-server architecture, a central server manages the game state and relays it to connected clients. This design can lead to high latency and packet loss issues, as clients must rely on the server's updates. To mitigate these issues, developers often employ techniques like client-side prediction, interpolation, and delta encoding."
+  },
+  {
+    "id": "q2",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Hard",
+    "question": "Design a system to handle disconnections and reconnections in a multiplayer game using a lockstep synchronization model.",
+    "answer": "To handle disconnections and reconnections, implement a system that stores a player's state in a separate entity (e.g., a 'ghost' object) when they disconnect. When the player reconnects, merge their local state with the server's state, and apply any missing updates to prevent desynchronization."
+  },
+  {
+    "id": "q3",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Hard",
+    "question": "Implement a latency compensation system that can account for varying network conditions and player movement. Provide a code snippet to demonstrate this system.",
+    "answer": "Use a combination of client-side prediction and server-side correction to implement latency compensation. On the client-side, predict player movement and interpolate between server updates. On the server-side, use a technique like 'delta encoding' to encode the player's movement and send only the necessary updates to the client."
+  },
+  {
+    "id": "q4",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Hard",
+    "question": "Explain the concept of 'wormholes' in multiplayer game networking and its advantages over traditional replication models.",
+    "answer": "Wormholes are a technique used in multiplayer game networking to reduce latency by allowing clients to communicate directly with each other, bypassing the server. This approach can provide lower latency and improved responsiveness, but it requires careful implementation to prevent cheating and ensure consistent game state."
+  },
+  {
+    "id": "q5",
+    "domain": "Game Development",
+    "topic": "Multiplayer Networking",
+    "difficulty": "Hard",
+    "question": "Design a system to handle concurrent updates from multiple players in a multiplayer game, ensuring that updates are processed in the correct order and preventing data corruption.",
+    "answer": "Use a technique called 'transactional updates' to handle concurrent updates. When a player sends an update, the server creates a transaction that includes the update and a timestamp. The server then processes transactions in order, using a mechanism like locking or versioning to prevent data corruption and ensure that updates are processed correctly."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Easy",
+    "question": "What is a key difference between a one-to-one and one-to-many relationship in data modeling?",
+    "answer": "A one-to-one relationship allows one record in one table to be associated with at most one record in another table, while a one-to-many relationship allows one record in one table to be associated with multiple records in another table."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Easy",
+    "question": "Describe a situation where a many-to-many relationship is necessary in data modeling.",
+    "answer": "A many-to-many relationship is necessary when multiple records in one table can be associated with multiple records in another table. For example, in a school database, a student can enroll in multiple courses, and a course can have multiple students."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a surrogate key in a database?",
+    "answer": "A surrogate key is a unique identifier assigned to each record in a table, used to establish relationships between tables and improve data consistency."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Easy",
+    "question": "Explain the concept of data normalization and its importance in data modeling.",
+    "answer": "Data normalization is the process of organizing data in a database to minimize data redundancy and dependency, ensuring data integrity and consistency. It involves breaking down large tables into smaller, more manageable ones, reducing data duplication and improving data quality."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Easy",
+    "question": "What is the difference between a database schema and a data model?",
+    "answer": "A database schema is a physical representation of a database, including the physical storage and organization of data, while a data model is a logical representation of the data, including the relationships and structure of the data, without considering the physical implementation."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Medium",
+    "question": "Explain the difference between a weak entity and a strong entity in data modeling.",
+    "answer": "A weak entity is one that does not have a primary key on its own, but relies on a strong entity for identification. A strong entity has a unique identifier and is self-sufficient."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Medium",
+    "question": "You are given two tables: Employees and Departments. Employees have a foreign key referencing Departments. What is the purpose of this foreign key?",
+    "answer": "The foreign key establishes a relationship between the Employees table and the Departments table, allowing you to link employee data with department data."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Medium",
+    "question": "Design a simple data model for a university database. Include tables for Students, Courses, and Instructors. Assume each student can take multiple courses and each course has multiple instructors.",
+    "answer": "Students (student_id, name), Courses (course_id, course_name), Instructors (instructor_id, name), Student_Courses (student_id, course_id), Course_Instructors (course_id, instructor_id)"
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Medium",
+    "question": "Explain the concept of a many-to-many relationship in data modeling and provide an example.",
+    "answer": "A many-to-many relationship occurs when one entity can be associated with multiple instances of another entity, and vice versa. For example, a student can take multiple courses, and a course can have multiple students."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a bridge table in data modeling?",
+    "answer": "A bridge table, also known as a junction table, is used to resolve many-to-many relationships between entities. It acts as a bridge between the two entities, allowing data to be stored in a normalized manner."
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Hard",
+    "question": "Design a data model for a social media platform that supports multiple types of relationships between users, such as friendships, followers, and groups. How would you handle the relationships between users and their associated content?",
+    "answer": "To design a data model for a social media platform, I would use a combination of entity-relationship diagrams (ERDs) and class diagrams. I would define three main entities: User, Content, and Relationship. The User entity would have attributes such as username, email, and profile information. The Content entity would have attributes such as title, description, and media type. The Relationship entity would have attributes such as type (friendship, follower, group), user IDs, and timestamps. To handle relationships between users and their associated content, I would use foreign keys to link the Content entity to the User entity, and use a separate table to store the relationships between users and groups."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Hard",
+    "question": "A company has a large database containing customer information, orders, and products. The data is spread across multiple tables, and there are many joins required to retrieve the desired information. Design a denormalized data model that would improve query performance.",
+    "answer": "To design a denormalized data model, I would identify the most frequently joined tables and the most commonly requested data. I would then create a new table that combines the relevant data from these tables. For example, I would create a new table called CustomerOrder that combines the customer information, order details, and product information. This would eliminate the need for multiple joins and improve query performance. However, I would also need to consider data consistency and update procedures to ensure that the denormalized data remains accurate."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Hard",
+    "question": "A company wants to implement a data warehouse to store historical sales data. The sales data is currently stored in a relational database, but the company wants to use a star schema to improve query performance. How would you design the fact table and dimension tables for the star schema?",
+    "answer": "To design the star schema, I would identify the key business metrics that the company wants to track, such as sales revenue and customer count. I would then create a fact table called Sales_Fact that contains the measures (e.g. sales revenue, customer count) and the keys to join to the dimension tables. The dimension tables would be created for each key attribute, such as date, product, customer, and region. The fact table would contain foreign keys to each of the dimension tables, allowing for efficient querying and aggregation of data."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Hard",
+    "question": "A company wants to implement a graph database to store complex relationships between customers, products, and orders. How would you design the graph schema to support efficient querying of recommendations and personalized content?",
+    "answer": "To design the graph schema, I would use a property graph data model that includes nodes (entities) and edges (relationships). I would create nodes for customers, products, and orders, and edges to represent relationships such as 'purchased', 'recommended', and 'follows'. To support efficient querying of recommendations and personalized content, I would use graph algorithms such as PageRank and Personalized PageRank. I would also use indexing and caching techniques to improve query performance."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "Data Modeling",
+    "difficulty": "Hard",
+    "question": "A company wants to migrate its database from a relational database to a NoSQL database. What are the key considerations for designing a data model that takes advantage of the NoSQL database's scalability and flexibility?",
+    "answer": "To design a data model that takes advantage of the NoSQL database's scalability and flexibility, I would consider the following key considerations: (1) use a schema-less or flexible schema design to accommodate changing data structures, (2) use a document-oriented data model to store self-contained documents, (3) use a key-value store to store simple data pairs, and (4) use a graph database to store complex relationships. I would also consider using caching and replication techniques to improve performance and availability."
+  }
+]

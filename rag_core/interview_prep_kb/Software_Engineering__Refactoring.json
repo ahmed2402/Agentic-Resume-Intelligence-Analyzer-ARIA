@@ -1,0 +1,88 @@
+[
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Refactoring",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of refactoring in software development?",
+    "answer": "The primary goal of refactoring is to improve the internal structure and organization of the code without changing its external behavior."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Refactoring",
+    "difficulty": "Easy",
+    "question": "What is an example of a simple refactoring technique that can improve code readability?",
+    "answer": "Extracting method, where a long method is broken down into smaller, more manageable methods each performing a single task."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Refactoring",
+    "difficulty": "Easy",
+    "question": "A) Improves performance",
+    "options": [
+      "A) Improves performance",
+      "B) Reduces maintenance costs",
+      "C) Increases code length",
+      "D) Decreases readability"
+    ],
+    "answer": "B) Reduces maintenance costs"
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Refactoring",
+    "difficulty": "Easy",
+    "question": "What is the main difference between refactoring and bug fixing?",
+    "answer": "Refactoring improves the internal structure of the code, whereas bug fixing corrects errors in the code's behavior."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Refactoring",
+    "difficulty": "Easy",
+    "question": "What is a common indicator that refactoring is needed?",
+    "answer": "Complex and convoluted code, high cyclomatic complexity, and duplicated code are common indicators that refactoring is needed."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Refactoring",
+    "difficulty": "Medium",
+    "question": "Explain the concept of 'Extract Method' in refactoring and provide an example.",
+    "answer": "Extract Method is a refactoring technique that breaks down a complex method into smaller, more manageable methods, each with a single responsibility. For example, if a method has 10 lines of code that perform two unrelated tasks, we can extract each task into its own method."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Refactoring",
+    "difficulty": "Medium",
+    "question": "A developer wants to refactor a large class with multiple responsibilities. What would be a good approach to consider?",
+    "answer": "To refactor a large class with multiple responsibilities, consider using the 'Extract Class' refactoring technique. This involves breaking down the large class into smaller classes, each with a single responsibility."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Refactoring",
+    "difficulty": "Medium",
+    "question": "What is the main goal of the 'Rename Variable' refactoring technique?",
+    "answer": "The main goal of the 'Rename Variable' refactoring technique is to improve code readability by giving meaningful and descriptive names to variables, making it easier for developers to understand the code."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Refactoring",
+    "difficulty": "Medium",
+    "question": "You are given a piece of code with multiple nested if-else statements. How would you refactor this code to make it more maintainable?",
+    "answer": "To refactor code with multiple nested if-else statements, consider using the 'Replace Nested Conditional' refactoring technique. This involves replacing the nested if-else statements with a single conditional statement or a switch statement."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Refactoring",
+    "difficulty": "Medium",
+    "question": "What are the benefits of refactoring code regularly, and how does it impact the overall quality of the codebase?",
+    "answer": "Refactoring code regularly improves the overall quality of the codebase by reducing technical debt, making the code more maintainable, and improving its readability. It also helps to catch and fix bugs, reduces the likelihood of introducing new bugs, and improves the performance of the code."
+  }
+]

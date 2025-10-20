@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of typography in visual design?",
+    "answer": "The primary goal of typography in visual design is to communicate the content and message effectively, making it easy for the user to read and understand."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Easy",
+    "question": "Describe the difference between a light and dark color scheme in UI design.",
+    "answer": "A light color scheme uses lighter colors as the primary background and darker colors for text and accents, while a dark color scheme uses darker colors as the primary background and lighter colors for text and accents."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Easy",
+    "question": "What is the purpose of padding and margin in visual design?",
+    "answer": "Padding and margin are used to create space between elements, improve readability, and make the layout more visually appealing."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Easy",
+    "question": "What is the rule of thirds in visual composition?",
+    "answer": "The rule of thirds suggests dividing the composition into thirds both horizontally and vertically, placing important elements along these lines to create a more balanced and visually appealing design."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Easy",
+    "question": "What is the difference between a grid and a layout in visual design?",
+    "answer": "A grid is a system of intersecting lines used to organize and align elements, while a layout refers to the arrangement of elements within a design, including the use of grids, padding, and margins."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Medium",
+    "question": "What is the primary purpose of using a grid system in visual design?",
+    "answer": "A grid system helps organize and structure content, ensuring consistency and balance in the layout of a user interface."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Medium",
+    "question": "A product designer wants to create a visually appealing card component. What design principle should they consider first?",
+    "answer": "The designer should consider the principle of contrast to make the card component stand out from other elements on the screen."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Medium",
+    "question": "A company's brand identity includes a distinctive color scheme. How would you ensure that this color scheme is consistently applied across different UI components?",
+    "answer": "Create a style guide or design system that outlines the specific colors, typography, and other visual elements, and ensure that all designers and developers follow it."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Medium",
+    "question": "What is the difference between a hero image and a hero section in visual design?",
+    "answer": "A hero image is a single image that is used to draw attention, while a hero section is a larger area that can contain multiple elements, including images, text, and other visual elements."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Medium",
+    "question": "Suppose you are designing a dashboard for a finance app. What typography principles should you consider to ensure readability and effectiveness?",
+    "answer": "You should consider the principles of legibility, readability, and hierarchy, using clear and concise typography with a clear font size, line spacing, and font family to prioritize important information."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Hard",
+    "question": "Design a typography system for a news website that can adapt to different screen sizes and devices. How would you ensure readability and maintainability?",
+    "answer": "To ensure readability and maintainability, I would create a typography system based on a modular scale, where font sizes increase by a consistent ratio (e.g., 1.5). This would enable easy scaling across different screen sizes. I would also define a set of font families, weights, and line heights to maintain consistency across the website. Additionally, I would use a responsive design approach, where typography is optimized for different devices and screen sizes, and use techniques like font loading and lazy loading to improve page speed."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Hard",
+    "question": "You're asked to redesign the interface of a financial app for visually impaired users. What design decisions would you make to ensure accessibility and usability?",
+    "answer": "To ensure accessibility and usability, I would prioritize a clear and consistent information architecture, using high contrast colors and sufficient color contrast (e.g., minimum 4.5:1 for normal text and 3:1 for larger text) to facilitate readability. I would also use clear and concise labels, headings, and icons, and ensure that all interactive elements (e.g., buttons, sliders) have a clear and consistent visual design. Furthermore, I would incorporate assistive technologies, such as screen readers and keyboard navigation, to enable users to interact with the app using assistive devices."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where you would use a dark mode or low-contrast color scheme in a UI design. How would you balance usability and aesthetics?",
+    "answer": "I would use a dark mode or low-contrast color scheme in a UI design when the application is used primarily at night or in environments with limited light, such as in a movie theater or a dimly lit office. To balance usability and aesthetics, I would ensure that the dark mode preserves sufficient color contrast (e.g., minimum 4.5:1 for normal text) and uses a consistent color scheme that is easy to read and navigate. I would also test the dark mode with users with visual impairments to ensure that it meets their needs and doesn't compromise usability."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Hard",
+    "question": "A client wants to incorporate a 3D or volumetric design element into their UI. What considerations would you take into account when designing for this type of element, and how would you ensure it doesn't distract from the overall user experience?",
+    "answer": "When designing for a 3D or volumetric element, I would consider the following factors: 1) visual weight and balance, to ensure the element doesn't overwhelm the surrounding content; 2) motion and animation, to avoid visual noise and ensure smooth interactions; 3) accessibility and usability, to ensure the element is usable by users with visual impairments; and 4) brand identity and consistency, to ensure the element aligns with the client's brand and visual language. To minimize distractions, I would use techniques like subtle animations, minimal depth cues, and clear labeling to help users understand the element's purpose and functionality."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Visual Design",
+    "difficulty": "Hard",
+    "question": "Design a UI for a complex data visualization, such as a financial dashboard or a scientific visualization. How would you communicate complex information in a clear and concise manner?",
+    "answer": "To communicate complex information in a clear and concise manner, I would use a combination of visual encodings (e.g., color, size, position) and clear labeling to make the data easy to understand. I would also use techniques like data storytelling, where I would use charts, graphs, and other visualizations to tell a story about the data, making it more relatable and actionable for the user. Additionally, I would use interactive elements, such as hover-over text or hotspots, to provide additional context and information when needed, and make sure the design is responsive and adaptable to different screen sizes and devices."
+  }
+]

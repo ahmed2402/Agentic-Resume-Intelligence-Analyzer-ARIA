@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of a security audit?",
+    "answer": "The primary goal of a security audit is to identify and evaluate the security vulnerabilities and risks within an organization's systems, networks, and applications, and to recommend corrective actions to improve their security posture."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Easy",
+    "question": "Describe the difference between a vulnerability and a threat.",
+    "answer": "A vulnerability is a weakness or flaw in a system, network, or application that could be exploited by an attacker, while a threat is a potential attack or malicious action that could take advantage of a vulnerability."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Easy",
+    "question": "What is a common type of security audit?",
+    "answer": "A penetration test (pen test) is a common type of security audit that simulates a real-world attack on an organization's systems, networks, and applications to identify vulnerabilities and test defenses."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a risk assessment in a security audit?",
+    "answer": "The purpose of a risk assessment in a security audit is to identify and evaluate the potential risks to an organization's assets and data, and to prioritize mitigation efforts based on the level of risk."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Easy",
+    "question": "What is the difference between a compliance audit and a security audit?",
+    "answer": "A compliance audit focuses on ensuring that an organization is meeting regulatory and industry-specific requirements, while a security audit focuses on evaluating the security posture of an organization's systems, networks, and applications."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Medium",
+    "question": "What are some common security auditing tools used to identify vulnerabilities in a system?",
+    "answer": "Common security auditing tools include Nessus, OpenVAS, and Burp Suite, which can be used to identify vulnerabilities, scan for open ports, and test for SQL injection and cross-site scripting (XSS) attacks."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Medium",
+    "question": "A security audit has been conducted on a web application, and it was found that the password policy does not enforce password expiration. What is the potential risk associated with this finding?",
+    "answer": "The potential risk associated with this finding is that users may reuse passwords across multiple accounts, making it easier for attackers to gain unauthorized access to the system."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Medium",
+    "question": "A security auditor is tasked with reviewing the configuration of a network device. What steps should they take to ensure the configuration is secure?",
+    "answer": "The security auditor should review the device's configuration for any unnecessary services, ensure that access controls are properly configured, and verify that the device's firmware is up to date."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Medium",
+    "question": "A company has a security policy that requires all employees to change their passwords every 60 days. What is a potential issue with this policy?",
+    "answer": "A potential issue with this policy is that it may encourage employees to choose weak, easily guessable passwords in order to remember them, which can compromise the security of the system."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Medium",
+    "question": "You are conducting a security audit of a system and you identify a vulnerability in an open-source library. What should you do to remediate the issue?",
+    "answer": "You should work with the development team to update the library to the latest version, and also implement a patch management process to ensure that all vulnerabilities are addressed in a timely manner."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Hard",
+    "question": "Describe a situation where a security auditor might need to use a combination of manual and automated techniques to identify vulnerabilities in a complex system.",
+    "answer": "A security auditor may need to use a combination of manual and automated techniques when auditing a complex system, such as a cloud-based infrastructure with multiple interconnected services and applications. Manual techniques, such as reviewing configuration files and interviewing personnel, can provide valuable context and identify vulnerabilities that automated tools may miss. Automated tools, such as vulnerability scanners, can quickly scan large amounts of data and identify potential vulnerabilities, but may require manual verification and analysis to determine their validity."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Hard",
+    "question": "A security auditor discovers a potential vulnerability in a system, but the remediation effort requires significant changes to the system's architecture. What steps should the auditor take to ensure that the changes are properly validated and tested before implementation?",
+    "answer": "The security auditor should work with the system owners and developers to develop a thorough testing plan that includes both unit testing and integration testing. The plan should also include testing for any potential side effects of the changes, such as impact on system performance or user experience. Additionally, the auditor should ensure that all necessary stakeholders are informed and engaged in the remediation effort, and that any changes are properly documented and tracked throughout the process."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Hard",
+    "question": "How would you approach conducting a security audit of a system that uses a custom-built authentication mechanism, and what types of testing would you perform to validate the mechanism's security?",
+    "answer": "To conduct a security audit of a custom-built authentication mechanism, I would start by reviewing the mechanism's design and implementation to understand its components and how they interact. I would then perform a combination of static analysis (e.g., code review) and dynamic testing (e.g., fuzz testing) to identify potential vulnerabilities in the mechanism. Additionally, I would conduct a series of attacks against the mechanism, such as password guessing and credential stuffing, to test its resistance to common attacks. Finally, I would review the mechanism's logging and audit capabilities to ensure that they are properly configured and functioning correctly."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Hard",
+    "question": "A security auditor identifies a potential security risk in a system, but the system owners are hesitant to implement controls to mitigate the risk due to concerns about performance or cost. How would you approach this situation?",
+    "answer": "In this situation, I would work with the system owners to gather more information about the potential security risk and the concerns about implementing controls to mitigate it. I would also perform a risk assessment to determine the likelihood and potential impact of the risk, and to compare it to the potential costs and performance impacts of implementing controls. If the risk is deemed high enough, I would work with the system owners to identify alternative solutions that balance security and performance costs, such as implementing controls only for specific use cases or implementing controls that have minimal impact on system performance."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Security Auditing",
+    "difficulty": "Hard",
+    "question": "A security auditor discovers that a system's security controls are not properly configured, resulting in a lack of visibility into system activity. What steps should the auditor take to ensure that the system's security controls are properly configured and functioning correctly?",
+    "answer": "To ensure that the system's security controls are properly configured and functioning correctly, I would start by reviewing the system's security documentation and configuration files to understand the current state of the controls. I would then work with the system owners and administrators to identify the root causes of the lack of visibility and develop a plan to correct the issues. This plan would include reconfiguring the security controls to provide the necessary visibility, testing the controls to ensure they are functioning correctly, and implementing monitoring and logging to detect any future issues. Finally, I would work with the system owners to develop a process for ongoing monitoring and maintenance of the security controls to ensure they remain properly configured and functioning correctly."
+  }
+]

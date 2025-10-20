@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Easy",
+    "question": "What is Single Sign-On (SSO)?",
+    "answer": "Single Sign-On (SSO) is a security mechanism that allows users to access multiple applications or systems with a single set of credentials, eliminating the need to remember multiple usernames and passwords."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of a User Account Control (UAC) system?",
+    "answer": "The primary purpose of a User Account Control (UAC) system is to restrict system access and prevent unauthorized actions by requiring users to provide additional authentication or authorization before making changes to the system."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Easy",
+    "question": "How does Multi-Factor Authentication (MFA) improve security?",
+    "answer": "Multi-Factor Authentication (MFA) improves security by requiring a user to provide two or more forms of verification, such as a password and a fingerprint or a code sent to their phone, making it more difficult for attackers to gain unauthorized access to a system."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a Public Key Infrastructure (PKI) in an organization?",
+    "answer": "The purpose of a Public Key Infrastructure (PKI) in an organization is to manage and authenticate digital certificates, which are used to establish secure communication and identity verification between systems and users."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Easy",
+    "question": "What is the difference between Active Directory and Lightweight Directory Access Protocol (LDAP)?",
+    "answer": "Active Directory is a centralized database that stores information about users, groups, and computers in a network, while Lightweight Directory Access Protocol (LDAP) is a protocol used to access and manage directory information in a network."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of Identity Federation in Identity and Access Management?",
+    "answer": "The primary goal of Identity Federation is to enable users to access multiple applications and services with a single set of credentials, eliminating the need for multiple usernames and passwords."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Medium",
+    "question": "You are implementing a new Identity and Access Management system. What is the first step in creating an account for a new user?",
+    "answer": "The first step is to verify the user's identity through a registration process, which typically involves collecting and validating user-provided information such as name, email address, and password."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Medium",
+    "question": "What is the difference between a User Account and an Identity?",
+    "answer": "A User Account is a set of credentials and attributes that uniquely identifies a user within a specific system or application, whereas an Identity is a broader concept that encompasses all the attributes and credentials associated with a person or entity across multiple systems and applications."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Medium",
+    "question": "You are tasked with implementing a Multi-Factor Authentication (MFA) system. What is the second factor in MFA?",
+    "answer": "The second factor in MFA is something you have, such as a smart card, USB token, or a mobile device, which requires possession and/or a specific action to access the system."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a Claims-Based Identity system?",
+    "answer": "A Claims-Based Identity system is designed to provide a standardized way of representing user attributes and permissions, allowing for more flexible and secure identity management across multiple systems and applications."
+  },
+  {
+    "id": "q1",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Hard",
+    "question": "Design a system to implement dynamic attribute-based access control (ABAC) using existing identity and access management (IAM) infrastructure. Explain how you would achieve this goal without modifying the underlying IAM system.",
+    "answer": "To implement dynamic ABAC, you would need to develop an external service that interacts with the IAM system. This service would utilize API hooks or event listeners to intercept and evaluate attribute-based access requests. Based on the evaluated attributes, the service would then dynamically update the user's permissions or issue temporary access tokens, allowing for fine-grained access control without modifying the underlying IAM system."
+  },
+  {
+    "id": "q2",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Hard",
+    "question": "Suppose you're tasked with configuring a Just-In-Time (JIT) provisioning system to automate user access to a cloud-based SaaS application. The system must integrate with an existing identity provider (IdP) and provide least privilege access to users upon initial login. What steps would you take to ensure secure JIT provisioning?",
+    "answer": "To ensure secure JIT provisioning, you would configure the IdP to send JIT provisioning requests to the SaaS application's API upon user authentication. The SaaS application would then verify the user's identity and dynamically create a new account with minimal privileges. To further enhance security, implement rate limiting, IP address filtering, and logging to detect potential security threats."
+  },
+  {
+    "id": "q3",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Hard",
+    "question": "Describe the risks associated with using a 'break glass' or 'emergency' access account for IAM. Consider how a compromised 'break glass' account could lead to unintended consequences.",
+    "answer": "Using a 'break glass' or 'emergency' access account for IAM poses significant risks, including: (1) compromised credentials providing unauthorized access to sensitive resources, (2) potential lateral movement within the organization, and (3) the inability to track and audit access granted via these accounts. In the event of a compromise, it could lead to a security incident, data breaches, or even a full-scale attack on the organization's resources."
+  },
+  {
+    "id": "q4",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Hard",
+    "question": "Design an identity federation system that integrates multiple identity providers (IdPs) to support a large enterprise with a diverse set of users and applications. Explain how you would handle conflicting attribute claims and ensure seamless user experience.",
+    "answer": "To design an identity federation system, you would utilize a service federation framework such as SAML or OAuth. You would create a federation server that acts as an intermediary between the IdPs and the enterprise applications. To handle conflicting attribute claims, implement a claims transformation and mapping process to reconcile the attribute values. Additionally, use a claims aggregation strategy to combine attributes from multiple IdPs and create a unified user profile."
+  },
+  {
+    "id": "q5",
+    "domain": "Cybersecurity",
+    "topic": "Identity & Access Management",
+    "difficulty": "Hard",
+    "question": "Consider a scenario where a user's access credentials are compromised, and an attacker gains access to a sensitive application. Describe a post-incident response and recovery process for revoking the compromised credentials and restoring access to the user.",
+    "answer": "To respond to a compromised credential incident, initiate a post-incident response and recovery process that includes: (1) immediate revocation of the compromised credentials, (2) notification of the affected user and other relevant stakeholders, (3) investigation and analysis to determine the root cause of the incident, and (4) implementation of corrective actions to prevent similar incidents in the future. To restore access to the user, utilize a password reset or account recovery process, and ensure that the restored credentials are unique and not previously compromised."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Code Review",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of code review?",
+    "answer": "The primary goal of code review is to ensure that the code is clear, concise, and follows the best practices and standards of the team, while also identifying and addressing any potential bugs or security vulnerabilities."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Code Review",
+    "difficulty": "Easy",
+    "question": "You're reviewing a piece of code that uses a long chain of if-else statements. What would you suggest to improve it?",
+    "answer": "I would suggest refactoring the code to use a switch statement or a polymorphic approach to make it more readable and maintainable."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Code Review",
+    "difficulty": "Easy",
+    "question": "A colleague has written a function with a long list of parameters. What would you advise them to do?",
+    "answer": "I would advise them to consider using object-based parameters or default values to make the function more flexible and easier to use."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Code Review",
+    "difficulty": "Easy",
+    "question": "You've been asked to review a code snippet that uses magic numbers. What would you do?",
+    "answer": "I would suggest replacing the magic numbers with named constants to make the code more readable and maintainable."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Code Review",
+    "difficulty": "Easy",
+    "question": "A code reviewer has suggested that you remove a particular piece of code. What would you do?",
+    "answer": "I would ask for clarification on why the code is being removed and ensure that it's not essential to the functionality, before agreeing to its removal."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Code Review",
+    "difficulty": "Medium",
+    "question": "What is the primary purpose of code review, and how does it benefit the development process?",
+    "answer": "The primary purpose of code review is to examine code written by a peer to ensure it meets the team's standards for quality, security, and performance. Code review benefits the development process by reducing bugs, improving code maintainability, and enhancing team collaboration."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Code Review",
+    "difficulty": "Medium",
+    "question": "A developer has implemented a new feature using a third-party library. How would you approach code review for this feature?",
+    "answer": "I would review the code to ensure that the library is being used correctly and efficiently. Additionally, I would verify that the library is properly configured, and its dependencies are managed correctly. It's also essential to consider security implications and potential licensing issues."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Code Review",
+    "difficulty": "Medium",
+    "question": "A team member has written a function that contains several conditional statements. What suggestions would you provide during a code review to improve its maintainability?",
+    "answer": "I would suggest refactoring the function to reduce the number of conditional statements and use the single responsibility principle. Additionally, I would recommend using early returns or guard clauses to simplify the code and make it more readable."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Code Review",
+    "difficulty": "Medium",
+    "question": "You are conducting a code review, and you find a section of code that is duplicated across multiple functions. What action would you take?",
+    "answer": "I would suggest extracting the duplicated code into a separate function or utility class to promote code reusability and reduce maintenance efforts. This approach also facilitates easier modification of the shared code, as changes would only be needed in one place."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Code Review",
+    "difficulty": "Medium",
+    "question": "What are some common anti-patterns that you would look out for during a code review, and how would you address them?",
+    "answer": "Common anti-patterns include tightly coupled code, God objects, and the use of global variables. To address these issues, I would suggest breaking down the code into smaller, more independent modules, and promoting loose coupling. Additionally, I would recommend using dependency injection to reduce the use of global variables."
+  }
+]

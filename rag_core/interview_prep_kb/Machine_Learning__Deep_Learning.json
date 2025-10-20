@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "What is the primary function of the ReLU activation function in a neural network?",
+    "answer": "The ReLU activation function maps all negative values to 0 and all positive values to the same value, effectively introducing non-linearity to the model and speeding up training."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "How does batch normalization improve model performance in deep neural networks?",
+    "answer": "Batch normalization normalizes the input to each layer, reducing internal covariate shift and speeding up training by stabilizing the learning process."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a dropout layer in a neural network?",
+    "answer": "A dropout layer randomly drops out neurons during training, preventing overfitting by reducing the model's complexity and encouraging generalization."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "Suppose you are building a deep neural network to classify images. What is a common technique for training such a model?",
+    "answer": "A common technique for training a deep neural network to classify images is to use pre-trained models (e.g. VGG16 or ResNet50) and fine-tune them on the target dataset."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Easy",
+    "question": "What is a key advantage of convolutional neural networks (CNNs) over fully connected networks?",
+    "answer": "A key advantage of CNNs is their ability to extract local feature hierarchies, making them particularly well-suited for image classification tasks."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between a convolutional neural network (CNN) and a recurrent neural network (RNN)?",
+    "answer": "A CNN is primarily used for image classification and recognition tasks, whereas an RNN is used for sequential data such as time series forecasting or natural language processing."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "Suppose you are training a model to predict house prices based on features such as number of bedrooms and square footage. If you notice that the model is overfitting, what could be a possible solution?",
+    "answer": "One possible solution is to add dropout layers to the model, which randomly drops out neurons during training to prevent overfitting."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a batch normalization layer in a neural network?",
+    "answer": "Batch normalization normalizes the input to each layer, reducing the effect of internal covariate shift and speeding up training."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "How would you implement a transfer learning approach to fine-tune a pre-trained model on a new dataset?",
+    "answer": "You would load the pre-trained model, freeze the weights of the lower layers, and train the upper layers on the new dataset."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Medium",
+    "question": "What is the difference between a softmax and sigmoid activation function in a neural network?",
+    "answer": "A softmax function is used for multi-class classification tasks, whereas a sigmoid function is used for binary classification tasks."
+  },
+  {
+    "id": "q1",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "Explain the differences between a convolutional neural network (CNN) and a recurrent neural network (RNN) in the context of image and sequence data, respectively.",
+    "answer": "A CNN is suitable for image data, where each pixel is processed by a small set of neurons to capture spatial hierarchies. In contrast, an RNN is used for sequential data, such as text or speech, where each input is processed in relation to the previous input, allowing the model to learn temporal dependencies."
+  },
+  {
+    "id": "q2",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "Suppose you have a dataset with 10,000 images of cats and dogs. You want to train a model that can classify images into one of these two categories. Describe a possible approach to overcome the issue of overfitting in this scenario.",
+    "answer": "To prevent overfitting, you can use data augmentation techniques such as random rotation, flipping, and cropping to artificially increase the size of the training dataset. Additionally, you can implement dropout regularization and use a technique called early stopping to stop the training process when the model's performance on the validation set starts to degrade."
+  },
+  {
+    "id": "q3",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "Given a neural network with multiple layers, explain how batch normalization (BN) and instance normalization (IN) differ in terms of normalization and the impact on model performance.",
+    "answer": "Batch normalization normalizes the activations of each layer over the entire mini-batch, whereas instance normalization normalizes activations over a single sample. BN typically leads to faster convergence and improved stability, but can be sensitive to the choice of batch size. IN, on the other hand, can improve performance on tasks with large variations within a single sample, such as images with complex textures."
+  },
+  {
+    "id": "q4",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "Design a neural network architecture to classify handwritten digits using a combination of convolutional and recurrent layers. Justify your design choice.",
+    "answer": "A possible architecture could be a CNN with two convolutional layers followed by a recurrent layer (e.g., LSTM). The CNN layers can extract spatial features from the images, while the recurrent layer can capture temporal dependencies in the handwriting patterns. This combination allows the model to learn both local and global patterns in the input data."
+  },
+  {
+    "id": "q5",
+    "domain": "Machine Learning",
+    "topic": "Deep Learning",
+    "difficulty": "Hard",
+    "question": "Explain the concept of attention in the context of deep learning models. Provide an example of how attention can be used to improve the performance of a sequence-to-sequence model.",
+    "answer": "Attention is a mechanism that allows the model to focus on specific parts of the input sequence that are relevant to the task at hand. In a sequence-to-sequence model, attention can be used to selectively weigh the importance of different input tokens when generating the output sequence. This can be particularly useful for tasks such as machine translation, where the model needs to pay attention to specific words in the source sentence to generate accurate translations."
+  }
+]

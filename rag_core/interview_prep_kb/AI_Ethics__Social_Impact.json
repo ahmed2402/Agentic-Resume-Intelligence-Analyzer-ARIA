@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Easy",
+    "question": "What is the primary concern of AI ethics in relation to social impact?",
+    "answer": "The primary concern is to ensure that AI systems do not perpetuate or exacerbate existing social biases and inequalities."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Easy",
+    "question": "Provide an example of a situation where AI could have a positive social impact.",
+    "answer": "AI-powered chatbots can be used to provide mental health support and counseling services to individuals who may not have access to these resources otherwise."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Easy",
+    "question": "What is the importance of transparency in AI decision-making processes for social impact?",
+    "answer": "Transparency is essential to understand how AI systems make decisions and to identify potential biases or errors, ultimately leading to more accountable and fair outcomes."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Easy",
+    "question": "How can AI systems be designed to promote diversity and inclusion?",
+    "answer": "AI systems can be designed to promote diversity and inclusion by using data that reflects diverse populations, avoiding biases in training data, and incorporating human values and principles in the design process."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Easy",
+    "question": "What role do AI ethics play in mitigating the risks associated with AI deployment in vulnerable communities?",
+    "answer": "AI ethics play a crucial role in identifying and addressing potential risks, such as job displacement, privacy concerns, and exacerbation of existing social inequalities, to ensure that AI deployment is beneficial and safe for all."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Medium",
+    "question": "How can AI systems be designed to mitigate the risk of job displacement, particularly in vulnerable communities?",
+    "answer": "AI systems can be designed to augment human capabilities, rather than replace them. For example, AI-powered tools can help workers in vulnerable communities develop new skills, enabling them to adapt to changing job market demands."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Medium",
+    "question": "A social media platform uses AI to moderate user-generated content. What are some potential biases in this system, and how can they be addressed?",
+    "answer": "Potential biases in AI-powered moderation systems include over-reliance on data that reflects the platform's existing user demographics, leading to under-moderation of content from marginalized groups. To address this, the platform can implement diverse and representative data sets, as well as regular auditing and testing for bias."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Medium",
+    "question": "Design a scenario where AI is used to improve access to healthcare in a rural area with limited resources. What are the key considerations for ensuring the system's social impact is positive?",
+    "answer": "Key considerations include ensuring the AI system is trained on diverse and representative data from the target population, incorporating human oversight and feedback, and prioritizing patient autonomy and agency in decision-making processes."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Medium",
+    "question": "An AI-powered recommendation system is deployed in an e-commerce platform to suggest products based on user behavior. How can this system be designed to promote diversity and inclusivity?",
+    "answer": "The system can be designed to incorporate diverse product recommendations, avoid reinforcing social stereotypes, and prioritize user preferences and values. This can be achieved through techniques such as data curation, algorithmic auditing, and user feedback mechanisms."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Medium",
+    "question": "What are the potential consequences of using AI-powered surveillance systems in public spaces, and how can their social impact be mitigated?",
+    "answer": "Potential consequences include erosion of civil liberties, perpetuation of systemic biases, and exacerbation of social inequalities. To mitigate these consequences, AI-powered surveillance systems should be designed with transparency, accountability, and human oversight, and their deployment should be subject to rigorous public debate and regulatory oversight."
+  },
+  {
+    "id": "q1",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Hard",
+    "question": "Design a bias-detection framework for AI systems that could potentially exacerbate existing social inequalities. Provide a technical overview of the framework's key components and explain how they address bias.",
+    "answer": "A bias-detection framework for AI systems could comprise the following components: (1) data curation: ensuring the quality and representativeness of training data; (2) algorithmic auditing: continuously monitoring AI model performance and identifying potential biases; (3) explainability techniques: providing insights into AI decision-making processes to detect and mitigate biases. The framework's key components would work in tandem to detect, assess, and mitigate biases in AI systems, thereby promoting fairness and equity in their social impact."
+  },
+  {
+    "id": "q2",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Hard",
+    "question": "A company is developing an AI-powered job recommendation platform. How would you assess the potential social impact of this platform, and what safeguards could be put in place to prevent it from perpetuating existing social inequalities?",
+    "answer": "To assess the potential social impact of the job recommendation platform, consider the following: (1) data quality: ensure the training data is representative and unbiased; (2) algorithmic fairness: implement techniques to prevent bias in the recommendation algorithm; (3) transparency: provide users with clear explanations of the recommendation process and potential biases. Safeguards could include: (1) diversity and inclusion metrics: tracking the diversity of users and job recommendations; (2) fairness audits: regularly assessing the platform's impact on different social groups; (3) user feedback mechanisms: collecting and addressing user concerns about bias and fairness."
+  },
+  {
+    "id": "q3",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Hard",
+    "question": "Suppose you're tasked with developing an AI system to predict recidivism rates among prisoners. What potential social implications should be considered, and how would you address these implications in the AI system's design?",
+    "answer": "When developing an AI system for predicting recidivism rates, consider the following social implications: (1) bias in training data: ensure the data is representative and unbiased; (2) disparate impact: assess the AI system's impact on different racial and socioeconomic groups; (3) human rights: consider the potential for AI-driven decision-making to infringe on prisoners' rights. To address these implications, implement: (1) data curation and validation; (2) fairness and transparency techniques (e.g., explainability); (3) human oversight and review mechanisms to ensure AI-driven decisions align with human values and rights."
+  },
+  {
+    "id": "q4",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Hard",
+    "question": "Describe a situation where an AI system, designed to optimize social welfare programs, inadvertently exacerbates existing social inequalities. How would you investigate and address this issue?",
+    "answer": "A potential scenario is an AI system that optimizes social welfare programs by allocating resources based on predicted individual need. However, if the system relies on biased data or flawed assumptions, it may inadvertently perpetuate existing inequalities. To investigate this issue, consider: (1) data analysis: examine the data used to train the AI system; (2) stakeholder engagement: consult with experts and community members to understand the social context; (3) fairness and bias audits: assess the AI system's impact on different social groups. To address the issue, implement: (1) data curation and validation; (2) fairness and transparency techniques (e.g., explainability); (3) human oversight and review mechanisms to ensure AI-driven decisions align with human values and rights."
+  },
+  {
+    "id": "q5",
+    "domain": "AI Ethics",
+    "topic": "Social Impact",
+    "difficulty": "Hard",
+    "question": "Design a framework for evaluating the social impact of AI systems in underserved communities. Consider the unique challenges and opportunities associated with these communities, and propose a set of indicators and metrics to assess the AI system's effectiveness and potential for positive change.",
+    "answer": "A framework for evaluating the social impact of AI systems in underserved communities could comprise the following components: (1) community engagement: involve local stakeholders in the AI system's design and development; (2) needs assessment: identify the community's specific needs and challenges; (3) impact indicators: develop metrics to assess the AI system's effectiveness in addressing these needs, such as: (a) increase in access to essential services; (b) improvement in community health outcomes; (c) reduction in social inequality. The framework would facilitate a nuanced understanding of the AI system's social impact and inform adjustments to ensure its effectiveness and potential for positive change in underserved communities."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "纊球数据管理",
+    "difficulty": "Easy",
+    "question": "什么是极速数据库的特点?",
+    "answer": "纊球数据管理的标题是很软为精一字为有只二软为平流的数据管理器为尝请一分后及给得平流的数据管理结果。"
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "纊球数据管理",
+    "difficulty": "Easy",
+    "question": "极速数据库通常用于什么类型的应用?",
+    "answer": "纊球数据管理盘证不很且代的存讯管理。很软为世界存讯和存讯管理下一的空当得平流的存讯管理。"
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "纊球数据管理",
+    "difficulty": "Easy",
+    "question": "极速数据库的优点是什么?",
+    "answer": "纊球数据管理的为很软的为得平流的存讯管理。不很为得平流的管理结果。"
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "纊球数据管理",
+    "difficulty": "Easy",
+    "question": "极速数据库的缺点是什么?",
+    "answer": "纊球数据管理的不很为只该的为得平流的管理结果。不很为存讯管理的结果。"
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "纊球数据管理",
+    "difficulty": "Easy",
+    "question": "如何评估极速数据库的性能?",
+    "answer": "很软为精丁结果。可以得平流的管理结果。可以得平流的数据管理结果。"
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "金球数据管理",
+    "difficulty": "Medium",
+    "question": "什么是极速数据库的内存表存储机制?",
+    "answer": "极速数据库的内存表存储机制是将表数据存储在内存中，利用内存的高性能特性来实现快速存取和检索数据。"
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "金球数据管理",
+    "difficulty": "Medium",
+    "question": "极速数据库在面对大批量写入时，会如何优化性能并减少延迟?",
+    "answer": "极速数据库会使用并发写入、分片写入以及内存预写日志等技术来优化性能并减少延迟。"
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "金球数据管理",
+    "difficulty": "Medium",
+    "question": "极速数据库支持哪些数据类型，并且如何处理JSON数据?",
+    "answer": "极速数据库支持多种数据类型，包括JSON、文本、整数、浮点数等。对于JSON数据，极速数据库提供了JSON解析和生成功能，能够高效地处理JSON数据。"
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "金球数据管理",
+    "difficulty": "Medium",
+    "question": "极速数据库的索引机制如何支持高效的数据检索?",
+    "answer": "极速数据库提供了多种索引机制，包括B-TREE、HASH等，能够有效地支持高效的数据检索和排序。"
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "金球数据管理",
+    "difficulty": "Medium",
+    "question": "极速数据库在分布式环境中如何进行数据一致性和故障恢复?",
+    "answer": "极速数据库使用分布式事务机制来维持数据的一致性，并提供了自动故障恢复和自我修复功能，能够保证系统的高可用性和可靠性。"
+  },
+  {
+    "id": "q1",
+    "domain": "Database Management",
+    "topic": "极速数据库",
+    "difficulty": "Hard",
+    "question": "What is the main advantage of using a column-store database like 极速数据库?",
+    "answer": "Column-store databases like 极速数据库 can provide significant performance improvements for analytical workloads due to their ability to store and query data in a columnar format, which can lead to faster data scanning and filtering."
+  },
+  {
+    "id": "q2",
+    "domain": "Database Management",
+    "topic": "极速数据库",
+    "difficulty": "Hard",
+    "question": "Design a schema for a high-traffic e-commerce application using 极速数据库. Ensure that it can handle large amounts of concurrent reads and writes while maintaining high performance.",
+    "answer": "Consider using a schema with a denormalized structure to store frequently accessed data in a single table, such as a 'product_info' table with all product-related information. Use a separate 'orders' table to store order data and a 'products' table to store product metadata. Utilize 极速数据库's built-in features like indexing and data partitioning to optimize performance."
+  },
+  {
+    "id": "q3",
+    "domain": "Database Management",
+    "topic": "极速数据库",
+    "difficulty": "Hard",
+    "question": "Explain how to implement a data warehousing strategy using 极速数据库 to support business intelligence and analytics workloads.",
+    "answer": "To implement a data warehousing strategy using 极速数据库, first design a star or snowflake schema to store data from multiple sources. Utilize 极速数据库's data loading and transformation tools to load and transform data from various sources into the data warehouse. Use 极速数据库's built-in features like data partitioning and indexing to optimize performance. Additionally, consider implementing data quality checks and data governance policies to ensure data accuracy and integrity."
+  },
+  {
+    "id": "q4",
+    "domain": "Database Management",
+    "topic": "极速数据库",
+    "difficulty": "Hard",
+    "question": "Describe the benefits and challenges of using 极速数据库's in-memory computing capabilities for real-time analytics and data processing.",
+    "answer": "The benefits of using 极速数据库's in-memory computing capabilities include fast data processing, real-time analytics, and improved system responsiveness. However, the challenges include data size limitations, increased memory requirements, and potential data loss due to power outages or system crashes. To mitigate these challenges, consider implementing data caching, using redundant storage, and configuring automatic recovery procedures."
+  },
+  {
+    "id": "q5",
+    "domain": "Database Management",
+    "topic": "极速数据库",
+    "difficulty": "Hard",
+    "question": "What is the recommended approach for handling data consistency and concurrency in a highly concurrent and distributed 极速数据库 environment?",
+    "answer": "To handle data consistency and concurrency in a highly concurrent and distributed 极速数据库 environment, consider implementing a multi-version concurrency control (MVCC) mechanism, which allows multiple versions of data to be stored and managed concurrently. Additionally, use transactional isolation levels, such as SERIALIZABLE or REPEATABLE READ, to ensure data consistency across concurrent transactions. Use locks and latches strategically to prevent contention and deadlocks."
+  }
+]

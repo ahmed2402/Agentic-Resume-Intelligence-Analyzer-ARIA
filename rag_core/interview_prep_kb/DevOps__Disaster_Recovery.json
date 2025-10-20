@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of disaster recovery in DevOps?",
+    "answer": "The primary goal of disaster recovery in DevOps is to quickly restore IT services and minimize downtime in the event of a disaster or failure."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Easy",
+    "question": "List the typical components of a disaster recovery plan.",
+    "answer": "Typical components of a disaster recovery plan include risk assessment, backup strategy, recovery procedures, communication plan, and testing and training."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Easy",
+    "question": "Describe the importance of regular backups in disaster recovery.",
+    "answer": "Regular backups are crucial in disaster recovery as they enable quick restoration of data to a previous state, reducing the risk of data loss and enabling business continuity."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Easy",
+    "question": "What should be the first step in implementing a disaster recovery plan?",
+    "answer": "The first step in implementing a disaster recovery plan is to conduct a risk assessment to identify potential risks and prioritize the recovery of critical systems and data."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Easy",
+    "question": "What is the purpose of disaster recovery testing?",
+    "answer": "The purpose of disaster recovery testing is to validate the effectiveness of the disaster recovery plan, identify areas for improvement, and ensure that the plan can be executed successfully in the event of a disaster."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Medium",
+    "question": "What is the primary goal of a disaster recovery plan in DevOps?",
+    "answer": "The primary goal of a disaster recovery plan in DevOps is to ensure business continuity by restoring critical systems and services in the event of a disaster or outage."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Medium",
+    "question": "A company uses a 3-2-1 backup strategy. If the primary data center and one of the secondary data centers are destroyed in a disaster, how many copies of the data are still available?",
+    "answer": "Two copies of the data are still available, one in the remaining secondary data center and one in the offsite storage location."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Medium",
+    "question": "A DevOps team is designing a disaster recovery plan for a cloud-based application. What type of service should they consider using to ensure high availability and rapid failover?",
+    "answer": "They should consider using a cloud-based load balancer and autoscaling service to ensure high availability and rapid failover."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Medium",
+    "question": "What is the difference between a disaster recovery plan and a business continuity plan?",
+    "answer": "A disaster recovery plan focuses on restoring critical systems and services after a disaster, while a business continuity plan focuses on ensuring that the organization can continue to operate and deliver value to customers during and after a disaster."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Medium",
+    "question": "A DevOps engineer is responsible for implementing a disaster recovery plan for a database. What type of database replication should they consider using to minimize data loss in the event of a disaster?",
+    "answer": "They should consider using asynchronous or synchronous database replication to minimize data loss in the event of a disaster."
+  },
+  {
+    "id": "q1",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Hard",
+    "question": "Design a disaster recovery plan for a multi-region cloud-based application with a 3-site Active-Passive-Active topology, where each site has a 3-node cluster and 2 nodes can fail before the site is considered down. The application requires a 99.99% uptime SLA.",
+    "answer": "To achieve this, you can use a load balancer to distribute traffic across the three sites. Each site should have a primary and secondary site, and the load balancer should be configured to automatically failover to the secondary site in case of an outage. The secondary site should have a warm standby configuration, with nodes in a standby state and ready to take over in case of a failure. This ensures that the application remains available with a minimum of 2 nodes failed at any site."
+  },
+  {
+    "id": "q2",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Hard",
+    "question": "Explain how you would use data replication and consistency models to minimize data loss during a disaster recovery process. Provide an example of using a distributed transaction protocol like Two-Phase Commit.",
+    "answer": "To minimize data loss, you can use data replication and consistency models like Master-Slave replication, Multi-Master replication, or eventual consistency models like Eventual Consistency or Conflict-Free Replicated Data Types (CRDT). For distributed transactions, you can use protocols like Two-Phase Commit (2PC) or Three-Phase Commit (3PC). In the case of 2PC, the client sends a prepare request to the transaction manager, which then sends 'prepare' requests to all nodes involved in the transaction. If all nodes respond with 'prepare', the transaction manager sends a commit request to all nodes, which then commit the transaction. If any node responds with 'abort', the transaction is rolled back."
+  },
+  {
+    "id": "q3",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Hard",
+    "question": "How would you measure the effectiveness of a disaster recovery plan in a cloud environment, and what metrics would you use to evaluate its success?",
+    "answer": "To measure the effectiveness of a disaster recovery plan, you can use metrics like Recovery Time Objective (RTO), Recovery Point Objective (RPO), and Mean Time to Recover (MTTR). RTO is the maximum time allowed for data to be recovered, RPO is the maximum amount of data that can be lost, and MTTR is the average time it takes to recover from a disaster. Additionally, you can use metrics like Mean Time Between Failures (MTBF) and Mean Time to Detect (MTTD) to evaluate the plan's success."
+  },
+  {
+    "id": "q4",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Hard",
+    "question": "Design a backup and restore process for a large-scale distributed database system with a complex schema and multiple data centers. Consider data consistency, data integrity, and disaster recovery time.",
+    "answer": "To design a backup and restore process for a large-scale distributed database system, you can use a combination of data replication, data snapshotting, and data deduplication. You can use data replication to maintain multiple copies of the data across data centers, data snapshotting to create point-in-time backups, and data deduplication to reduce storage requirements. For data consistency and integrity, you can use techniques like data versioning, data validation, and data checksums. For disaster recovery time, you can use techniques like asynchronous replication, data caching, and data pre-warming."
+  },
+  {
+    "id": "q5",
+    "domain": "DevOps",
+    "topic": "Disaster Recovery",
+    "difficulty": "Hard",
+    "question": "Explain how you would use artificial intelligence and machine learning to improve the disaster recovery process, specifically in predicting and preventing disasters, and in automating recovery tasks.",
+    "answer": "To improve the disaster recovery process using AI and ML, you can use techniques like predictive analytics, anomaly detection, and decision trees to predict potential disasters. You can use ML algorithms like clustering, classification, and regression to identify patterns and anomalies in system behavior. For automating recovery tasks, you can use techniques like automation scripting, orchestration, and containerization. You can also use AI-powered tools like chatbots and virtual assistants to provide real-time support and guidance during disaster recovery."
+  }
+]

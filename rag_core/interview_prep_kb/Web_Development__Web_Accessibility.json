@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the alt attribute in HTML images?",
+    "answer": "The alt attribute provides a text description of an image for screen readers and other assistive technologies, making it accessible to visually impaired users."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Easy",
+    "question": "Describe a scenario where a keyboard-only user might struggle with a website.",
+    "answer": "A user who cannot use a mouse might struggle with a website that relies heavily on hover effects or has a complex navigation menu that requires precise mouse movements."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Easy",
+    "question": "What is the semantic meaning of the role attribute in HTML?",
+    "answer": "The role attribute provides additional information about a web element's purpose or behavior, making it easier for assistive technologies to interpret and interact with it."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Easy",
+    "question": "How can a developer ensure that a form is accessible to users with screen readers?",
+    "answer": "A developer can ensure that a form is accessible by providing a clear and consistent label for each form field, using ARIA attributes to provide additional information about the form elements, and making sure that the form can be navigated using a keyboard."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the ARIA attributes in HTML?",
+    "answer": "The ARIA attributes provide additional information about the structure and behavior of a web page, making it easier for assistive technologies to interpret and interact with the page."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the WAI-ARIA attribute 'aria-label'?",
+    "answer": "The WAI-ARIA attribute 'aria-label' is used to provide a text description for an element, making it accessible to screen readers and other assistive technologies when the element's visual content is not visible or perceivable."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Medium",
+    "question": "A user with a visual impairment is having trouble navigating your website. How would you help them understand the purpose of the navigation menu?",
+    "answer": "I would use ARIA attributes such as 'aria-label' or 'aria-labelledby' to provide a screen reader with the text that describes the navigation menu's purpose, allowing the user to understand its function."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Medium",
+    "question": "What is the difference between a 'role' attribute in HTML and an ARIA attribute?",
+    "answer": "A 'role' attribute in HTML is used to declare the role of an element to the browser, while an ARIA attribute is used to provide additional information about the element's properties and behavior, making it more accessible to assistive technologies."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Medium",
+    "question": "How would you make a dynamic chart or graph accessible to users with visual impairments?",
+    "answer": "You would use ARIA attributes such as 'aria-label' or 'aria-describedby' to provide a screen reader with a text description of the chart or graph's purpose and content, allowing the user to understand its meaning and navigate it effectively."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the 'alt' attribute in an 'img' element, and how does it impact accessibility?",
+    "answer": "The 'alt' attribute in an 'img' element is used to provide a text description of the image, making it accessible to screen readers and other assistive technologies when the image is not visible or perceivable. If the 'alt' attribute is missing or empty, screen readers will read the file path of the image, which is not helpful to users with visual impairments."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Hard",
+    "question": "A web application uses ARIA attributes to provide audio descriptions for screen readers. However, the application also uses a combination of JavaScript and server-side rendering. How can you ensure that the ARIA attributes are updated correctly in both client-side and server-side rendering?",
+    "answer": "To ensure ARIA attributes are updated correctly in both client-side and server-side rendering, you can use a virtual DOM library like React or Angular to manage the state and updates of the ARIA attributes. Alternatively, you can use a library like ARIA attributes updater that provides a way to update ARIA attributes in both client-side and server-side rendering."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Hard",
+    "question": "Design a scenario where a user with a visual impairment is using a screen reader to navigate a complex web application. Describe how the application should handle keyboard navigation and provide hints for the screen reader to convey the application's layout and structure.",
+    "answer": "The web application should follow the WAI-ARIA guidelines for keyboard navigation. The application should provide a clear and consistent navigation flow, using ARIA attributes to convey the layout and structure of the application. The application should also provide hints for the screen reader, such as ARIA live regions, to convey information about the current state and errors."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Hard",
+    "question": "Write a function in JavaScript that takes a string of HTML code as input and checks if it is WCAG 2.1 compliant. The function should check for at least five accessibility features: color contrast, ARIA attributes, alt text for images, label elements, and ARIA live regions.",
+    "answer": "function checkAccessibility(html) { // Check color contrast using a library like WebAIM // Check ARIA attributes using a library like ARIA attributes checker // Check alt text for images using a library like Image Alt Text Checker // Check label elements using a library like Label Checker // Check ARIA live regions using a library like ARIA live regions Checker return true if all checks pass, false otherwise; }"
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Hard",
+    "question": "Explain how to implement a high-contrast mode in a web application, including the steps to follow, the HTML, CSS, and JavaScript code required, and how to ensure compatibility with different browsers and devices.",
+    "answer": "To implement a high-contrast mode in a web application, follow these steps: // Step 1: Add a high-contrast mode toggle button to the interface (HTML) // Step 2: Write CSS code to change the colors and fonts when the high-contrast mode is enabled // Step 3: Write JavaScript code to add or remove ARIA attributes and to update the layout when the high-contrast mode is enabled or disabled // Ensure compatibility with different browsers and devices by testing the high-contrast mode in various browsers and devices."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Web Accessibility",
+    "difficulty": "Hard",
+    "question": "A web application uses a third-party library that is not compatible with ARIA attributes. Describe the steps to take to ensure that the library is accessible and does not break the ARIA attributes in the application.",
+    "answer": "To ensure that the third-party library is accessible and does not break the ARIA attributes in the application, follow these steps: // Step 1: Evaluate the library's accessibility features and identify any issues // Step 2: Modify the library's code to make it ARIA attribute compatible // Step 3: Test the library's accessibility features and ensure that the ARIA attributes are not broken // Step 4: Provide documentation and support for developers to make the library ARIA attribute compatible // Step 5: Consider using a polyfill or a wrapper library to make the library ARIA attribute compatible"
+  }
+]

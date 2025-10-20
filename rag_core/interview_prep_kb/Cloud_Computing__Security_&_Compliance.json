@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Easy",
+    "question": "What is the main purpose of Identity and Access Management (IAM) in cloud computing?",
+    "answer": "The main purpose of IAM is to manage and control access to cloud resources, ensuring that only authorized users and services can access and modify sensitive data."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Easy",
+    "question": "A company is storing sensitive customer data in a cloud storage service. What should they do to ensure compliance with data protection regulations?",
+    "answer": "They should implement encryption at rest and in transit, and use access controls to restrict who can access the data."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Easy",
+    "question": "What is the difference between a private cloud and a public cloud in terms of security?",
+    "answer": "In a private cloud, the organization has control over the security configuration and access controls, whereas in a public cloud, the cloud provider is responsible for security, but the organization has less control."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Easy",
+    "question": "A cloud service provider has implemented a vulnerability scanning and patching process. What does this help to prevent?",
+    "answer": "This helps to prevent security vulnerabilities and exploits that could be used to gain unauthorized access to the system."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a Service Level Agreement (SLA) in cloud computing?",
+    "answer": "The purpose of an SLA is to outline the expected levels of service quality, availability, and performance that the cloud provider guarantees to maintain, and what consequences will follow if these levels are not met."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Medium",
+    "question": "What is a key difference between IaaS and PaaS in terms of security responsibilities?",
+    "answer": "In IaaS, customers have full control over security and are responsible for configuring and managing it. In PaaS, providers manage the underlying infrastructure and are responsible for security, but customers are responsible for their own application and data security."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Medium",
+    "question": "A company is storing sensitive customer data in a cloud-based database. What is a recommended approach to encrypting this data?",
+    "answer": "Use a cloud provider's key management service (KMS) or bring your own key (BYOK) to encrypt sensitive data at rest. Use server-side encryption with customer-provided keys (SSE-C) or client-side encryption with a secure key exchange protocol (e.g., TLS) for data in transit."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Medium",
+    "question": "An organization is using AWS IAM roles to manage access to their S3 bucket. What is a best practice to ensure least privilege access for users?",
+    "answer": "Use a combination of IAM policies, users, and roles to limit access to specific actions and resources. For example, create an IAM role with a policy that allows only read access to the S3 bucket, and assign this role to users who need to access the bucket."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Medium",
+    "question": "A company is using Azure Active Directory (AAD) to authenticate users to their cloud-based applications. What is a recommended approach to implement multi-factor authentication (MFA) for AAD?",
+    "answer": "Use Conditional Access policies in AAD to require MFA for users who access cloud applications from outside the organization's network or at non-standard hours. Configure AAD to use a cloud-based MFA service (e.g., Azure MFA) or a third-party MFA provider."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Medium",
+    "question": "An organization is required to comply with HIPAA regulations for storing electronic health records (EHRs) in the cloud. What is a key consideration for selecting a cloud provider?",
+    "answer": "Choose a cloud provider that is certified to meet HIPAA requirements, such as AWS HIPAA-eligible services or Azure HIPAA-compliant services. Ensure the provider has a Business Associate Agreement (BAA) in place and can demonstrate compliance with HIPAA regulations."
+  },
+  {
+    "id": "q1",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where a cloud provider's Shared Responsibility Model might lead to a security vulnerability in a customer's cloud environment, and how such a vulnerability could be exploited by an attacker.",
+    "answer": "In a scenario where a cloud provider's Shared Responsibility Model assigns the responsibility of patching and updating third-party libraries to the customer, a security vulnerability in one of these libraries could be exploited by an attacker if the customer fails to patch and update the library in a timely manner. This highlights the importance of clear communication and alignment between the cloud provider and the customer regarding security responsibilities."
+  },
+  {
+    "id": "q2",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Hard",
+    "question": "Suppose you are tasked with implementing a cloud-based data loss prevention (DLP) solution for an organization. What are the technical considerations you would take into account when evaluating a cloud-based DLP solution, and how would you assess its effectiveness?",
+    "answer": "Key technical considerations when evaluating a cloud-based DLP solution include data encryption, access controls, data masking, and anomaly detection. Effectiveness would be assessed by evaluating the solution's ability to detect and prevent sensitive data exfiltration, its integration with existing security tools and infrastructure, and its scalability and flexibility to accommodate changing business needs."
+  },
+  {
+    "id": "q3",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Hard",
+    "question": "Explain how a cloud provider's encryption key management system could be compromised, and outline the risks associated with such a breach.",
+    "answer": "A cloud provider's encryption key management system could be compromised through unauthorized access to the key management service, either through brute-force attacks or by exploiting vulnerabilities in the system's architecture or implementation. Such a breach would expose sensitive encryption keys, allowing attackers to decrypt and access encrypted data, and potentially leading to data breaches and loss of customer trust."
+  },
+  {
+    "id": "q4",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Hard",
+    "question": "Assume you are tasked with conducting a risk assessment for a cloud-based application that stores sensitive personal data. How would you approach this risk assessment, and what technical controls would you recommend to mitigate identified risks?",
+    "answer": "To conduct a risk assessment, I would follow a structured approach, including identifying potential threats, vulnerabilities, and controls; assessing the likelihood and impact of each risk; and recommending technical controls to mitigate identified risks. Recommended controls might include encryption, access controls, data masking, and intrusion detection systems, as well as implementing a robust incident response plan to address potential data breaches."
+  },
+  {
+    "id": "q5",
+    "domain": "Cloud Computing",
+    "topic": "Security & Compliance",
+    "difficulty": "Hard",
+    "question": "Suppose you are responsible for implementing a cloud-based identity and access management (IAM) system. What are the key design considerations for a scalable and secure IAM system, and how would you ensure the system's compliance with relevant regulatory requirements?",
+    "answer": "Key design considerations for a scalable and secure IAM system include role-based access control, multi-factor authentication, and integration with existing security tools and infrastructure. To ensure compliance with regulatory requirements, I would conduct a thorough risk assessment, implement a robust audit logging mechanism, and establish clear policies and procedures for IAM system administration and monitoring."
+  }
+]

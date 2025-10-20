@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Easy",
+    "question": "What is a Single Page Application (SPA)?",
+    "answer": "A Single Page Application is a web application that loads a single HTML page and dynamically updates the content as the user interacts with the application, without requiring a full page reload."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Easy",
+    "question": "What is the main advantage of using a SPA over a traditional multi-page application?",
+    "answer": "The main advantage of using a SPA is improved user experience, as it provides fast and seamless navigation between pages and reduces the load time for the application."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Easy",
+    "question": "What is the role of the browser's History API in a SPA?",
+    "answer": "The browser's History API allows developers to manipulate the browser's URL and history stack, enabling features like back button functionality and bookmarking in a SPA."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Easy",
+    "question": "Can you give an example of a popular JavaScript library used to build SPAs?",
+    "answer": "Yes, an example of a popular JavaScript library used to build SPAs is React, which provides a robust and efficient way to build reusable UI components."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Easy",
+    "question": "How does a SPA handle server-side routing compared to traditional server-side routing?",
+    "answer": "In a SPA, server-side routing is typically handled by the client-side JavaScript code, which makes AJAX requests to the server to fetch the necessary data and updates the application state accordingly."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Medium",
+    "question": "What is the primary advantage of using a Single Page Application (SPA)?",
+    "answer": "The primary advantage of using a Single Page Application (SPA) is that it provides a seamless user experience by minimizing page reloads and improving navigation speed."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Medium",
+    "question": "Consider a scenario where you're developing a complex e-commerce SPA. How would you handle a situation where the user's cart is not updating correctly after adding or removing items?",
+    "answer": "To handle this situation, I would use an event-driven approach, such as WebSockets or long polling, to ensure that the SPA is notified in real-time when the cart is updated. Additionally, I would use a robust state management system, like Redux or MobX, to ensure that the cart state is accurately reflected in the application."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Medium",
+    "question": "Explain the difference between a SPA and a Multi-Page Application (MPA).",
+    "answer": "A Single Page Application (SPA) is a web application that loads a single HTML page and dynamically updates the content as the user interacts with the application, whereas a Multi-Page Application (MPA) loads a separate HTML page for each request, resulting in multiple page reloads."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Medium",
+    "question": "Assuming you're using React as the front-end framework for your SPA, how would you handle a situation where a component's props change, but the component's state does not change?",
+    "answer": "To handle this situation, I would use React's built-in shouldComponentUpdate() method to prevent unnecessary re-renders of the component. Alternatively, I would use React's memoization techniques, such as using the React.memo() function or the useMemo() hook, to ensure that the component's render method is only called when the props change."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Medium",
+    "question": "Considering a scenario where you're developing a real-time collaboration SPA, how would you ensure that the application's state is consistent across all connected users?",
+    "answer": "To ensure that the application's state is consistent across all connected users, I would use a distributed state management system, such as Apollo Client or Redux, that can handle multiple clients and provide a single source of truth for the application's state. Additionally, I would use WebSockets or Server-Sent Events to ensure that all connected users receive real-time updates to the application's state."
+  },
+  {
+    "id": "q1",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Hard",
+    "question": "Describe the differences between using a state management library like Redux and a framework like Angular's NgRx for a Single Page Application. When would you choose one over the other?",
+    "answer": "A state management library like Redux provides a centralized state store and a set of utilities to manage that state, whereas a framework like Angular's NgRx is a more comprehensive solution that includes state management, effects handling, and side effects management. I would choose a state management library like Redux for smaller applications or applications with simple state requirements, while I would choose NgRx for more complex applications with multiple features and features with complex side effects."
+  },
+  {
+    "id": "q2",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Hard",
+    "question": "Design a system for handling routing in a Single Page Application using React Router, ensuring that the application can handle multiple concurrent requests and prevent the browser's back button from navigating away from the current route.",
+    "answer": "To handle routing in a Single Page Application using React Router, I would use the `useParams` hook to capture the URL parameters, and the `useHistory` hook to manage the navigation history. To prevent the browser's back button from navigating away from the current route, I would use the `useRouter` hook to listen for the `POP` event and redirect the user to the current route. To handle multiple concurrent requests, I would use the `useMemo` hook to memoize the route configurations and prevent unnecessary re-renders."
+  },
+  {
+    "id": "q3",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Hard",
+    "question": "Explain how you would implement a debouncing mechanism to handle user input in a Single Page Application, ensuring that the application only updates the state after a certain delay.",
+    "answer": "To implement a debouncing mechanism in a Single Page Application, I would use a library like Lodash or a custom implementation using a timer. The basic idea is to wait for a certain delay after the user stops typing before updating the state. I would use the `setTimeout` function to schedule a timer that clears the previous timeout and sets a new one after the delay. This ensures that the state is only updated after the user has stopped typing for a certain period of time."
+  },
+  {
+    "id": "q4",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Hard",
+    "question": "Design a system for handling authentication in a Single Page Application, ensuring that the application can securely store and retrieve user credentials across different devices.",
+    "answer": "To handle authentication in a Single Page Application, I would use a library like JWT (JSON Web Tokens) to securely store and retrieve user credentials. I would also use a secure storage mechanism like LocalStorage or a cookies-based solution to store the user's authentication tokens. To securely store and retrieve user credentials across different devices, I would use a backend API that supports token-based authentication and provides a secure way to store and retrieve user credentials."
+  },
+  {
+    "id": "q5",
+    "domain": "Web Development",
+    "topic": "Single Page Applications",
+    "difficulty": "Hard",
+    "question": "Explain how you would implement a lazy loading mechanism to load large datasets in a Single Page Application, ensuring that the application only loads the data when it is actually needed.",
+    "answer": "To implement a lazy loading mechanism in a Single Page Application, I would use a library like React Loadable or a custom implementation using a library like Lodash. The basic idea is to create a function that loads the data only when it is actually needed, and then returns a component that loads the data. I would use the `useMemo` hook to memoize the data and prevent unnecessary re-renders. This ensures that the application only loads the data when it is actually needed, and not when the component is first rendered."
+  }
+]

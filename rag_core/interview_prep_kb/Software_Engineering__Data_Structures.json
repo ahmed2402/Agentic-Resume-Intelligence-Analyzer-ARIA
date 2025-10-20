@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Easy",
+    "question": "What is the main difference between a Stack and a Queue data structure?",
+    "answer": "A Stack follows the Last-In-First-Out (LIFO) principle, whereas a Queue follows the First-In-First-Out (FIFO) principle."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Easy",
+    "question": "How do you implement a basic Node in a Linked List?",
+    "answer": "A basic Node in a Linked List consists of a data value and a reference to the next Node in the list."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Easy",
+    "question": "What is the time complexity of searching an element in an Array?",
+    "answer": "The time complexity of searching an element in an Array is O(n), where n is the number of elements in the Array."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Easy",
+    "question": "Can you describe a real-world scenario where a Hash Table data structure would be useful?",
+    "answer": "A Hash Table data structure can be useful in a web browser's cache, where it can store and quickly retrieve URLs and their corresponding content."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a Binary Search Tree in data storage?",
+    "answer": "A Binary Search Tree is used to store data in a way that allows for efficient search, insertion, and deletion operations, with an average time complexity of O(log n)."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of inserting an element into a balanced binary search tree, and explain the underlying reason?",
+    "answer": "The time complexity of inserting an element into a balanced binary search tree is O(log n). This is because with each insertion, the tree is rebalanced by rotating nodes, maintaining the balance property, and thus the height of the tree remains logarithmic to the number of nodes."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Medium",
+    "question": "Design a stack using two queues, and provide a step-by-step implementation.",
+    "answer": "To design a stack using two queues, we can create a new queue for temporary storage and use the existing queue for actual stack operations.\n\n1. Create a new queue (tempQueue).\n2. When push is called, enqueue the element to the existing queue.\n3. When pop is called, dequeue all elements except the top one from the existing queue, enqueue the top element to tempQueue, and then dequeue the top element from tempQueue.\n4. When isEmpty is called, return whether the existing queue is empty."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Medium",
+    "question": "What is the main difference between a linked list and an array, and when should you use each data structure?",
+    "answer": "The main difference between a linked list and an array is the way elements are stored and accessed. In an array, elements are stored contiguously in memory, allowing for constant time random access. In a linked list, elements are stored at non-contiguous locations in memory, and access to an element requires traversing the list from the beginning.\n\nUse an array when you need to frequently access elements at arbitrary indices, or when memory is a concern and elements are relatively small. Use a linked list when you need to frequently insert or delete elements in the middle of the list, or when memory is not a concern and elements are large."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Medium",
+    "question": "Can you explain the concept of a hash table and its time complexities for insertion, search, and deletion operations?",
+    "answer": "A hash table is a data structure that maps keys to values using a hash function. The time complexities for hash table operations are:\n\n- Insertion: O(1) (average case), O(n) (worst case) - When the hash function is good, the time complexity is O(1). However, in the worst case, all elements may hash to the same index, resulting in O(n) time complexity.\n- Search: O(1) (average case), O(n) (worst case) - Similar to insertion, the time complexity is O(1) in the average case, but O(n) in the worst case.\n- Deletion: O(1) (average case), O(n) (worst case) - The time complexity for deletion is the same as insertion."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Medium",
+    "question": "Can you explain the concept of a heap data structure and its time complexities for insertion, search, and deletion operations?",
+    "answer": "A heap is a data structure that satisfies the heap property: the parent node is either greater than (max heap) or less than (min heap) its child nodes. The time complexities for heap operations are:\n\n- Insertion: O(log n) - We insert the new element into the heap and then rebalance it to maintain the heap property.\n- Search: O(n) - We do not typically search for an element in a heap, as it is not designed for this purpose.\n- Deletion: O(log n) - We remove the root node (which is the maximum or minimum element) and then rebalance the remaining elements to maintain the heap property."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Hard",
+    "question": "Develop a time and space complexity analysis of the Trie data structure when used for storing and searching a dynamic set of strings with an average length of 10 characters.",
+    "answer": "Time complexity: Search (O(m), where m is the average length of strings) and Insert (O(m). Space complexity: O(n * m), where n is the number of strings and m is the average length of each string."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Hard",
+    "question": "Design an algorithm to find the first duplicate in an array of integers where elements can be negative and the size of the array is not known in advance. Provide a Big O analysis of your solution.",
+    "answer": "Use a HashSet to store the elements. Iterate over the array, for each element, check if it exists in the HashSet. If it does, return the element as the first duplicate. Time complexity: O(n) and space complexity: O(n)."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Hard",
+    "question": "Implement a stack using a heap data structure. What are the trade-offs of using a heap-based stack compared to a traditional array-based stack?",
+    "answer": "The heap-based stack would use a min-heap to store elements in reverse order (top of the stack would be the root of the heap). This approach would require additional overhead for heap operations and may not be as cache-friendly as an array-based stack. Trade-offs include increased memory usage and slower performance due to heap operations. However, this approach can be useful in scenarios where the stack needs to be implemented on top of an existing heap data structure."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Hard",
+    "question": "Consider a scenario where you need to store a large number of objects in memory, but only a subset of the objects is accessed frequently. Describe a data structure that would be suitable for this use case and explain its advantages.",
+    "answer": "A suitable data structure for this use case would be a combination of a HashMap and a cache (e.g., LRU cache). The HashMap would store the objects with their keys, and the cache would store the frequently accessed objects. This approach would allow for efficient lookups and fast access to frequently accessed objects."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Data Structures",
+    "difficulty": "Hard",
+    "question": "Given a binary tree, write an algorithm to find the maximum path sum from the root to a leaf node. The path sum can be negative.",
+    "answer": "Use a recursive approach to traverse the tree and calculate the maximum path sum. Keep track of the maximum path sum found so far. Base case: If the node is a leaf node, return the node's value. Recursive case: Calculate the path sum for the left and right subtrees, and return the maximum of the two sums plus the current node's value. Update the maximum path sum if the current sum is greater."
+  }
+]

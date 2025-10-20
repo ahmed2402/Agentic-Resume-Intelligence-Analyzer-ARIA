@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Easy",
+    "question": "What is the primary difference between a Fragment and an Activity in Android?",
+    "answer": "A Fragment is a self-contained piece of user interface in an Activity, while an Activity is a single screen in an Android app."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Easy",
+    "question": "Why is it a good practice to use a Navigation Drawer in a mobile app?",
+    "answer": "It provides easy access to app features and settings, enhancing user experience and usability."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a Tab Bar in a mobile app?",
+    "answer": "It allows users to navigate between different views or features within an app, improving user interface and accessibility."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Easy",
+    "question": "How can you make a mobile app more accessible to users with disabilities?",
+    "answer": "By implementing features such as screen readers, closed captions, and high contrast mode, ensuring that all users can easily interact with the app."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Easy",
+    "question": "What is the main goal of Material Design in Android app development?",
+    "answer": "To create visually appealing, consistent, and intuitive user interfaces that improve the overall user experience."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Medium",
+    "question": "What is the main difference between a Navigation Drawer and a Tab Bar in mobile UI design?",
+    "answer": "A Navigation Drawer is a sliding menu that provides access to secondary navigation options, while a Tab Bar is a horizontal or vertical bar at the bottom of the screen that displays multiple tabs."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Medium",
+    "question": "Design a simple mobile screen layout for a social media app, including a header, content area, and footer. How would you justify the placement of each section?",
+    "answer": "The header would be at the top of the screen, containing the app name and navigation icons. The content area would be below the header, displaying the main content of the social media feed. The footer would be at the bottom of the screen, containing a call-to-action button and links to other app features."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Medium",
+    "question": "What are some best practices for designing a responsive and accessible mobile UI? Provide examples.",
+    "answer": "Best practices for designing a responsive and accessible mobile UI include using flexible layout systems, such as Auto Layout or Constraint Layout, and providing clear and consistent typography, color schemes, and iconography. Additionally, incorporating accessibility features such as screen reader support, high contrast mode, and keyboard navigation can ensure that the app is usable by a wide range of users."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Medium",
+    "question": "Explain the concept of Material Design and its application in mobile app development. How does it impact the UI/UX design?",
+    "answer": "Material Design is a design language developed by Google that focuses on creating visually appealing, intuitive, and consistent user experiences across devices and platforms. In mobile app development, Material Design is applied through the use of guidelines for layout, typography, color, and motion, as well as the incorporation of design elements such as cards, sheets, and snack bars. By following Material Design principles, developers can create apps that are modern, engaging, and easy to use."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Medium",
+    "question": "Design a mobile app's onboarding process for a new user. What steps would you include, and how would you make the process engaging and informative?",
+    "answer": "A well-designed onboarding process for a mobile app might include the following steps: 1) Welcome screen with a brief introduction to the app's purpose and benefits; 2) Quick tour of the app's main features and functionality; 3) Tutorial or interactive guide to help users understand how to use the app; and 4) In-app messaging or notification to encourage users to explore the app further and provide feedback. By making the onboarding process engaging and informative, developers can help users get started with the app quickly and easily, reducing friction and improving overall user satisfaction."
+  },
+  {
+    "id": "q1",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where you would use a non-visual assistive technology feature in a mobile app, and how you would implement it.",
+    "answer": "A non-visual assistive technology feature, such as screen reader support, would be used in a mobile app to assist users with visual impairments. To implement this feature, I would use a screen reader library, such as TalkBack on Android, or VoiceOver on iOS, and ensure that all UI components are accessible by providing a clear and consistent hierarchy of elements, using semantic markup, and providing alternative text for images and other non-text elements."
+  },
+  {
+    "id": "q2",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Hard",
+    "question": "What are some techniques for optimizing the performance of animations in a mobile app, and how do they affect the user experience?",
+    "answer": "To optimize the performance of animations in a mobile app, I would use techniques such as: 1) limiting the number of animations running concurrently, 2) using the GPU for rendering, 3) using frame rate reduction, and 4) caching animations. These techniques can help reduce animation lag and improve the overall user experience by providing a smoother and more responsive interface."
+  },
+  {
+    "id": "q3",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Hard",
+    "question": "A user reports that a button in your app is not responding to touch events. How would you debug this issue, and what steps would you take to resolve it?",
+    "answer": "To debug this issue, I would use a combination of logging, debugging tools, and manual testing to identify the root cause of the problem. I would start by checking the button's layout and bounds to ensure it is visible and clickable, then check the button's event listeners and handlers to ensure they are properly attached. If the issue persists, I would use a debugger or a tool like a gesture recognizer to analyze the touch events and determine where the issue is occurring."
+  },
+  {
+    "id": "q4",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Hard",
+    "question": "Write an example of a mobile UI component that uses the Material Design guidelines for a floating action button (FAB). What considerations would you take into account when designing this component?",
+    "answer": "An example of a mobile UI component that uses the Material Design guidelines for a floating action button (FAB) would be: \\[code\\] FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab); fab.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View view) { // Handle FAB click } }); \\[/code\\] When designing a FAB, I would consider factors such as: 1) size and placement, 2) color and icon, 3) animation and behavior, and 4) accessibility features such as screen reader support and high contrast mode."
+  },
+  {
+    "id": "q5",
+    "domain": "Mobile Development",
+    "topic": "Mobile UI/UX",
+    "difficulty": "Hard",
+    "question": "Explain the concept of a ' gesture hierarchy' and how it is used in mobile app design. Provide an example of how you would implement it in a mobile app.",
+    "answer": "A gesture hierarchy is a concept in mobile app design that refers to the order in which gestures are recognized and responded to by an app. The hierarchy is typically defined by the app developer and is based on the specific gestures used in the app. For example, a gesture hierarchy might be defined as: 1) tap, 2) long press, 3) drag, 4) swipe, etc. To implement a gesture hierarchy in a mobile app, I would use a combination of gesture recognizers, such as GestureDetector or GestureOverlayView, and a well-defined gesture hierarchy to ensure that the app responds correctly to user input."
+  }
+]

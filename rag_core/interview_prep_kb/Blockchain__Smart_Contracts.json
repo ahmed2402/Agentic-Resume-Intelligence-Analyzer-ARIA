@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of a smart contract in a blockchain network?",
+    "answer": "A smart contract is a self-executing program that automates the enforcement of a contract's rules and obligations when certain conditions are met."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Easy",
+    "question": "Write a simple example of a smart contract in Solidity that allows two parties to exchange Ether.",
+    "answer": "contract Exchange { function exchange(address _from, address _to, uint _amount) { _from.transfer(_to, _amount); } }"
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Easy",
+    "question": "What is the difference between a public and private key in the context of a smart contract?",
+    "answer": "A public key is used to receive cryptocurrency, while a private key is used to sign and send transactions."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Easy",
+    "question": "What is the purpose of the `require` statement in Solidity?",
+    "answer": "The `require` statement is used to check a condition and revert the execution of the contract if the condition is not met."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Easy",
+    "question": "Can you describe the concept of gas in the context of smart contracts?",
+    "answer": "Gas is a measure of the computational effort required to execute a smart contract. It is used to prevent denial-of-service attacks and ensure that contracts are executed efficiently."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Medium",
+    "question": "What is the primary purpose of a fallback function in Solidity?",
+    "answer": "The primary purpose of a fallback function in Solidity is to handle situations where the contract is called with a value of eth.send() or eth.call() and does not match any of its declared functions."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Medium",
+    "question": "A company wants to create a smart contract that rewards users with tokens for contributing to a project. How can the contract ensure that users who contribute code contribute unique and valid code?",
+    "answer": "The contract can use a combination of hash functions and a mapping data structure to keep track of unique contributions. When a user submits code, the contract can hash the code and check if the hash already exists in the mapping. If it does not, the user is rewarded with tokens."
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Medium",
+    "question": "What is the difference between a stateless and a stateful smart contract?",
+    "answer": "A stateless smart contract is one that does not maintain any internal state and does not rely on any external state. A stateful smart contract, on the other hand, maintains internal state and may rely on external state, such as data stored in a mapping or an array."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Medium",
+    "question": "A developer is writing a smart contract that involves executing a series of transactions. How can the developer ensure that the transactions are executed in the correct order?",
+    "answer": "The developer can use a combination of if-else statements or a more complex logic to determine the order in which the transactions are executed. Alternatively, the developer can use a library such as Chainlink or a custom solution to ensure the correct order."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Medium",
+    "question": "What is gas optimization in the context of smart contracts, and how can it be achieved?",
+    "answer": "Gas optimization refers to the process of minimizing the amount of gas required to execute a smart contract. Gas optimization can be achieved through a variety of techniques, including reusing variables, reducing the number of operations, and using more efficient algorithms."
+  },
+  {
+    "id": "q1",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Hard",
+    "question": "Explain the concept of reentrancy attacks in smart contracts and how they can be prevented.",
+    "answer": "Reentrancy attacks occur when a smart contract function calls another contract function within the same transaction, allowing the attacker to execute the victim's function multiple times. This can be prevented by using the Checks-Effects-Interactions pattern, ensuring that all external calls are made outside the critical section of the contract, or using reentrancy guard mechanisms such as the 'reentrancy' modifier."
+  },
+  {
+    "id": "q2",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Hard",
+    "question": "Suppose you are designing a decentralized finance (DeFi) lending protocol. Write a short code snippet in Solidity that implements a basic interest rate calculation function for borrowers.",
+    "answer": "function calculateInterest(uint256 principal, uint256 rate, uint256 time) public pure returns (uint256) { return principal + (principal * rate * time) / 100; }"
+  },
+  {
+    "id": "q3",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Hard",
+    "question": "Discuss the trade-off between gas efficiency and security when implementing smart contract functions. Provide an example of a security consideration that may compromise gas efficiency.",
+    "answer": "Gas efficiency and security are often at odds in smart contract implementation. For instance, using a more secure data structure like a Merkle tree for storage may be gas-inefficient compared to a simple array, but provides stronger security guarantees against data tampering attacks."
+  },
+  {
+    "id": "q4",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Hard",
+    "question": "A smart contract contains a bug that causes it to run out of gas when executing a specific function. Describe a situation where this could lead to a denial-of-service (DoS) attack.",
+    "answer": "If a malicious actor can trigger the out-of-gas condition repeatedly, they could perform a DoS attack by exhausting the contract's gas limit, preventing legitimate users from executing the function and causing the contract to become unusable."
+  },
+  {
+    "id": "q5",
+    "domain": "Blockchain",
+    "topic": "Smart Contracts",
+    "difficulty": "Hard",
+    "question": "How would you design a smart contract that allows for dynamic addition and removal of trusted entities, while maintaining the integrity of the contract's functionality?",
+    "answer": "You could use a mapping of addresses to boolean values (representing trust status) and implement functions to add/remove trusted entities, update the mapping accordingly, and then use the mapping to authorize or deny access to sensitive functionality."
+  }
+]

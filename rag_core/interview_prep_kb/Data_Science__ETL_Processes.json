@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of an ETL (Extract, Transform, Load) process in data science?",
+    "answer": "The primary purpose of an ETL process is to extract data from various sources, transform it into a standardized format, and load it into a target system such as a database or data warehouse for analysis."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Easy",
+    "question": "Consider a scenario where you need to load data from a CSV file into a database. What would be the correct order of operations in an ETL process?",
+    "answer": "The correct order of operations in an ETL process would be: Extract (read the CSV file), Transform (clean and preprocess the data), and Load (insert the data into the database)."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Easy",
+    "question": "What are some common sources from which data is typically extracted during an ETL process?",
+    "answer": "Common sources from which data is typically extracted during an ETL process include databases, CSV files, JSON files, and APIs."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Easy",
+    "question": "How would you handle missing or null values in a dataset during an ETL process?",
+    "answer": "During an ETL process, missing or null values can be handled by either removing them, imputing them with a default value, or inferring a value based on the context of the data."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Easy",
+    "question": "What is the purpose of data quality checks in an ETL process?",
+    "answer": "The purpose of data quality checks in an ETL process is to ensure that the data is accurate, complete, and consistent before loading it into the target system."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Medium",
+    "question": "What is the primary advantage of using a data warehousing approach in ETL processes?",
+    "answer": "The primary advantage of using a data warehousing approach in ETL processes is that it allows for centralized data storage, improved data consistency, and faster query performance."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Medium",
+    "question": "Suppose you are working on an ETL pipeline that involves loading data from multiple sources. How would you handle different data types and formats in the same pipeline?",
+    "answer": "To handle different data types and formats in the same pipeline, I would use a combination of data transformation techniques such as data cleansing, data normalization, and data standardization, along with the use of data integration tools that can handle different data formats."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Medium",
+    "question": "Consider an ETL process where data is being extracted from a legacy system. What are some common issues that might arise during this process?",
+    "answer": "Common issues that might arise during data extraction from a legacy system include data inconsistencies, data truncation, and incomplete data, due to limitations in the legacy system's data retrieval capabilities or outdated data formats."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Medium",
+    "question": "How would you measure the performance of an ETL process, and what metrics would you use to evaluate its efficiency?",
+    "answer": "To measure the performance of an ETL process, I would track metrics such as data processing time, data volume, and data quality, along with system resource utilization, such as CPU usage and memory consumption. These metrics would help evaluate the efficiency of the ETL process and identify areas for improvement."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Medium",
+    "question": "Suppose you are working on an ETL pipeline that involves loading data into a data lake. What are some considerations you would take into account to ensure data quality and governance in this context?",
+    "answer": "When loading data into a data lake, I would consider data provenance, data lineage, and data quality checks to ensure that data is accurate, complete, and consistent. I would also implement data governance policies, such as access controls and data retention periods, to maintain data integrity and security."
+  },
+  {
+    "id": "q1",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Hard",
+    "question": "Describe a scenario where you would use a data lake instead of a data warehouse for an ETL process, and how it would impact the overall data processing pipeline.",
+    "answer": "A data lake would be used when dealing with large volumes of semi-structured or unstructured data, where the schema is not well-defined or evolves over time. This would allow for more flexible data storage and processing, but would require additional data governance and quality control measures to ensure data integrity. The data lake would serve as a central repository for raw data, with data processing and transformation occurring in a separate layer, such as a data warehouse or a data engineering platform."
+  },
+  {
+    "id": "q2",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Hard",
+    "question": "Design an ETL process that handles duplicate records in a source dataset, and explain how you would implement data deduplication using a combination of Python and SQL.",
+    "answer": "To handle duplicate records, I would use a combination of the following steps: 1) Use SQL to identify duplicate records based on a unique identifier or key, 2) Use Python's pandas library to read the source data and filter out duplicates, 3) Use SQL to insert the filtered data into a target table, and 4) Use SQL to maintain a reference table to track duplicate records for further analysis or data quality checks."
+  },
+  {
+    "id": "q3",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Hard",
+    "question": "Explain how you would implement data validation checks using Apache Beam, and provide an example of a PySpark code snippet that demonstrates data validation for a streaming ETL process.",
+    "answer": "To implement data validation checks using Apache Beam, I would create a pipeline that applies data validation rules to input data, using Beam's built-in validation SDK or custom validation functions. Here's an example of a PySpark code snippet that demonstrates data validation for a streaming ETL process:\n```python\n from apache_beam.options.pipeline_options import PipelineOptions\n from apache_beam.io.gcp.datastore.v1.datastoreio import ReadFromDatastore\n from apache_beam.transforms import Filter\n from apache_beam.transforms import Map\n\n # Define data validation function\n def validate_data(data):  # check for missing values, invalid formats, etc.\n   if data['name'] is None or data['name'].isnull(): return False\n   if data['age'] < 0 or data['age'] > 120: return False\n   return True\n\n # Create Beam pipeline\n pipeline_options = PipelineOptions()\n pipeline = beam.Pipeline(options=pipeline_options)\n\n # Read data from Datastore\n read_data = ReadFromDatastore(\n     'datastore-id',\n     query=beam.Create([DatastoreQuery()])\n )\n\n # Apply data validation checks\n filtered_data = read_data | Filter(validate_data)\n\n # Process validated data\n processed_data = filtered_data | Map(lambda data: {'name': data['name'], 'age': data['age']})\n\n # Write processed data to output\n output = beam.WriteToText(\n     'output.txt',\n     'validated_data'\n )\n\n pipeline.run()\n```\nThis code snippet demonstrates how to implement data validation checks using Apache Beam, and applies a custom validation function to input data."
+  },
+  {
+    "id": "q4",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Hard",
+    "question": "Compare and contrast the use of data replication and data warehousing for ETL processes, and provide an example use case where data replication is more suitable than data warehousing.",
+    "answer": "Data replication involves creating multiple copies of data in different systems or locations, whereas data warehousing involves aggregating and storing data in a single, centralized repository. Data replication is more suitable when: 1) Data is highly distributed and needs to be accessed from multiple locations, 2) Data is high-velocity and needs to be processed in real-time, or 3) Data is sensitive and requires multiple levels of redundancy and backup. An example use case for data replication is a financial services company that needs to process high-velocity trading data in real-time across multiple locations, where data replication is more suitable due to the high volume and velocity of data."
+  },
+  {
+    "id": "q5",
+    "domain": "Data Science",
+    "topic": "ETL Processes",
+    "difficulty": "Hard",
+    "question": "Design an ETL process that handles data drift in a source dataset, and explain how you would implement data drift detection and mitigation using a combination of statistical methods and machine learning algorithms.",
+    "answer": "To handle data drift, I would use a combination of the following steps: 1) Use statistical methods to detect changes in data distributions, such as mean, median, and standard deviation, 2) Use machine learning algorithms to detect changes in data patterns, such as anomaly detection or clustering, and 3) Implement data drift mitigation strategies, such as retraining models or updating data pipelines. Here's an example of a code snippet that demonstrates data drift detection and mitigation using Python and scikit-learn:\n```python\n import numpy as np\n from sklearn.ensemble import IsolationForest\n from sklearn.metrics import mean_squared_error\n\n # Load data\n data = np.loadtxt('data.csv', delimiter=',')\n\n # Split data into training and testing sets\n train_data, test_data = train_test_split(data, test_size=0.2, random_state=42)\n\n # Train Isolation Forest model\n model = IsolationForest(n_estimators=100, contamination=0.1)\n model.fit(train_data)\n\n # Detect anomalies in test data\n anomalies = model.predict(test_data)\n\n # Mitigate data drift by retraining model\n model.fit(np.concatenate((train_data, test_data)))\n\n # Evaluate model performance\n mse = mean_squared_error(test_data, model.predict(test_data))\n print(f'MSE: {mse}')\n```\nThis code snippet demonstrates how to implement data drift detection and mitigation using a combination of statistical methods and machine learning algorithms."
+  }
+]

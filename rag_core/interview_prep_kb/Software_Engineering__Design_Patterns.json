@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Design Patterns",
+    "difficulty": "Easy",
+    "question": "What is the Single Responsibility Principle (SRP)?",
+    "answer": "The Single Responsibility Principle (SRP) states that a class should have only one reason to change, meaning it should have a single responsibility or a single task to perform."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Design Patterns",
+    "difficulty": "Easy",
+    "question": "Can you describe the Observer pattern and provide an example?",
+    "answer": "The Observer pattern is a behavioral design pattern that allows objects to be notified of changes to other objects without having a direct reference to each other. An example is a weather station where multiple displays register to receive updates when the temperature changes."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Design Patterns",
+    "difficulty": "Easy",
+    "question": "What is the difference between a Factory method and an Abstract Factory?",
+    "answer": "A Factory method is a creational design pattern that returns an instance of a class based on a specific condition or parameter. An Abstract Factory is a creational design pattern that returns a family of related objects without specifying their concrete classes."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Design Patterns",
+    "difficulty": "Easy",
+    "question": "Can you explain the purpose of the Decorator pattern?",
+    "answer": "The Decorator pattern is a structural design pattern that allows an object to add or override its behavior dynamically without affecting its structure. It is often used to add additional responsibilities to an object without subclassing it."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Design Patterns",
+    "difficulty": "Easy",
+    "question": "What is the Strategy pattern and how is it used?",
+    "answer": "The Strategy pattern is a behavioral design pattern that defines a family of algorithms, encapsulates each one as a separate class, and makes them interchangeable at runtime. It is used when there are multiple ways to solve a problem, and the best solution depends on the context."
+  },
+  {
+    "id": "q1",
+    "domain": "Software Engineering",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "question": "What is the Singleton design pattern and when would you use it?",
+    "answer": "The Singleton design pattern ensures that only one instance of a class is created, providing a global point of access to it. You would use it when you need to control access to a resource that should have a single point of control, such as a logging system or a database connection pool."
+  },
+  {
+    "id": "q2",
+    "domain": "Software Engineering",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "question": "Implement the Factory method design pattern to create different types of database connections based on the given configuration.",
+    "answer": "You can implement the Factory method design pattern using the following code: \n```java\npublic abstract class DatabaseConnectionFactory {\n    public abstract DatabaseConnection createConnection(Configuration config);\n}\n\npublic class MySQLConnectionFactory extends DatabaseConnectionFactory {\n    @Override\n    public DatabaseConnection createConnection(Configuration config) {\n        return new MySQLDatabaseConnection(config);\n    }\n}\n\npublic class PostgreSQLConnectionFactory extends DatabaseConnectionFactory {\n    @Override\n    public DatabaseConnection createConnection(Configuration config) {\n        return new PostgreSQLDatabaseConnection(config);\n    }\n}\n\n// usage\nDatabaseConnectionFactory factory = new MySQLConnectionFactory();\nDatabaseConnection connection = factory.createConnection(config);\n```\nThis code demonstrates how the Factory method design pattern allows you to create different types of database connections based on the given configuration."
+  },
+  {
+    "id": "q3",
+    "domain": "Software Engineering",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "question": "Explain the Observer design pattern and provide an example of its usage in a real-world scenario.",
+    "answer": "The Observer design pattern allows objects to be notified of changes to other objects without having a direct reference to them. This pattern is commonly used in systems that require real-time updates, such as financial markets or social media platforms.\n\nExample: A stock exchange system where subscribers (observers) can receive notifications when a stock's price changes.\n```java\npublic interface StockObserver {\n    void update(Stock stock);\n}\n\npublic class Stock implements Observable {\n    private List<StockObserver> observers = new ArrayList<>();\n\n    public void addObserver(StockObserver observer) {\n        observers.add(observer);\n    }\n\n    public void removeObserver(StockObserver observer) {\n        observers.remove(observer);\n    }\n\n    public void notifyObservers(Stock stock) {\n        for (StockObserver observer : observers) {\n            observer.update(stock);\n        }\n    }\n}\n\n// usage\nStock stock = new Stock();\nstock.addObserver(new StockSubscriber());\nstock.updatePrice(100.0);\nstock.notifyObservers(stock);\n```\nThis example demonstrates how the Observer design pattern allows subscribers to receive notifications when a stock's price changes."
+  },
+  {
+    "id": "q4",
+    "domain": "Software Engineering",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "question": "What is the difference between the Command design pattern and the Strategy design pattern?",
+    "answer": "The Command design pattern encapsulates a request as an object, allowing you to parameterize and queue requests. The Strategy design pattern defines a family of algorithms, encapsulates each one as an object, and makes them interchangeable.\n\nKey differences: \n- Command focuses on encapsulating requests, while Strategy focuses on encapsulating algorithms.\n- Command is used for parameterizing and queuing requests, while Strategy is used for defining and switching between algorithms."
+  },
+  {
+    "id": "q5",
+    "domain": "Software Engineering",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "question": "Explain the Adapter design pattern and provide an example of its usage in a real-world scenario.",
+    "answer": "The Adapter design pattern allows objects with incompatible interfaces to work together by converting the interface of one object into an interface expected by the clients. This pattern is commonly used in systems that require integration with third-party libraries or services.\n\nExample: A payment gateway system where you need to integrate with multiple payment processors that have different APIs.\n```java\npublic interface PaymentProcessor {\n    void processPayment(Payment payment);\n}\n\npublic class PayPalAdapter implements PaymentProcessor {\n    @Override\n    public void processPayment(Payment payment) {\n        // convert payment to PayPal-specific format\n        PayPalPayment paypalPayment = convertToPayPalPayment(payment);\n        // call PayPal API to process payment\n        paypalApi.processPayment(paypalPayment);\n    }\n}\n\n// usage\nPaymentProcessor processor = new PayPalAdapter();\nprocessor.processPayment(payment);\n```\nThis example demonstrates how the Adapter design pattern allows you to integrate with multiple payment processors that have different APIs."
+  }
+]

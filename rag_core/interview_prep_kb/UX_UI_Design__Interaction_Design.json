@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Easy",
+    "question": "What is the primary goal of a loading animation in an interactive system?",
+    "answer": "The primary goal of a loading animation is to provide visual feedback to the user, indicating that the system is working on a task and preventing the user from making assumptions about the system's status."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Easy",
+    "question": "Consider a scenario where you have a long list of items and you want the user to scroll through them. What design principle would you apply to make the interaction more efficient?",
+    "answer": "You would apply the principle of 'Progressive Disclosure', where only a portion of the list is visible at a time, allowing the user to scroll through it more efficiently."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Easy",
+    "question": "What is the purpose of a 'hamburger menu' in mobile app design?",
+    "answer": "The purpose of a 'hamburger menu' is to provide a compact navigation option that can be easily accessed and hidden, allowing users to navigate through the app's content without cluttering the main screen."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Easy",
+    "question": "Consider a scenario where you have a form with multiple fields and the user needs to fill out the entire form before submitting it. What interaction design pattern would you apply to guide the user through the process?",
+    "answer": "You would apply the 'Wizard Pattern' design, where the form is divided into multiple steps, each with its own set of fields, guiding the user through the process and making it easier to fill out the form."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Easy",
+    "question": "What is the significance of ' affordance' in interaction design?",
+    "answer": "Affordance refers to the visual cues or hints that are provided to the user to understand how an interactive element (such as a button or a text field) should be used, making it clear how to interact with it and reducing confusion."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Medium",
+    "question": "How do you approach designing a complex workflow with multiple steps and user actions?",
+    "answer": "When designing a complex workflow, I prioritize clear labeling and concise instructions for each step. I also consider the most common user paths and ensure that the workflow is intuitive and easy to navigate. Additionally, I use visual hierarchy and color-coding to differentiate between steps and highlight important information."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Medium",
+    "question": "Can you explain the difference between a modal window and a popup? When would you use each?",
+    "answer": "A modal window is a self-contained window that overlays the main content, while a popup is a small window that appears on top of the main content. I would use a modal window for critical or time-sensitive information, such as confirmations or alerts. A popup is better suited for less critical information, such as notifications or reminders."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Medium",
+    "question": "Design a loading animation for a data-intensive web application. What principles would you follow, and what animation would you propose?",
+    "answer": "To design a loading animation for a data-intensive web application, I would follow the principles of rhythm, repetition, and progression. I would propose a animation that uses a combination of spinning circles and morphing shapes to create a sense of movement and fluidity. The animation would transition from a static state to a dynamic state, indicating the progress of data loading."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Medium",
+    "question": "How would you design an error message that provides actionable feedback to the user?",
+    "answer": "To design an error message that provides actionable feedback, I would focus on clear and concise language, providing specific details about the issue and suggesting possible solutions. The message would also include a clear call-to-action, guiding the user on how to resolve the issue or recover from the error."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Medium",
+    "question": "What are some best practices for designing accessible interactions, such as keyboard navigation and screen reader compatibility?",
+    "answer": "To design accessible interactions, I would follow best practices such as providing keyboard-navigable elements, using ARIA attributes for screen reader compatibility, and ensuring that all interactive elements have a clear and consistent focus state. Additionally, I would test the interaction with various screen readers and keyboard layouts to ensure that it works as intended."
+  },
+  {
+    "id": "q1",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Hard",
+    "question": "Design an adaptive navigation system for a dynamic website that adjusts its layout based on the user's screen size and device type. How would you ensure a seamless user experience across different devices and screen sizes?",
+    "answer": "To create an adaptive navigation system, I would use a combination of responsive design principles, mobile-first approach, and flexible grid systems. I would also employ media queries to apply different styles based on the screen size and device type. Additionally, I would use A/B testing and user feedback to refine the navigation system and ensure a seamless user experience across different devices and screen sizes."
+  },
+  {
+    "id": "q2",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Hard",
+    "question": "Develop a micro-interaction that provides visual feedback to users when they successfully submit a form on a mobile device. Ensure that the animation is smooth, visually appealing, and accessible.",
+    "answer": "To create a smooth and visually appealing micro-interaction, I would use a combination of CSS animations and transitions. I would design a simple and concise animation that provides clear visual feedback to users when they successfully submit a form. To ensure accessibility, I would also include alternative text for the animation and ensure that it is keyboard-navigable."
+  },
+  {
+    "id": "q3",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Hard",
+    "question": "Design an error handling system for a complex web application that provides users with clear and concise error messages. How would you ensure that the error messages are accessible and actionable?",
+    "answer": "To design an effective error handling system, I would use a combination of clear and concise language, simple syntax, and actionable feedback. I would also employ a hierarchical error handling system that provides users with clear and concise error messages at each level of the error hierarchy. To ensure accessibility, I would use ARIA attributes, provide alternative text for images, and ensure that the error messages are keyboard-navigable."
+  },
+  {
+    "id": "q4",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Hard",
+    "question": "Develop a gesture-based interface for a touchscreen device that allows users to perform complex actions with ease. How would you ensure that the gestures are intuitive, consistent, and accessible?",
+    "answer": "To create a gesture-based interface, I would use a combination of user research, usability testing, and design principles. I would design a set of intuitive and consistent gestures that are easy to learn and use. To ensure accessibility, I would provide alternative input methods, such as a keyboard or mouse, and ensure that the gestures are keyboard-navigable."
+  },
+  {
+    "id": "q5",
+    "domain": "UX/UI Design",
+    "topic": "Interaction Design",
+    "difficulty": "Hard",
+    "question": "Design a conversational interface for a voice assistant that provides users with a seamless and natural conversation experience. How would you ensure that the interface is context-aware, adaptive, and accessible?",
+    "answer": "To create a conversational interface, I would use a combination of natural language processing, machine learning, and design principles. I would design a context-aware interface that adapts to the user's conversation and provides relevant and accurate responses. To ensure accessibility, I would provide alternative input methods, such as text input, and ensure that the interface is screen reader-friendly and keyboard-navigable."
+  }
+]
