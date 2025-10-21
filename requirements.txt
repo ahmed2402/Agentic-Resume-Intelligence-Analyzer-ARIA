@@ -5,12 +5,17 @@ pandas
 numpy
 tqdm
 loguru
+tiktoken
 nltk
+
+# --- Visualization ---
+matplotlib
+plotly
+
 # --- Text Extraction & Preprocessing ---
 pdfminer.six
 python-docx
 PyMuPDF==1.24.4
-nltk
 spacy
 pypdf
 scikit-learn
@@ -29,7 +34,8 @@ langchain-community
 langchain-core
 langchain-groq
 langchain_huggingface
-
+langchain-classic
+langgraph
 
 # --- Web UI ---
 streamlit
