@@ -39,9 +39,20 @@ st-audiorec
 fpdf2
 reportlab
 
+<<<<<<< HEAD
 # --- Mock Interview (audio & NLP) ---
 librosa
 soundfile
 SpeechRecognition
 textblob
 nltk
+=======
+# --- Workflow / Orchestration ---
+prefect
+
+# --- Testing ---
+pytest
+
+# --- Optional (for future web/LLM connectivity) ---
+requests
+>>>>>>> dde138d027b870bd2a92988f41db9d2519eb7ac7
