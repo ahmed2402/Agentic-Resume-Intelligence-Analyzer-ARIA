@@ -15,7 +15,7 @@ from agents.pdf_generator_agent import PDFGeneratorAgent
 class AgentState(TypedDict):
     """ The state of the agentic RAG workflow. """
     resume_path: str
-    jd_path: str
+    jd_text: str 
     raw_resume_text: str
     raw_jd_text: str
     cleaned_resume: List[str]
@@ -37,7 +37,7 @@ pdf_generator_agent = PDFGeneratorAgent()
 def ingest_node(state: AgentState):
     """Call ingestion once and extract all required data."""
     print("Ingesting documents...")
-    ingested_data = ingestion_agent.ingest(state["resume_path"], state["jd_path"])
+    ingested_data = ingestion_agent.ingest(state["resume_path"], state["jd_text"])
     print("Documents ingested successfully.")
     return {
         "raw_resume_text": ingested_data["raw_resume_text"],
@@ -62,7 +62,7 @@ def advise_node(state: AgentState):
         state["similarity_score"]
     )
     print("Insights generated successfully.")
-    return insights # Returns a dict that updates the state, including 'insights' key
+    return {"insights": insights} # Returns a dict that updates the state, including 'insights' key
 
 def generate_pdf_node(state: AgentState):
     """Generate the tailored CV PDF."""
@@ -101,7 +101,7 @@ app = workflow.compile()
 if __name__ == "__main__":
 
     RESUME_PATH = "../data/raw/resumes/Ahmed Raza - AI Engineer.pdf"
-    JD_PATH = "../data/raw/job_descriptions/ai_engineer.txt"
+    JD_PATH = "This is an example job description text for testing purposes."
     
     initial_state = {"resume_path": RESUME_PATH, "jd_path": JD_PATH}
     print("Running the Resume Match Pipeline...")
