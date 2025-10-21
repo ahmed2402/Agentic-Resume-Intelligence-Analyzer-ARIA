@@ -33,7 +33,7 @@ def show_mock_interview_ui():
             'questions': [],
             'responses': [],
             'analyses': []
-        }J
+        }
     
     # Sidebar for configuration
     with st.sidebar:
