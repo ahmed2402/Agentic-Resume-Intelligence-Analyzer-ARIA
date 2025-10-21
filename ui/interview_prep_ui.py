@@ -196,14 +196,26 @@ def show_interview_prep_ui():
             "Design a scalable URL shortener system.",
             "What is the difference between bagging and boosting?",
             "How to approach behavioral questions using STAR?",
-            "Python: explain generators vs iterators with code."
+            "Python: explain generators vs iterators with code.",
+            "What are REST APIs? Explain the main HTTP methods.",
+            "Explain the difference between SQL and NoSQL databases.",
+            "Describe the Transformer architecture and its applications."
         ]
+
+        row1 = st.columns(4)
+        row2 = st.columns(4)
         cols = st.columns(min(4, len(suggestions)))
-        for i, s in enumerate(suggestions):
-            with cols[i % len(cols)]:
-                if st.button(s, use_container_width=True):
-                    st.session_state.chat_input = s
-                    st.rerun()
+         # Populate the first row
+        for i, suggestion in enumerate(suggestions[:4]):
+            if row1[i].button(suggestion, use_container_width=True, key=f"suggestion_{i}"):
+                st.session_state.chat_input = suggestion
+                st.rerun()
+
+        # Populate the second row
+        for i, suggestion in enumerate(suggestions[4:]):
+            if row2[i].button(suggestion, use_container_width=True, key=f"suggestion_{i+4}"):
+                st.session_state.chat_input = suggestion
+                st.rerun()
         st.markdown('</div>', unsafe_allow_html=True)
     
     # --- Chat Messages Area ---
