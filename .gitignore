@@ -19,3 +19,6 @@ __pycache__/
 .env.local
 .env.development
 .env.test
+
+local_test_report_agent.py
+test_report.py
