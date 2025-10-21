@@ -33,7 +33,15 @@ langchain_huggingface
 
 # --- Web UI ---
 streamlit
+st-audiorec
 
 # --- PDF Generation ---
 fpdf2
 reportlab
+
+# --- Mock Interview (audio & NLP) ---
+librosa
+soundfile
+SpeechRecognition
+textblob
+nltk
