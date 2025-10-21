@@ -1,19 +1,19 @@
 # --- Core utilities ---
 python-dotenv
-# PyYAML
-# pandas
-# numpy
-# tqdm
-# loguru
-
+PyYAML
+pandas
+numpy
+tqdm
+loguru
+nltk
 # --- Text Extraction & Preprocessing ---
-# pdfminer.six
-# python-docx
-# PyMuPDF==1.24.4
-# nltk
-# spacy
+pdfminer.six
+python-docx
+PyMuPDF==1.24.4
+nltk
+spacy
 pypdf
-# scikit-learn
+scikit-learn
 
 # --- Embeddings & NLP Models ---
 sentence-transformers
