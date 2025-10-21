@@ -24,14 +24,14 @@ def load_resume(file_path: str):
     else:
         raise ValueError("Unsupported file type. Only PDF and (placeholder for) DOC/DOCX are accepted.")
 
-def load_job_description(file_path: str) -> str:
-    """
-    Loads a job description from a text file.
-    """
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"Job description file not found at {file_path}")
-    with open(file_path, 'r', encoding='utf-8') as f:
-        return f.read()
+# def load_job_description(file_path: str) -> str:
+#     """
+#     Loads a job description from a text file.
+#     """
+#     if not os.path.exists(file_path):
+#         raise FileNotFoundError(f"Job description file not found at {file_path}")
+#     with open(file_path, 'r', encoding='utf-8') as f:
+        # return f.read()
 
 def clean_text(text: str) -> list[str]:
     """
@@ -53,13 +53,12 @@ def clean_text(text: str) -> list[str]:
 
     return tokens
 
-def process_documents(resume_path: str, jd_path: str) -> dict:
+def process_documents(resume_path: str, jd_text: str) -> dict:
     """
     Loads and preprocesses both the resume and job description.
     Returns a dictionary containing the raw text and cleaned text for both.
     """
     resume_text = load_resume(resume_path)
-    jd_text = load_job_description(jd_path)
 
     cleaned_resume = clean_text(resume_text)
     cleaned_jd = clean_text(jd_text)

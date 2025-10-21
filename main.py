@@ -1,4 +1,13 @@
 # main.py
+import sys
+import os
+import pprint # Add this import
+
+# ... existing code ...
+
+# print("--- sys.path when main.py starts ---")
+# pprint.pprint(sys.path)
+# print("------------------------------------")
 import os
 import sys
 import streamlit as st

@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import sys
 from dotenv import load_dotenv
@@ -60,8 +61,13 @@ Format your response as a JSON object with the following keys: "missing_skills",
         else:
             # If markdown not found, try to parse the whole string as a fallback
             print("Warning: JSON markdown block not found. Attempting to parse raw response.")
-        insights = json.loads(json_string)
+        cleaned_json_string = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', json_string)
+        insights = json.loads(cleaned_json_string)
         return insights
+    except json.JSONDecodeError as e:
+        print(f"JSON Decode Error in generate_insights: {e}")
+        # Include a snippet of the problematic string for better debugging
+        return {"error": f"JSON parsing failed: {e}. Problematic string snippet: {cleaned_json_string[:200]}..."}
     except Exception as e:
         print(f"Error generating insights with LLM: {e}")
         return {"error": str(e)}

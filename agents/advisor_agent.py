@@ -34,6 +34,7 @@ class AdvisorAgent:
             for key, value in insights.items():
                 print(f"\n**{key.replace('_', ' ').title()}**:\n{value}")
             print("Insights generated successfully.")
+            return insights
         except Exception as e:
             print(f"Error generating advice: {e}")
             raise

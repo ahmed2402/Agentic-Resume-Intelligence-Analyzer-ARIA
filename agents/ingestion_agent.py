@@ -9,7 +9,7 @@ class IngestionAgent:
     The IngestionAgent handles the loading and initial preprocessing of resumes and job descriptions.
     It utilizes functions from `core/utils.py` for document processing.
     """
-    def ingest(self, resume_path: str, jd_path: str) -> dict:
+    def ingest(self, resume_path: str, jd_text: str) -> dict:
         """
         Loads and preprocesses the resume and job description.
         
@@ -20,9 +20,9 @@ class IngestionAgent:
         Returns:
             dict: A dictionary containing the raw resume and job description text, and their cleaned text (lists of tokens).
         """
-        print(f"Ingesting documents: Resume - {resume_path}, Job Description - {jd_path}")
+        print(f"Ingesting documents: Resume - {resume_path},Job Description Text Provided.")
         try:
-            ingested_data = process_documents(resume_path, jd_path)
+            ingested_data = process_documents(resume_path, jd_text)
             return ingested_data
         except Exception as e:
             print(f"Error during ingestion: {e}")
