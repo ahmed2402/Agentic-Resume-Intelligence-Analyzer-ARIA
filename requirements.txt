@@ -37,3 +37,12 @@ streamlit
 # --- PDF Generation ---
 fpdf2
 reportlab
+
+# --- Workflow / Orchestration ---
+prefect
+
+# --- Testing ---
+pytest
+
+# --- Optional (for future web/LLM connectivity) ---
+requests
