@@ -5,6 +5,8 @@ ENV/
 .env
 .env.local
 .env.production
+.env
+
 
 # Python cache
 __pycache__/
