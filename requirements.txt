@@ -45,3 +45,16 @@ pytest
 
 # --- Optional (for future web/LLM connectivity) ---
 requests
+
+# --- Mock Interview Analyzer Dependencies ---
+# Audio processing
+SpeechRecognition
+soundfile
+
+# Text analysis
+textblob
+nltk
+
+# Streamlit audio components (optional)
+st-audiorec
+librosa
