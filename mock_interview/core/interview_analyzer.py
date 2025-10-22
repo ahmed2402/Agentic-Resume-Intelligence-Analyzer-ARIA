@@ -30,15 +30,19 @@ class InterviewAnalyzer:
         
     def analyze_response(self, 
                         transcript: str, 
+                        question: str = "",
                         ideal_answer: str = "", 
-                        audio_features: Dict = None) -> Dict:
+                        audio_features: Dict = None,
+                        job_description: str = "") -> Dict:
         """
         Comprehensive analysis of interview response
         
         Args:
             transcript: Speech-to-text transcript
+            question: The interview question asked
             ideal_answer: Ideal answer for keyword matching
             audio_features: Audio analysis features
+            job_description: Job description for context
             
         Returns:
             Dictionary with analysis results
@@ -50,6 +54,7 @@ class InterviewAnalyzer:
         analysis['sentiment'] = self._analyze_sentiment(transcript)
         analysis['keyword_match'] = self._analyze_keyword_match(transcript, ideal_answer)
         analysis['fluency'] = self._analyze_fluency(transcript)
+        analysis['relevance'] = self._analyze_relevance(transcript, question, job_description)
         
         # Audio-based analysis
         if audio_features:
@@ -228,11 +233,12 @@ class InterviewAnalyzer:
         
         # Weighted scoring
         weights = {
-            'clarity': 0.25,
-            'confidence': 0.25,
-            'sentiment': 0.15,
-            'keyword_match': 0.20,
-            'fluency': 0.15
+            'clarity': 0.20,
+            'confidence': 0.20,
+            'sentiment': 0.10,
+            'keyword_match': 0.15,
+            'fluency': 0.15,
+            'relevance': 0.20
         }
         
         for metric, weight in weights.items():
@@ -300,3 +306,41 @@ class InterviewAnalyzer:
             feedback.append("• Very fluent and coherent delivery")
         
         return "\n".join(feedback) if feedback else "• Good overall performance"
+    
+    def _analyze_relevance(self, transcript: str, question: str, job_description: str) -> Dict:
+        """Analyze how relevant the response is to the question and job"""
+        if not transcript or not question:
+            return {'score': 0.5, 'details': 'Insufficient data for relevance analysis'}
+        
+        # Extract keywords from question and job description
+        question_words = set(word.lower() for word in word_tokenize(question) 
+                           if word.isalpha() and word.lower() not in self.stop_words)
+        
+        job_words = set()
+        if job_description:
+            job_words = set(word.lower() for word in word_tokenize(job_description) 
+                          if word.isalpha() and word.lower() not in self.stop_words)
+        
+        transcript_words = set(word.lower() for word in word_tokenize(transcript) 
+                             if word.isalpha() and word.lower() not in self.stop_words)
+        
+        # Calculate relevance scores
+        question_relevance = 0
+        if question_words:
+            question_overlap = transcript_words.intersection(question_words)
+            question_relevance = len(question_overlap) / len(question_words)
+        
+        job_relevance = 0
+        if job_words:
+            job_overlap = transcript_words.intersection(job_words)
+            job_relevance = len(job_overlap) / len(job_words)
+        
+        # Combined relevance score
+        relevance_score = (question_relevance * 0.6 + job_relevance * 0.4) if job_words else question_relevance
+        
+        return {
+            'score': min(1, max(0, relevance_score)),
+            'question_relevance': question_relevance,
+            'job_relevance': job_relevance,
+            'details': f"Relevance: {relevance_score:.2f} (question: {question_relevance:.2f}, job: {job_relevance:.2f})"
+        }
