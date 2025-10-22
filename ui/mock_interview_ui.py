@@ -176,12 +176,12 @@ def show_response_capture(question, question_index):
     """Display response capture interface"""
     st.subheader("🎙️ Your Response")
     
+    # Initialize audio_bytes and manual_transcript
+    audio_bytes = None
+    manual_transcript = ""
     # Initialize audio processor
     if 'audio_processor' not in st.session_state:
         st.session_state.audio_processor = AudioProcessor()
-    
-        audio_bytes = None
-    manual_transcript = ""
     
     # Audio recording options
     tab1, tab2, tab3 = st.tabs(["🎤 Record Audio", "📁 Upload Audio", "✍️ Type Response"])
@@ -253,14 +253,16 @@ def process_response(question, question_index, audio_bytes, manual_transcript):
             session['analyses'][question_index] = analysis
             
             # Show immediate feedback
-            show_immediate_feedback(analysis)
+            # Determine if answer was audio or text
+            is_audio = audio_bytes is not None
+            show_immediate_feedback(analysis, is_audio)
             
             st.rerun()
             
         except Exception as e:
             st.error(f"Error processing response: {str(e)}")
 
-def show_immediate_feedback(analysis):
+def show_immediate_feedback(analysis, is_audio):
     """Show immediate feedback for the response"""
     st.subheader("📊 Immediate Analysis")
     
@@ -270,25 +272,26 @@ def show_immediate_feedback(analysis):
     grade = overall.get('grade', 'N/A')
     
     col1, col2, col3 = st.columns(3)
-    
     with col1:
         st.metric("Overall Score", f"{score:.1%}", f"Grade: {grade}")
-    
     with col2:
         st.metric("Clarity", f"{analysis.get('clarity', {}).get('score', 0):.1%}")
-    
     with col3:
-        st.metric("Confidence", f"{analysis.get('confidence', {}).get('score', 0):.1%}")
+        if is_audio:
+            st.metric("Confidence", f"{analysis.get('confidence', {}).get('score', 0):.1%}")
+        else:
+            st.metric("Confidence", "N/A")
     
     # Detailed metrics
     st.subheader("Detailed Metrics")
     
     metrics_col1, metrics_col2 = st.columns(2)
-    
     with metrics_col1:
         st.metric("Sentiment", f"{analysis.get('sentiment', {}).get('score', 0):.1%}")
-        st.metric("Fluency", f"{analysis.get('fluency', {}).get('score', 0):.1%}")
-    
+        if is_audio:
+            st.metric("Fluency", f"{analysis.get('fluency', {}).get('score', 0):.1%}")
+        else:
+            st.metric("Fluency", "N/A")
     with metrics_col2:
         st.metric("Relevance", f"{analysis.get('relevance', {}).get('score', 0):.1%}")
         st.metric("Keyword Match", f"{analysis.get('keyword_match', {}).get('score', 0):.1%}")
@@ -330,7 +333,10 @@ def show_previous_responses():
                         for metric in metrics:
                             if metric in analysis:
                                 metric_score = analysis[metric].get('score', 0)
-                                st.metric(metric.title(), f"{metric_score:.1%}")
+                                if isinstance(metric_score, (int, float)):
+                                    st.metric(metric.title(), f"{metric_score:.1%}")
+                                else:
+                                    st.metric(metric.title(), str(metric_score))
                 
 def show_final_report():
     """Show comprehensive final report"""

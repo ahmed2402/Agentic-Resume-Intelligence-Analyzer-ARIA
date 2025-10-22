@@ -2,7 +2,9 @@
 Interview Analysis Engine for Mock Interview Analyzer
 Analyzes speech for clarity, confidence, sentiment, and keyword matching
 """
-
+import json
+import os
+from langchain_groq import ChatGroq
 import re
 import numpy as np
 from typing import Dict, List, Tuple, Optional
@@ -12,7 +14,13 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import streamlit as st
+from dotenv import load_dotenv
 
+load_dotenv()
+groq_api_key = os.environ.get("GROQ_API_KEY")
+if not groq_api_key:
+    raise ValueError("GROQ_API_KEY not found. Please set in .env file.")
+llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.3-70b-versatile")
 # Download required NLTK data
 try:
     nltk.download('vader_lexicon', quiet=True)
@@ -22,95 +30,91 @@ except:
     pass
 
 class InterviewAnalyzer:
-    """Analyzes interview responses for various metrics"""
-    
     def __init__(self):
         self.sia = SentimentIntensityAnalyzer()
         self.stop_words = set(stopwords.words('english'))
-        
+
     def analyze_response(self, 
-                        transcript: str, 
-                        question: str = "",
-                        ideal_answer: str = "", 
-                        audio_features: Dict = None,
-                        job_description: str = "") -> Dict:
+            transcript: str, 
+            question: str = "",
+            ideal_answer: str = "", 
+            audio_features: Dict = None,
+            job_description: str = "") -> Dict:
         """
-        Comprehensive analysis of interview response
-        
-        Args:
-            transcript: Speech-to-text transcript
-            question: The interview question asked
-            ideal_answer: Ideal answer for keyword matching
-            audio_features: Audio analysis features
-            job_description: Job description for context
-            
-        Returns:
-            Dictionary with analysis results
+        LLM-based analysis of interview response using Groq
         """
-        analysis = {}
-        
-        # Text-based analysis
-        analysis['clarity'] = self._analyze_clarity(transcript)
-        analysis['sentiment'] = self._analyze_sentiment(transcript)
-        analysis['keyword_match'] = self._analyze_keyword_match(transcript, ideal_answer)
-        analysis['fluency'] = self._analyze_fluency(transcript)
-        analysis['relevance'] = self._analyze_relevance(transcript, question, job_description)
-        
-        # Audio-based analysis
-        if audio_features:
-            analysis['confidence'] = self._analyze_confidence(audio_features)
-            analysis['speech_quality'] = self._analyze_speech_quality(audio_features)
-        else:
-            analysis['confidence'] = {'score': 0.5, 'details': 'No audio data available'}
-            analysis['speech_quality'] = {'score': 0.5, 'details': 'No audio data available'}
-        
-        # Overall score
-        analysis['overall_score'] = self._calculate_overall_score(analysis)
-        
-        return analysis
+          # Make sure groq is installed and your API key is set
+        prompt = f"""
+You are an expert interview evaluator. Analyze the following response and provide scores (0-1) for:
+- Clarity
+- Confidence
+- Fluency
+- Relevance
+- Sentiment (positive/neutral/negative)
+- Keyword Match (to job description)
+Return your analysis as a JSON object with keys: clarity, confidence, fluency, relevance, sentiment, keyword_match. Each should have a 'score' (0-1) and 'details'.
+
+Interview Question: {question}
+Job Description: {job_description}
+Candidate Response: {transcript}
+        """
+
+        response = llm.invoke(prompt)
+        print("Raw LLM response from InterviewAnalyzer:", response.content) # More specific debug print
     
+        json_string = response.content.strip()
+        start_index = json_string.find("```json")
+        end_index = json_string.find("```", start_index + len("```json"))
+
+        if start_index != -1 and end_index != -1:
+            json_string = json_string[start_index + len("```json\n") : end_index].strip()
+            print("Extracted JSON string (markdown block):", json_string) # Debug print
+        else:
+            print("Warning: JSON markdown block not found in interview_analyzer.py. Attempting to parse raw response as is.")
+            print("Raw response being parsed as JSON:", json_string) # Debug print for fallback
+        
+        # Clean control characters before parsing
+        cleaned_json_string = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', json_string)
+        print("Cleaned JSON string before json.loads():", cleaned_json_string) # CRITICAL debug print
+        
+        analysis = json.loads(cleaned_json_string)
+        # Calculate overall score as before
+        analysis['overall_score'] = self._calculate_overall_score(analysis)
+        return analysis
+
     def _analyze_clarity(self, text: str) -> Dict:
         """Analyze clarity of speech"""
         if not text or text.strip() == "":
             return {'score': 0, 'details': 'No speech detected'}
-        
         # Remove filler words and analyze
         filler_words = ['um', 'uh', 'like', 'you know', 'so', 'well', 'actually']
         words = text.lower().split()
-        
         filler_count = sum(1 for word in words if word in filler_words)
         total_words = len(words)
         filler_ratio = filler_count / total_words if total_words > 0 else 0
-        
         # Sentence structure analysis
         sentences = re.split(r'[.!?]+', text)
         avg_sentence_length = np.mean([len(s.split()) for s in sentences if s.strip()])
-        
         # Clarity score (0-1, higher is better)
         clarity_score = max(0, 1 - (filler_ratio * 2) - (0.1 if avg_sentence_length < 5 else 0))
-        
         return {
             'score': min(1, max(0, clarity_score)),
             'filler_ratio': filler_ratio,
             'avg_sentence_length': avg_sentence_length,
             'details': f"Filler words: {filler_count}/{total_words} ({filler_ratio:.1%})"
         }
-    
+
     def _analyze_sentiment(self, text: str) -> Dict:
         """Analyze sentiment of the response"""
         if not text or text.strip() == "":
             return {'score': 0, 'label': 'neutral', 'details': 'No speech detected'}
-        
         # Using TextBlob for sentiment
         blob = TextBlob(text)
         polarity = blob.sentiment.polarity  # -1 to 1
-        
         # Using VADER for more nuanced sentiment
         vader_scores = self.sia.polarity_scores(text)
-        
         # Convert to 0-1 scale
         sentiment_score = (polarity + 1) / 2
-        
         # Determine label
         if sentiment_score > 0.6:
             label = 'positive'
@@ -243,7 +247,9 @@ class InterviewAnalyzer:
         
         for metric, weight in weights.items():
             if metric in analysis and 'score' in analysis[metric]:
-                scores.append(analysis[metric]['score'] * weight)
+                score_val = analysis[metric]['score']
+                if isinstance(score_val, (int, float)):
+                    scores.append(score_val * weight)
         
         overall_score = sum(scores) if scores else 0
         
@@ -272,38 +278,46 @@ class InterviewAnalyzer:
         
         # Clarity feedback
         clarity = analysis.get('clarity', {})
-        if clarity.get('score', 0) < 0.6:
-            feedback.append("• Reduce filler words (um, uh, like) for better clarity")
-        elif clarity.get('score', 0) > 0.8:
-            feedback.append("• Excellent clarity and articulation")
-        
+        clarity_score = clarity.get('score', 0)
+        if isinstance(clarity_score, (int, float)):
+            if clarity_score < 0.6:
+                feedback.append("• Reduce filler words (um, uh, like) for better clarity")
+            elif clarity_score > 0.8:
+                feedback.append("• Excellent clarity and articulation")
+
         # Confidence feedback
         confidence = analysis.get('confidence', {})
-        if confidence.get('score', 0) < 0.6:
-            feedback.append("• Speak with more confidence and volume")
-        elif confidence.get('score', 0) > 0.8:
-            feedback.append("• Great confidence in delivery")
-        
+        confidence_score = confidence.get('score', 0)
+        if isinstance(confidence_score, (int, float)):
+            if confidence_score < 0.6:
+                feedback.append("• Speak with more confidence and volume")
+            elif confidence_score > 0.8:
+                feedback.append("• Great confidence in delivery")
+
         # Sentiment feedback
         sentiment = analysis.get('sentiment', {})
         if sentiment.get('label') == 'negative':
             feedback.append("• Maintain a more positive tone")
         elif sentiment.get('label') == 'positive':
             feedback.append("• Good positive attitude")
-        
+
         # Keyword match feedback
         keyword_match = analysis.get('keyword_match', {})
-        if keyword_match.get('score', 0) < 0.5:
-            feedback.append("• Include more relevant keywords from the job description")
-        elif keyword_match.get('score', 0) > 0.7:
-            feedback.append("• Excellent use of relevant keywords")
-        
+        keyword_score = keyword_match.get('score', 0)
+        if isinstance(keyword_score, (int, float)):
+            if keyword_score < 0.5:
+                feedback.append("• Include more relevant keywords from the job description")
+            elif keyword_score > 0.7:
+                feedback.append("• Excellent use of relevant keywords")
+
         # Fluency feedback
         fluency = analysis.get('fluency', {})
-        if fluency.get('score', 0) < 0.6:
-            feedback.append("• Practice speaking more fluently and coherently")
-        elif fluency.get('score', 0) > 0.8:
-            feedback.append("• Very fluent and coherent delivery")
+        fluency_score = fluency.get('score', 0)
+        if isinstance(fluency_score, (int, float)):
+            if fluency_score < 0.6:
+                feedback.append("• Practice speaking more fluently and coherently")
+            elif fluency_score > 0.8:
+                feedback.append("• Very fluent and coherent delivery")
         
         return "\n".join(feedback) if feedback else "• Good overall performance"
     
