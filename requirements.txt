@@ -1,10 +1,7 @@
 # --- Core utilities ---
 python-dotenv
-PyYAML
 pandas
 numpy
-tqdm
-loguru
 tiktoken
 nltk
 
@@ -14,17 +11,12 @@ plotly
 
 # --- Text Extraction & Preprocessing ---
 pdfminer.six
-python-docx
-PyMuPDF==1.24.4
-spacy
 pypdf
 scikit-learn
 
 # --- Embeddings & NLP Models ---
 sentence-transformers
-openai
 faiss-cpu
-chromadb
 rank_bm25
 jq
 
@@ -44,11 +36,7 @@ streamlit
 fpdf2
 reportlab
 
-# --- Workflow / Orchestration ---
-prefect
 
-# --- Testing ---
-pytest
-
-# --- Optional (for future web/LLM connectivity) ---
-requests
+librosa
+SpeechRecognition
+textblob
