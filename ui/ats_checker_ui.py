@@ -8,12 +8,14 @@ import plotly.express as px
 import pandas as pd
 from io import BytesIO
 import base64
+from prefect import flow
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from workflows.ats_flow import ats_analysis_flow
 
 # Add the project root to Python path
 project_root = Path(__file__).parent.parent
 sys.path.append(str(project_root))
-
-from core.ats import ATSAnalyzer, create_ats_score_circle
+# from core.ats import ATSAnalyzer, create_ats_score_circle
 from core.utils import load_resume
 
 def show_ats_checker_ui():
@@ -74,11 +76,8 @@ def show_ats_checker_ui():
                             tmp_file.write(uploaded_file.getvalue())
                             tmp_file_path = tmp_file.name
                         
-                        # Initialize ATS analyzer
-                        ats_analyzer = ATSAnalyzer()
-                        
-                        # Perform analysis
-                        results = ats_analyzer.calculate_ats_score(tmp_file_path, job_description)
+                        # Run Prefect flow instead of direct call
+                        results = ats_analysis_flow(tmp_file_path, job_description)
                         
                         # Store results in session state
                         st.session_state.ats_analysis_results = results

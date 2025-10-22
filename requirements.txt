@@ -1,25 +1,22 @@
 # --- Core utilities ---
 python-dotenv
-# PyYAML
-# pandas
-# numpy
-# tqdm
-# loguru
+pandas
+numpy
+tiktoken
+nltk
+
+# --- Visualization ---
+matplotlib
+plotly
 
 # --- Text Extraction & Preprocessing ---
-# pdfminer.six
-# python-docx
-# PyMuPDF==1.24.4
-# nltk
-# spacy
+pdfminer.six
 pypdf
-# scikit-learn
+scikit-learn
 
 # --- Embeddings & NLP Models ---
 sentence-transformers
-openai
 faiss-cpu
-chromadb
 rank_bm25
 jq
 
@@ -29,7 +26,8 @@ langchain-community
 langchain-core
 langchain-groq
 langchain_huggingface
-
+langchain-classic
+langgraph
 
 # --- Web UI ---
 streamlit
@@ -38,11 +36,10 @@ streamlit
 fpdf2
 reportlab
 
-# --- Workflow / Orchestration ---
+
+librosa
+SpeechRecognition
+textblob
+
+
 prefect
-
-# --- Testing ---
-pytest
-
-# --- Optional (for future web/LLM connectivity) ---
-requests
