@@ -40,6 +40,7 @@ reportlab
 librosa
 SpeechRecognition
 textblob
-
-
+soundfile
+# st-audiorec  (the most popular open-source browser mic recorder for Streamlit is actually called streamlit-audiorec, not st-audiorec.)
+streamlit-audiorec
 prefect
