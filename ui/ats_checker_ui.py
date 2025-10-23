@@ -8,14 +8,11 @@ import plotly.express as px
 import pandas as pd
 from io import BytesIO
 import base64
-from prefect import flow
-# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from workflows.ats_flow import ats_analysis_flow
 
 # Add the project root to Python path
 project_root = Path(__file__).parent.parent
 sys.path.append(str(project_root))
-# from core.ats import ATSAnalyzer, create_ats_score_circle
 from core.utils import load_resume
 
 def show_ats_checker_ui():

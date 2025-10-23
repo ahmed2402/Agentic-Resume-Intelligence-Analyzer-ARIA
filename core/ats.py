@@ -6,7 +6,7 @@ import matplotlib.patches as patches
 from matplotlib.patches import Circle, Wedge
 import numpy as np
 from core.utils import load_resume, clean_text
-
+from prefect import task
 class ATSAnalyzer:
     """
     ATS (Applicant Tracking System) Score Calculator
@@ -119,8 +119,8 @@ class ATSAnalyzer:
             return self._check_content_quality(resume_text, resume_tokens)
         
         return 0.0
-    
-    def _check_format_compatibility(self, resume_text: str) -> float:
+    @task
+    def check_format_compatibility(self, resume_text: str) -> float:
         """Check resume format compatibility with ATS systems"""
         score = 0.0
         checks = 0
@@ -157,8 +157,8 @@ class ATSAnalyzer:
         checks += 1
         
         return min(score, 1.0)
-    
-    def _check_keyword_optimization(self, resume_text: str, resume_tokens: List[str], 
+    @task
+    def check_keyword_optimization(self, resume_text: str, resume_tokens: List[str], 
                                   job_description: str = None) -> float:
         """Check keyword optimization"""
         score = 0.0
@@ -196,7 +196,8 @@ class ATSAnalyzer:
         
         return min(score, 1.0)
     
-    def _check_structure_quality(self, resume_text: str) -> float:
+    @task
+    def check_structure_quality(self, resume_text: str) -> float:
         """Check resume structure quality"""
         score = 0.0
         
@@ -238,8 +239,8 @@ class ATSAnalyzer:
             score += 0.15
         
         return min(score, 1.0)
-    
-    def _check_content_quality(self, resume_text: str, resume_tokens: List[str]) -> float:
+    @task
+    def check_content_quality(self, resume_text: str, resume_tokens: List[str]) -> float:
         """Check content quality"""
         score = 0.0
         
@@ -274,7 +275,8 @@ class ATSAnalyzer:
         
         return min(score, 1.0)
     
-    def _generate_recommendations(self, scores: Dict, resume_text: str) -> List[str]:
+    @task
+    def generate_recommendations(self, scores: Dict, resume_text: str) -> List[str]:
         """Generate improvement recommendations based on scores"""
         recommendations = []
         

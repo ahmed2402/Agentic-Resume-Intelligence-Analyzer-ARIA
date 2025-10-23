@@ -3,18 +3,65 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from core.ats import ATSAnalyzer
-from core.utils import load_resume
+from core.utils import load_resume,clean_text
 
 @task
-def analyze_resume_task(resume_path: str, job_description: str = None):
-    ats = ATSAnalyzer()
-    return ats.calculate_ats_score(resume_path, job_description)
-
-@flow(name="ATS Analysis Flow")
+def load_and_clean_resume(resume_path: str):
+    """Loads resume text and cleans it."""
+    print(f"Loading and cleaning resume from: {resume_path}")
+    resume_text = load_resume(resume_path)
+    resume_tokens = clean_text(resume_text)
+    return resume_text, resume_tokens
+@flow(name="ATS Analysis Flow", log_prints=True)
 def ats_analysis_flow(resume_path: str, job_description: str = None):
-    result = analyze_resume_task(resume_path, job_description)
+    """
+    Orchestrates the full ATS analysis by running individual checks as tasks.
+    """
+    analyzer = ATSAnalyzer()
+    ats_criteria = analyzer.ats_criteria
+
+    # 1. Load and preprocess resume
+    resume_text, resume_tokens = load_and_clean_resume(resume_path)
+
+    # 2. Run analysis tasks
+    print("Running individual analysis tasks...")
+    format_score = analyzer.check_format_compatibility(resume_text)
+    keyword_score = analyzer.check_keyword_optimization(resume_text, resume_tokens, job_description)
+    structure_score = analyzer.check_structure_quality(resume_text)
+    content_score = analyzer.check_content_quality(resume_text, resume_tokens)
+
+    # 3. Aggregate scores (this logic runs inside the flow)
+    print("Aggregating scores...")
+    category_scores_data = {
+        'format_compatibility': format_score,
+        'keyword_optimization': keyword_score,
+        'structure_quality': structure_score,
+        'content_quality': content_score
+    }
+    
+    scores = {}
+    total_score = 0
+    for category, score in category_scores_data.items():
+        config = ats_criteria[category]
+        scores[category] = {
+            'score': score,
+            'weight': config['weight'],
+            'weighted_score': score * config['weight']
+        }
+        total_score += scores[category]['weighted_score']
+
+    # 4. Generate recommendations
+    recommendations = analyzer.generate_recommendations(scores, resume_text)
+
+    # 5. Compile final results
+    result = {
+        'overall_score': round(total_score * 100, 1),
+        'category_scores': scores,
+        'recommendations': recommendations,
+    }
+    
     print("ATS Analysis Complete:")
-    print(result)
+    print(f"Overall Score: {result['overall_score']}%")
     return result
 
 if __name__ == "__main__":
